@@ -1,20 +1,21 @@
-# Managing issues
+#管理 issues
 
-You should:
+你可以:
 
--   use [labels](https://github.com/stylelint/stylelint/labels) and:
-    -   add _one_ of the `status: *` labels (or the `help wanted` label when ready-to-go)
-    -   add _zero or one_ of the `type: *` labels
-    -   add _zero, one or more_ of the `non-standard syntax: *` labels
-    -   optionally, add the `good first issue` label
+-   使用 [标签](https://github.com/stylelint/stylelint/labels) :
+    -   添加 _一个_ `status: *` 的类似标签 (或者  `help wanted` 标签 当 ready-to-go)
+    -   添加 _零个或者 一个_  `type: *` 的类似标签
+    -   添加 _零个、一个 或者多个_  `non-standard syntax: *` 的类似标签
+    -   可选择项, 添加  `good first issue` 标签
 -   rename the title into a consistent format and:
-    -   lead with the [CHANGELOG group names](pull-requests.md), but in the present tense:
-        -   "Remove y" e.g. "Remove unit-blacklist"
-        -   "Deprecate x in y" e.g. "Deprecate resolvedNested option in selector-class-pattern"
-        -   "Add y" e.g. "Add unit-blacklist"
-        -   "Add x to y" e.g. "Add ignoreProperties: [] to property-blacklist"
-        -   "Fix false positives/negatives for x in y" e.g. "Fix false positives for Less mixins in color-no-hex"
-    -   use `*` if the issue applies to a group of rules e.g. "Fix false negatives for SCSS variables in selector-*-pattern"
+-   把标题重名成统一格式：
+    -   以 [CHANGELOG group names](pull-requests.md)为开头, 但是使用的是现在时:
+        -   "Remove y" 例如： "Remove unit-blacklist"
+        -   "Deprecate x in y" 例如： "Deprecate resolvedNested option in selector-class-pattern"
+        -   "Add y" 例如： "Add unit-blacklist"
+        -   "Add x to y" 例如： "Add ignoreProperties: [] to property-blacklist"
+        -   "Fix false positives/negatives for x in y" 例如： "Fix false positives for Less mixins in color-no-hex"
+    -   使用 `*` 如果这个issue适用于一组规则 ，例如： "Fix false negatives for SCSS variables in selector-*-pattern"
 -   provide a link to the relevant section of the [Developer Guide](../developer-guide.md) when:
     -   adding the `help wanted` label to encourage the original poster to contribute, e.g. [adding an option to an existing rule](../developer-guide/rules.md#adding-an-option-to-an-existing-rule) or [fixing a bug in an existing rule](../developer-guide/rules.md#fixing-a-bug-in-an-existing-rule)
     -   closing an issue because the feature is best part of ecosystem e.g. [a plugin](../developer-guide/plugins.md) or [processor](../developer-guide/processors.md)
