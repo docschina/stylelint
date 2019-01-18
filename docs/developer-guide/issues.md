@@ -16,22 +16,22 @@
         -   "Add x to y" 例如： "Add ignoreProperties: [] to property-blacklist"
         -   "Fix false positives/negatives for x in y" 例如： "Fix false positives for Less mixins in color-no-hex"
     -   使用 `*` 如果这个issue适用于一组规则 ，例如： "Fix false negatives for SCSS variables in selector-*-pattern"
--   provide a link to the relevant section of the [Developer Guide](../developer-guide.md) when:
-    -   adding the `help wanted` label to encourage the original poster to contribute, e.g. [adding an option to an existing rule](../developer-guide/rules.md#adding-an-option-to-an-existing-rule) or [fixing a bug in an existing rule](../developer-guide/rules.md#fixing-a-bug-in-an-existing-rule)
-    -   closing an issue because the feature is best part of ecosystem e.g. [a plugin](https://github.com/stylelint/stylelint/blob/master/docs/developer-guide/plugins.md) or [processor](https://github.com/stylelint/stylelint/blob/master/docs/developer-guide/processors.md)
--   use milestones only on issues and not on pull requests and:
-    -   use the `future-major` milestone for issues that introduce breaking changes
-    -   optionally, create version milestones (e.g. `8.x`) to manage upcoming releases
--   use the following saved reply to close any issue that do not use the template:
+-   提供一个指向[Developer Guide](../developer-guide.md)的相关部分的链接 ，当:
+    -   添加 `help wanted` 标签来鼓励楼主去修改 例如： [adding an option to an existing rule](../developer-guide/rules.md#adding-an-option-to-an-existing-rule) 或者 [fixing a bug in an existing rule](../developer-guide/rules.md#fixing-a-bug-in-an-existing-rule)
+    -   关闭一个issue ，因为今后是更好的环境 例如： [a plugin](https://github.com/stylelint/stylelint/blob/master/docs/developer-guide/plugins.md) 或者 [processor](https://github.com/stylelint/stylelint/blob/master/docs/developer-guide/processors.md)
+-   只有在issues的时候，不是在pull requests 的时候，使用里程碑:
+    -   对 issues 使用 `future-major` 版本号 ,来描述突破性改变
+    -   可供选项，创建版本号（例如:`8.x`),来控制升级发布
+-   使用以下保存回复来关闭任何不需要模板issue
 
 ```md
-Thanks for creating this issue but we're closing it as issues need to follow one of our templates, so that we can clearly understand your particular circumstances.
+感谢创建这个issue,但是我们将要关闭它，因为issues需要使用我们的模板，这样我们才能清楚的理解你的具体情况
 
-Please help us to help you by [recreating the issue](https://github.com/stylelint/stylelint/issues/new/choose) using one of our templates.
+这样有利于你我 [recreating the issue](https://github.com/stylelint/stylelint/issues/new/choose) 请使用一个我们的模板吧.
 ```
 
-There are three rules of thumb. You should use the:
+这里有三个经验法则，你可以使用它们：
 
--   `status: discussion`, `status: needs clarification` or `status: needs investigation` label when first triaging an issue
--   `help wanted`, a `type` (and `non-standard syntax: *` and `good first issue`) labels when a course of action is agreed
--   `status: wip` label when your are, or someone has said they are, about to start working on an issue
+-   `status: discussion`, `status: needs clarification` 或者 `status: needs investigation` 标签当第一次修复或者issue的时候
+-   `help wanted`, 一个 `type` (和 `non-standard syntax: *` 和 `good first issue`) 标签当一连串行为被同意的时候
+-   `status: wip` 标签当你或者其他人说他们，准备开始工作一个issue的时候
