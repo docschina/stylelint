@@ -1,6 +1,6 @@
 # stylelint PostCSS 插件
 
-与任何其他 [PostCSS 插件](https://github.com/postcss/postcss#plugins)一样，您可以使用 stylelint 的 PostCSS 插件，可以使用 PostCSS 运行器，也可以直接使用 PostCSS JS 应用程序接口。
+与任何其他 [PostCSS 插件](https://github.com/postcss/postcss#plugins)一样，您可以使用 stylelint 的 PostCSS 插件，可以使用 [PostCSS 运行器](https://github.com/postcss/postcss#runners)，也可以直接使用 PostCSS JS 应用程序接口。
 
 *但是，如果专用的 stylelint 任务运行插件[可用](complementary-tools.md)（例如 [gulp-stylelint](https://github.com/olegskl/gulp-stylelint) 或 [grunt-stylelint](https://github.com/wikimedia/grunt-stylelint)）我们建议您使用该插件而不是此插件，因为它们可以提供更好的报告。*
 
