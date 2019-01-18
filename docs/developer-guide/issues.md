@@ -7,7 +7,6 @@
     -   添加 _零个或者 一个_  `type: *` 的类似标签
     -   添加 _零个、一个 或者多个_  `non-standard syntax: *` 的类似标签
     -   可选择项, 添加  `good first issue` 标签
--   rename the title into a consistent format and:
 -   把标题重名成统一格式：
     -   以 [CHANGELOG group names](pull-requests.md)为开头, 但是使用的是现在时:
         -   "Remove y" 例如： "Remove unit-blacklist"
