@@ -1,15 +1,17 @@
-# Head
+# 9.10.0
 
 -   Added: support for ordinary regular expressions anywhere a regex string is accepted in rule config ([#3799](https://github.com/stylelint/stylelint/pull/3799)).
 -   Added: `css-in-js` syntax option that will replace the existing `styled` and `jsx` ones ([#3872](https://github.com/stylelint/stylelint/pull/3872)).
 -   Added: `function-calc-no-invalid` rule ([#3833](https://github.com/stylelint/stylelint/pull/3833)).
 -   Added: `ignore: ["next-sibling"]` to `selector-max-type` ([#3832](https://github.com/stylelint/stylelint/pull/3832)).
 -   Added: `declaration-block-semicolon-space-after` autofix ([#3865](https://github.com/stylelint/stylelint/pull/3865)).
--   Changed: Autofixing will be disabled if it is used with stylelint processors ([#3873](https://github.com/stylelint/stylelint/pull/3873)).
+-   Fixed: autofix is now disabled when a stylelint processors is used ([#3873](https://github.com/stylelint/stylelint/pull/3873)).
 -   Fixed: `CssSyntaxError` for functions in template literals ([#3869](https://github.com/stylelint/stylelint/pull/3869)).
 -   Fixed: `no-descending-specificity` false positives for styled-components ([#3875](https://github.com/stylelint/stylelint/pull/3875)).
 -   Fixed: `no-duplicate-selectors` false positives for styled-components ([#3875](https://github.com/stylelint/stylelint/pull/3875)).
+-   Fixed: `selector-pseudo-class-no-unknown` false positives for `focus-visible` ([#3887](https://github.com/stylelint/stylelint/pull/3887)).
 -   Fixed: `selector-max-universal` false positives for flush comments containing a comma ([#3817](https://github.com/stylelint/stylelint/pull/3817)).
+-   Fixed: `shorthand-property-redundant-values` false positives for negative values ([#3888](https://github.com/stylelint/stylelint/pull/3888)).
 
 # 9.9.0
 
