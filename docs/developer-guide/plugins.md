@@ -1,6 +1,6 @@
-# Writing plugins
+# 编写插件
 
-Plugins are rules and sets of rules built by the community.
+插件是社区构建的规则和规则集
 
 We recommend familiarising yourself and adhering to stylelint's [conventions for writing rules](rules.md), including those for names, options, messages, tests and docs.
 
