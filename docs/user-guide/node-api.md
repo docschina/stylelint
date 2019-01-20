@@ -1,4 +1,4 @@
-# stylelint Node 应用程序接口
+# stylelint Node.js 应用程序接口
 
 stylelint 模块包含一个提供 Node 应用程序接口的 `lint()` 函数。
 

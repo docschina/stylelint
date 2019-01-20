@@ -1,6 +1,6 @@
 {
   "name": "stylelint",
-  "version": "9.10.0",
+  "version": "9.10.1",
   "description": "A mighty, modern CSS linter.",
   "keywords": [
     "css",
@@ -45,7 +45,7 @@
     "cosmiconfig": "^5.0.0",
     "debug": "^4.0.0",
     "execall": "^1.0.0",
-    "file-entry-cache": "^2.0.0",
+    "file-entry-cache": "^4.0.0",
     "get-stdin": "^6.0.0",
     "global-modules": "^2.0.0",
     "globby": "^9.0.0",
@@ -54,7 +54,6 @@
     "ignore": "^5.0.4",
     "import-lazy": "^3.1.0",
     "imurmurhash": "^0.1.4",
-    "jison-gho": "^0.6.1-215",
     "known-css-properties": "^0.11.0",
     "leven": "^2.1.0",
     "lodash": "^4.17.4",
@@ -64,7 +63,7 @@
     "micromatch": "^3.1.10",
     "normalize-selector": "^0.2.0",
     "pify": "^4.0.0",
-    "postcss": "^7.0.0",
+    "postcss": "^7.0.13",
     "postcss-html": "^0.36.0",
     "postcss-jsx": "^0.36.0",
     "postcss-less": "^3.1.0",
@@ -97,7 +96,7 @@
     "eslint": "~5.7.0",
     "eslint-config-stylelint": "~11.0.0",
     "file-exists-promise": "^1.0.2",
-    "flow-bin": "^0.90.0",
+    "flow-bin": "^0.91.0",
     "flow-typed": "^2.5.1",
     "husky": "^1.1.0",
     "jest": "^23.4.1",
@@ -140,7 +139,11 @@
   "lint-staged": {
     "*.js": [
       "prettier --write",
+      "eslint --max-warnings=0 --fix",
       "git add"
+    ],
+    "*.md": [
+      "remark --quiet --frail"
     ]
   },
   "eslintConfig": {
@@ -156,7 +159,8 @@
     "collectCoverage": false,
     "collectCoverageFrom": [
       "lib/**/*.js",
-      "!lib/vendor/**/*.js"
+      "!lib/vendor/**/*.js",
+      "!lib/utils/parseCalcExpression/parser.js"
     ],
     "coverageDirectory": "./.coverage/",
     "coverageReporters": [

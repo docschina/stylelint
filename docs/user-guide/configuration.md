@@ -75,7 +75,7 @@
 }]
 ```
 
-#### 在您的CSS中关闭规则
+#### 在您的 CSS 中关闭规则
 
 可以通过在CSS中使用特殊注释暂时关闭规则。例如，您可以关闭所有规则：
 
@@ -131,7 +131,7 @@ a {}
 
 默认情况下，所有规则都是 `"error"` 级别的严重性。您可以通过在配置中添加 `defaultSeverity` 属性来更改此默认值（请参阅下文）。
 
-要调整任何特定规则的严重性，请使用辅助选项 `severity`。 `severity` 的可用值是：
+要调整任何特定规则的严重性，请使用辅助选项 `severity`。`severity` 的可用值是：
 
 -   `"warning"`
 -   `"error"`
@@ -175,7 +175,7 @@ a {}
 
 ### `extends`
 
-您的配置可以*继承*现有配置（无论您自己的配置还是第三方配置）。当一个配置继承另一个配置时，它从另一个配置属性开始，然后添加并覆盖其中的内容。
+您的配置可以*继承*现有配置（无论您自己的配置还是第三方配置）。当一个配置继承另一个配置时，它从另一个配置的属性开始，然后添加并覆盖其中的内容。
 
 您可以继承现有配置的数组，数组中的每个项都优先于前一项（因此第二项将覆盖第一项中的规则，第三项将覆盖第一项和第二项中的规则，依此类推，最后一项覆盖其他所有内容）。
 
@@ -208,7 +208,7 @@ a {}
 `"extends"` 的值是一个“定位符”（或者是一个“定位符”数组），最终通过 `require()` 加载，所以可以是任何适用于 Node 的 `require.resolve()` 算法的格式。这意味着“定位符”可以是：
 
 -   `node_modules` 中模块的名称（例如 `stylelint-config-standard`；该模块的 `main` 文件必须是有效的 JSON 配置）
--   使用 `.js` 或 `.json` 扩展名的文件绝对路径（如果您在 Node 上下文中创建 JS 对象并将其传入，则这是有意义的）。
+-   使用 `.js` 或 `.json` 扩展名的文件绝对路径（如果您在 Node.js 上下文中创建 JS 对象并将其传入，则这是有意义的）。
 -   相对于引用配置的使用 `.js` 或 `.json` 扩展名的文件相对路径（例如，如果 configA 具有 `extends: "../configB"`，我们将相对于 configA 查找 `configB`）。
 
 *有赖于 `extends`，您可以创建和使用可共享的 stylelint 配置。* 如果您将配置发布到 npm，请在 `package.json` 中使用 `stylelint-config` 关键字。
@@ -251,7 +251,7 @@ a {}
 
 Processors are functions that hook into stylelint's pipeline,
 
-*Processors can only be used with the CLI and the Node API, not with the PostCSS plugin.* (The PostCSS plugin will ignore them.)
+*Processors can only be used with the CLI and the Node.js API, not with the PostCSS plugin.* (The PostCSS plugin will ignore them.)
 
 Processors can enable stylelint to lint, but not autofix, the CSS within non-stylesheet files that aren't supported out-of-the-box by stylelint.
 
@@ -294,7 +294,7 @@ If your processor has options, make that item an array whose first item is the "
 
 ### `defaultSeverity`
 
-未在辅助选项中指定严重性的所有规则的默认严重性级别。 `severity` 的可用值是：
+未在辅助选项中指定严重性的所有规则的默认严重性级别。`severity` 的可用值是：
 
 -   `"warning"`
 -   `"error"`

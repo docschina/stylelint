@@ -32,7 +32,7 @@
 -   [在命令行中](docs/user-guide/cli.md)
 -   [在您的文本编辑器中](docs/user-guide/complementary-tools.md#编辑器插件), 例如在 VS Code 中
 -   [在您的构建工具中](docs/user-guide/complementary-tools.md#构建工具插件), 例如在 webpack 中
--   [通过 Node API](docs/user-guide/node-api.md)
+-   [通过 Node.js API](docs/user-guide/node-api.md)
 -   [作为 PostCSS 插件](docs/user-guide/postcss-plugin.md)
 
 然后创建您的[配置对象](docs/user-guide/configuration.md)。您可以扩展共享配置或制作自己的配置。
