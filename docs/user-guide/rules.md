@@ -22,7 +22,7 @@
 
 #### 字体族
 
--   [`font-family-no-duplicate-names`](../../lib/rules/font-family-no-duplicate-names/README.md): Disallow duplicate font family names.
+-   [`font-family-no-duplicate-names`](../../lib/rules/font-family-no-duplicate-names/README.md): 禁止使用重复的字体族名称。
 -   [`font-family-no-missing-generic-family-keyword`](../../lib/rules/font-family-no-missing-generic-family-keyword/README.md): Disallow missing generic families in lists of font family names.
 
 #### 函数
