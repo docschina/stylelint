@@ -18,7 +18,7 @@
 
 #### 颜色
 
--   [`color-no-invalid-hex`](../../lib/rules/color-no-invalid-hex/README.md): Disallow invalid hex colors.
+-   [`color-no-invalid-hex`](../../lib/rules/color-no-invalid-hex/README.md): 禁止使用无效的十六进制颜色。
 
 #### 字体族
 
