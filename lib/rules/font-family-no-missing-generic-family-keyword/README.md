@@ -1,6 +1,6 @@
 # font-family-no-missing-generic-family-keyword
 
-禁止在字体系列名称列表中缺少通用族。
+禁止在字体族名称列表中缺少通用字体族关键字。
 
 ```css
 a { font-family: Arial, sans-serif; }
