@@ -300,7 +300,7 @@ b {
 
 我们建议您将主要选项（例如 `"always"` 或 `"never"`）设置为最普遍的风格，并使用 `except` 可选的辅助选项定义例外。`except` 选项有很多值，例如 `first-nested`、`after-comment` 等。
 
-`*-empty-line-before` 规则控制在*事物*之前不要或者必须空*一行或多行*空行。`*-max-empty-lines` 规则通过控制*事物*中的*空行数*。`max-empty-lines` 规则用于设置整个源代码的限制。然后可以使用诸如 `function-max-empty-lines`、`selector-max-empty-lines` 和 `value-list-max-empty-lines` 之类的规则来更严格的设置 *事物* 内的空行限制。
+`*-empty-line-before` 规则控制在*事物*之前不要或者必须空*一行或多行*空行。`*-max-empty-lines` 规则通过控制*事物*中的*空行数*。`max-empty-lines` 规则用于设置整个源码的限制。然后可以使用诸如 `function-max-empty-lines`、`selector-max-empty-lines` 和 `value-list-max-empty-lines` 之类的规则来更严格的设置 *事物* 内的空行限制。
 
 例如，假设您要强制执行以下操作：
 
@@ -321,7 +321,7 @@ c {
 }
 ```
 
-即整个源代码中最多有1个空行，但函数，选择器列表和值列表中没有空行。
+即整个源码中最多有1个空行，但函数，选择器列表和值列表中没有空行。
 
 您可以这样做：
 

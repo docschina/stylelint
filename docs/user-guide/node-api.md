@@ -111,7 +111,7 @@ npm install stylelint
 
 ### `reportNeedlessDisables`
 
-如果为 `true`，`ignoreDisables` 也将被设置为 `true`，返回的数据将包含 `needlessDisables` 属性，其值是一个对象数组，每个成员对应一个源代码，告诉您哪个 stylelint 禁用注释是没有阻止违规检查的。
+如果为 `true`，`ignoreDisables` 也将被设置为 `true`，返回的数据将包含 `needlessDisables` 属性，其值是一个对象数组，每个成员对应一个源码，告诉您哪个 stylelint 禁用注释是没有阻止违规检查的。
 
 使用此报告来清理代码库，仅保留有其服务目的的 stylelint 禁用注释。
 
