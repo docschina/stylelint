@@ -1,15 +1,15 @@
-# Writing plugins
+# 编写插件
 
-Plugins are rules and sets of rules built by the community.
+插件是社区构建的规则和规则集
 
-We recommend familiarising yourself and adhering to stylelint's [conventions for writing rules](rules.md), including those for names, options, messages, tests and docs.
+我们建议您熟悉并遵守 stylelint 的[规则编写约定](rules.md)，包括命名、选项、消息、测试和文档。
 
 <!-- TOC -->
 
-## The anatomy of a plugin
+## 插件详解
 
 ```js
-// Abbreviated example
+// 简短的例子
 var stylelint = require("stylelint")
 
 var ruleName = "plugin/foo-bar"
@@ -21,7 +21,7 @@ module.exports = stylelint.createPlugin(ruleName, function(primaryOption, second
   return function(postcssRoot, postcssResult) {
     var validOptions = stylelint.utils.validateOptions(postcssResult, ruleName, { .. })
     if (!validOptions) { return }
-    // ... some logic ...
+    // ... 一些逻辑 ...
     stylelint.utils.report({ .. })
   }
 })
@@ -30,22 +30,22 @@ module.exports.ruleName = ruleName
 module.exports.messages = messages
 ```
 
-Your plugin's rule name must be namespaced, e.g. `your-namespace/your-rule-name`. If your plugin provides only a single rule or you can't think of a good namespace, you can simply use `plugin/my-rule`. This namespace ensures that plugin rules will never clash with core rules. *Make sure you document your plugin's rule name (and namespace) for users, because they will need to use it in their config.*
+您的插件规则名必须有命名空间，例如 `your-namespace/your-rule-name`。如果您的插件只提供一个单独的规则或您想不出一个好的命名空间，您可以简单地使用 `plugin/my-rule`。此命名空间可确保插件规则永远不会与核心规则冲突。*请确保您的文档里面记录了插件的规则名（和命名空间），因为用户需要在配置中使用它。*
 
-`stylelint.createPlugin(ruleName, ruleFunction)` ensures that your plugin will be setup properly alongside other rules.
+`stylelint.createPlugin(ruleName, ruleFunction)` 可确保您的插件能与其他规则一起正确设定。
 
-In order for your plugin rule to work with the [standard configuration format](../user-guide/configuration.md#rules), `ruleFunction` should accept 2 arguments: the primary option and, optionally, a secondary options object.
+为了使插件规则能够使用[标准配置格式](../user-guide/configuration.md#rules)，`ruleFunction` 应该接受两个参数：主选项和可选辅助选项对象。
 
-If your plugin rule supports [autofixing](rules.md#adding-autofixing), then `ruleFunction` should also accept a third argument: context. Also, it's highly recommended to support the `disableFix` option in your secondary options object. Within the rule, don't perform autofixing if the user has passed a `disableFix` option for your rule.
+如果您的插件规则支持[自动修复](rules.md#adding-autofixing)，则 `ruleFunction` 还应接受第三个参数：context。此外，强烈建议您在辅助选项对象中支持 `disableFix` 选项。如果用户为规则传递 `disableFix` 选项，则不在规则内执行自动修复。
 
-`ruleFunction` should return a function that is essentially a little [PostCSS plugin](https://github.com/postcss/postcss/blob/master/docs/writing-a-plugin.md): it takes 2 arguments: the PostCSS Root (the parsed AST), and the PostCSS LazyResult. You'll have to [learn about the PostCSS API](https://api.postcss.org/).
+`ruleFunction` 可以返回一个函数，这个函数本质上是一个小的 [PostCSS 插件](https://github.com/postcss/postcss/blob/master/docs/writing-a-plugin.md)：它接受两个参数：PostCSS Root（解析的 AST）和 PostCSS LazyResult。您必须[了解 PostCSS API](https://api.postcss.org/)。
 
-### Asynchronous rules
+### 异步规则
 
-Rules with asynchronous PostCSS plugins are also possible! All you need to do is return a Promise instance from your plugin function.
+规则使用异步 PostCSS 插件也是可行的！您需要做的就是从插件函数返回一个 Promise 实例。
 
 ```js
-// Abbreviated asynchronous example
+// 简短的异步例子
 var stylelint = require("stylelint")
 
 var ruleName = "plugin/foo-bar-async"
@@ -59,9 +59,9 @@ module.exports = stylelint.createPlugin(ruleName, function(primaryOption, second
     if (!validOptions) { return }
 
     return new Promise(function(resolve) {
-      // some async operation
+      // 一些异步操作
       setTimeout(function() {
-        // ... some logic ...
+        // ... 一些逻辑 ...
         stylelint.utils.report({ .. })
         resolve()
       }, 1)
@@ -75,35 +75,35 @@ module.exports.messages = messages
 
 ## `stylelint.utils`
 
-stylelint exposes some utilities that are useful. *For details about the APIs of these functions, please look at comments in the source code and examples in the standard rules.*
+stylelint 公开了一些有用的实用程序。*关于这些应用程序的接口，请查看源码的注释和标准规则中的示例。*
 
 ### `stylelint.utils.report`
 
-Adds violations from your plugin to the list of violations that stylelint will report to the user.
+将插件中的违规添加到 stylelint 向用户报告的违规列表中。
 
-*Do not use PostCSS's `node.warn()` method directly.* When you use `stylelint.utils.report`, your plugin will respect disabled ranges and other possible future features of stylelint, providing a better user-experience, one that better fits the standard rules.
+*不要直接使用 PostCSS 的 `node.warn()` 方法。*当您使用 `stylelint.utils.report` 时，您的插件会遵守禁用范围和其他 stylelint 未来的特性。这会提供更好的用户体验，更符合标准规则。
 
 ### `stylelint.utils.ruleMessages`
 
-Tailors your messages to the format of standard stylelint rules.
+将您的消息定制为标准 stylelint 规则的格式。
 
 ### `stylelint.utils.validateOptions`
 
-Validates the options for your rule.
+验证您的规则选项。
 
 ### `stylelint.utils.checkAgainstRule`
 
-Checks CSS against a standard stylelint rule *within your own rule*. This function provides power and flexibility for plugins authors who wish to modify, constrain, or extend the functionality of existing stylelint rules.
+*在您自己的规则中*使用标准 stylelint 规则检查 CSS。此功能为希望修改、约束或扩展现有 stylelint 规则功能的插件作者提供了强大功能和灵活性。
 
-Accepts an options object and a callback that is invoked with warnings from the specified rule. The options are:
+接受选项对象和用于接收来自被调用规则的警告的回调。选项是：
 
--   `ruleName`: The name of the rule you are invoking.
--   `ruleSettings`: Settings for the rule you are invoking, formatting in the same way they would be in a `.stylelintrc` configuration object.
--   `root`: The root node to run this rule against.
+-   `ruleName`: 要调用的规则的名称。
+-   `ruleSettings`: 您正在调用的规则的设置，格式与 `.stylelintrc` 配置对象中的格式相同。
+-   `root`: 针对此规则运行的根节点。
 
-Use the warning to create a *new* warning *from your plugin rule* that you report with `stylelint.utils.report`.
+使用警告来创建一个*来自您插件规则*的*新*警告，并用 `stylelint.utils.report` 汇报
 
-For example, imagine you want to create a plugin that runs `at-rule-no-unknown` with a built-in list of exceptions for at-rules provided by your preprocessor-of-choice:
+比如，假设您要创建一个插件，使用您的预处理器内置的 @规则的例外列表来运行 `at-rule-no-unknown`：
 
 ```js
 const allowableAtRules = [..]
@@ -134,13 +134,13 @@ function myPluginRule(primaryOption, secondaryOptions) {
 
 ## `stylelint.rules`
 
-All of the rule functions are available at `stylelint.rules`. This allows you to build on top of existing rules for your particular needs.
+所有规则函数都可以在 `stylelint.rules` 中找到。这使您可以根据您的特定需求构建现有规则。
 
-A typical use-case is to build in more complex conditionals that the rule's options allow for. For example, maybe your codebase uses special comment directives to customize rule options for specific stylesheets. You could build a plugin that checks those directives and then runs the appropriate rules with the right options (or doesn't run them at all).
+一个典型的用例是，在复杂条件下构建规则选项。例如，您的代码库可能使用特殊注释指令来自定义特定样式表的规则选项。您可以构建一个插件来检查这些指令，然后使用正确的选项运行适当的规则（或者根本不运行它们）。
 
-All rules share a common signature. They are a function that accepts two arguments: a primary option and a secondary options object. And that functions returns a function that has the signature of a PostCSS plugin, expecting a PostCSS root and result as its arguments.
+所有规则都有共同的签名。它们是一个接受两个参数的函数：主选项和辅助选项对象。并且该函数返回一个具有 PostCSS 插件签名的函数，期望PostCSS 根节点和结果作为其参数。
 
-Here's a simple example of a plugin that runs `color-hex-case` only if there is a special directive `@@check-color-hex-case` somewhere in the stylesheet:
+这里有个简短的例子，只有当样式表某处有个特殊的指令 `@@check-color-hex-case` 时才运行 `color-hex-case`。
 
 ```js
 export default stylelint.createPlugin(ruleName, function (expectation) {
@@ -152,25 +152,25 @@ export default stylelint.createPlugin(ruleName, function (expectation) {
 })
 ```
 
-## Allow primary option arrays
+## 允许主选项数组
 
-If your plugin can accept an array as its primary option, you must designate this by setting the property `primaryOptionArray = true` on your rule function. For more information, check out the ["Working on rules"](rules.md#primary) doc.
+如果您的插件可以接受数组作为其主选项，则必须通过在规则函数上设置属性 `primaryOptionArray = true` 来指定它。有关更多信息，请查看[“处理规则”](rules.md#primary)文档。
 
-## External helper modules
+## 外部辅助模块
 
-In addition to the standard parsers mentioned in the ["Working on rules"](rules.md) doc, there are other external modules used within stylelint that we recommend using. These include:
+除了[“处理规则”](rules.md)文档中提到的标准解析器, 我们还推荐使用在 stylelint 里用到的其他的外部模块。它们包括:
 
--   [normalize-selector](https://github.com/getify/normalize-selector): Normalize CSS selectors.
--   [postcss-resolve-nested-selector](https://github.com/davidtheclark/postcss-resolve-nested-selector): Given a (nested) selector in a PostCSS AST, return an array of resolved selectors.
--   [style-search](https://github.com/davidtheclark/style-search): Search CSS (and CSS-like) strings, with sensitivity to whether matches occur inside strings, comments, and functions.
+-   [normalize-selector](https://github.com/getify/normalize-selector)：规范化CSS选择器。
+-   [postcss-resolve-nested-selector](https://github.com/davidtheclark/postcss-resolve-nested-selector)：给予 PostCSS AST 中的（嵌套）选择器，返回解析后的选择器的数组。
+-   [style-search](https://github.com/davidtheclark/style-search)：搜索CSS（和类 CSS）中的字符串，对字符串、注释和函数内是否发生匹配敏感。
 
-Have a look through [stylelint's internal utils](https://github.com/stylelint/stylelint/tree/master/lib/utils) and if you come across one that you need in your plugin, then please consider helping us extract it out into an external module.
+请看一下 [stylelint 的内部工具](https://github.com/stylelint/stylelint/tree/master/lib/utils)，如果您遇到一个您的插件需要的函数，请考虑帮助我们把它提取为外部模块。
 
-## Peer dependencies
+## 对等依赖
 
-You should express, within the `peerDependencies` key (and **not** within the `dependencies` key) of your plugin's `package.json`, what version(s) of stylelint your plugin can be used with. This is to ensure that different versions of stylelint are not unexpectedly installed.
+您应该在插件的 `package.json` 的 `peerDependencies`（**不是** `dependencies`）键中表明，你的插件可以使用什么版本的 stylelint。这是为了确保不会意外安装不同版本的 stylelint。
 
-For example, to express that your plugin can be used with stylelint versions 7 and 8:
+例如，要表示您的插件可以与 stylelint 版本 7 和 8 一起使用：
 
 ```json
 {
@@ -180,15 +180,15 @@ For example, to express that your plugin can be used with stylelint versions 7 a
 }
 ```
 
-## Testing plugins
+## 测试插件
 
-For testing your plugin, you might consider using the same rule-testing function that stylelint uses internally: [`stylelint-test-rule-tape`](https://github.com/stylelint/stylelint-test-rule-tape).
+为了测试您的插件，您可以考虑使用和 stylelint 内部使用的一样的规则测试函数，: [`stylelint-test-rule-tape`](https://github.com/stylelint/stylelint-test-rule-tape)。
 
-## Plugin packs
+## 插件包
 
-To make a single module provide multiple rules, simply export an array of plugin objects (rather than a single object).
+要使单个模块提供多个规则，只需导出一个插件对象数组（而不是单个对象）。
 
-## Sharing plugins and plugin packs
+## 共享插件和插件包
 
--   Use the `stylelint-plugin` keyword within your `package.json`.
--   Once your plugin is published, please send us a Pull Request to add your plugin to [the list](../user-guide/plugins.md).
+-   在您的 `package.json` 文件中使用 `stylelint-plugin` 关键字。
+-   一旦你的插件发布，请发送一个拉取请求将你的插件添加到[列表](../user-guide/plugins.md)。
