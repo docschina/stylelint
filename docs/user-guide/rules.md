@@ -355,6 +355,6 @@
 -   [`max-empty-lines`](../../lib/rules/max-empty-lines/README.md)：限制相邻空行的数量。
 -   [`max-line-length`](../../lib/rules/max-line-length/README.md)：限制行的长度。
 -   [`no-eol-whitespace`](../../lib/rules/no-eol-whitespace/README.md)：禁止行尾空白（可自动修复）。
--   [`no-missing-end-of-source-newline`](../../lib/rules/no-missing-end-of-source-newline/README.md)：禁止缺少源代码结尾换行符（可自动修复）。
+-   [`no-missing-end-of-source-newline`](../../lib/rules/no-missing-end-of-source-newline/README.md)：禁止缺少源码结尾换行符（可自动修复）。
 -   [`no-empty-first-line`](../../lib/rules/no-empty-first-line/README.md)：禁止空第一行（可自动修复）。
 

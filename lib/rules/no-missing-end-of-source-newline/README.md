@@ -1,6 +1,6 @@
 # no-missing-end-of-source-newline
 
-禁止缺少源代码结尾换行符。
+禁止缺少源码结尾换行符。
 
 ```css
     a { color: pink; }
