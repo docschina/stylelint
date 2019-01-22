@@ -1,18 +1,18 @@
 # no-unknown-animations
 
-Disallow unknown animations.
+禁止未知的动画。
 
 ```css
 a { animation-name: fancy-slide; }
 /**                    ↑
- *   This animation name */
+ *                这个动画名称 */
 
 a { animation: fancy-slide 2s linear; }
 /**                    ↑
- *           And this one */
+ *                 还有这个 */
 ```
 
-This rule considers the identifiers of `@keyframes` rules defined within the same source to be known.
+此规则认为在同一源码中定义的 `@keyframes` 规则的标识符是已知的。
 
 ## 选项
 
