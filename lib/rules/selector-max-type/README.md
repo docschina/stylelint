@@ -137,7 +137,7 @@ div a + span {}
 
 ### `ignoreTypes: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "custom"]

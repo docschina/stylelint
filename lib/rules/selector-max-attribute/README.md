@@ -80,7 +80,7 @@ input:not([type="text"][data-attribute="value"][disabled]) {}
 
 ### `ignoreAttributes: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "dir"]

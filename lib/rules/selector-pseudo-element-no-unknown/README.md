@@ -52,7 +52,7 @@ input::-moz-placeholder {}
 
 ### `ignorePseudoElements: ["/regex/", "string"]`
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "pseudo-element"]

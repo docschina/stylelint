@@ -26,7 +26,7 @@ If a name or value is surrounded with `/` (e.g. `"/width$/"`), it is interpreted
 as a regular expression. For example, `/width$/` will match `max-width` and
 `min-width`.
 
-Given:
+给定：
 
 ```json
 {

@@ -52,7 +52,7 @@ input:-moz-placeholder {}
 
 ### `ignorePseudoClasses: ["/regex/", "string"]`
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "pseudo-class"]

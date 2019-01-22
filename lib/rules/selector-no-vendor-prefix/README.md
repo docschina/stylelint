@@ -40,7 +40,7 @@ input::placeholder {}
 
 Ignore vendor prefixes for selectors.
 
-Given:
+给定：
 
 ```js
 ["::-webkit-input-placeholder", "/-moz-.*/"]

@@ -14,7 +14,7 @@ Specify a blacklist of disallowed media feature names.
 
 `array|string|regex`: `["array", "of", "unprefixed", /media-features/ or "regex"]|"media-feature"|/regex/`
 
-Given:
+给定：
 
 ```js
 ["max-width", "/^my-/"]

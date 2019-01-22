@@ -43,7 +43,7 @@ a { -webkit-touch-callout: none; }
 
 ### `ignoreProperties: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["transform", "columns"]

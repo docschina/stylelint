@@ -58,7 +58,7 @@ a {
 
 ### `ignoreUnits: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "custom"]
@@ -86,7 +86,7 @@ a {
 
 ### `ignoreFunctions: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["image-set", "/^my-/", "/^YOUR-/i"]

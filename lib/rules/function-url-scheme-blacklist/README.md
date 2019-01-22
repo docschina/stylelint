@@ -19,7 +19,7 @@ This rule ignores:
 
 `array|string|regex`: `["array", "of", /schemes/ or "/regex/"]|"scheme"|/regex/`
 
-Given:
+给定：
 
 ```js
 ["ftp", "/^http/"]

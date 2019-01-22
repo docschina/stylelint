@@ -82,7 +82,7 @@ div {}
 
 ### `ignoreSelectors: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["0,2,0", {

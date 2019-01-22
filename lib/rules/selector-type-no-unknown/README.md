@@ -80,7 +80,7 @@ unknown {}
 
 ### `ignoreNamespaces: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "custom-namespace"]
@@ -102,7 +102,7 @@ my-other-namespace|unknown {}
 
 ### `ignoreTypes: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "custom-type"]

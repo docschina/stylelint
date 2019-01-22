@@ -139,7 +139,7 @@ a {
 
 ### `ignoreShorthands: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["padding", "/border/"]

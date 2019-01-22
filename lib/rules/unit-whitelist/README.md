@@ -12,7 +12,7 @@ a { width: 100px; }
 
 `array|string`: `["array", "of", "units"]|"unit"`
 
-Given:
+给定：
 
 ```js
 ["px", "em", "deg"]
@@ -62,7 +62,7 @@ Ignore units in the values of declarations with the specified properties.
 
 For example, with `["px", "em"]`.
 
-Given:
+给定：
 
 ```js
 {

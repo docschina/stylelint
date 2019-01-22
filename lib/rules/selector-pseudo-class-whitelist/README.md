@@ -16,7 +16,7 @@ This rule ignores selectors that use variable interpolation e.g. `:#{$variable} 
 
 If a string is surrounded with `"/"` (e.g. `"/^nth-/"`), it is interpreted as a regular expression. This allows, for example, easy targeting of shorthands: `/^nth-/` will match `nth-child`, `nth-last-child`, `nth-of-type`, etc.
 
-Given:
+给定：
 
 ```js
 ["hover", "/^nth-/"]

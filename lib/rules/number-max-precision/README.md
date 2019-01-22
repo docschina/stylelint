@@ -46,7 +46,7 @@ Ignore the precision of numbers for values with the specified units.
 
 For example, with `2`.
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "%"]

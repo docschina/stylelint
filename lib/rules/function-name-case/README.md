@@ -108,7 +108,7 @@ Ignore case of function names.
 
 For example, with `"lower"`.
 
-Given:
+给定：
 
 ```js
 ["some-function", "/^get.*$/"]

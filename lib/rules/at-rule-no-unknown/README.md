@@ -44,7 +44,7 @@ This rule considers at-rules defined in the CSS Specifications, up to and includ
 
 ### `ignoreAtRules: ["/regex/", /regex/, "string"]`
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "custom"]

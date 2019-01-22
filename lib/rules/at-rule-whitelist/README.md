@@ -12,7 +12,7 @@ Specify a whitelist of allowed at-rules.
 
 `array|string`: `["array", "of", "unprefixed", "at-rules"]|"at-rule"`
 
-Given:
+给定：
 
 ```js
 ["extend", "keyframes"]

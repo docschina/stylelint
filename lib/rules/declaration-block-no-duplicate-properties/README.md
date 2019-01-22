@@ -102,7 +102,7 @@ p {
 
 Ignore duplicates of specific properties.
 
-Given:
+给定：
 
 ```js
 ["color", "/background\-/"]

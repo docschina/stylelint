@@ -14,7 +14,7 @@ This rule ignores media feature names within a range context.
 
 `array|string|regex`: `["array", "of", "unprefixed", /media-features/ or "regex"]|"media-feature"|/regex/`
 
-Given:
+给定：
 
 ```js
 ["max-width", "/^my-/"]

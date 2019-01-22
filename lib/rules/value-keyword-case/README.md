@@ -109,7 +109,7 @@ Ignore case of keywords values.
 
 For example, with `"lower"`.
 
-Given:
+给定：
 
 ```js
 ["Block", "/^(f|F)lex$/"]

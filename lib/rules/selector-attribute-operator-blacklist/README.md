@@ -12,7 +12,7 @@ Specify a blacklist of disallowed attribute operators.
 
 `array|string`: `["array", "of", "operators"]|"operator"`
 
-Given:
+给定：
 
 ```js
 [ "*=" ]

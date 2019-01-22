@@ -132,7 +132,7 @@ a {
 
 For example with `"never"`.
 
-Given:
+给定：
 
 ```js
 ["/^my-/", "composes"]

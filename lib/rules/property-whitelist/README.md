@@ -16,7 +16,7 @@ This rule ignores variables (`$sass`, `@less`, `--custom-property`).
 
 If a string is surrounded with `"/"` (e.g. `"/^background/"`), it is interpreted as a regular expression. This allows, for example, easy targeting of shorthands: `/^background/` will match `background`, `background-size`, `background-color`, etc.
 
-Given:
+给定：
 
 ```js
 ["display", "animation", "/^background/"]

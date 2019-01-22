@@ -17,7 +17,7 @@ This rule ignores:
 
 `array|string|regex`: `["array", "of", "unprefixed", "pseudo-elements" or "regex"]|"pseudo-element"|/regex/`
 
-Given:
+给定：
 
 ```js
 ["before", "/^my-/i"]

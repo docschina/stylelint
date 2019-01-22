@@ -62,7 +62,7 @@ LI {}
 
 ### `ignoreTypes: ["/regex/", "non-regex"]`
 
-Given:
+给定：
 
 ```js
 ["$childClass", "/(p|P)arent.*/"]

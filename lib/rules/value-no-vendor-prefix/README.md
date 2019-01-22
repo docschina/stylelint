@@ -46,7 +46,7 @@ a { background: linear-gradient(bottom, #000, #fff); }
 
 ### `ignoreValues: ["string"]`
 
-Given:
+给定：
 
 ```js
 ["grab", "max-content"]

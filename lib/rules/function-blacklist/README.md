@@ -14,7 +14,7 @@ a { transform: scale(1); }
 
 If a string is surrounded with `"/"` (e.g. `"/^rgb/"`), it is interpreted as a regular expression.
 
-Given:
+给定：
 
 ```js
 ["scale", "rgba", "linear-gradient"]

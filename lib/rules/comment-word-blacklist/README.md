@@ -16,7 +16,7 @@ This rule ignores comments within selector and value lists.
 
 If a string is surrounded with `"/"` (e.g. `"/^TODO:/"`), it is interpreted as a regular expression.
 
-Given:
+给定：
 
 ```js
 ["/^TODO:/", "badword"]

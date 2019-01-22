@@ -378,7 +378,7 @@ Ignore specified at-rules.
 
 For example, with `"always"`.
 
-Given:
+给定：
 
 ```js
 ["import"]

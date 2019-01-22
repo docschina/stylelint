@@ -156,7 +156,7 @@ color: pink;}
 
 ### `ignoreAtRules: ["/regex/", /regex/, "non-regex"]`
 
-Given:
+给定：
 
 ```js
 ["/fo/"]

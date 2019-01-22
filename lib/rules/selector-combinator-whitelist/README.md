@@ -16,7 +16,7 @@ This rule ignores [reference combinators](https://www.w3.org/TR/selectors4/#idre
 
 `array|string`: `["array", "of", "combinators"]|"combinator"`
 
-Given:
+给定：
 
 ```js
 [">", " "]

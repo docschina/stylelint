@@ -153,7 +153,7 @@ Ignore specified at-rules.
 
 For example, with `"always"` or `"always-multi-line"`.
 
-Given:
+给定：
 
 ```js
 ["if", "else"]
