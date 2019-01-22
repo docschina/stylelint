@@ -195,8 +195,8 @@
 
 #### 一般/表
 
--   [`max-nesting-depth`](../../lib/rules/max-nesting-depth/README.md): Limit the depth of nesting.
--   [`no-unknown-animations`](../../lib/rules/no-unknown-animations/README.md): Disallow unknown animations.
+-   [`max-nesting-depth`](../../lib/rules/max-nesting-depth/README.md)：限制允许的嵌套深度。
+-   [`no-unknown-animations`](../../lib/rules/no-unknown-animations/README.md)：禁止未知的动画。
 
 ### 风格问题
 
