@@ -8,7 +8,7 @@ Specify a whitelist of allowed at-rules.
  * At-rules like this */
 ```
 
-## Options
+## 选项
 
 `array|string`: `["array", "of", "unprefixed", "at-rules"]|"at-rule"`
 

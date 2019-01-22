@@ -13,7 +13,7 @@ Require a newline or disallow whitespace before the semicolons of declaration bl
 
 This rule ignores semicolons that are preceded by Less mixins.
 
-## Options
+## 选项
 
 `string`: `"always"|"always-multi-line"|"never-multi-line"`
 

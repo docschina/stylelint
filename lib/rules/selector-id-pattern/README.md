@@ -8,7 +8,7 @@ Specify a pattern for ID selectors.
  * These ID selectors */
 ```
 
-## Options
+## 选项
 
 `regex|string`
 

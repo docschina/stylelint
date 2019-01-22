@@ -9,7 +9,7 @@ Require a newline or disallow whitespace before the commas of media query lists.
  * These commas */
 ```
 
-## Options
+## 选项
 
 `string`: `"always"|"always-multi-line"|"never-multi-line"`
 

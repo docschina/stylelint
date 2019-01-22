@@ -8,7 +8,7 @@ Disallow vendor prefixes for at-rules.
  * These prefixes */
 ```
 
-## Options
+## 选项
 
 ### `true`
 

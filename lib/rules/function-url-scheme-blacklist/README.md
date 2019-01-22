@@ -15,7 +15,7 @@ This rule ignores:
 -   URL arguments without an existing URL scheme
 -   URL arguments with variables or variable interpolation (`$sass`, `@less`, `--custom-property`, `#{$var}`, `@{var}`, `$(var)`)
 
-## Options
+## 选项
 
 `array|string|regex`: `["array", "of", /schemes/ or "/regex/"]|"scheme"|/regex/`
 

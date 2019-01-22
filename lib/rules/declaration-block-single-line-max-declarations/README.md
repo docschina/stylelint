@@ -8,7 +8,7 @@ a { color: pink; top: 0; }
  * The number of these declarations */
 ```
 
-## Options
+## 选项
 
 `int`: Maximum number of declarations allowed.
 

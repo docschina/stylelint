@@ -20,7 +20,7 @@ This rule allows a trailing semicolon after the closing brace of a block. For ex
 }
 ```
 
-## Options
+## 选项
 
 `string`: `"always"|"never"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line"`
 

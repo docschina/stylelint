@@ -13,7 +13,7 @@ Refer to [the FAQ](../../../docs/user-guide/faq.md#how-do-i-disallow-single-line
 
 The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix all of the problems reported by this rule.
 
-## Options
+## 选项
 
 `string`: `"always"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line"`
 

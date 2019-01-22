@@ -8,7 +8,7 @@ a { width: 100px; }
  * These properties and these units */
 ```
 
-## Options
+## 选项
 
 `object`: `{
   "unprefixed-property-name": ["array", "of", "units"]

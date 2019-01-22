@@ -8,7 +8,7 @@ Require or disallow quotes for attribute values.
  * These quotes */
 ```
 
-## Options
+## 选项
 
 `string`: `"always"|"never"`
 

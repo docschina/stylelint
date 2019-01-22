@@ -10,7 +10,7 @@ Specify a blacklist of disallowed pseudo-class selectors.
 
 This rule ignores selectors that use variable interpolation e.g. `:#{$variable} {}`.
 
-## Options
+## 选项
 
 `array|string|regex`: `["array", "of", "unprefixed", /pseudo-classes/ or "/regex/"]|"pseudo-class"|/regex/`
 

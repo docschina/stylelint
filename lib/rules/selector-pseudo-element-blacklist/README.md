@@ -13,7 +13,7 @@ This rule ignores:
 -   CSS2 pseudo-elements i.e. those prefixed with a single colon
 -   selectors that use variable interpolation e.g. `::#{$variable} {}`
 
-## Options
+## 选项
 
 `array|string|regex`: `["array", "of", "unprefixed", "pseudo-elements" or "regex"]|"pseudo-element"|/regex/`
 

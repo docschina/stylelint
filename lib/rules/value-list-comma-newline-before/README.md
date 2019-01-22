@@ -9,7 +9,7 @@ Require a newline or disallow whitespace before the commas of value lists.
  * The newline before these commas */
 ```
 
-## Options
+## 选项
 
 `string`: `"always"|"always-multi-line"|"never-multi-line"`
 

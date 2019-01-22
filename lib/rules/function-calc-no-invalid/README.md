@@ -46,7 +46,7 @@ Disallow an invalid expression within `calc` functions.
 -   `calc()` must not be division by zero.
 -   [The resolved type](https://www.w3.org/TR/css-values-3/#calc-type-checking) must be valid for where the expression is placed.
 
-## Options
+## 选项
 
 ### `true`
 

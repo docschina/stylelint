@@ -12,7 +12,7 @@ This rule normalizes the whitespace descendant combinator to be a single space.
 
 This rule ignores [reference combinators](https://www.w3.org/TR/selectors4/#idref-combinators) e.g. `/for/`.
 
-## Options
+## 选项
 
 `array|string`: `["array", "of", "combinators"]|"combinator"`
 

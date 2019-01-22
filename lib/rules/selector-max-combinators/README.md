@@ -10,7 +10,7 @@ Limit the number of combinators in a selector.
 
 This rule resolves nested selectors before counting the number of combinators selectors. Each selector in a [selector list](https://www.w3.org/TR/selectors4/#selector-list) is evaluated separately.
 
-## Options
+## 选项
 
 `int`: Maximum combinators selectors allowed.
 

@@ -14,7 +14,7 @@ a { animation: fancy-slide 2s linear; }
 
 This rule considers the identifiers of `@keyframes` rules defined within the same source to be known.
 
-## Options
+## 选项
 
 ### `true`
 

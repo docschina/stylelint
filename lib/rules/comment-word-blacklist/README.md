@@ -10,7 +10,7 @@ Specify a blacklist of disallowed words within comments.
 
 This rule ignores comments within selector and value lists.
 
-## Options
+## 选项
 
 `array|string|regexp`: `["array", "of", "words", /or/, "/regex/"]|"word"|"/regex/"`
 

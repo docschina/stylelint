@@ -15,7 +15,7 @@ This rule resolves nested selectors before calculating the depth of a selector.
 
 `:not()` is considered one compound selector irrespective to the complexity of the selector inside it. The rule *does* process that inner selector, but does so separately, independent of the main selector.
 
-## Options
+## 选项
 
 `int`: Maximum compound selectors allowed.
 

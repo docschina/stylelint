@@ -8,7 +8,7 @@ Specify a whitelist of allowed attribute operators.
  * These operators */
 ```
 
-## Options
+## 选项
 
 `array|string`: `["array", "of", "operators"]|"operator"`
 

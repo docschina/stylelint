@@ -10,7 +10,7 @@ a { display: block; }
 
 This rule ignores variables (`$sass`, `@less`, `--custom-property`).
 
-## Options
+## 选项
 
 `array|string`: `["array", "of", "unprefixed", /properties/ or "regex"]|"property"|"/regex/"`|/regex/
 

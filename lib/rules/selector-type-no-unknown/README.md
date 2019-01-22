@@ -10,7 +10,7 @@ Disallow unknown type selectors.
 
 This rule considers tags defined in the HTML, SVG, and MathML specifications to be known.
 
-## Options
+## 选项
 
 ### `true`
 

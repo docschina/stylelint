@@ -8,7 +8,7 @@ a { --foo-: 1px; }
  * The pattern of this */
 ```
 
-## Options
+## 选项
 
 `regex|string`
 

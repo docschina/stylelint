@@ -10,7 +10,7 @@ Specify a blacklist of disallowed media feature names.
 
 **Caveat:** Media feature names within a range context are currently ignored.
 
-## Options
+## 选项
 
 `array|string|regex`: `["array", "of", "unprefixed", /media-features/ or "regex"]|"media-feature"|/regex/`
 

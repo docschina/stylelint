@@ -8,7 +8,7 @@ a { text-rendering: optimizeLegibility; }
  * These properties */
 ```
 
-## Options
+## 选项
 
 `array|string`: `["array", "of", "unprefixed", /properties/ or "regex"]|"property"|"/regex/"`|/regex/
 

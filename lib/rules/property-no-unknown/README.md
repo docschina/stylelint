@@ -17,7 +17,7 @@ This rule ignores:
 
 Use option `checkPrefixed` described below to turn on checking of vendor-prefixed properties.
 
-## Options
+## 选项
 
 ### `true`
 

@@ -8,7 +8,7 @@ Disallow empty blocks.
  * Blocks like this */
 ```
 
-## Options
+## 选项
 
 ### `true`
 

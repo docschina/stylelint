@@ -8,7 +8,7 @@ Specify lowercase or uppercase for pseudo-element selectors.
  * This is pseudo-element selector */
 ```
 
-## Options
+## 选项
 
 `string`: `"lower"|"upper"`
 

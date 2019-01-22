@@ -8,7 +8,7 @@ a { background: url("x.jpg") }
  *             These quotes */
 ```
 
-## Options
+## 选项
 
 `string`: `"always"|"never"`
 

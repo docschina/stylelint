@@ -15,7 +15,7 @@ This rule ignores:
 -   media feature names within a range context
 -   vendor-prefixed media feature names
 
-## Options
+## 选项
 
 ### `true`
 

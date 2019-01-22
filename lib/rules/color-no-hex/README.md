@@ -8,7 +8,7 @@ a { color: #333 }
  * These hex colors */
 ```
 
-## Options
+## 选项
 
 ### `true`
 

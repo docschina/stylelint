@@ -12,7 +12,7 @@ This rule ignores [`<custom-idents>`](https://developer.mozilla.org/en/docs/Web/
 
 The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix all of the problems reported by this rule.
 
-## Options
+## 选项
 
 `string`: `"lower"|"upper"`
 

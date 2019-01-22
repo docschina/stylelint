@@ -8,7 +8,7 @@ a { width: 100px; }
  *  These units */
 ```
 
-## Options
+## 选项
 
 `array|string`: `["array", "of", "units"]|"unit"`
 
@@ -67,7 +67,7 @@ Given:
 ```js
 {
   "rem": [ "line-height", "/^border/" ],
-  "%": [ "width" ]  
+  "%": [ "width" ]
 }
 ```
 

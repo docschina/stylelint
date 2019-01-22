@@ -10,7 +10,7 @@ Specify a whitelist of allowed media feature names.
 
 This rule ignores media feature names within a range context.
 
-## Options
+## 选项
 
 `array|string|regex`: `["array", "of", "unprefixed", /media-features/ or "regex"]|"media-feature"|/regex/`
 

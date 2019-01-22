@@ -10,7 +10,7 @@ Specify a whitelist of allowed media feature name and value pairs.
 
 This rule ignores media features within range and boolean context.
 
-## Options
+## 选项
 
 ```js
 {

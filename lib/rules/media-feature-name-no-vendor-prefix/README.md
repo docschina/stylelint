@@ -10,7 +10,7 @@ Disallow vendor prefixes for media feature names.
 
 Right now this rule simply checks for prefixed *resolutions*.
 
-## Options
+## 选项
 
 ### `true`
 

@@ -14,7 +14,7 @@ This rule ignores selectors with variable interpolation (`#{$var}`, `@{var}`, `$
 
 This rule resolves nested selectors before calculating the specificity of a selector.
 
-## Options
+## 选项
 
 `string`: Maximum specificity allowed.
 

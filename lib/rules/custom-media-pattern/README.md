@@ -8,7 +8,7 @@ Specify a pattern for custom media query names.
  * The pattern of this */
 ```
 
-## Options
+## 选项
 
 `regex|string`
 

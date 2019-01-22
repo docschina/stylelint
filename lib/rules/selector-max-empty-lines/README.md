@@ -12,7 +12,7 @@ b {        /* ↑ */
  *        This empty line */
 ```
 
-## Options
+## 选项
 
 `int`: Maximum number of empty lines.
 

@@ -10,7 +10,7 @@ a { display: -webkit-flex; }
 
 This rule will only complain for prefixed *standard* values, and not for prefixed *proprietary* or *unknown* ones.
 
-## Options
+## 选项
 
 ### `true`
 

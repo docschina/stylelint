@@ -10,7 +10,7 @@ Disallow empty comments.
 
 This rule ignores comments within selector and value lists.
 
-## Options
+## 选项
 
 ### `true`
 

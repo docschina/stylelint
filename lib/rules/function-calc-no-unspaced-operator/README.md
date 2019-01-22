@@ -10,7 +10,7 @@ a { top: calc(1px + 2px); }
 
 Before the operator, there must be a single whitespace or a newline plus indentation. After the operator, there must be a single whitespace or a newline.
 
-## Options
+## 选项
 
 ### `true`
 

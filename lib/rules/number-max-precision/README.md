@@ -8,7 +8,7 @@ a { top: 3.245634px; }
  * These decimal places */
 ```
 
-## Options
+## 选项
 
 `int`: Maximum number of decimal places allowed.
 

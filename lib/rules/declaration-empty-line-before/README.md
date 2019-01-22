@@ -16,7 +16,7 @@ This rule only applies to standard property declarations. Use the [`custom-prope
 
 The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix all of the problems reported by this rule. We recommend to enable [`indentation`](../indentation/README.md) rule for better autofixing results with this rule.
 
-## Options
+## 选项
 
 `string`: `"always"|"never"`
 

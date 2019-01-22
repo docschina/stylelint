@@ -10,7 +10,7 @@ Specify lowercase or uppercase for units.
 
 The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix most of the problems reported by this rule.
 
-## Options
+## 选项
 
 `string`: `"lower"|"upper"`
 

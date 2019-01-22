@@ -12,7 +12,7 @@ This rule checks the `font` and `font-family` properties.
 
 This rule ignores `$sass`, `@less`, and `var(--custom-property)` variable syntaxes.
 
-## Options
+## 选项
 
 `string`: `"always-where-required"|"always-where-recommended"|"always-unless-keyword"`
 

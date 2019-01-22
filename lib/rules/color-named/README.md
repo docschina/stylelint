@@ -8,7 +8,7 @@ a { color: black }
  * These named colors */
 ```
 
-## Options
+## 选项
 
 `string`: `"always-where-possible"|"never"`
 

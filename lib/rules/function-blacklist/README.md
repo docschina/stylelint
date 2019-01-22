@@ -8,7 +8,7 @@ a { transform: scale(1); }
  * These functions */
 ```
 
-## Options
+## 选项
 
 `array|string`: `["array", "of", "unprefixed", /functions/ or "regex"]|"function"|"/regex/"`
 

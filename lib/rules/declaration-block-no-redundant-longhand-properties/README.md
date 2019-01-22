@@ -64,7 +64,7 @@ This rule complains when the following shorthand properties can be used:
 
 Flexbox-related properties can be ignored using `ignoreShorthands: ["/flex-/"]` (see below).
 
-## Options
+## 选项
 
 ### `true`
 

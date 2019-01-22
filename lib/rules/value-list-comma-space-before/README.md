@@ -10,7 +10,7 @@ a { background-size: 0 ,0; }
 
 The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix most of the problems reported by this rule.
 
-## Options
+## 选项
 
 `string`: `"always"|"never"|"always-single-line"|"never-single-line"`
 

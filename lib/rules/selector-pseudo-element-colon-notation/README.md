@@ -14,7 +14,7 @@ However, for compatibility with existing style sheets, user agents also accept t
 
 The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix all of the problems reported by this rule.
 
-## Options
+## 选项
 
 `string`: `"single"|"double"`
 

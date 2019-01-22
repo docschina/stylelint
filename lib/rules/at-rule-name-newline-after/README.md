@@ -9,7 +9,7 @@ Require a newline after at-rule names.
  * The newline after this at-rule name */
 ```
 
-## Options
+## 选项
 
 `string`: `"always"|"always-multi-line"`
 

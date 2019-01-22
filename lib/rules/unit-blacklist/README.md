@@ -8,7 +8,7 @@ a { width: 100px; }
  *  These units */
 ```
 
-## Options
+## 选项
 
 `array|string`: `["array", "of", "units"]|"unit"`
 
@@ -63,7 +63,7 @@ Given:
 ```js
 {
   "px": [ "font-size", "/^border/" ],
-  "vmin": [ "width" ]  
+  "vmin": [ "width" ]
 }
 ```
 
@@ -106,7 +106,7 @@ Given:
 ```js
 {
   "px": [ "min-width", "/height$/" ],
-  "dpi": [ "resolution" ]  
+  "dpi": [ "resolution" ]
 }
 ```
 

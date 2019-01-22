@@ -12,7 +12,7 @@ This rule considers pseudo-class selectors defined in the CSS Specifications, up
 
 This rule ignores vendor-prefixed pseudo-class selectors.
 
-## Options
+## 选项
 
 ### `true`
 

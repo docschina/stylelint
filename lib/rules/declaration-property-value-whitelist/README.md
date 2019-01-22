@@ -8,7 +8,7 @@ a { text-transform: uppercase; }
  * These properties and these values */
 ```
 
-## Options
+## 选项
 
 `object`: `{
   "unprefixed-property-name": ["array", "of", "values"],
