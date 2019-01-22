@@ -72,7 +72,7 @@ Disallow an invalid expression within `calc` functions.
 .foo {width: calc(100px + 80);}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 .foo {width: calc(100% - 80px);}

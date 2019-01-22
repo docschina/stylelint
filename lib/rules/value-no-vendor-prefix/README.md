@@ -28,7 +28,7 @@ a { max-width: -moz-max-content; }
 a { background: -webkit-linear-gradient(bottom, #000, #fff); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { display: flex; }
@@ -52,7 +52,7 @@ Given:
 ["grab", "max-content"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 cursor: -webkit-grab;

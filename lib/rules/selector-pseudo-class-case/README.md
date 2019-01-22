@@ -38,7 +38,7 @@ a:HOVER {}
 :-MS-INPUT-PLACEHOLDER {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a:hover {}
@@ -76,7 +76,7 @@ a:hover {}
 :-ms-input-placeholder {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a:HOVER {}

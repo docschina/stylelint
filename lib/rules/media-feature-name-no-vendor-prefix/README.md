@@ -28,7 +28,7 @@ Right now this rule simply checks for prefixed *resolutions*.
 @media (-o-max-device-pixel-ratio: 1/1) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media (min-resolution: 96dpi) {}

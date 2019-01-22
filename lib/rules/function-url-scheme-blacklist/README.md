@@ -39,7 +39,7 @@ a { background-image: url('http://www.example.com/file.jpg'); }
 a { background-image: url('https://www.example.com/file.jpg'); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs='); }

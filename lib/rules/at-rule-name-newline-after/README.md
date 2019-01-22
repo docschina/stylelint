@@ -28,7 +28,7 @@ There *must always* be a newline after at-rule names.
   (orientation: landscape) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset
@@ -68,7 +68,7 @@ There *must always* be a newline after at-rule names in at-rules with multi-line
  (orientation: landscape) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset "UTF-8";

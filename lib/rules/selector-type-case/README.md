@@ -26,7 +26,7 @@ A {}
 LI {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {}
@@ -48,7 +48,7 @@ a {}
 li {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 A {}
@@ -68,7 +68,7 @@ Given:
 ["$childClass", "/(p|P)arent.*/"]
 ```
 
-The following patterns are not considered violations:
+以下模式*不*被视为违规：
 
 ```css
 myParentClass {

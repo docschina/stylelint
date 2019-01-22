@@ -56,7 +56,7 @@ a { color: hwb(0, 0%, 100%); }
 a { color: gray(0); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: black; }
@@ -84,7 +84,7 @@ a { color: black; }
 a { color: white; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: #000; }
@@ -114,7 +114,7 @@ Ignore colors that are inside a function.
 
 For example, with `"never"`.
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {
@@ -138,7 +138,7 @@ Given:
 ["/^my-/", "composes"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {

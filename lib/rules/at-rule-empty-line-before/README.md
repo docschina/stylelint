@@ -36,7 +36,7 @@ a {}
 @media {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {}
@@ -56,7 +56,7 @@ a {}
 @media {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {} @media {}
@@ -79,7 +79,7 @@ This means that you can group your at-rules by name.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset "UTF-8";
@@ -124,7 +124,7 @@ b {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {
@@ -148,7 +148,7 @@ Shared-line comments do not affect this option.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset "UTF-8";
@@ -193,7 +193,7 @@ Shared-line comments do not affect this option.
 @media print {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @import url(x.css);
@@ -230,7 +230,7 @@ b {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {
@@ -253,7 +253,7 @@ Ignore at-rules that come after a comment.
 
 Shared-line comments do not trigger this option.
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 /* comment */
@@ -278,7 +278,7 @@ Ignore at-rules that are nested and the first child of their parent node.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @supports {
@@ -294,7 +294,7 @@ Ignore at-rules that are inside a declaration block.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {
@@ -328,7 +328,7 @@ This means that you can group your blockless at-rules by name.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 
@@ -355,7 +355,7 @@ Ignore blockless at-rules that follow another blockless at-rule.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @import url(x.css);
@@ -384,7 +384,7 @@ Given:
 ["import"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset "UTF-8";

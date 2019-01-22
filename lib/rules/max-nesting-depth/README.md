@@ -72,7 +72,7 @@ a {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {
@@ -122,7 +122,7 @@ a {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 As all of the following `.foo` rules would have a nesting depth of just 1.
 
@@ -198,7 +198,7 @@ Ignore rules where the first selector in each selector list item is a pseudo-cla
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 As all of the following pseudoclasses rules would have a nesting depth of just 1.
 
@@ -267,7 +267,7 @@ Ignore the specified at-rules.
 ["/^my-/", "media"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {

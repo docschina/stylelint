@@ -44,7 +44,7 @@ a::BEFORE {}
 input::-MOZ-PLACEHOLDER {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a:before {}
@@ -90,7 +90,7 @@ a::before {}
 input::-moz-placeholder {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a:BEFORE {}

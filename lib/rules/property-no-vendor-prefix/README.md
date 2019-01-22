@@ -24,7 +24,7 @@ a { -webkit-transform: scale(1); }
 a { -moz-columns: 2; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { transform: scale(1); }
@@ -49,7 +49,7 @@ Given:
 ["transform", "columns"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { -webkit-transform: scale(1); }

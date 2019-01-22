@@ -36,7 +36,7 @@ div a {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 div {}
@@ -65,7 +65,7 @@ a span {}
 div a .foo:not(span) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ## Optional secondary options
 
@@ -77,7 +77,7 @@ Discount child type selectors.
 
 例如，使用 `2`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 div span > a {}
@@ -93,7 +93,7 @@ Discount compounded type selectors -- i.e. type selectors chained with other sel
 
 例如，使用 `2`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 div span a.foo {}
@@ -109,7 +109,7 @@ Discount descendant type selectors.
 
 例如，使用 `2`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 .foo div span a {}
@@ -125,7 +125,7 @@ Discount next-sibling type selectors.
 
 例如，使用 `2`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 div a + span {}
@@ -145,7 +145,7 @@ Given:
 
 For example, with `2`.
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 div a custom {}

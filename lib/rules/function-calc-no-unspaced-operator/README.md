@@ -24,7 +24,7 @@ a { top: calc(1px+2px); }
 a { top: calc(1px+ 2px); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { top: calc(1px + 2px); }

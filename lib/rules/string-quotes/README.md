@@ -43,7 +43,7 @@ a { content: "x"; }
 a[id="foo"] {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { content: 'x'; }
@@ -71,7 +71,7 @@ a { content: 'x'; }
 a[id='foo'] {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { content: "x"; }
@@ -103,7 +103,7 @@ a { content: "x'y'z"; }
 a[id="foo'bar'baz"] {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { content: 'x'; }

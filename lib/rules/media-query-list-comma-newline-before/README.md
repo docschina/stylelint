@@ -28,7 +28,7 @@ There *must always* be a newline before the commas.
 projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color)
@@ -52,7 +52,7 @@ There *must always* be a newline before the commas in multi-line media query lis
 projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}
@@ -86,7 +86,7 @@ There *must never* be whitespace before the commas in multi-line media query lis
 projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}

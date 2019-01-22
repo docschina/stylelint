@@ -34,7 +34,7 @@ Urls *must always* be quoted.
 @-moz-document url-prefix() {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { background: url('x.jpg'); }
@@ -74,7 +74,7 @@ a { background: url('x.jpg'); }
 @font-face { font-family: "foo"; src: url('foo.ttf'); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { background: url(x.jpg); }
@@ -96,7 +96,7 @@ Reverse the primary option if the function has no arguments.
 
 For example, with `"always"`.
 
-The following pattern is *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @-moz-document url-prefix() {}

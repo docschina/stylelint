@@ -26,7 +26,7 @@ There *must always* be whitespace after the function.
 a { transform: translate(1, 1)scale(3); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { transform: translate(1, 1) scale(3); }
@@ -78,7 +78,7 @@ There *must never* be whitespace after the function.
 a { transform: translate(1, 1) scale(3); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { transform: translate(1, 1)scale(3); }

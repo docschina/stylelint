@@ -24,7 +24,7 @@ unknown {}
 tag {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 input {}
@@ -56,7 +56,7 @@ unknown {}
 x-Foo {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 x-foo {}
@@ -72,7 +72,7 @@ Allow unknown type selectors if they belong to the default namespace.
 namespace|unknown {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 unknown {}
@@ -86,7 +86,7 @@ Given:
 ["/^my-/", "custom-namespace"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 custom-namespace|unknown {}
@@ -108,7 +108,7 @@ Given:
 ["/^my-/", "custom-type"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 custom-type {}

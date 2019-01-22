@@ -34,7 +34,7 @@ a { font-weight: bold; }
 a { font: italic normal 20px sans-serif; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-weight: 700; }
@@ -60,7 +60,7 @@ a { font-weight: 700; }
 a { font: italic 400 20px sans-serif; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-weight: bold; }
@@ -76,7 +76,7 @@ a { font: italic normal 20px sans-serif; }
 
 Ignore the [*relative*](https://drafts.csswg.org/css-fonts/#font-weight-prop) keyword names of `bolder` and `lighter`.
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-weight: 400; }

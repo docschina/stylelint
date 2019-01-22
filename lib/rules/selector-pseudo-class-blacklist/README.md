@@ -36,7 +36,7 @@ a:nth-of-type(5) {}
 a:nth-child(2) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a:focus {}

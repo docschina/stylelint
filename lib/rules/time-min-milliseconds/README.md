@@ -34,7 +34,7 @@ a { transition: background-color 6ms linear; }
 a { animation-delay: 0.01s; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { animation: 8s; }

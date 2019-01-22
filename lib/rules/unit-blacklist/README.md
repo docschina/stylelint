@@ -32,7 +32,7 @@ a { font-size: 10em; }
 a { transform: rotate(30deg); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-size: 1.2rem; }
@@ -67,7 +67,7 @@ Given:
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-size: 13px; }
@@ -110,7 +110,7 @@ Given:
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media (min-width: 960px) {}

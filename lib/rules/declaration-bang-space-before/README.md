@@ -28,7 +28,7 @@ a { color: pink!important; }
 a { color: pink  ! important; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink !important; }
@@ -48,7 +48,7 @@ There *must never* be whitespace before the bang.
 a { color : pink !important; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink!important; }

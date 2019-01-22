@@ -32,7 +32,7 @@ a { font-size: 10rem; }
 a { animation: animation-name 5s ease; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-size: 1.2em; }
@@ -71,7 +71,7 @@ Given:
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { line-height: 0.1rem; }

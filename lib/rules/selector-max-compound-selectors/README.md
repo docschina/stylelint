@@ -33,7 +33,7 @@ This rule resolves nested selectors before calculating the depth of a selector.
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 div {}

@@ -39,7 +39,7 @@ a { color: pink; }
 b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; } b { color: red; }
@@ -60,7 +60,7 @@ a { color: pink; }
 b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }b { color: red; }
@@ -81,7 +81,7 @@ There *must always* be a single space after the closing brace in single-line blo
 a { color: pink; }b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; } b { color: red; }
@@ -102,7 +102,7 @@ There *must never* be whitespace after the closing brace in single-line blocks.
 a { color: pink; } b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }b { color: red; }
@@ -124,7 +124,7 @@ a { color: pink;
 }b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }b { color: red; }
@@ -146,7 +146,7 @@ a { color: pink;
 } b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; } b { color: red; }

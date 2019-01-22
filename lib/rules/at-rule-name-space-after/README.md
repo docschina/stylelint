@@ -37,7 +37,7 @@ There *must always* be a single space after at-rule names.
 (min-width: 700px) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset "UTF-8";
@@ -69,7 +69,7 @@ There *must always* be a single space after at-rule names in single-line declara
 @media  (min-width: 700px) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset "UTF-8";

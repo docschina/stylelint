@@ -24,7 +24,7 @@ a { top: 1.0px }
 a { top: 1.01000px }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { top: 1px }

@@ -45,7 +45,7 @@ a { font-family: Times New Roman, Times, serif; }
 a { font: 1em Arial, sans-serif; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-family: 'Arial', sans-serif; }
@@ -77,7 +77,7 @@ a { font-family: 'Times New Roman', Times, serif; }
 a { font: 1em "Arial", sans-serif; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-family: Arial, sans-serif; }
@@ -121,7 +121,7 @@ a { font-family: 'Arial', sans-serif; }
 a { font: 1em Times New Roman, Times, serif; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { font-family: 'Times New Roman', Times, serif; }

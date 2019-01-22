@@ -30,7 +30,7 @@ a:UNKNOWN {}
 a:hoverr {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a:hover {}
@@ -58,7 +58,7 @@ Given:
 ["/^my-/", "pseudo-class"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a:pseudo-class {}

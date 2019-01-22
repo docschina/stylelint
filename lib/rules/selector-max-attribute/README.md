@@ -51,7 +51,7 @@ The `:not()` pseudo-class is also evaluated separately. The rule processes the a
 input:not([type="text"][data-attribute="value"][disabled]) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 [type="text"] {}
@@ -88,7 +88,7 @@ Given:
 
 For example, with `0`.
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 [dir] [my-attr] {}

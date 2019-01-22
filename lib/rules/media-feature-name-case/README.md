@@ -32,7 +32,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 @media (min-width: 700px) and (ORIENTATION: landscape) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media (min-width: 700px) {}
@@ -62,7 +62,7 @@ The following patterns are *not* considered violations:
 @media (MIN-WIDTH: 700px) and (orientation: landscape) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media (MIN-WIDTH: 700px) {}

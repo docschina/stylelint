@@ -44,7 +44,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 @MEDIA (min-width: 50em) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset 'UTF-8';
@@ -82,7 +82,7 @@ The following patterns are *not* considered violations:
 @media (min-width: 50em) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @CHARSET 'UTF-8';

@@ -30,7 +30,7 @@ There *must always* be a newline after the commas.
 , projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color),
@@ -54,7 +54,7 @@ There *must always* be a newline after the commas in multi-line media query list
 , projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}
@@ -88,7 +88,7 @@ projection and (color) {}
 projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}

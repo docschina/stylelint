@@ -42,7 +42,7 @@ A common mistake (matching outdated non-standard syntax) is to use just a side-o
 .foo { background: linear-gradient(to top top, #fff, #000); }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 .foo { background: linear-gradient(to top, #fff, #000); }

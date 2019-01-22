@@ -26,7 +26,7 @@ a { color: #ffffff; }
 a { color: #ffffffaa; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: #fff; }
@@ -52,7 +52,7 @@ a { color: #fff; }
 a { color: #fffa; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: #ffffff; }

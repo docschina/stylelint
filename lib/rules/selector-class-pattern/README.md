@@ -40,7 +40,7 @@ Given the string:
 div > #zing + .foo-BAR {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 .foo-bar {}
@@ -90,7 +90,7 @@ Given the string:
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 .A {

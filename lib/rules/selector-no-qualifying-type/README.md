@@ -34,7 +34,7 @@ input[type='button'] {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 .foo {
@@ -62,7 +62,7 @@ input {
 
 Allow attribute selectors qualified by type.
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 input[type='button'] {
@@ -74,7 +74,7 @@ input[type='button'] {
 
 Allow class selectors qualified by type.
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a.foo {
@@ -86,7 +86,7 @@ a.foo {
 
 Allow ID selectors qualified by type.
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a#foo {

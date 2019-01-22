@@ -25,7 +25,7 @@ There *must always* be a newline before the closing brace.
 a { color: pink;}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink;
@@ -49,7 +49,7 @@ a {
 color: pink;}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }
@@ -71,7 +71,7 @@ a {
 color: pink; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }

@@ -29,7 +29,7 @@ There *must always* be a single space after the commas.
 ,projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}
@@ -55,7 +55,7 @@ There *must never* be whitespace after the commas.
 , projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color),projection and (color) {}
@@ -76,7 +76,7 @@ There *must always* be a single space after the commas in single-line media quer
 @media screen and (color),projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}
@@ -102,7 +102,7 @@ There *must never* be whitespace after the commas in single-line media query lis
 @media screen and (color), projection and (color) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (color),projection and (color) {}

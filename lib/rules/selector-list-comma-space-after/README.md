@@ -28,7 +28,7 @@ a,b { color: pink; }
 a ,b { color: pink; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a, b { color: pink; }
@@ -52,7 +52,7 @@ a, b { color: pink; }
 a , b { color: pink; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a,b { color: pink; }
@@ -72,7 +72,7 @@ There *must always* be a single space after the commas in single-line selector l
 a,b { color: pink; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a
@@ -89,7 +89,7 @@ There *must never* be a single space after the commas in single-line selector li
 a, b { color: pink; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a

@@ -45,7 +45,7 @@ Given:
 @media screen and (min-resolution: 2dpi) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (min-width: 768px) {}

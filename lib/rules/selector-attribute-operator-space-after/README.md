@@ -44,7 +44,7 @@ There *must always* be a single space after the operator.
 [target ="_blank"] {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 [target] {}
@@ -104,7 +104,7 @@ There *must never* be a single space after the operator.
 [target = "_blank"] {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 [target] {}

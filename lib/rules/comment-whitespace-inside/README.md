@@ -36,7 +36,7 @@ There *must always* be whitespace inside the markers.
 /** comment**/
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 /* comment */
@@ -75,7 +75,7 @@ There *must never* be whitespace on the inside the markers.
 /** comment**/
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 /*comment*/

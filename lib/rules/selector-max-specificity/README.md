@@ -47,7 +47,7 @@ Format is `"id,class,type"`, as laid out in the [W3C selector spec](https://draf
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 div {}
@@ -90,7 +90,7 @@ Given:
 }];
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 :global(.foo) .bar {}

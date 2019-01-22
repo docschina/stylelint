@@ -34,7 +34,7 @@ a { transform: translate(1,
   1) }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {
@@ -61,7 +61,7 @@ a { transform: translate(1,
   1) }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { transform: translate(1,1) }
@@ -96,7 +96,7 @@ a { transform: translate(1 ,
   1) }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { transform: translate(1 ,1) }

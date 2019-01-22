@@ -30,7 +30,7 @@ a { background-size: 0
       , 0; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { background-size: 0,
@@ -48,7 +48,7 @@ a { background-size: 0
     , 0; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { background-size: 0, 0; }
@@ -74,7 +74,7 @@ a { background-size: 0
       , 0; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { background-size: 0,0; }

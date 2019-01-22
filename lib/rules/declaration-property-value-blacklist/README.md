@@ -62,7 +62,7 @@ a { animation-timing-function: ease-in-out; }
 a { -webkit-animation-timing-function: ease-in-out; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { position: relative; }

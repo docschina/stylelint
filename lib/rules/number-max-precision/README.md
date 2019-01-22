@@ -28,7 +28,7 @@ a { top: 3.245634px; }
 @media (min-width: 3.234em) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { top: 3.24px; }
@@ -66,7 +66,7 @@ a { top: 3.245634px; }
 @media (min-width: 3.234em) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { top: 3.245%; }

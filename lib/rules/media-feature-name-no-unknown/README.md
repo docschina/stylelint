@@ -29,7 +29,7 @@ This rule ignores:
 @media screen and (unknown: 10px) {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media all and (monochrome) {}
@@ -61,7 +61,7 @@ Given:
 ["/^my-/", "custom"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media screen and (my-media-feature-name) {}

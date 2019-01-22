@@ -50,7 +50,7 @@ a { color: pink;
 } b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }
@@ -67,7 +67,7 @@ There *must always* be a newline after the closing brace in single-line blocks.
 a { color: pink; } b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink;
@@ -89,7 +89,7 @@ There *must never* be whitespace after the closing brace in single-line blocks.
 a { color: pink; } b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }b { color: red; }
@@ -111,7 +111,7 @@ a { color: pink;
 }b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }b { color: red; }
@@ -134,7 +134,7 @@ a { color: pink;
 } b { color: red; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; } b { color: red; }
@@ -159,7 +159,7 @@ Given:
 ["if", "else"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @if ($var) {

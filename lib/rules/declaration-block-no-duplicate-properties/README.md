@@ -24,7 +24,7 @@ a { color: pink; color: orange; }
 a { color: pink; background: orange; color: orange }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; }
@@ -52,7 +52,7 @@ p {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 p {
@@ -88,7 +88,7 @@ p {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 p {
@@ -118,7 +118,7 @@ a { color: pink; background: orange; background: white; }
 a { background: orange; color: pink; background: white; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; color: orange; background-color: orange; background-color: white; }

@@ -24,7 +24,7 @@ input::-moz-placeholder {}
 :-webkit-full-screen a {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 input::placeholder {}
@@ -46,7 +46,7 @@ Given:
 ["::-webkit-input-placeholder", "/-moz-.*/"]
 ```
 
-The following patterns are not considered violations:
+以下模式*不*被视为违规：
 
 ```css
 input::-webkit-input-placeholder {

@@ -38,7 +38,7 @@ a {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink;}
@@ -69,7 +69,7 @@ a {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink;}
@@ -93,7 +93,7 @@ There *must always* be a single space after the semicolon in single-line declara
 a { color: pink;top: 0; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink; top: 0; }
@@ -116,7 +116,7 @@ There *must never* be whitespace after the semicolon in single-line declaration 
 a { color: pink; top: 0; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a { color: pink;top: 0; }

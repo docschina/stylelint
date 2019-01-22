@@ -33,7 +33,7 @@ a {}
 b {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {}
@@ -53,7 +53,7 @@ a {}
 b {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {} b {}
@@ -79,7 +79,7 @@ b {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {
@@ -107,7 +107,7 @@ b {
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {
@@ -136,7 +136,7 @@ a {}
 b {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 a {}
@@ -157,7 +157,7 @@ Reverse the primary option if the rule comes after a single-line comment.
 a {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 /* comment */
@@ -181,7 +181,7 @@ Reverse the primary option if the rule is inside a block and comes after another
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media {
@@ -209,7 +209,7 @@ a {
 
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```scss
 a {
@@ -237,7 +237,7 @@ Reverse the primary option if the rule is the first in a block.
 }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media {
@@ -255,7 +255,7 @@ Ignore rules that come after a comment.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 /* comment */
@@ -268,7 +268,7 @@ Ignore rules that are nested and the first child of their parent node.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media {
@@ -284,7 +284,7 @@ Ignore rules that are inside a block.
 
 例如，使用 `"always"`：
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @media {

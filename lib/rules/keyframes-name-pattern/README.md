@@ -35,7 +35,7 @@ Given the string:
 @keyframes FOO-bar {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @keyframes foo-bar {}

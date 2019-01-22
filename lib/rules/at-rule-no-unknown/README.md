@@ -20,7 +20,7 @@ This rule considers at-rules defined in the CSS Specifications, up to and includ
 @unknown {}
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @charset "UTF-8";
@@ -50,7 +50,7 @@ Given:
 ["/^my-/", "custom"]
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 @my-at-rule "x.css";

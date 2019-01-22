@@ -26,7 +26,7 @@ Given the string:
 :root { --boo-bar: 0; }
 ```
 
-The following patterns are *not* considered violations:
+以下模式*不*被视为违规：
 
 ```css
 :root { --foo-bar: 0; }
