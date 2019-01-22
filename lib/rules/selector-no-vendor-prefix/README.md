@@ -14,7 +14,7 @@ This rule does not blanketly condemn vendor prefixes. Instead, it uses [Autopref
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 input::-moz-placeholder {}

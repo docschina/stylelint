@@ -16,7 +16,7 @@ a { background: url("x.jpg") }
 
 Urls *must always* be quoted.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @import url(foo.css);
@@ -60,7 +60,7 @@ a { background: url('x.jpg'); }
 
 Urls *must never* be quoted.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { background: url('x.jpg'); }

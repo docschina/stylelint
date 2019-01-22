@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 ### `"lower"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -60,7 +60,7 @@ a {
 
 ### `"upper"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -114,7 +114,7 @@ Given:
 ["some-function", "/^get.*$/"]
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

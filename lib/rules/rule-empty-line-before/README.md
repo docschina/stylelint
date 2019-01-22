@@ -22,7 +22,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be an empty line before rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {} b {}
@@ -45,7 +45,7 @@ b {}
 
 There *must never* be an empty line before rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {}
@@ -68,7 +68,7 @@ b {}
 
 There *must always* be an empty line before multi-line rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -95,7 +95,7 @@ b {
 
 There *must never* be an empty line before multi-line rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -128,7 +128,7 @@ Reverse the primary option if the rule comes after another rule.
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {}
@@ -149,7 +149,7 @@ Reverse the primary option if the rule comes after a single-line comment.
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 /* comment */
@@ -170,7 +170,7 @@ Reverse the primary option if the rule is inside a block and comes after another
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media {
@@ -196,7 +196,7 @@ Reverse the primary option if the rule is inside a block.
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```scss
 a {
@@ -226,7 +226,7 @@ Reverse the primary option if the rule is the first in a block.
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media {

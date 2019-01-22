@@ -20,7 +20,7 @@ Given the string:
 "foo-.+"
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @custom-media --bar (min-width: 30em);

@@ -19,7 +19,7 @@ The content of the `:not()` pseudo-class is also evaluated separately. The rule 
 
 例如，使用 `1`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a:first-child:focus {}

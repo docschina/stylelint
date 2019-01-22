@@ -20,7 +20,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 ### `"always"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -44,7 +44,7 @@ a {
 
 ### `"never"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -93,7 +93,7 @@ Shared-line comments do not trigger this option.
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -141,7 +141,7 @@ Shared-line comments do not affect this option.
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -185,7 +185,7 @@ Reverse the primary option for custom properties that are nested and the first c
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

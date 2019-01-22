@@ -21,7 +21,7 @@ Use option `checkPrefixed` described below to turn on checking of vendor-prefixe
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

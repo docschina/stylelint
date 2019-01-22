@@ -22,7 +22,7 @@ Format is `"id,class,type"`, as laid out in the [W3C selector spec](https://draf
 
 例如，使用 `"0,2,0"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 #foo {}
@@ -104,7 +104,7 @@ The following patterns are *not* considered violations:
 :local(.foo, :global(.bar).baz)
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 :global(.foo) .bar.baz {}

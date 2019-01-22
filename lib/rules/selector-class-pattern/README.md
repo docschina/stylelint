@@ -26,7 +26,7 @@ Given the string:
 "foo-[a-z]+"
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 .foop {}
@@ -82,7 +82,7 @@ Given the string:
 "^[A-Z]+$"
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 .A {

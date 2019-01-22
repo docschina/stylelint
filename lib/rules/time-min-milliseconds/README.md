@@ -16,7 +16,7 @@ This rule checks positive numbers in `transition-duration`, `transition-delay`, 
 
 例如，使用 `100`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { animation: 80ms; }

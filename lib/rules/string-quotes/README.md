@@ -33,7 +33,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 Strings *must always* be wrapped with single quotes.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { content: "x"; }
@@ -61,7 +61,7 @@ a { content: "x'y'z"; }
 
 Strings *must always* be wrapped with double quotes.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { content: 'x'; }
@@ -93,7 +93,7 @@ Allows strings to use single-quotes or double-quotes so long as the string conta
 
 For example, with `"single", { "avoidEscape" : false }`.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { content: "x'y'z"; }

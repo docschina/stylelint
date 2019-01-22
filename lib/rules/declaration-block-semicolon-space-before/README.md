@@ -20,7 +20,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a single space before the semicolons.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; }
@@ -44,7 +44,7 @@ a { color: pink ; top: 0 ; }
 
 There *must never* be whitespace before the semicolons.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink ; }
@@ -68,7 +68,7 @@ a { color: pink; top: 0; }
 
 There *must always* be a single space before the semicolons in single-line declaration blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; }
@@ -92,7 +92,7 @@ a { color: pink ; top: 0 ; }
 
 There *must never* be whitespace before the semicolons in single-line declaration blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink ; }

@@ -19,7 +19,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 ### `always-multi-line`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -42,7 +42,7 @@ a { color: pink; }
 
 ### `never`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -71,7 +71,7 @@ When a rule is nested, `after-closing-brace` brace will reverse the primary opti
 
 例如，使用 `"never"` 和 `except: ["after-closing-brace"]`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media print {
@@ -141,7 +141,7 @@ The following patterns are *not* considered violations:
 
 例如，使用 `"always-multi-line"` 和 `except: ["after-closing-brace"]`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media print {

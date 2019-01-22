@@ -27,7 +27,7 @@ Given the string:
 "^&:(?:hover|focus)$"
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

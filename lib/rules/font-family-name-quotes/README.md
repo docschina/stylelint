@@ -31,7 +31,7 @@ For more on these subtleties, read ["Unquoted font family names in CSS"](https:/
 
 Expect quotes around every font family name that is not a keyword.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { font-family: Arial, sans-serif; }
@@ -63,7 +63,7 @@ a { font: 1em 'Arial', sans-serif; }
 
 Expect quotes only when quotes are *required* according to the criteria above, and disallow quotes in all other cases.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { font-family: "Arial", sans-serif; }
@@ -103,7 +103,7 @@ a { font: 1em Arial, sans-serif; }
 
 Expect quotes only when quotes are *recommended* according to the criteria above, and disallow quotes in all other cases. (This includes all cases where quotes are *required*, as well.)
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { font-family: Times New Roman, Times, serif; }

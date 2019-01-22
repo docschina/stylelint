@@ -12,7 +12,7 @@ Disallow vendor prefixes for at-rules.
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @-webkit-keyframes { 0% { top: 0; } }

@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a single space after the bang.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink !important; }
@@ -42,7 +42,7 @@ a { color: pink! important; }
 
 There *must never* be whitespace after the bang.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink ! important; }

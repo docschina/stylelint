@@ -14,7 +14,7 @@ In almost every case, this is just an authorial oversight. For more about this b
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

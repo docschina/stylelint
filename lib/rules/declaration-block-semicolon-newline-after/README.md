@@ -37,7 +37,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline after the semicolon.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; top: 0; }
@@ -71,7 +71,7 @@ a {
 
 There *must always* be a newline after the semicolon in multi-line rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -100,7 +100,7 @@ a {
 
 There *must never* be whitespace after the semicolon in multi-line rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

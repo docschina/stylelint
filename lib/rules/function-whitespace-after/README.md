@@ -20,7 +20,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be whitespace after the function.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1, 1)scale(3); }
@@ -72,7 +72,7 @@ a {
 
 There *must never* be whitespace after the function.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1, 1) scale(3); }

@@ -20,7 +20,7 @@ Given:
 ["max-width", "/^my-/"]
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media (max-width: 50em) {}

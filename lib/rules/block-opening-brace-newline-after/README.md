@@ -29,7 +29,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline after the opening brace.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a{ color: pink; }
@@ -70,7 +70,7 @@ a { /* end-of-line comment */
 
 There *must always* be a newline after the opening brace in multi-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a{color: pink;
@@ -92,7 +92,7 @@ color: pink; }
 
 There *must never* be whitespace after the opening brace in multi-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink;

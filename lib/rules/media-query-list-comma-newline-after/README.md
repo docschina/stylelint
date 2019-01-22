@@ -19,7 +19,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline after the commas.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}
@@ -47,7 +47,7 @@ projection and (color) {}
 
 There *must always* be a newline after the commas in multi-line media query lists.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (color)
@@ -75,7 +75,7 @@ projection and (color) {}
 
 There *must never* be a white after the commas in multi-line media query lists.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (color),

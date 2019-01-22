@@ -14,7 +14,7 @@ a { top: 3.245634px; }
 
 例如，使用 `2`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { top: 3.245px; }
@@ -52,7 +52,7 @@ Given:
 ["/^my-/", "%"]
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { top: 3.245px; }

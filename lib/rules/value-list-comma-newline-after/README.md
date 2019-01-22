@@ -19,7 +19,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline after the commas.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { background-size: 0,0; }
@@ -41,7 +41,7 @@ a { background-size: 0,
 
 There *must always* be a newline after the commas in multi-line value lists.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { background-size: 0
@@ -67,7 +67,7 @@ a { background-size: 0,
 
 There *must never* be whitespace after the commas in multi-line value lists.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { background-size: 0

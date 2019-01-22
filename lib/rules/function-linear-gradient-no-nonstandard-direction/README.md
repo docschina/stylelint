@@ -20,7 +20,7 @@ A common mistake (matching outdated non-standard syntax) is to use just a side-o
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 .foo { background: linear-gradient(top, #fff, #000); }

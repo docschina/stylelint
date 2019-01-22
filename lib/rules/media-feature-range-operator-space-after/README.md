@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a single space after the range operator.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media (width>=600px) {}
@@ -42,7 +42,7 @@ The following patterns are *not* considered violations:
 
 There *must never* be whitespace after the range operator.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media (width>= 600px) {}

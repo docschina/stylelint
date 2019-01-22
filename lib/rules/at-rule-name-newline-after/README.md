@@ -17,7 +17,7 @@ Require a newline after at-rule names.
 
 There *must always* be a newline after at-rule names.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @charset "UTF-8";
@@ -56,7 +56,7 @@ The following patterns are *not* considered violations:
 
 There *must always* be a newline after at-rule names in at-rules with multi-line parameters.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @import "x.css" screen and

@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a single space inside the brackets.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 [target] {}
@@ -58,7 +58,7 @@ The following patterns are *not* considered violations:
 
 There *must never* be whitespace on the inside the brackets.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 [ target] {}

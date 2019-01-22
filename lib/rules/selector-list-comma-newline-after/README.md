@@ -26,7 +26,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline after the commas.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a, b { color: pink; }
@@ -54,7 +54,7 @@ b { color: pink; }
 
 There *must always* be a newline after the commas in multi-line selector lists.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a
@@ -82,7 +82,7 @@ b { color: pink; }
 
 There *must never* be whitespace after the commas in multi-line selector lists.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a

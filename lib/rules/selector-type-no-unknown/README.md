@@ -14,7 +14,7 @@ This rule considers tags defined in the HTML, SVG, and MathML specifications to 
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 unknown {}
@@ -46,7 +46,7 @@ li > a {}
 
 Allow custom elements.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 unknown {}
@@ -66,7 +66,7 @@ x-foo {}
 
 Allow unknown type selectors if they belong to the default namespace.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 namespace|unknown {}

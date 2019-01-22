@@ -22,7 +22,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline after the colon.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color:pink; }
@@ -45,7 +45,7 @@ a {
 
 There *must always* be a newline after the colon *if the declaration's value is multi-line*.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

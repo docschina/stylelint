@@ -16,7 +16,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 ### `"short"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: #ffffff; }
@@ -42,7 +42,7 @@ a { color: #a4a4a4; }
 
 ### `"long"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: #fff; }

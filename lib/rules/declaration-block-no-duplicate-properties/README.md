@@ -14,7 +14,7 @@ This rule ignores variables (`$sass`, `@less`, `--custom-property`).
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; color: orange; }
@@ -42,7 +42,7 @@ Ignore consecutive duplicated properties.
 
 They can prove to be useful fallbacks for older browsers.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 p {
@@ -68,7 +68,7 @@ Ignore consecutive duplicated properties with different values.
 
 Including duplicate properties (fallbacks) is useful to deal with older browsers support for CSS properties. E.g. using 'px' units when 'rem' isn't available.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 /* properties with the same value */
@@ -108,7 +108,7 @@ Given:
 ["color", "/background\-/"]
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; background: orange; background: white; }

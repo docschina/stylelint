@@ -23,7 +23,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline inside the parentheses.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1, 1); }
@@ -58,7 +58,7 @@ a {
 
 There *must always* be a newline inside the parentheses of multi-line functions.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1,
@@ -94,7 +94,7 @@ a {
 
 ### `"never-multi-line"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

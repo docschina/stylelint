@@ -18,7 +18,7 @@ Colors *must always*, where possible, be named.
 
 This will complain if a hex (3, 4, 6 and 8 digit), `rgb()`, `rgba()`, `hsl()`, `hsla()`, `hwb()` or `gray()` color can be represented as a named color.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: #000; }
@@ -74,7 +74,7 @@ a { color: rgb(0, 0, 0, 0.5); }
 
 Colors *must never* be named.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: black; }

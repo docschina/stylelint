@@ -18,7 +18,7 @@ Given:
 ["px", "em", "deg"]
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { width: 100%; }
@@ -85,7 +85,7 @@ a { border-bottom-width: 6rem; }
 a { width: 100%; }
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { margin: 0 20rem; }

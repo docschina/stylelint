@@ -27,7 +27,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be an empty line before comments.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {}
@@ -50,7 +50,7 @@ a {} /* comment */
 
 There *must never* be an empty line before comments.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {}
@@ -77,7 +77,7 @@ Reverse the primary option for comments that are nested and the first child of t
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -133,7 +133,7 @@ Ignore comments that deliver commands to stylelint, e.g. `/* stylelint-disable c
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

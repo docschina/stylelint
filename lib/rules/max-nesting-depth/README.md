@@ -50,7 +50,7 @@ This rule integrates into stylelint's core the functionality of the (now depreca
 
 例如，使用 `2`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -102,7 +102,7 @@ Ignore at-rules that only wrap other rules, and do not themselves have declarati
 
 例如，使用 `1`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 As the at-rules have a declarations blocks.
 
@@ -154,7 +154,7 @@ Ignore rules where the first selector in each selector list item is a pseudo-cla
 
 例如，使用 `1`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 .a {
@@ -309,7 +309,7 @@ a {
 }
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

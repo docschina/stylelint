@@ -27,7 +27,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline after the semicolon.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @import url("x.css"); @import url("y.css");

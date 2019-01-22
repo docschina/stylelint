@@ -28,7 +28,7 @@ This rule allows a trailing semicolon after the closing brace of a block. For ex
 
 There *must always* be a single space after the closing brace.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; }b { color: red; }
@@ -49,7 +49,7 @@ a { color: pink; } b { color: red; }
 
 There *must never* be whitespace after the closing brace.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; } b { color: red; }
@@ -75,7 +75,7 @@ a { color: pink;
 
 There *must always* be a single space after the closing brace in single-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; }b { color: red; }
@@ -96,7 +96,7 @@ a { color: pink;
 
 There *must never* be whitespace after the closing brace in single-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; } b { color: red; }
@@ -117,7 +117,7 @@ a { color: pink;
 
 There *must always* be a single space after the closing brace in multi-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink;
@@ -139,7 +139,7 @@ a { color: pink;
 
 There *must never* be whitespace after the closing brace in multi-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink;

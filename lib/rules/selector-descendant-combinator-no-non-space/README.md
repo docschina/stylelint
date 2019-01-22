@@ -16,7 +16,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 .foo  .bar {}

@@ -14,7 +14,7 @@ This rule considers units defined in the CSS Specifications, up to and including
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

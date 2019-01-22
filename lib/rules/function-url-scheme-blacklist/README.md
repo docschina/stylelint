@@ -25,7 +25,7 @@ Given:
 ["ftp", "/^http/"]
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { background-image: url('ftp://www.example.com/file.jpg'); }

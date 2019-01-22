@@ -18,7 +18,7 @@ Using `!important` within keyframes declarations is completely ignored in some b
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @keyframes important1 {

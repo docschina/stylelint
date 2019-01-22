@@ -26,7 +26,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a trailing semicolon.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink }
@@ -58,7 +58,7 @@ a { @include foo; }
 
 There *must never* be a trailing semicolon.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; }

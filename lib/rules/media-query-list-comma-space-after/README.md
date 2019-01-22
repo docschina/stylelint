@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a single space after the commas.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (color),projection and (color) {}
@@ -44,7 +44,7 @@ The following patterns are *not* considered violations:
 
 There *must never* be whitespace after the commas.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}
@@ -70,7 +70,7 @@ The following patterns are *not* considered violations:
 
 There *must always* be a single space after the commas in single-line media query lists.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (color),projection and (color) {}
@@ -96,7 +96,7 @@ The following patterns are *not* considered violations:
 
 There *must never* be whitespace after the commas in single-line media query lists.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (color), projection and (color) {}

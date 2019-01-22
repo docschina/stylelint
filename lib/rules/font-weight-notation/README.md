@@ -24,7 +24,7 @@ This rule ignores `$sass`, `@less`, and `var(--custom-property)` variable syntax
 
 `font-weight` values *must always* be numbers.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { font-weight: bold; }
@@ -50,7 +50,7 @@ a { font: italic 400 20px; }
 
 This means that only `400` and `700` will be rejected, because those are the only numbers with keyword equivalents (`normal` and `bold`).
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { font-weight: 700; }

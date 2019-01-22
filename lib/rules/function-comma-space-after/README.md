@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a single space after the commas.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1,1) }
@@ -42,7 +42,7 @@ a { transform: translate(1 , 1) }
 
 There *must never* be whitespace after the commas.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1, 1) }
@@ -66,7 +66,7 @@ a { transform: translate(1 ,1) }
 
 There *must always* be a single space after the commas in single-line functions.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1,1) }
@@ -97,7 +97,7 @@ a {
 
 There *must never* be whitespace after the commas in single-line functions.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1, 1) }

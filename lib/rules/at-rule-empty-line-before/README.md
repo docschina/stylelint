@@ -25,7 +25,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be an empty line before at-rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {} @media {}
@@ -48,7 +48,7 @@ a {}
 
 There *must never* be an empty line before at-rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {}
@@ -108,7 +108,7 @@ Reverse the primary option for at-rules that are nested.
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -183,7 +183,7 @@ Shared-line comments do not affect this option.
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @import url(x.css);
@@ -215,7 +215,7 @@ Reverse the primary option for at-rules that are nested and the first child of t
 
 例如，使用 `"always"`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

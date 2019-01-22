@@ -18,7 +18,7 @@ The `:not()` pseudo-class is also evaluated separately. The rule processes the a
 
 例如，使用 `2`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 * * * {}

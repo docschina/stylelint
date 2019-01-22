@@ -22,7 +22,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 Applicable pseudo-elements *must always* use the single colon notation.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a::before { color: pink; }
@@ -70,7 +70,7 @@ li::marker { font-variant-numeric: tabular-nums; }
 
 Applicable pseudo-elements *must always* use the double colon notation.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a:before { color: pink; }

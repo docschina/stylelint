@@ -14,7 +14,7 @@ Before the operator, there must be a single whitespace or a newline plus indenta
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { top: calc(1px+2px); }

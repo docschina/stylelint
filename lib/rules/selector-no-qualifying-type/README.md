@@ -14,7 +14,7 @@ A type selector is "qualifying" when it is compounded with (chained to) another 
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a.foo {

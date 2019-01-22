@@ -14,7 +14,7 @@ Right now this rule simply checks for prefixed *resolutions*.
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media (-webkit-min-device-pixel-ratio: 1) {}

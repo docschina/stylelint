@@ -21,7 +21,7 @@ This rule resolves nested selectors before calculating the depth of a selector.
 
 例如，使用 `3`：
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 .foo .bar .baz .lorem {}

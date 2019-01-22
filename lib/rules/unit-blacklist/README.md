@@ -18,7 +18,7 @@ Given:
 ["px", "em", "deg"]
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { width: 100px; }
@@ -81,7 +81,7 @@ a { border-bottom-width: 6px; }
 a { width: 100vmin; }
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { line-height: 12px; }
@@ -124,7 +124,7 @@ The following patterns are *not* considered violations:
 @media not (resolution: 300dpi) {}
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (max-device-width: 500px) {}

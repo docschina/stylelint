@@ -14,7 +14,7 @@ This rule considers at-rules defined in the CSS Specifications, up to and includ
 
 ### `true`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @unknown {}

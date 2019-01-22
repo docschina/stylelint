@@ -20,7 +20,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a leading zero.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { line-height: .5; }
@@ -44,7 +44,7 @@ a { transform: translate(2px, 0.4px); }
 
 There *must never* be a leading zero.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { line-height: 0.5; }

@@ -35,7 +35,7 @@ Given:
 }
 ```
 
-The following pattern are considered violations:
+以下模式被视为违规：
 
 ```css
 @media screen and (min-width: 1000px) {}

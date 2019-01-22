@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 ### `"lower"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @Charset 'UTF-8';
@@ -56,7 +56,7 @@ The following patterns are *not* considered violations:
 
 ### `"upper"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @Charset 'UTF-8';

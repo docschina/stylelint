@@ -19,7 +19,7 @@ The --fix option on the [command line](../../../docs/user-guide/cli.md#autofixin
 
 There *must always* be a newline after the commas.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1,1) }
@@ -47,7 +47,7 @@ a {
 
 There *must always* be a newline after the commas in multi-line functions.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1
@@ -75,7 +75,7 @@ a {
 
 There *must never* be a whitespace after the commas in multi-line functions.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { transform: translate(1

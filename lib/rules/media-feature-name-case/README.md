@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 ### `"lower"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media (MIN-WIDTH: 700px) {}
@@ -48,7 +48,7 @@ The following patterns are *not* considered violations:
 
 ### `"upper"`
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @media (min-width: 700px) {}

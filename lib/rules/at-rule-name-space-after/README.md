@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a single space after at-rule names.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @charset"UTF-8";
@@ -55,7 +55,7 @@ The following patterns are *not* considered violations:
 
 There *must always* be a single space after at-rule names in single-line declaration blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 @charset"UTF-8";

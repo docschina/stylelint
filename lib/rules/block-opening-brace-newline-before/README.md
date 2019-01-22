@@ -21,7 +21,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a newline before the opening brace.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a{ color: pink; }
@@ -56,7 +56,7 @@ a /* foo */
 
 There *must always* be a newline before the opening brace in single-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a{ color: pink; }
@@ -78,7 +78,7 @@ color: pink; }
 
 There *must never* be whitespace before the opening brace in single-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; }
@@ -99,7 +99,7 @@ color: pink; }
 
 There *must always* be a newline before the opening brace in multi-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a{
@@ -136,7 +136,7 @@ color: pink; }
 
 There *must never* be whitespace before the opening brace in multi-line blocks.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {

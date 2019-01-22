@@ -22,7 +22,7 @@ Given:
 ["display", "animation", "/^background/"]
 ```
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; }

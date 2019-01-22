@@ -18,7 +18,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 There *must always* be a single space inside the parentheses.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 input:not([type="submit"]) {}
@@ -38,7 +38,7 @@ input:not( [type="submit"] ) {}
 
 There *must never* be whitespace on the inside the parentheses.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 input:not( [type="submit"] ) {}

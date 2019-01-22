@@ -21,7 +21,7 @@ This rule ignores semicolons that are preceded by Less mixins.
 
 There *must always* be a newline before the semicolons.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a { color: pink; }
@@ -51,7 +51,7 @@ a {
 
 There *must always* be a newline before the semicolons in multi-line rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
@@ -80,7 +80,7 @@ a {
 
 There *must never* be whitespace before the semicolons in multi-line rules.
 
-The following patterns are considered violations:
+以下模式被视为违规：
 
 ```css
 a {
