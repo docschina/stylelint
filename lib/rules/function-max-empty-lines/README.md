@@ -23,7 +23,7 @@ The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofix
 
 `int`: Maximum number of characters allowed.
 
-For example, with `0`:
+例如，使用 `0`：
 
 The following patterns are considered violations:
 

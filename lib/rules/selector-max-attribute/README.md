@@ -16,7 +16,7 @@ The `:not()` pseudo-class is also evaluated separately. The rule processes the a
 
 `int`: Maximum attribute selectors allowed.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are considered violations:
 

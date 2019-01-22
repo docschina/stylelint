@@ -12,7 +12,7 @@ a { color: pink; top: 0; }
 
 `int`: Maximum number of declarations allowed.
 
-For example, with `1`:
+例如，使用 `1`：
 
 The following patterns are considered violations:
 

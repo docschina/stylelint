@@ -19,7 +19,7 @@ This rule resolves nested selectors before calculating the depth of a selector.
 
 `int`: Maximum compound selectors allowed.
 
-For example, with `3`:
+例如，使用 `3`：
 
 The following patterns are considered violations:
 

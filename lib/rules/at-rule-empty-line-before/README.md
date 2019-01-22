@@ -77,7 +77,7 @@ Reverse the primary option for at-rules that follow another at-rule with the sam
 
 This means that you can group your at-rules by name.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -106,7 +106,7 @@ a {
 
 Reverse the primary option for at-rules that are nested.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -146,7 +146,7 @@ This means that you can group your blockless at-rules by name.
 
 Shared-line comments do not affect this option.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -181,7 +181,7 @@ Reverse the primary option for at-rules within a blockless group.
 
 Shared-line comments do not affect this option.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -213,7 +213,7 @@ The following patterns are *not* considered violations:
 
 Reverse the primary option for at-rules that are nested and the first child of their parent node.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -276,7 +276,7 @@ The following patterns are *not* considered violations:
 
 Ignore at-rules that are nested and the first child of their parent node.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -292,7 +292,7 @@ The following patterns are *not* considered violations:
 
 Ignore at-rules that are inside a declaration block.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -326,7 +326,7 @@ Ignore blockless at-rules that follow another blockless at-rule with the same na
 
 This means that you can group your blockless at-rules by name.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -353,7 +353,7 @@ a {
 
 Ignore blockless at-rules that follow another blockless at-rule.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 

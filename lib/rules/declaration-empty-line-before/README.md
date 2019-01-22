@@ -104,7 +104,7 @@ Reverse the primary option for declarations that come after a comment.
 
 Shared-line comments do not trigger this option.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -148,7 +148,7 @@ Reverse the primary option for declarations that come after another declaration.
 
 Shared-line comments do not affect this option.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -192,7 +192,7 @@ a {
 
 Reverse the primary option for declarations that are nested and the first child of their parent node.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -221,7 +221,7 @@ a {
 
 Ignore declarations that are preceded by comments.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -236,7 +236,7 @@ a {
 
 Ignore declarations that are preceded by declarations, to allow for multiple declaration sets in the same block.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -272,7 +272,7 @@ a {
 
 Ignore declarations that are nested and the first child of their parent node.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -288,7 +288,7 @@ a {
 
 Ignore declarations that are inside single-line blocks.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 

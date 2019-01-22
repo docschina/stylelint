@@ -20,7 +20,7 @@ This rule resolves nested selectors before calculating the specificity of a sele
 
 Format is `"id,class,type"`, as laid out in the [W3C selector spec](https://drafts.csswg.org/selectors/#specificity-rules).
 
-For example, with `"0,2,0"`:
+例如，使用 `"0,2,0"`：
 
 The following patterns are considered violations:
 

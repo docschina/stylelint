@@ -126,7 +126,7 @@ b {
 
 Reverse the primary option if the rule comes after another rule.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -147,7 +147,7 @@ b {}
 
 Reverse the primary option if the rule comes after a single-line comment.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -168,7 +168,7 @@ a {}
 
 Reverse the primary option if the rule is inside a block and comes after another rule.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -194,7 +194,7 @@ The following patterns are *not* considered violations:
 
 Reverse the primary option if the rule is inside a block.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -224,7 +224,7 @@ a {
 
 Reverse the primary option if the rule is the first in a block.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -253,7 +253,7 @@ The following patterns are *not* considered violations:
 
 Ignore rules that come after a comment.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -266,7 +266,7 @@ a {}
 
 Ignore rules that are nested and the first child of their parent node.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -282,7 +282,7 @@ The following patterns are *not* considered violations:
 
 Ignore rules that are inside a block.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 

@@ -48,7 +48,7 @@ This rule integrates into stylelint's core the functionality of the (now depreca
 
 `int`: Maximum nesting depth allowed.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are considered violations:
 
@@ -100,7 +100,7 @@ a .foo__foo .bar .baz {}
 
 Ignore at-rules that only wrap other rules, and do not themselves have declaration blocks.
 
-For example, with `1`:
+例如，使用 `1`：
 
 The following patterns are considered violations:
 
@@ -152,7 +152,7 @@ a {
 
 Ignore rules where the first selector in each selector list item is a pseudo-class
 
-For example, with `1`:
+例如，使用 `1`：
 
 The following patterns are considered violations:
 
@@ -261,7 +261,7 @@ As all of the following pseudoclasses rules would have a nesting depth of just 1
 
 Ignore the specified at-rules.
 
-For example, with `1` and given:
+例如，使用 `1` 并给定：
 
 ```js
 ["/^my-/", "media"]

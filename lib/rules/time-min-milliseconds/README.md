@@ -14,7 +14,7 @@ This rule checks positive numbers in `transition-duration`, `transition-delay`, 
 
 `int`: Minimum number of milliseconds for time values.
 
-For example, with `100`:
+例如，使用 `100`：
 
 The following patterns are considered violations:
 

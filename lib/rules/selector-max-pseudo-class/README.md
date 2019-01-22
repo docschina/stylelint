@@ -17,7 +17,7 @@ The content of the `:not()` pseudo-class is also evaluated separately. The rule 
 
 `int`: Maximum pseudo-classes allowed.
 
-For example, with `1`:
+例如，使用 `1`：
 
 The following patterns are considered violations:
 

@@ -75,7 +75,7 @@ a {} /* comment */
 
 Reverse the primary option for comments that are nested and the first child of their parent node.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 
@@ -102,7 +102,7 @@ a {
 
 Don't require an empty line after a comment.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are *not* considered violations:
 
@@ -131,7 +131,7 @@ a {
 
 Ignore comments that deliver commands to stylelint, e.g. `/* stylelint-disable color-no-hex */`.
 
-For example, with `"always"`:
+例如，使用 `"always"`：
 
 The following patterns are considered violations:
 

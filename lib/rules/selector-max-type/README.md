@@ -16,7 +16,7 @@ The `:not()` pseudo-class is also evaluated separately. The rule processes the a
 
 `int`: Maximum type selectors allowed.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are considered violations:
 
@@ -75,7 +75,7 @@ The following patterns are *not* considered violations:
 
 Discount child type selectors.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are *not* considered violations:
 
@@ -91,7 +91,7 @@ div span > a {}
 
 Discount compounded type selectors -- i.e. type selectors chained with other selectors.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are *not* considered violations:
 
@@ -107,7 +107,7 @@ div span a#bar {}
 
 Discount descendant type selectors.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are *not* considered violations:
 
@@ -123,7 +123,7 @@ The following patterns are *not* considered violations:
 
 Discount next-sibling type selectors.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are *not* considered violations:
 

@@ -14,7 +14,7 @@ This rule resolves nested selectors before counting the number of combinators se
 
 `int`: Maximum combinators selectors allowed.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are considered violations:
 

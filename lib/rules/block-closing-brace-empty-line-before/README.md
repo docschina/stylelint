@@ -69,7 +69,7 @@ a { color: pink; }
 
 When a rule is nested, `after-closing-brace` brace will reverse the primary option.
 
-For example, with `"never"` and `except: ["after-closing-brace"]`:
+例如，使用 `"never"` 和 `except: ["after-closing-brace"]`：
 
 The following patterns are considered violations:
 
@@ -139,7 +139,7 @@ The following patterns are *not* considered violations:
 }
 ```
 
-For example, with `"always-multi-line"` and `except: ["after-closing-brace"]`:
+例如，使用 `"always-multi-line"` 和 `except: ["after-closing-brace"]`：
 
 The following patterns are considered violations:
 

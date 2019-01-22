@@ -12,7 +12,7 @@ a { top: 3.245634px; }
 
 `int`: Maximum number of decimal places allowed.
 
-For example, with `2`:
+例如，使用 `2`：
 
 The following patterns are considered violations:
 
