@@ -10,7 +10,7 @@ Specify lowercase or uppercase for media feature names.
 
 This rule ignores media feature names within a range context.
 
-The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix all of the problems reported by this rule.
+[命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
 ## 选项
 

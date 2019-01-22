@@ -15,7 +15,7 @@ This rule ignores:
 -   at-rules that are the very first node in the source
 -   `@import` in Less.
 
-The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix all of the problems reported by this rule. We recommend to enable [`indentation`](../indentation/README.md) rule for better autofixing results with this rule.
+[命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。 We recommend to enable [`indentation`](../indentation/README.md) rule for better autofixing results with this rule.
 
 ## 选项
 

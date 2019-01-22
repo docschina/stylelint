@@ -10,7 +10,7 @@ Specify lowercase or uppercase for at-rules names.
 
 Only lowercase at-rule names are valid in SCSS.
 
-The `--fix` option on the [command line](../../../docs/user-guide/cli.md#autofixing-errors) can automatically fix some of the problems reported by this rule.
+[命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的一些问题。
 
 ## 选项
 
