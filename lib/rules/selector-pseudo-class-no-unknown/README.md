@@ -48,7 +48,7 @@ a:focus {}
 input:-moz-placeholder {}
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignorePseudoClasses: ["/regex/", "string"]`
 

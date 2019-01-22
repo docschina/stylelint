@@ -94,7 +94,7 @@ a .foo__foo .bar .baz {}
 }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignore: ["blockless-at-rules"]`
 

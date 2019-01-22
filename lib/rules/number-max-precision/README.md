@@ -38,7 +38,7 @@ a { top: 3.24px; }
 @media (min-width: 3.23em) {}
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreUnits: ["/regex/", /regex/, "string"]`
 

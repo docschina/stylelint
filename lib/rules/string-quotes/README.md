@@ -85,7 +85,7 @@ a[id="foo"] {}
 a { content: 'x"y"z'; }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `avoidEscape`: `true|false`, defaults to `true`
 

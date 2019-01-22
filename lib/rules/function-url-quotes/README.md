@@ -88,7 +88,7 @@ a { background: url(x.jpg); }
 @font-face { font-family: 'foo'; src: url(foo.ttf); }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `except: ["empty"]`
 

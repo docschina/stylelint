@@ -40,7 +40,7 @@ This rule considers at-rules defined in the CSS Specifications, up to and includ
 }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreAtRules: ["/regex/", /regex/, "string"]`
 

@@ -70,7 +70,7 @@ a { font-weight: bold; }
 a { font: italic normal 20px sans-serif; }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignore: ["relative"]`
 

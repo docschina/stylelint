@@ -42,7 +42,7 @@ a { max-width: max-content; }
 a { background: linear-gradient(bottom, #000, #fff); }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreValues: ["string"]`
 

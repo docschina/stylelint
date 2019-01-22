@@ -100,7 +100,7 @@ a {
 }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreFunctions: ["/regex-as-string/", /regex/, "non-regex"]`
 

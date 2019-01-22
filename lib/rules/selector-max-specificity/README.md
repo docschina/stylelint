@@ -78,7 +78,7 @@ div {}
 }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreSelectors: ["/regex/", /regex/, "string"]`
 

@@ -101,7 +101,7 @@ a {
 }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreKeywords: ["/regex/", /regex/, "non-regex"]`
 

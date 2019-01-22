@@ -51,7 +51,7 @@ This rule ignores:
 @media (-webkit-min-device-pixel-ratio: 2) {}
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreMediaFeatureNames: ["/regex/", /regex/, "string"]`
 

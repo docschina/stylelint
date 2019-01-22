@@ -63,7 +63,7 @@ a {
 a { color: pink; }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `except: ["after-closing-brace"]`
 

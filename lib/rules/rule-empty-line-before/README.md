@@ -118,7 +118,7 @@ b {
 }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `except: ["after-rule", "after-single-line-comment", "inside-block-and-after-rule", "inside-block", "first-nested"]`
 

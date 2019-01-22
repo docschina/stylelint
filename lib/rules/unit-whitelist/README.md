@@ -54,7 +54,7 @@ a { height: 100PX; }
 a { transform: rotate(30deg); }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreProperties: { unit: ["property", "/regex/", /regex/] }`
 

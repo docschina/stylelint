@@ -58,7 +58,7 @@ A {}
 LI {}
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreTypes: ["/regex/", "non-regex"]`
 

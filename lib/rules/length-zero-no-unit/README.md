@@ -44,7 +44,7 @@ a { top: 2in; }
 a { top: 1.001vh }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignore: ["custom-properties"]`
 

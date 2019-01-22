@@ -69,7 +69,7 @@ a {}
 a {} /* comment */
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `except: ["first-nested"]`
 

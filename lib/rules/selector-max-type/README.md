@@ -67,7 +67,7 @@ div a .foo:not(span) {}
 
 以下模式*不*被视为违规：
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignore: ["child", "compounded", "descendant", "next-sibling"]`
 

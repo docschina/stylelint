@@ -76,7 +76,7 @@ input:not([type="text"][data-attribute="value"][disabled]) {}
 [type="text"][name="message"]:not([disabled]) {}
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreAttributes: ["/regex/", /regex/, "string"]`
 

@@ -94,7 +94,7 @@ a {
 }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `except: ["after-comment", "after-declaration", "first-nested"]`
 

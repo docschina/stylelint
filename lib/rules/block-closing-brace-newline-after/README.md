@@ -145,7 +145,7 @@ a { color: pink;
 }b { color: red; }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignoreAtRules: ["/regex/", "non-regex"]`
 

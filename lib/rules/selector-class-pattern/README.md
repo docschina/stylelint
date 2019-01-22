@@ -68,7 +68,7 @@ div > #zing + .foo-bar {}
 }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `resolveNestedSelectors: true | false` (default: `false`)
 

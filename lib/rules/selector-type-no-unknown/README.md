@@ -38,7 +38,7 @@ ul li {}
 li > a {}
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignore: ["custom-elements", "default-namespace"]`
 

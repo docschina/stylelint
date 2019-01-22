@@ -67,7 +67,7 @@ a {}
 @media {}
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `except: ["after-same-name", "inside-block", "blockless-after-same-name-blockless", "blockless-after-blockless", "first-nested"]`
 

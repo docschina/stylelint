@@ -34,7 +34,7 @@ a { color: pink; }
 a { color: pink; background: orange; }
 ```
 
-## Optional secondary options
+## 可选的辅助选项
 
 ### `ignore: ["consecutive-duplicates"]`
 
