@@ -1,6 +1,6 @@
 # 插件
 
-插件是社区构建的规则和规则集，支持方法论、工具集、*非标准* CSS 功能或非常具体的用例。他们的*包*名称以“stylelint”为前缀。他们的*规则*名称在命名空间中，因此它们不会与 stylelint 的核心规则冲突。
+插件是社区构建的规则和规则集，支持方法论、工具集、*非标准* CSS 功能或非常具体的用例。他们的*包*名称以“stylelint”为前缀。他们的*规则*名称有命名空间，所以它们不会与 stylelint 的核心规则冲突。
 
 -   [`stylelint-8-point-grid`](https://github.com/dcrtantuco/stylelint-8-point-grid)：使用8点网格指南验证 CSS
 -   [`stylelint-a11y`](https://github.com/YozhikM/stylelint-a11y)：可访问性规则（插件包）。
