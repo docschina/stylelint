@@ -1,21 +1,21 @@
 # comment-empty-line-before
 
-Require or disallow an empty line before comments.
+要求或禁止在注释之前的空行。
 
 ```css
 a {}
               /* ← */
 /* comment */ /* ↑ */
 /**              ↑
-*        This line */
+*               这行 */
 ```
 
-This rule ignores:
+此规则忽略：
 
--   comments that are the very first node in the source
--   shared-line comments
--   single-line comments with `//` (when you're using a custom syntax that supports them)
--   comments within selector and value lists
+-   作为源码中第一个节点的注释
+-   共享行的注释
+-   使用 `//` 的单行注释（当您使用支持它们的自定义语法时）
+-   选择器和值列表中的注释
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。我们建议启用 [`indentation`](../indentation/README.md) 规则，以便更好地使用此规则自动修复结果。
 
@@ -25,13 +25,13 @@ This rule ignores:
 
 ### `"always"`
 
-There *must always* be an empty line before comments.
+在注释之前*必须*有空行。
 
 以下模式被视为违规：
 
 ```css
 a {}
-/* comment */
+/* 注释 */
 ```
 
 以下模式*不*被视为违规：
@@ -39,41 +39,41 @@ a {}
 ```css
 a {}
 
-/* comment */
+/* 注释 */
 ```
 
 ```css
-a {} /* comment */
+a {} /* 注释 */
 ```
 
 ### `"never"`
 
-There *must never* be an empty line before comments.
+在注释之前*不能*有空行。
 
 以下模式被视为违规：
 
 ```css
 a {}
 
-/* comment */
+/* 注释 */
 ```
 
 以下模式*不*被视为违规：
 
 ```css
 a {}
-/* comment */
+/* 注释 */
 ```
 
 ```css
-a {} /* comment */
+a {} /* 注释 */
 ```
 
 ## 可选的辅助选项
 
 ### `except: ["first-nested"]`
 
-Reverse the primary option for comments that are nested and the first child of their parent node.
+当注释有嵌套并且是其父节点的第一个子节点时反转主选项
 
 例如，使用 `"always"`：
 
@@ -82,7 +82,7 @@ Reverse the primary option for comments that are nested and the first child of t
 ```css
 a {
 
-  /* comment */
+  /* 注释 */
   color: pink;
 }
 ```
@@ -91,7 +91,7 @@ a {
 
 ```css
 a {
-  /* comment */
+  /* 注释 */
   color: pink;
 }
 ```
@@ -100,7 +100,7 @@ a {
 
 #### `"after-comment"`
 
-Don't require an empty line after a comment.
+在其他注释之后则不要求空行。
 
 例如，使用 `"always"`：
 
@@ -110,8 +110,8 @@ Don't require an empty line after a comment.
 a {
   background: pink;
 
-  /* comment */
-  /* comment */
+  /* 注释 */
+  /* 注释 */
   color: #eee;
 }
 ```
@@ -120,16 +120,16 @@ a {
 a {
   background: pink;
 
-  /* comment */
+  /* 注释 */
 
-  /* comment */
+  /* 注释 */
   color: #eee;
 }
 ```
 
 #### `"stylelint-commands"`
 
-Ignore comments that deliver commands to stylelint, e.g. `/* stylelint-disable color-no-hex */`.
+忽略将命令传递给 stylelint 的注释，例如 `/* stylelint-disable color-no-hex */`。
 
 例如，使用 `"always"`：
 
@@ -138,7 +138,7 @@ Ignore comments that deliver commands to stylelint, e.g. `/* stylelint-disable c
 ```css
 a {
   background: pink;
-  /* not a stylelint command */
+  /* 并非 stylelint 命令 */
   color: #eee;
 }
 ```

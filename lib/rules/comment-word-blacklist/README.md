@@ -1,20 +1,20 @@
 # comment-word-blacklist
 
-Specify a blacklist of disallowed words within comments.
+在注释中指定不允许的单词的黑名单。
 
 ```css
  /* words within comments */
 /** ↑     ↑      ↑
- * These three words */
+ *    这三个单词 */
 ```
 
-This rule ignores comments within selector and value lists.
+**警告：** *选择器和值列表*中的注释目前被忽略。
 
 ## 选项
 
 `array|string|regexp`: `["array", "of", "words", /or/, "/regex/"]|"word"|"/regex/"`
 
-If a string is surrounded with `"/"` (e.g. `"/^TODO:/"`), it is interpreted as a regular expression.
+如果字符串用 `"/"` 包围（例如 `"/^TODO:/"`），则将其解释为正则表达式。
 
 给定：
 
