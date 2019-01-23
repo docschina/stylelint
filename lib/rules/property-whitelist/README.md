@@ -14,7 +14,7 @@ This rule ignores variables (`$sass`, `@less`, `--custom-property`).
 
 `array|string`: `["array", "of", "unprefixed", /properties/ or "regex"]|"property"|"/regex/"`|/regex/
 
-If a string is surrounded with `"/"` (e.g. `"/^background/"`), it is interpreted as a regular expression. This allows, for example, easy targeting of shorthands: `/^background/` will match `background`, `background-size`, `background-color`, etc.
+如果字符串用 `"/"` 包围（例如 `"/^background/"`），则将其解释为正则表达式。这允许方便的简写，例如：`/^background/` 将匹配 `background`、`background-size`、`background-color` 等。
 
 给定：
 

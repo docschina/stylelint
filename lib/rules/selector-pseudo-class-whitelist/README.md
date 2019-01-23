@@ -14,7 +14,7 @@ This rule ignores selectors that use variable interpolation e.g. `:#{$variable} 
 
 `array|string|regex`: `["array", "of", "unprefixed", /pseudo-classes/ or "/regex/"]|"pseudo-class"|/regex/`
 
-If a string is surrounded with `"/"` (e.g. `"/^nth-/"`), it is interpreted as a regular expression. This allows, for example, easy targeting of shorthands: `/^nth-/` will match `nth-child`, `nth-last-child`, `nth-of-type`, etc.
+如果字符串用 `"/"` 包围（例如 `"/^nth-/"`），则将其解释为正则表达式。这允许方便的简写，例如：`/^nth-/` 将匹配 `nth-child`、`nth-last-child`、`nth-of-type` 等。
 
 给定：
 

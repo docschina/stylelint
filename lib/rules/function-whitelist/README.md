@@ -12,7 +12,7 @@ a { transform: scale(1); }
 
 `array|string`: `["array", "of", "unprefixed", /functions/ or "regex"]|"function"|"/regex/"`
 
-If a string is surrounded with `"/"` (e.g. `"/^rgb/"`), it is interpreted as a regular expression.
+如果字符串用 `"/"` 包围（例如 `"/^rgb/"`），则将其解释为正则表达式。
 
 给定：
 

@@ -1,16 +1,16 @@
 # comment-whitespace-inside
 
-Require or disallow whitespace on the inside of comment markers.
+要求或禁止注释标记内侧的空白。
 
 ```css
     /* comment */
 /**  ↑         ↑
- * The space inside these two markers */
+ * 这两个标记内侧的空白 */
 ```
 
-Any number of asterisks are allowed at the beginning or end of the comment. So `/** comment **/` is treated the same way as `/* comment */`.
+在注释的开头或结尾允许任意数量的星号。因此 `/** 注释 **/` 与 `/* 注释 */` 的处理方式相同。
 
-**Caveat:** Comments within *selector and value lists* are currently ignored.
+**警告：** *选择器和值列表*中的注释目前被忽略。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
@@ -20,67 +20,67 @@ Any number of asterisks are allowed at the beginning or end of the comment. So `
 
 ### `"always"`
 
-There *must always* be whitespace inside the markers.
+标记内侧*必须*有空白。
 
 以下模式被视为违规：
 
 ```css
-/*comment*/
+/*注释*/
 ```
 
 ```css
-/*comment */
+/*注释 */
 ```
 
 ```css
-/** comment**/
+/** 注释**/
 ```
 
 以下模式*不*被视为违规：
 
 ```css
-/* comment */
+/* 注释 */
 ```
 
 ```css
-/** comment **/
+/** 注释 **/
 ```
 
 ```css
 /**
- * comment
+ * 注释
  */
 ```
 
 ```css
-/*     comment
+/*     注释
 */
 ```
 
 ### `"never"`
 
-There *must never* be whitespace on the inside the markers.
+标记内侧*不能*有空白。
 
 以下模式被视为违规：
 
 ```css
-/* comment */
+/* 注释 */
 ```
 
 ```css
-/*comment */
+/*注释 */
 ```
 
 ```css
-/** comment**/
+/** 注释**/
 ```
 
 以下模式*不*被视为违规：
 
 ```css
-/*comment*/
+/*注释*/
 ```
 
 ```css
-/****comment****/
+/****注释****/
 ```

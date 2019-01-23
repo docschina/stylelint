@@ -1,14 +1,14 @@
 # comment-no-empty
 
-Disallow empty comments.
+禁止空注释。
 
 ```css
     /* */
 /** ↑
- * Comments like this */
+ * 像这样的注释 */
 ```
 
-This rule ignores comments within selector and value lists.
+**警告：** *选择器和值列表*中的注释目前被忽略。
 
 ## 选项
 
@@ -33,11 +33,11 @@ This rule ignores comments within selector and value lists.
 以下模式*不*被视为违规：
 
 ```css
-/* comment */
+/* 注释 */
 ```
 
 ```css
 /*
- * Multi-line Comment
+ * 多行注释
 **/
 ```
