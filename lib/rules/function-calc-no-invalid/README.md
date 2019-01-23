@@ -1,6 +1,6 @@
 # function-calc-no-invalid
 
-Disallow an invalid expression within `calc` functions.
+禁止在 `calc` 函数中使用无效表达式。
 
 ```css
 .foo {width: calc();}
@@ -41,10 +41,10 @@ Disallow an invalid expression within `calc` functions.
 /* the `resolved type` is invalid */
 ```
 
--   `calc()` must have an expression.
--   `calc()` must have an operator between the arguments.
--   `calc()` must not be division by zero.
--   [The resolved type](https://www.w3.org/TR/css-values-3/#calc-type-checking) must be valid for where the expression is placed.
+-   `calc()` 必须接收一个表达式。
+-   `calc()` 的参数之间必须有操作符。
+-   `calc()` 不能除以0。
+-   [计算结果的类型](https://www.w3.org/TR/css-values-3/#calc-type-checking) 在对应的位置上，　该结果的类型必须是有效的。
 
 ## 选项
 
