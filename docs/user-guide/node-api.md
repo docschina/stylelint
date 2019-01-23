@@ -29,9 +29,9 @@ npm install stylelint
 
 ### `codeFilename`
 
-如果使用`code`直接传递源字符串，可以使用`codeFilename`将该代码与特定文件名相关联。
+如果使用 `code` 直接传递源字符串，可以使用 `codeFilename` 将该代码与特定文件名相关联。
 
-这可能很有用，比如在制作直接传递代码但仍需要使用配置的`ignoreFiles`功能的文本编辑器插件时，可能会忽略该代码。
+这可能很有用，比如在制作直接传递代码但仍需要使用配置的 `ignoreFiles` 功能的文本编辑器插件时，可能会忽略该代码。
 
 ### `config`
 
@@ -71,13 +71,13 @@ npm install stylelint
 
 此选项将在使用 globby 时与 `files` 一起传递。
 
-例如，您可以手动设置特定的`cwd`，这是 `files` glob 的当前工作目录的文件夹路径。`files` 中的相对 glob 将被认为是此路径的相对路径。默认情况下，`cwd` 将由 `process.cwd()` 设置。
+例如，您可以手动设置特定的 `cwd`，这是 `files` glob 的当前工作目录的文件夹路径。`files` 中的相对 glob 将被认为是此路径的相对路径。默认情况下，`cwd` 将由 `process.cwd()` 设置。
 
 有关更多详细信息，请参阅 [Globby 指南](https://github.com/sindresorhus/globby#options)。
 
 ### `formatter`
 
-选项：`"compact"|"json"|"string"|"unix"|"verbose"` 或函数。默认是 `"json"`。
+选项：`"compact"|"json"|"string"|"unix"|"verbose"` 或函数。默认为 `"json"`。
 
 指定要用于结果的格式化程序。
 
@@ -103,9 +103,9 @@ npm install stylelint
 
 ### `cacheLocation`
 
-用于 `cache` 的文件或目录的路径。只有与`cache` 共同使用才有意义。如果没有指定位置，将在 `process.cwd()` 中创建 `.stylelintcache`。
+用于 `cache` 的文件或目录的路径。只有与 `cache` 共同使用才有意义。如果没有指定位置，将在 `process.cwd()` 中创建 `.stylelintcache`。
 
-如果指定了目录，则将在指定的文件夹中创建缓存文件。该文件的名称将基于 `process.cwd()` 的哈希（例如 `.cache_hashOfCWD`）。这允许stylelint 为来自不同项目的各种缓存复用单个位置。
+如果指定了目录，则将在指定的文件夹中创建缓存文件。该文件的名称将基于 `process.cwd()` 的哈希（例如 `.cache_hashOfCWD`）。这允许 stylelint 为来自不同项目的各种缓存复用单个位置。
 
 **注意：** 如果 `cacheLocation` 的目录不存在，请确保在 Windows 上添加一个尾随的`/`（在 \*nix 系统）或 `\`（在 Windows）。否则，路径将被假定为文件。
 
@@ -122,7 +122,7 @@ npm install stylelint
 设置接受警告数量的限制。如果找到的警告数超过给定限制，将向返回的数据添加 `maxWarningsExceeded` 属性。
 该值是一个对象（例如 `{ maxWarnings: 0, foundWarnings: 12 }` ）。
 
-*建议使用此选项的方法是通过命令行界面。* 当超过 `maxWarnings` 时，它将以退出码2退出。
+*建议使用此选项的方法是通过命令行界面。* 当超过 `maxWarnings` 时，它将以退出码 2 退出。
 
 ### `ignorePath`
 
@@ -148,7 +148,7 @@ npm install stylelint
 
 ## 返回的 Promise
 
-`stylelint.lint()` 返回一个 Promise 对象，它将解析为包含以下属性的对象：
+`stylelint.lint()` 返回一个 Promise 对象，它将释为包含以下属性的对象：
 
 ### `errored`
 
@@ -168,8 +168,8 @@ npm install stylelint
 
 ## 语法错误
 
-当您的CSS包含语法错误时，`stylelint.lint()` 并不会拒绝Promise。
-它解析一个对象（请参阅[返回的 Promise](#返回的-promise)），其中包含有关语法错误的信息。
+当您的 CSS 包含语法错误时，`stylelint.lint()` 并不会拒绝 Promise。
+它释为一个对象（请参阅[返回的 Promise](#返回的-promise)），其中包含有关语法错误的信息。
 
 ## 用法示例
 
@@ -190,7 +190,7 @@ stylelint.lint({
   });
 ```
 
-如果`myConfig` *包含* `extends` 或 `plugins` 的相对路径，您 *必须* 使用 `configBasedir`：
+如果 `myConfig` *包含* `extends` 或 `plugins` 的相对路径，您 *必须* 使用 `configBasedir`：
 
 ```js
 stylelint.lint({
@@ -210,7 +210,7 @@ stylelint.lint({
 }).then(function() { .. });
 ```
 
-也许您想使用我自己的自定义格式化程序函数并解析`.scss`源文件：
+也许您想使用我自己的自定义格式化程序函数并解析 `.scss` 源文件：
 
 ```js
 stylelint.lint({

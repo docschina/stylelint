@@ -1,90 +1,90 @@
-# Rule testers
+# 规则测试工具
 
-stylelint rules require *a lot* of tests. So we've built a specialized stylelint rule testing format to speed up the mass production of consistent, effective rule tests.
+stylelint 规则需要*大量的*测试。所以我们构建了一个专门的 stylelint 规则测试格式，以加速大规模生成一致，有效的规则测试。
 
-There is a schema for describing tests, and a function for creating "rule testers" that interpret that schema using a test framework (e.g. tape or Mocha).
+我们有一个用于描述测试的架构，以及用于创建“规则测试工具”的函数，其使用测试框架（例如，tape 或 Mocha）来解析该架构。
 
-When developing plugins, you can use the following rule testers or create your own.
+开发插件时，您可以使用以下规则测试工具或创建自己的工具。
 
 -   stylelint-test-rule-tape
 -   stylelint-test-rule-mocha
 -   stylelint-test-rule-ava
 
-## Using a rule tester
+## 使用规则测试工具
 
-To use the rule tester of your choice, do the following:
+要使用您选择的规则测试程序，请执行以下操作：
 
 ```js
-// `testRule` = the imported rule tester
+// `testRule` = 导入的规则测试工具
 testRule(rule, testGroupDescription)
 ```
 
-`rule` is just the rule that you are testing (a function).
+`rule` 正是是你正在测试的规则（一个函数）。
 
-`testGroupDescription` is an object fitting the following schema.
+`testGroupDescription` 是一个适合以下架构的对象。
 
-### The test group schema
+### 测试组架构
 
-Each test group object describes a set of test-cases for a certain rule with a certain configuration.
+每个测试组对象都描述了具有特定配置的特定规则的一组测试用例。
 
-Required properties:
+所需属性：
 
--   `ruleName` {string}: The name of the rule. Used in generated test-case descriptions.
--   `config` {any}: The rule's configuration for this test group. Should match the rule configuration format you'd use in `.stylelintrc`.
--   `accept` {array}: An array of objects describing test cases that *should not violate the rule*. Each object has these properties:
-    -   `code` {string}: The source CSS to check.
-    -   `description` {string}: *Optional.* A description of the case.
-    -   `only` {boolean}: If `true`, run only this test case.
--   `reject` {array}: An array of objects describing test cases that *should violate the rule once*. Each object has these properties:
-    -   `code` {string}: The source CSS to check.
-    -   `message` {string}: The message of the expected violation.
-    -   `line` {number}: *Optional but recommended.* The expected line number of the violation. If this is left out, the line won't be checked.
-    -   `column` {number}: *Optional but recommended.* The expected column number of the violation. If this is left out, the column won't be checked.
-    -   `description` {string}: *Optional.* A description of the case.
-    -   `only` {boolean}: If `true`, run only this test case.
-    -   `fixed` {string}: *Required if test schema has `fix` enabled.* Result of autofixing against `code` property.
+-   `ruleName` {string}：规则的名称。用于生成的测试用例描述。
+-   `config` {any}：此测试组的规则配置。应该与 `.stylelintrc` 中使用的规则配置格式相匹配。
+-   `accept` {array}：*不应违反规则*的测试用例的对象数组。每个对象都具有以下属性：
+    -   `code` {string}：要检查的 CSS 源码。
+    -   `description` {string}：*可选。* 测试用例描述。
+    -   `only` {boolean}：如果为 `true`，只运行这个测试用例。
+-   `reject` {array}：*应该违反规则* 的测试用例的对象数组。每个对象都具有以下属性：
+    -   `code` {string}：要检查的 CSS 源码。
+    -   `message` {string}：预期违规的消息。
+    -   `line` {number}：*可选但推荐使用。* 预期违规的行号。如果省略，则不会检查。
+    -   `column` {number}：*可选但推荐使用。* 预期违规的列号。如果省略，则不会检查。
+    -   `description` {string}：*可选。* 测试用例描述。
+    -   `only` {boolean}：如果为 `true`，只运行这个测试用例。
+    -   `fixed` {string}：*如果测试架构启用了 `fix`，则为必需。* 针对 `code` 属性自动修复的结果。
 
-Optional properties:
+可选属性：
 
--   `syntax` {"css"|"less"|"scss"|"sugarss"}: Defaults to `"css"`. Other settings use special parsers.
--   `skipBasicChecks` {boolean}: Defaults to `false`. If `true`, a few rudimentary checks (that should almost always be included) will not be performed. You can check those out in `lib/testUtils/basicChecks.js`.
--   `preceedingPlugins` {array}: An array of PostCSS plugins that should be run before the CSS is tested.
--   `fix` {boolean}: Defaults to `false`. If `true`, every `reject` test-case will be tested for autofixing functionality. *Required if rule has autofixing.*
+-   `syntax` {"css"|"css-in-js"|"html"|"less"|"markdown"|"sass"|"scss"|"sugarss"}：默认为 `"css"`。其他设置使用特殊解析器。
+-   `skipBasicChecks` {boolean}：默认为 `false`。如果为 `true`，则不会执行一些基本检查（应该几乎总是包括在内）。你可以在 `lib/testUtils/basicChecks.js` 中查看它们。
+-   `preceedingPlugins` {array}：应该在测试 CSS 之前运行的 PostCSS 插件数组。
+-   `fix` {boolean}：默认为 `false`。如果为 `true`，则每个 `reject` 测试用例都将进行自动修复功能测试。*如果规则具有自动修复，则为必需项。*
 
-## Creating a rule tester
+## 创建规则测试工具
 
-stylelint itself exposes a means of creating rule testers with just about any testing framework.
+stylelint 本身公开了一种几乎可以用任何测试框架创建规则测试工具的方法。
 
 ```js
 var testRule = stylelint.createRuleTester(equalityCheck)
 ```
 
-Pass in an `equalityCheck` function. Given some information, this checker should use whatever test runner you like to perform equality checks.
+传入 `equalityCheck` 函数。给定一些信息，此检查工具应使用您喜欢的任何测试运行器来执行相等性检查。
 
-The `equalityCheck` function should accept two arguments:
+`equalityCheck` 函数应该接受两个参数：
 
--   `processCss` {Promise}: A Promise that resolves with an array of comparisons that you need to check (documented below).
--   `context` {object}: An object that contains additional information you may need:
-    -   `caseDescription` {string}: A description of the test case as  whole. It will end up printing like something this:
+-   `processCss` {Promise}：一个 Promise，释为您需要检查的对照组的数组（文档附后）。
+-   `context` {object}：包含您可能需要的其他信息的对象：
+    -   `caseDescription` {string}：整个测试用例的描述。最终打印会像这样：
     ```bash
     > rule: value-list-comma-space-before
     > config: "always-single-line"
     > code: "a { background-size: 0 ,0;\n}"
     ```
-    -   `comparisonCount` {number}: The number of comparisons that will need to be performed (e.g. useful for tape).
-    -   `completeAssertionDescription` {string}: While each individual comparison may have its own description, this is a description of the whole assertion (e.g. useful for Mocha).
-    -   `only` {boolean}: If `true`, the test runner should only run this test case (e.g. `test.only` in tape, `describe.only` in Mocha).
+    -   `comparisonCount` {number}：需要执行的比较次数（例如对 tape 有用）。
+    -   `completeAssertionDescription` {string}：虽然每个单独的对照组可能有自己的描述，但这个是对整个断言的描述（例如对 Mocha 有用）。
+    -   `only` {boolean}：如果为 `true`，那么测试运行器应该只运行这个测试用例（例如 tape 中的 `test.only`，Mocha中的 `describe.only`）。
 
-`processCss` is a Promise that resolves with an array of comparisons. Each comparison has the following properties:
+`processCss` 是一个 Promise，它释为对照组的数组。每个对照组都具有以下属性：
 
--   `actual` {any}: Some actual value.
--   `expected` {any}: Some expected value.
--   `description` {string}: A (possibly empty) description of the comparison.
+-   `actual` {any}：某些实际值。
+-   `expected` {any}：某些预期值。
+-   `description` {string}：一个（可能是空的）比较的描述。
 
-Within the `equalityCheck` function, you need to ensure that you do the following:
+在 `equalityCheck` 函数中，您需要确保执行以下操作：
 
--   Set up the test case.
--   When `processCss` resolves, loop through every comparison.
--   For each comparison, make an assertion checking that `actual === expected`.
+-   设定测试用例。
+-   当 `processCss` 解析后，遍历每个对照组。
+-   对每个对照组进行断言 `actual === expected` 检查。
 
-A `testRule` function (as described above) is returned.
+返回 `testRule` 函数（如上所述）。
