@@ -94,7 +94,7 @@ a { background: url(x.jpg); }
 
 Reverse the primary option if the function has no arguments.
 
-For example, with `"always"`.
+例如，使用 `"always"`。
 
 以下模式*不*被视为违规：
 

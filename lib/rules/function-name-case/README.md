@@ -106,7 +106,7 @@ a {
 
 Ignore case of function names.
 
-For example, with `"lower"`.
+例如，使用 `"lower"`。
 
 给定：
 

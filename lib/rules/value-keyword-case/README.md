@@ -107,7 +107,7 @@ a {
 
 Ignore case of keywords values.
 
-For example, with `"lower"`.
+例如，使用 `"lower"`。
 
 给定：
 
@@ -171,7 +171,7 @@ a {
 
 Ignore case of the values of the listed properties.
 
-For example, with `"lower"`.
+例如，使用 `"lower"`。
 
 ```js
 ["/^(b|B)ackground$/", "display"]

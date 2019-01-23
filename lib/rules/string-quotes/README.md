@@ -91,7 +91,7 @@ a { content: 'x"y"z'; }
 
 Allows strings to use single-quotes or double-quotes so long as the string contains a quote that would have to be escaped otherwise.
 
-For example, with `"single", { "avoidEscape" : false }`.
+例如，使用 `"single", { "avoidEscape" : false }`。
 
 以下模式被视为违规：
 

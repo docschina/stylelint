@@ -143,7 +143,7 @@ div a + span {}
 ["/^my-/", "custom"]
 ```
 
-For example, with `2`.
+例如，使用 `2`。
 
 以下模式*不*被视为违规：
 

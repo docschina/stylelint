@@ -376,7 +376,7 @@ Ignore blockless at-rules that follow another blockless at-rule.
 
 Ignore specified at-rules.
 
-For example, with `"always"`.
+例如，使用 `"always"`。
 
 给定：
 

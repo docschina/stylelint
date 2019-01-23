@@ -60,7 +60,7 @@ a { transform: rotate(30deg); }
 
 Ignore units in the values of declarations with the specified properties.
 
-For example, with `["px", "em"]`.
+例如，使用 `["px", "em"]`。
 
 给定：
 

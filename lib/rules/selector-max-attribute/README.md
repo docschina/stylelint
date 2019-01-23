@@ -86,7 +86,7 @@ input:not([type="text"][data-attribute="value"][disabled]) {}
 ["/^my-/", "dir"]
 ```
 
-For example, with `0`.
+例如，使用 `0`。
 
 以下模式*不*被视为违规：
 
