@@ -3,7 +3,7 @@
 经验法则：
 
 -   使用[GitHub审查系统](https://help.github.com/articles/about-pull-request-reviews/)。
--   根据[开发人员指南标准](rules.md)进行审核。
+-   根据[开发者准则指南](rules.md)进行审核。
 -   在请求更改时，分配一个或多个适当的 [`PR：needs *`标签](https://github.com/stylelint/stylelint/labels)。
 -   通过[变基](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)解决冲突，而不是将目标分支合并到拉取请求分支中。
 

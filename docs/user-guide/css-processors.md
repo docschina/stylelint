@@ -15,7 +15,7 @@ stylelint 将根据以下信息自动推断出以下语法：
 
 -   文件扩展名
 -   `<style>` 标签上的 `lang` 或 `type` 属性的值
--   Markdown 代码栏上的标记
+-   Markdown 代码围栏上的标记
 
 但是，您可以强制使用特定语法。[命令行界面](cli.md)和 [Node.js 应用程序接口](node-api.md)都暴露了 `syntax` 选项。
 

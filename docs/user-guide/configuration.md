@@ -12,7 +12,7 @@
 -   `.stylelintrc` 文件
 -   导出JS对象的 `stylelint.config.js` 文件
 
-`.stylelintrc` 文件（没有扩展名）可以是 JSON 或 YAML 格式。或者您可以添加文件扩展名以指定 JSON、YAML 或 JS 格式：`.stylelintrc.json`、`.stylelintrc.yaml`、`.stylelintrc.yml`，`.stylelintrc.js`。您可能希望使用扩展名，以便文本编辑器可以更好地解释文件，并帮助进行语法检查和高亮显示。
+`.stylelintrc` 文件（没有扩展名）可以是 JSON 或 YAML 格式。或者您可以添加文件扩展名以指定 JSON、YAML 或 JS 格式：`.stylelintrc.json`、`.stylelintrc.yaml`、`.stylelintrc.yml`、`.stylelintrc.js`。您可能希望使用扩展名，以便文本编辑器可以更好地解释文件，并帮助进行语法检查和高亮显示。
 
 找到并解析其中一个后，搜索将停止并将使用该对象。
 

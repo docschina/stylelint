@@ -88,7 +88,7 @@
 -   使用我们的[制定规则](docs/developer-guide/rules.md)指南来创建、增强和调试规则
 -   改进[文档](docs/)
 -   为*任何一切*添加新测试
--   改善[规则的表现](docs/developer-guide/rules.md#improving-the-performance-of-a-new-or-an-existing-rule)
+-   改善[规则的表现](docs/developer-guide/rules.md#提高规则的性能)
 -   开创[新问题](https://github.com/stylelint/stylelint/issues/new/choose)来表述您让 stylelint 变得更好的主意
 -   开创[拉取请求](https://github.com/stylelint/stylelint/compare)来展示您的主意是如何工作的
 -   创建或贡献[生态系统工具](docs/user-guide/complementary-tools.md)，例如 [VS Code 插件](https://github.com/shinnn/vscode-stylelint)

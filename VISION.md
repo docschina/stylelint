@@ -79,7 +79,7 @@
 
 ## 强大
 
-提供强大的[综合测试套件](docs/developer-guide/rules.md#write-tests)工具，包括：
+提供强大的[综合测试套件](docs/developer-guide/rules.md#编写测试)工具，包括：
 
 -   高覆盖率，目前超过95％。
 -   各种规则的功能点固定装置，目前超过10000个。
@@ -88,11 +88,11 @@
 
 始终保持一致性，包括：
 
--   一致的[命名](docs/developer-guide/rules.md#naming-a-rule)、[选项](docs/developer-guide/rules.md#determining-options)、[违规消息](docs/developer-guide/rules.md#determine-violation-messages)、[文档](docs/developer-guide/rules.md#write-the-readme) 和规则内的非标准语法[处理](docs/developer-guide/rules.md#write-the-rule).
--   一致的[收录标准](docs/developer-guide/rules.md#criteria-for-inclusion).
+-   一致的[命名](docs/developer-guide/rules.md#为规则命名)、[选项](docs/developer-guide/rules.md#确立选项)、[违规消息](docs/developer-guide/rules.md#确立违规消息)、[文档](docs/developer-guide/rules.md#编写自述文档) 和规则内的非标准语法[处理](docs/developer-guide/rules.md#编写规则).
+-   一致的[收录标准](docs/developer-guide/rules.md#收录标准).
 
 ## 执行
 
 提供快速工具，以及测试和改进性能的方法，包括：
 
--   单个规则的性能[基准测试](docs/developer-guide/rules.md#improving-the-performance-of-a-new-or-an-existing-rule)。
+-   单个规则的性能[基准测试](docs/developer-guide/rules.md#提高规则的性能)。

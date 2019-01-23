@@ -34,4 +34,4 @@
 
 ## `stylelint.formatters`
 
-styelint的核心格式化器在 `stylelint.formatters` 中暴露给外界
+styelint 的核心格式化程序在 `stylelint.formatters` 中暴露给外界
