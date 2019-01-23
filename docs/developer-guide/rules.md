@@ -1,46 +1,46 @@
-# Working on rules
+# 处理规则
 
-Please help us create, enhance, and debug stylelint rules!
+请帮助我们创建、增强和调试 stylelint 规则！
 
 <!-- TOC -->
 
-## Creating a new rule
+## 创建新规则
 
-First, open [an issue](https://github.com/stylelint/stylelint/issues/new) with your idea for the new rule.
+首先，开[一个问题](https://github.com/stylelint/stylelint/issues/new)，阐述您对新规则的想法。
 
-Usually we have some discussion about the rule's purpose, name, options, and suitability as a rule.
+通常我们会对规则的目的、名称、选项和适用性进行一些讨论。
 
-### Criteria for inclusion
+### 收录标准
 
-We discuss whether the rule meets the following criteria for inclusion in stylelint:
+我们讨论规则是否符合以下以收录入 stylelint 的标准：
 
--   Applicable to standard CSS syntax only.
--   Generally useful; not tied to idiosyncratic patterns.
--   Has a clear and unambiguous finished state.
--   Has a singular purpose.
--   Is standalone, and doesn't rely on another rule.
--   Does not contain functionality that overlaps with another rule.
+-   仅适用于标准 CSS 语法。
+-   通用性；不依赖于特定模式。
+-   具有清晰明确的完成状态。
+-   有一个单一的目的。
+-   是独立的，不依赖于其他规则。
+-   不包含与其他规则重叠的功能。
 
-Otherwise, it should be a plugin. However, plugins should also try to adhere to the latter three criteria.
+否则，它应该是一个插件。但是插件也应该尽量遵守后三个标准。
 
-### Naming a rule
+### 为规则命名
 
-Have a look at the [rules user guide](../user-guide/about-rules.md) to familiarize yourself the rule naming conventions.
+查看[规则用户指南](../user-guide/about-rules.md)以熟悉规则命名约定。
 
-We take care to ensure that all the rules are named accurately and consistently. Our goals in that effort are to ensure that rules are easy to find and understand, and to prevent us from wanting to change the name later.
+我们一直很注重确保准确一致地命名所有规则。我们在这方面的目标是确保规则易于查找和理解，并防止我们以后想要更改命名。
 
-*Rules are named to encourage explicit, rather than implicit, options.* For example, `color-hex-case: "upper"|"lower"` rather than `color-hex-uppercase: "always"|"never"`. As `color-hex-uppercase: "never"` *implies* always lowercase, whereas `color-hex-case: "lower"` makes it *explicit*.
+*我们鼓励显式而非隐式选项来命名规则。* 例如 `color-hex-case: "upper"|"lower"` 而非 `color-hex-uppercase: "always"|"never"`。`color-hex-uppercase: "never"` *隐含*总是小写的语义，而 `color-hex-case: "lower"` 使语义更加*显式*。
 
-### Determining options
+### 确立选项
 
-#### Primary
+#### 主选项
 
-Every rule *must have* a **primary option**.
+每个规则*必须具有*一个**主选项**。
 
--   In `"color-hex-case": "upper"`, the primary option is `"upper"`.
--   In `"indentation": [2, { "except": ["block"] }]`, the primary option is `2`.
+-   在 `"color-hex-case": "upper"` 中，主选项是 `"upper"`。
+-   在 `"indentation": [2, { "except": ["block"] }]` 中，主选项是 `2`。
 
-If your rule can accept an array as its primary option, you must designate this by setting the property `primaryOptionArray = true` on your rule function. For example:
+如果您的规则可以接受数组作为其主要选项，则必须通过在规则函数上设置属性 `primaryOptionArray = true` 来指定它。例如：
 
 ```js
 function rule(primary, secondary) {
@@ -48,63 +48,63 @@ function rule(primary, secondary) {
 }
 rule.primaryOptionArray = true
 export default rule
-// or, for plugins: stylelint.createPlugin(ruleName, rule)
+// 或者，对于插件：stylelint.createPlugin(ruleName, rule)
 ```
 
-There is one caveat here: If your rule accepts a primary option array, it cannot also accept a primary option object. Whenever possible, if you want your rule to accept a primary option array, you should just make an array the only possibility, instead of allowing for various data structures.
+这里有一点需要注意：如果您的规则接受主选项数组，则它也不能接受主选项对象。如果您希望规则接受主选项数组，您应该只允许一个数组，而不是允许各种数据结构。
 
-#### Secondary
+#### 辅助选项
 
-Some rules require extra flexibility to address a variety of use-cases. These can use an **optional secondary options object**.
+某些规则需要额外的灵活性来解决各种用例。这些可以使用**可选的辅助选项对象**。
 
--   In `"color-hex-case": "upper"`, there is no secondary options object.
--   In `"indentation": [2, { "except": ["block"] }]`, the secondary options object is `{ "except": ["block"] }`.
+-   在 `"color-hex-case": "upper"` 中，没有辅助选项对象。
+-   在 `"indentation": [2, { "except": ["block"] }]` 中, 辅助选项对象是 `{ "except": ["block"] }`。
 
-The most typical secondary options are `"ignore": []` and `"except": []`; but anything is possible.
+最典型的次要选项是 `"ignore": []` 和 `"except": []`；但任何数据都可以使用。
 
-A rule's secondary option can be anything if you're not ignoring or making exceptions. As an example, `resolveNestedSelectors: true|false` is used within some `selector-*` rules to change how the rule processes nested selectors.
+如果您不需要忽略或例外，规则的次要选项可以是任何内容。例如，在一些 `selector-*` 规则中使用 `resolveNestedSelectors: true|false` 来改变规则处理嵌套选择器的方式。
 
-##### Keyword `"ignore"` and `"except"`
+##### 关键字 `"ignore"` 和 `"except"`
 
-`"ignore"` and `"except"` accept an array of predefined keyword options e.g. `["relative", "first-nested", "descendant"]`.
+`"ignore"` 和 `"except"` 接受一组预定义的关键字选项，例如 `["relative", "first-nested", "descendant"]`。
 
--   Use `"ignore"` when you want the rule to simply skip-over a particular pattern.
--   Use `"except"` when you want to invert the primary option for a particular pattern.
+-   当您希望规则简单地跳过特定模式时，请使用 `"ignore"`。
+-   当您想要反转特定模式的主要选项时，请使用 `"except"`。
 
-##### User-defined `"ignore*"`
+##### 用户定义的 `"ignore*"`
 
-Use a more specific secondary option name when accepting a *user-defined* list of things to ignore. This takes the form of `"ignore<Things>": []` e.g. use `"ignoreAtRules": []` if a rule checks at-rules and you want to allow a user to specify which particular at-rule types to ignore.
+在接受*用户定义的*要忽略的事物列表时，请使用更具体的辅助选项名称。这采取 `"ignore<Things>": []`，例如如果规则检查 @规则并且您想允许用户通过 `"ignoreAtRules": []` 指定要忽略哪些特定的 @规则类型。
 
-### Determine violation messages
+### 确立违规消息
 
-Messages take one of these forms:
+消息采用以下形式之一：
 
--   "Expected \[something\] \[in some context\]".
--   "Unexpected \[something\] \[in some context\]."
+-   "预期的 \[某物\] \[在某上下文\]"
+-   "非预期的 \[某物\] \[在某上下文\]"
 
-Look at the messages of other rules to glean more conventions and patterns.
+查看其他规则的消息，以了解更多的约定和模式。
 
-### Write the rule
+### 编写规则
 
-*When writing the rule, always look to other similar rules for conventions and patterns to start from and mimic.*
+*在编写规则时，请始终查看其他类似规则的约定和模式，以便从模仿开始。*
 
-You will use the simple [PostCSS API](https://api.postcss.org/) to navigate and analyze the CSS syntax tree. We recommend using the `walk` iterators (e.g. `walkDecls`), rather than using `forEach` to loop through the nodes.
+您将使用简单的 [PostCSS 应用程序接口](https://api.postcss.org/)来导航和分析 CSS 语法树。我们建议使用 `walk` 迭代器（例如 `walkDecls`），而不是使用 `forEach` 来遍历节点。
 
-Depending on the rule, we also recommend using [postcss-value-parser](https://github.com/TrySound/postcss-value-parser) and [postcss-selector-parser](https://github.com/postcss/postcss-selector-parser). There are significant benefits to using these parsers instead of regular expressions or `indexOf` searches (even if they aren't always the most performant method).
+根据规则不同，我们还建议使用 [postcss-value-parser](https://github.com/TrySound/postcss-value-parser) 和 [postcss-selector-parser](https://github.com/postcss/postcss-selector-parser)。使用这些解析器而不是正则表达式或 `indexOf` 搜索有很多好处（即使它们并不总是最高效的方法）。
 
-stylelint has a number of [utility functions](https://github.com/stylelint/stylelint/tree/master/lib/utils) that are used in existing rules and might prove useful to you, as well. Please look through those so that you know what's available. (And if you have a new function that you think might prove generally helpful, let's add it to the list!). You will definitely want to use `validateOptions()` util so that users are warned about invalid options. (Looking at other rules for examples of options validation will help a lot.). You should also make use of the `isStandardSyntax*` utilities to ignore non-standard syntax.
+stylelint 有许多[实用函数](https://github.com/stylelint/stylelint/tree/master/lib/utils)，它们在现有规则中使用，也可能对您有用。请仔细查看，以便了解可用的内容。（如果您有一个您认为可能通用的新功能，那么让我们把它添加到列表中！）。您肯定希望使用 `validateOptions()`，以便警告用户无效选项。（查看其他规则的选项验证示例将有很大帮助。） 您还应该使用 `isStandardSyntax*` 实用程序来忽略非标准语法。
 
-The rule should be strict *by default*. The user can make the rule more permissive by using the `"ignore*:"` secondary options.
+*默认情况下*, 规则应更严格。用户可以通过使用 `"ignore*:"` 辅助选项使规则更加宽松。
 
-The rule should not include code for methodologies or language extensions. Instead, provide generic secondary options so that the user can ignore these at the *configuration level*. For example, when dealing with specificity, a rule should not account for the `:global` and `:local` pseudo-classes (introduced in the CSS Modules language extension), instead the rule should provide a `ignorePseudoClasses: []` secondary option. Methodologies come and go quickly, and this approach ensures the code base does not become littered with code for obsolete things.
+规则不应包含方法论或语言扩展的代码。相反，提供通用的辅助选项，以便用户可以在*配置级别*忽略这些选项。例如，在处理特异性时，规则不应该考虑 `:global` 和 `:local` 伪类（在 CSS 模块语言扩展中引入），而规则应该提供 `ignorePseudoClasses: []` 辅助选项。方法论来的快，去得也快，这种实践可以确保代码库不会被过时的代码所困扰。
 
-Only add an option to a rule if it addresses a *requested* use case. Do not add an option to a rule, even for the sake of consistency, if there has been no request. This is to avoid polluting the tool with unused features.
+仅在规则处理有实际用例*需求*时才添加选项。如果没有需求，即便是为了保持一致性，也不要为规则添加选项。这是为了避免未使用的功能污染工具。
 
-### Adding autofixing
+### 添加自动修复
 
-Depending on the rule, it might be possible to automatically fix the rule's violations by mutating the PostCSS AST (Abstract Syntax Tree) using the [PostCSS API](http://api.postcss.org/).
+根据规则不同，可以通过使用 [PostCSS 应用程序接口](http://api.postcss.org/)改变 PostCSS AST（抽象语法树）来自动修复违规。
 
-Add `context` variable to rule parameters:
+将 `context` 变量添加到规则参数：
 
 ```js
 function rule(primary, secondary, context) {
@@ -112,167 +112,167 @@ function rule(primary, secondary, context) {
 }
 ```
 
-`context` is an object which could have two properties:
+`context` 是一个可以有两个属性的对象：
 
--   `fix`(boolean): If `true`, your rule can apply autofixes.
--   `newline`(string): Line-ending used in current linted file.
+-   `fix`(boolean)：如果为 `true`，您的规则可以应用自动修复。
+-   `newline`(string)：当前检查的文件中使用的换行符。
 
-If `context.fix` is `true`, then change `root` using PostCSS API and return early before `report()` is called.
+如果 `context.fix` 为 `true`，那么使用 PostCSS 应用程序接口更改 `root` 并在调用 `report()` 之前返回。
 
 ```js
 if (context.fix) {
-  // Apply fixes using PostCSS API
-  return // Return and don't report a problem
+  // 使用 PostCSS 应用程序接口应用修复
+  return // 返回并且不报告问题
 }
 
 report(...)
 ```
 
-### Write tests
+### 编写测试
 
-Each rule must be accompanied by tests that contain:
+每条规则必须附带包含以下内容的测试：
 
--   All patterns that are considered violations.
--   All patterns that should *not* be considered violations.
+-   所有被视为违规的模式。
+-   所有应该*不*被视为违规的模式。
 
-It is easy to write stylelint tests, so *write as many as you can stand to*.
+编写 stylelint 测试很容易，所以请*尽可能多地编写*。
 
-#### Checklist
+#### 清单
 
-Please run through this checklist and ensure each point is covered by your tests. Especially *consider the edge-cases*. These are where the bugs and shortcomings of rules always arise.
+请仔细检查此清单，确保测试涵盖每个点。特别是*考虑边缘情况*。这些都是规则中总是出现 bug 和缺点的地方。
 
-##### Best practices
+##### 最佳实践
 
--   Ensure you are testing errors in multiple positions, not the same place every time.
--   Ensure you use realistic (if simple) CSS, and avoid the use of ellipses.
--   Ensure you use standard CSS syntax by default, and only swap parsers when testing a specific piece of non-standard syntax.
--   When accessing raw strings from the PostCSS AST, use `node.raws` instead of `node.raw()`. This will ensure string corresponds exactly to the original.
+-   确保您在多个位置测试错误，而不是每次都在同一个位置。
+-   确保使用真实的（如果简单的）CSS，并避免使用省略号。
+-   确保默认使用标准 CSS 语法，并且在测试特定的非标准语法时仅交换解析器。
+-   从 PostCSS AST 访问原始字符串时，使用 `node.raws` 而不是 `node.raw()`。这将确保字符串与原始字符串完全对应。
 
-##### Commonly overlooked edge-cases
+##### 通常被忽视的边缘情况
 
--   How does your rule handle variables (`$sass`, `@less`, or `var(--custom-property)`)?
--   How does your rule handle CSS strings (e.g. `content: "anything goes";`)?
--   How does your rule handle CSS comments (e.g. `/* anything goes */`)?
--   How does your rule handle `url()` functions, including data URIs (e.g. `url(anything/goes.jpg)`)?
--   How does your rule handle vendor prefixes (e.g. `@-webkit-keyframes name {}`)?
--   How does your rule handle case sensitivity (e.g. `@KEYFRAMES name {}`)?
--   How does your rule handle a pseudo-class *combined* with a pseudo-element (e.g. `a:hover::before`)?
--   How does your rule handle nesting (e.g. do you resolve `& a {}`, or check it as is?)?
--   How does your rule handle whitespace and punctuation (e.g. comparing `rgb(0,0,0)` with `rgb(0, 0, 0)`)?
+-   您的规则如何处理变量（`$sass`、`@less` 或 `var(--custom-property)`）？
+-   您的规则如何处理 CSS 字符串（例如 `content: "anything goes";`）？
+-   您的规则如何处理 CSS 注释（例如 `/* anything goes */`）？
+-   您的规则如何处理 `url()` 函数, 包括 data URIs（例如 `url(anything/goes.jpg)`）？
+-   您的规则如何处理供应商前缀（例如 `@-webkit-keyframes name {}`）？
+-   您的规则如何处理字母大小写（例如 `@KEYFRAMES name {}`）？
+-   您的规则如何处理伪类与伪元素的*组合*（例如 `a:hover::before`）？
+-   您的规则如何处理嵌套（例如 do you resolve `& a {}`, or check it as is?）？
+-   您的规则如何处理空白和标点符号（例如 comparing `rgb(0,0,0)` with `rgb(0, 0, 0)`）？
 
-#### Running tests
+#### 运行测试
 
-You can run the tests via:
+您可以通过以下方式运行测试：
 
 ```console
 npm test
 ```
 
-However, this runs all 25,000+ unit tests and also linting.
+然后，这将运行所有 25,000 多个单元测试，也将检查代码。
 
-You can use the interactive testing prompt to run tests for just a chosen set of rules (which you'll want to do during development). For example, to run the tests for just the `color-hex-case` and `color-hex-length` rules:
+您可以使用交互式测试提示来仅针对一组选定的规则（您在开发期间要执行的操作）运行测试。例如，仅针对 `color-hex-case` 和 `color-hex-length` 规则运行测试：
 
-1.  Use `npm run watch` to start the prompt.
-2.  Press `p` to filter by a filename regex pattern.
-3.  Enter `color-hex-case|color-hex-length` i.e. each rule name separated by the pipe symbol (`|`).
+1.  运行 `npm run watch` 以启动交互式测试提示。
+2.  按 `p` 按文件名正则表达式模式过滤。
+3.  输入 `color-hex-case|color-hex-length`，即每个规则名称用管道符号（`|`）分隔。
 
-### Write the README
+### 编写自述文档
 
-Each rule must be accompanied by a README, fitting the following format:
+每条规则必须附有自述文档，符合以下格式：
 
-1.  Rule name.
-2.  Single line description.
-3.  Prototypical code example.
-4.  Expanded description (if necessary).
-5.  Options.
-6.  Example patterns that are considered violations (for each option value).
-7.  Example patterns that are *not* considered violations (for each option value).
-8.  Optional options (if applicable).
+1.  规则名称。
+2.  单行描述。
+3.  原型代码示例。
+4.  扩展描述（如有必要）。
+5.  选项。
+6.  被视为违规的模式示例（针对每个选项值）。
+7.  *不*被视为违规的模式示例（对于每个选项值）。
+8.  可选选项（如适用）。
 
-Look at the READMEs of other rules to glean more conventional patterns. These include:
+查看其他规则的自述文件以了解更多约定模式。这些包括：
 
--   Using "This rule" to refer to the rule e.g. "This rule ignores ..."
--   Aligning the arrows within the prototypical code example with the beginning of the construct being highlighted.
--   Aligning the text within the prototypical code example as far to the left as possible.
+-   使用“这条规则”来引用该规则，例如 “这条规则忽略了...”
+-   将原型代码示例中的箭头与突出显示的构造的开头对齐。
+-   将原型代码示例中的文本尽量对齐。
 
-For example:
+例如：
 
 ```css
  @media screen and (min-width: 768px) {}
 /**                 ↑          ↑
-  *       These names and values */
+  *                  这些名称和值 */
 ```
 
-#### Single line descriptions
+#### 单行描述
 
-Take the form of:
+采取以下形式：
 
--   "Disallow ..." (for `no` rules).
--   "Limit ..." (for `max` rules).
--   "Require ..." (for rules that accept `"always"` and `"never"` options).
--   "Specify ..." (for everything else).
+-   “禁止...” (对于 `no` 规则)。
+-   “限制...” (对于 `max` 规则)。
+-   “要求...” (对于接受 `"always"` 和 `"never"` 选项的规则)。
+-   “指定...” (其他所有)。
 
-#### Example patterns
+#### 示例模式
 
--   Use complete CSS patterns i.e. avoid ellipses (`...`)
--   Use standard CSS syntax (and use `css` code fences) by default.
--   Use the minimum amount of code possible to communicate the pattern e.g. if the rule targets selectors then use an empty rule e.g. `{}`.
--   Use `{}`, rather than `{ }` for empty rules.
--   Use the `a` type selector by default.
--   Use the `@media` at-rules by default.
--   Use the `color` property by default.
--   Use *foo*, *bar* and *baz* for names e.g. `.foo`, `#bar` `--baz`
+-   使用完整的 CSS 模式，即避免省略号（`...`）
+-   默认情况下使用标准 CSS 语法（和 `css` 代码围栏）。
+-   使用尽可能少的代码来传达模式，例如如果规则定位于选择器，则使用空规则，例如 `{}`。
+-   对于空规则，使用`{}`而不是`{ }`。
+-   默认情况下使用 `a` 类型选择器。
+-   默认情况下使用 `@media` @规则。
+-   默认情况下使用 `color` 属性。
+-   使用 *foo*、*bar* 和 *baz* 作为名称，例如 `.foo`、`#bar`、`--baz`
 
-### Wire up the rule
+### 完成规则编写
 
-The final step is to add references to the new rule in the following places:
+最后一步是在以下位置添加对新规则的引用：
 
--   [The rules `index.js` file](https://github.com/stylelint/stylelint/blob/master/lib/rules/index.js)
--   [The list of rules](../user-guide/rules.md)
--   [The example config](../user-guide/example-config.md)
+-   [规则 `index.js` 文件](https://github.com/stylelint/stylelint/blob/master/lib/rules/index.js)
+-   [规则列表](../user-guide/rules.md)
+-   [示例配置](../user-guide/example-config.md)
 
-Once you have something to show, you'll create a [pull request](https://github.com/stylelint/stylelint/compare) to continue the conversation.
+一旦您有展示的东西，创建一个[拉取请求](https://github.com/stylelint/stylelint/compare)继续讨论。
 
-## Adding an option to an existing rule
+## 向现有规则添加选项
 
-First, open [an issue](https://github.com/stylelint/stylelint/issues/new) about the option you wish to add. We'll discuss its functionality and name there.
+首先，开[一个问题](https://github.com/stylelint/stylelint/issues/new)，阐述您想添加的选项。我们将在那里讨论它的功能和名称。
 
-Once we've agreed on the direction, you can work on a pull request. Here are the steps you'll need to take:
+一旦我们就方向达成一致，您就可以处理拉取请求。以下是您需要采取的步骤：
 
-1.  Run `npm run watch` to start the interactive testing prompt.
-2.  Use the `p` command to filter the active tests to just the rule you're working on.
-2.  Change the rule's validation to allow for the new option.
-3.  Add to the rule some logic (as little as possible) to make the option work.
-4.  Add new unit tests to test the option.
-5.  Add documentation about the new option.
+1.  运行 `npm run watch` 以启动交互式测试提示。
+2.  使用 `p` 命令将活动测试过滤为您正在处理的规则。
+3.  更改规则的验证以允许新选项。
+4.  向规则添加一些逻辑（尽可能少）以使选项有效。
+5.  添加新的单元测试以测试该选项。
+6.  添加有关新选项的文档。
 
-## Fixing a bug in an existing rule
+## 修复现有规则中的 bug
 
-Fixing bugs is usually very easy. Here is a process that works:
+修复错误通常很容易。这是一个有效的过程：
 
-1.  Run `npm run watch` to start the interactive testing prompt.
-2.  Use the `p` command to filter the active tests to just the rule you're working on.
-3.  Write failing unit tests that exemplify the bug.
-4.  Fiddle with the rule until those new tests pass.
+1.  运行 `npm run watch` 以启动交互式测试提示。
+2.  使用 `p` 命令将活动测试过滤为您正在处理的规则。
+3.  编写示例错误的失败单元测试。
+4.  处理规则，直到这些新测试通过。
 
-That's it! **If you are unable to figure out how to fix the bug yourself, it is still helpful to submit a pull request with your failing test cases.** It means that somebody else can jump right in and help out with the rule's logic.
+就这些！**如果您无法修复 bug，那么在您的测试用例失败的情况下提交拉取请求仍然很有用的。** 这意味着其他人可以直接接手并帮助解决规则的逻辑问题。
 
-## Deprecating a rule
+## 弃用规则
 
-Deprecating rules doesn't happen very often. However, these two steps are important to do:
+弃用规则不会经常发生。但是，这两个步骤很重要：
 
-1.  Point the `stylelintReference` link to the specific version of the rule README on the GitHub website, so that it is always accessible.
-2.  Add the appropriate meta data to mark the rule as deprecated.
+1.  将 `stylelintReference` 链接指向 GitHub 网站上规则自述文档的特定版本，以便始终可以访问它。
+2.  添加适当的元数据以将规则标记为已弃用。
 
-## Improving the performance of a new or an existing rule
+## 提高规则的性能
 
-There's a simple way to run benchmarks on any given rule with any valid config for it:
+有一种简单的方法可以在任何给定规则上运行基准测试，并为其提供任何有效配置：
 
 ```shell
 npm run benchmark-rule -- [rule-name] [config]
 ```
 
-If the `config` argument is anything other than a string or a boolean, it must be valid JSON wrapped in quotation marks.
+如果 `config` 参数不是字符串或布尔值，它必须是用引号括起来的有效 JSON。
 
 ```shell
 npm run benchmark-rule -- selector-combinator-space-after never
@@ -290,9 +290,9 @@ npm run benchmark-rule -- selector-no-combinator true
 npm run benchmark-rule -- block-opening-brace-space-before "[\"always\", {\"ignoreAtRules\": [\"else\"]}]"
 ```
 
-The script loads Bootstrap's CSS (from its CDN) and runs it through the configured rule.
+该脚本加载 Bootstrap 的 CSS（来自其 CDN）并通过配置的规则运行它。
 
-It will end up printing some simple stats like this:
+它最终将打印一些简单的统计数据：
 
 ```shell
 Warnings: 1441
@@ -300,10 +300,10 @@ Mean: 74.17598357142856 ms
 Deviation: 16.63969674310928 ms
 ```
 
-What can you do with this? **When writing new rules or refactoring existing rules, use these measurements to determine the efficiency of your code.**
+您能用这个做什么？ **在编写新规则或重构现有规则时，请使用这些度量来确定代码的效率。**
 
-A stylelint rule can repeat it's core logic many, many times (e.g. checking every value node of every declaration in a vast CSS codebase). So it's worth paying attention to performance and doing what we can to improve it!
+stylelint 规则会多次重复它的核心逻辑（例如，检查庞大的 CSS 代码库中每个声明的每个值节点）。所以性能值得我们关注并竭尽所能来改进它！
 
-**This is a great way to contribute if you just want a quick little project.** Try picking a rule and seeing if there's anything you can do to speed it up.
+**如果您只想要一个快速的小项目，这是一个很好的贡献方式。** 尝试选择规则并查看是否有任何可以做的事情来加速它。
 
-Make sure to include benchmark measurements in your PR's!
+确保在拉取请求中包含基准测量！

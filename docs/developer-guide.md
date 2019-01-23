@@ -3,7 +3,7 @@
 ## 贡献者指南
 
 -   [先决条件](developer-guide/prerequisites.md)：贡献的先决条件。
--   [规则](developer-guide/rules.md)：规则工作。
+-   [规则](developer-guide/rules.md)：处理内建规则。
 
 ## 生态系统指南
 

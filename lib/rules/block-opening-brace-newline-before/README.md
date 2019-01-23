@@ -9,7 +9,7 @@ Require a newline or disallow whitespace before the opening brace of blocks.
  * The newline before this brace */
 ```
 
-Refer to [the FAQ](../../../docs/user-guide/faq.md#how-do-i-disallow-single-line-blocks) for more information on using this rule with [`block-opening-brace-newline-after`](../block-opening-brace-newline-after/README.md) to disallow single-line rules.
+Refer to [the FAQ](../../../docs/user-guide/faq.md#如何禁用单行代码块) for more information on using this rule with [`block-opening-brace-newline-after`](../block-opening-brace-newline-after/README.md) to disallow single-line rules.
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 

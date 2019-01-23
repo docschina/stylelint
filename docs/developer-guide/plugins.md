@@ -36,9 +36,9 @@ module.exports.messages = messages
 
 为了使插件规则能够使用[标准配置格式](../user-guide/configuration.md#rules)，`ruleFunction` 应该接受两个参数：主选项和可选辅助选项对象。
 
-如果您的插件规则支持[自动修复](rules.md#adding-autofixing)，则 `ruleFunction` 还应接受第三个参数：context。此外，强烈建议您在辅助选项对象中支持 `disableFix` 选项。如果用户为规则传递 `disableFix` 选项，则不在规则内执行自动修复。
+如果您的插件规则支持[自动修复](rules.md#添加自动修复)，则 `ruleFunction` 还应接受第三个参数：context。此外，强烈建议您在辅助选项对象中支持 `disableFix` 选项。如果用户为规则传递 `disableFix` 选项，则不在规则内执行自动修复。
 
-`ruleFunction` 可以返回一个函数，这个函数本质上是一个小的 [PostCSS 插件](https://github.com/postcss/postcss/blob/master/docs/writing-a-plugin.md)：它接受两个参数：PostCSS Root（解析的 AST）和 PostCSS LazyResult。您必须[了解 PostCSS API](https://api.postcss.org/)。
+`ruleFunction` 可以返回一个函数，这个函数本质上是一个小的 [PostCSS 插件](https://github.com/postcss/postcss/blob/master/docs/writing-a-plugin.md)：它接受两个参数：PostCSS Root（解析的 AST）和 PostCSS LazyResult。您必须[了解 PostCSS 应用程序接口](https://api.postcss.org/)。
 
 ### 异步规则
 
@@ -154,7 +154,7 @@ export default stylelint.createPlugin(ruleName, function (expectation) {
 
 ## 允许主选项数组
 
-如果您的插件可以接受数组作为其主选项，则必须通过在规则函数上设置属性 `primaryOptionArray = true` 来指定它。有关更多信息，请查看[“处理规则”](rules.md#primary)文档。
+如果您的插件可以接受数组作为其主选项，则必须通过在规则函数上设置属性 `primaryOptionArray = true` 来指定它。有关更多信息，请查看[“处理规则”](rules.md#主选项)文档。
 
 ## 外部辅助模块
 
@@ -168,7 +168,7 @@ export default stylelint.createPlugin(ruleName, function (expectation) {
 
 ## 对等依赖
 
-您应该在插件的 `package.json` 的 `peerDependencies`（**不是** `dependencies`）键中表明，你的插件可以使用什么版本的 stylelint。这是为了确保不会意外安装不同版本的 stylelint。
+您应该在插件的 `package.json` 的 `peerDependencies`（**不是** `dependencies`）键中表明，您的插件可以使用什么版本的 stylelint。这是为了确保不会意外安装不同版本的 stylelint。
 
 例如，要表示您的插件可以与 stylelint 版本 7 和 8 一起使用：
 
@@ -191,4 +191,4 @@ export default stylelint.createPlugin(ruleName, function (expectation) {
 ## 共享插件和插件包
 
 -   在您的 `package.json` 文件中使用 `stylelint-plugin` 关键字。
--   一旦你的插件发布，请发送一个拉取请求将你的插件添加到[列表](../user-guide/plugins.md)。
+-   一旦您的插件发布，请发送一个拉取请求将您的插件添加到[列表](../user-guide/plugins.md)。

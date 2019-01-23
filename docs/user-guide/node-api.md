@@ -81,7 +81,7 @@ npm install stylelint
 
 指定要用于结果的格式化程序。
 
-如果传递函数，它必须符合[开发人员指南](../developer-guide/formatters.md)中描述的条款。
+如果传递函数，它必须符合[开发者指南](../developer-guide/formatters.md)中描述的条款。
 
 ### `ignoreDisables`
 

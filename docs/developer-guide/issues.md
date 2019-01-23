@@ -16,7 +16,7 @@
         -   "Fix false positives/negatives for x in y" 例如："Fix false positives for Less mixins in color-no-hex"
     -   使用 `*` 如果这个问题适用于一组规则，例如："Fix false negatives for SCSS variables in selector-*-pattern"
 -   提供一个指向[开发者指南](../developer-guide.md)中相关部分的链接，当：
-    -   添加 `help wanted` 标签来鼓励楼主去贡献提交 例如：[向现有规则添加选项](../developer-guide/rules.md#adding-an-option-to-an-existing-rule)或者[修复现有规则中的 bug](../developer-guide/rules.md#fixing-a-bug-in-an-existing-rule)
+    -   添加 `help wanted` 标签来鼓励楼主去贡献提交 例如：[向现有规则添加选项](../developer-guide/rules.md#向现有规则添加选项)或者[修复现有规则中的 bug](../developer-guide/rules.md#修复现有规则中的-bug)
     -   关闭一个问题，因为该功能最好是生态系统的一部分 例如：[插件](https://github.com/stylelint/stylelint/blob/master/docs/developer-guide/plugins.md) 或者 [处理器](https://github.com/stylelint/stylelint/blob/master/docs/developer-guide/processors.md)
 -   仅在问题上使用里程碑，而不要在拉取请求上使用里程碑，并且：
     -   为引入重大变化的问题使用 `future-major` 里程碑
