@@ -27,7 +27,7 @@
 
 #### 函数
 
--   [`function-calc-no-invalid`](../../lib/rules/function-calc-no-invalid/README.md): Disallow an invalid expression within `calc` functions.
+-   [`function-calc-no-invalid`](../../lib/rules/function-calc-no-invalid/README.md): 禁止在 `calc` 函数中使用无效表达式。
 -   [`function-calc-no-unspaced-operator`](../../lib/rules/function-calc-no-unspaced-operator/README.md): Disallow an unspaced operator within `calc` functions.
 -   [`function-linear-gradient-no-nonstandard-direction`](../../lib/rules/function-linear-gradient-no-nonstandard-direction/README.md): Disallow direction values in `linear-gradient()` calls that are not valid according to the [standard syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient#Syntax).
 
