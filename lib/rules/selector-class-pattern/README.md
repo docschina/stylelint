@@ -74,7 +74,7 @@ div > #zing + .foo-bar {}
 
 This option will resolve nested selectors with `&` interpolation.
 
-For example, with `true`.
+例如，使用 `true`。
 
 Given the string:
 

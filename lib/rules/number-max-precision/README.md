@@ -44,7 +44,7 @@ a { top: 3.24px; }
 
 Ignore the precision of numbers for values with the specified units.
 
-For example, with `2`.
+例如，使用 `2`。
 
 给定：
 

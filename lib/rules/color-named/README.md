@@ -112,7 +112,7 @@ a { color: @blue; }
 
 Ignore colors that are inside a function.
 
-For example, with `"never"`.
+例如，使用 `"never"`。
 
 以下模式*不*被视为违规：
 

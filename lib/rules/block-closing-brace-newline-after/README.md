@@ -151,7 +151,7 @@ a { color: pink;
 
 Ignore specified at-rules.
 
-For example, with `"always"` or `"always-multi-line"`.
+例如，使用 `"always"` 或 `"always-multi-line"`。
 
 给定：
 

@@ -56,7 +56,7 @@ a { animation: animation-name 5s ease; }
 
 Ignore units in the values of declarations with the specified properties.
 
-For example, with `["px", "vmin"]`.
+例如，使用 `["px", "vmin"]`。
 
 给定：
 
@@ -99,7 +99,7 @@ a { height: 100vmin; }
 
 Ignore units for specific feature names.
 
-For example, with `["px", "dpi"]`.
+例如，使用 `["px", "dpi"]`。
 
 给定：
 
