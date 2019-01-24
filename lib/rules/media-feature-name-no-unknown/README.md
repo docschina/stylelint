@@ -10,7 +10,7 @@ Disallow unknown media feature names.
 
 This rule considers media feature names defined in the CSS Specifications, up to and including Editor's Drafts, to be known.
 
-This rule ignores:
+此规则忽略：
 
 -   media feature names within a range context
 -   vendor-prefixed media feature names

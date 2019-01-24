@@ -8,7 +8,7 @@ Specify a whitelist of allowed pseudo-element selectors.
  * These pseudo-element selectors */
 ```
 
-This rule ignores:
+此规则忽略：
 
 -   CSS2 pseudo-elements i.e. those prefixed with a single colon
 -   selectors that use variable interpolation e.g. `::#{$variable} {}`

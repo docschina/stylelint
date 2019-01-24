@@ -1,6 +1,6 @@
 # declaration-empty-line-before
 
-Require or disallow an empty line before declarations.
+要求或禁止在声明之前的空行。
 
 ```css
 a {
@@ -9,10 +9,10 @@ a {
   top: 15px; /* ↑ */
 }            /* ↑ */
 /**             ↑
- *      This line */
+ *             这行 */
 ```
 
-This rule only applies to standard property declarations. Use the [`custom-property-empty-line-before`](../custom-property-empty-line-before/README.md) rule for custom property declarations.
+此规则仅适用于标准属性声明。对于自定义属性声明，请使用 [`custom-property-empty-line-before`](../custom-property-empty-line-before/README.md) 规则。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。我们建议启用 [`indentation`](../indentation/README.md) 规则，以便更好地使用此规则自动修复结果。
 
@@ -100,9 +100,9 @@ a {
 
 #### `"after-comment"`
 
-Reverse the primary option for declarations that come after a comment.
+如果声明紧跟在注释之后则反转主选项。
 
-Shared-line comments do not trigger this option.
+共享行注释不会触发此选项。
 
 例如，使用 `"always"`：
 
@@ -110,7 +110,7 @@ Shared-line comments do not trigger this option.
 
 ```css
 a {
-  /* comment */
+  /* 注释 */
 
   top: 5px;
 }
@@ -118,7 +118,7 @@ a {
 
 ```css
 a {
-  bottom: 5px; /* comment */
+  bottom: 5px; /* 注释 */
   top: 5px;
 }
 ```
@@ -127,7 +127,7 @@ a {
 
 ```css
 a {
-  /* comment */
+  /* 注释 */
   top: 5px;
 }
 
@@ -135,7 +135,7 @@ a {
 
 ```css
 a {
-  bottom: 5px; /* comment */
+  bottom: 5px; /* 注释 */
 
   top: 5px;
 }
@@ -144,9 +144,9 @@ a {
 
 #### `"after-declaration"`
 
-Reverse the primary option for declarations that come after another declaration.
+如果声明紧跟在另一个声明之后则反转主选项。
 
-Shared-line comments do not affect this option.
+共享行注释不会影响此选项。
 
 例如，使用 `"always"`：
 
@@ -164,7 +164,7 @@ a {
 ```css
 a {
 
-  bottom: 15px; /* comment */
+  bottom: 15px; /* 注释 */
 
   top: 5px;
 }
@@ -183,14 +183,14 @@ a {
 ```css
 a {
 
-  bottom: 15px; /* comment */
+  bottom: 15px; /* 注释 */
   top: 5px;
 }
 ```
 
 #### `"first-nested"`
 
-Reverse the primary option for declarations that are nested and the first child of their parent node.
+如果声明被嵌套并且是其父节点的第一个子节点则反转主选项。
 
 例如，使用 `"always"`：
 
@@ -219,7 +219,7 @@ a {
 
 #### `"after-comment"`
 
-Ignore declarations that are preceded by comments.
+如果声明紧跟在注释之后则忽略。
 
 例如，使用 `"always"`：
 
@@ -227,14 +227,14 @@ Ignore declarations that are preceded by comments.
 
 ```css
 a {
-  /* comment */
+  /* 注释 */
   bottom: 15px;
 }
 ```
 
 #### `"after-declaration"`
 
-Ignore declarations that are preceded by declarations, to allow for multiple declaration sets in the same block.
+如果声明紧跟在另一个声明之后则忽略。
 
 例如，使用 `"always"`：
 
@@ -270,7 +270,7 @@ a {
 
 #### `"first-nested"`
 
-Ignore declarations that are nested and the first child of their parent node.
+如果声明被嵌套并且是其父节点的第一个子节点则忽略。
 
 例如，使用 `"always"`：
 
@@ -286,7 +286,7 @@ a {
 
 #### `"inside-single-line-block"`
 
-Ignore declarations that are inside single-line blocks.
+忽略单行块内的声明。
 
 例如，使用 `"always"`：
 

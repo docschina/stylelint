@@ -8,7 +8,7 @@ a { color: pink; top: 0; }
  * The space after this semicolon */
 ```
 
-This rule ignores:
+此规则忽略：
 
 -   semicolons that are preceded by Less mixins
 -   the last semicolon of declaration blocks

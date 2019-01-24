@@ -12,7 +12,7 @@ Require a newline or disallow whitespace after the commas of selector lists.
 End-of-line comments are allowed one space after the comma.
 
 ```css
-a, /* comment */
+a, /* 注释 */
 b { color: pink; }
 ```
 
