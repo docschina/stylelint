@@ -1,6 +1,6 @@
 # function-parentheses-newline-inside
 
-Require a newline or disallow whitespace on the inside of the parentheses of functions.
+要求在函数的括号内侧必须有换行符或不能有空白符。
 
 ```css
   a {
@@ -10,7 +10,7 @@ Require a newline or disallow whitespace on the inside of the parentheses of fun
     );               /* ↑ */
   }                  /* ↑ */
 /** ↑                   ↑
- * The newline inside these two parentheses */
+ *  这两个括号内侧的换行符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -21,7 +21,7 @@ Require a newline or disallow whitespace on the inside of the parentheses of fun
 
 ### `"always"`
 
-There *must always* be a newline inside the parentheses.
+在括号的内侧*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -56,7 +56,7 @@ a {
 
 ### `"always-multi-line"`
 
-There *must always* be a newline inside the parentheses of multi-line functions.
+在多行函数的括号内侧*必须*有换行符。
 
 以下模式被视为违规：
 

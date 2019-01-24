@@ -1,15 +1,15 @@
 # selector-list-comma-newline-after
 
-Require a newline or disallow whitespace after the commas of selector lists.
+要求在选择器列表的逗号之后必须有换行符或不能有空白符。
 
 ```css
    a,
    b↑{ color: pink; }
 /** ↑
- * The newline after this comma */
+ * 这个逗号之后的换行符 */
 ```
 
-End-of-line comments are allowed one space after the comma.
+逗号与行尾注释之间允许有一个空格。
 
 ```css
 a, /* 注释 */
@@ -24,7 +24,7 @@ b { color: pink; }
 
 ### `"always"`
 
-There *must always* be a newline after the commas.
+在逗号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -52,7 +52,7 @@ b { color: pink; }
 
 ### `"always-multi-line"`
 
-There *must always* be a newline after the commas in multi-line selector lists.
+在多行选择器列表的逗号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -80,7 +80,7 @@ b { color: pink; }
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace after the commas in multi-line selector lists.
+在多行选择器列表的逗号之后*不能*有空白符。
 
 以下模式被视为违规：
 

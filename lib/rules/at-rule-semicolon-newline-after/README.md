@@ -1,18 +1,18 @@
 # at-rule-semicolon-newline-after
 
-Require a newline after the semicolon of at-rules.
+要求在 @规则的分号之后必须有换行符。
 
 ```css
 @import url("x.css");
 @import url("y.css");
 /**                 ↑
- * The newline after these semicolons */
+ *        这些分号之后的换行符 */
 ```
 
-This rule allows an end-of-line comment followed by a newline. For example:
+此规则允许在行尾注释之后跟换行符。例如：
 
 ```css
-@import url("x.css"); /* end-of-line comment */
+@import url("x.css"); /* 行尾注释 */
 
 a {}
 ```
@@ -25,7 +25,7 @@ a {}
 
 ### `"always"`
 
-There *must always* be a newline after the semicolon.
+在分号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -45,7 +45,7 @@ There *must always* be a newline after the semicolon.
 ```
 
 ```css
-@import url("x.css"); /* end-of-line comment */
+@import url("x.css"); /* 行尾注释 */
 a {}
 ```
 

@@ -1,12 +1,12 @@
 # media-query-list-comma-newline-before
 
-Require a newline or disallow whitespace before the commas of media query lists.
+要求在媒体查询列表的逗号之前必须有换行符或不能有空白符。
 
 ```css
     @media screen and (color)
     , projection and (color) {}
 /** ↑
- * These commas */
+ * 这些逗号 */
 ```
 
 ## 选项
@@ -15,7 +15,7 @@ Require a newline or disallow whitespace before the commas of media query lists.
 
 ### `"always"`
 
-There *must always* be a newline before the commas.
+在逗号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -43,7 +43,7 @@ projection and (color) {}
 
 ### `"always-multi-line"`
 
-There *must always* be a newline before the commas in multi-line media query lists.
+在多行媒体查询列表的逗号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -71,7 +71,7 @@ projection and (color) {}
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace before the commas in multi-line media query lists.
+在多行媒体查询列表的逗号之前*不能*有空白符。
 
 以下模式被视为违规：
 

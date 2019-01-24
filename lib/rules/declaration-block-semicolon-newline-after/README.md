@@ -1,6 +1,6 @@
 # declaration-block-semicolon-newline-after
 
-Require a newline or disallow whitespace after the semicolons of declaration blocks.
+要求在声明块的分号之后必须有换行符或不能有空白符。
 
 ```css
 a {
@@ -8,21 +8,21 @@ a {
   top: 0;    ↑
 }            ↑
 /**          ↑
- * The newline after this semicolon */
+ * 这个分号后面的换行符 */
 ```
 
 此规则忽略：
 
--   semicolons that are preceded by Less mixins
--   the last semicolon of declaration blocks
+-   Less mixins 的分号
+-   声明块的最后一个分号
 
-Use the `block-closing-brace-*-before` rules to control the whitespace between the last semicolon and the closing brace instead.
+使用 `block-closing-brace-*-before` 规则来控制最后一个分号和闭括号之间的空白符。
 
-This rule allows an end-of-line comment followed by a newline. For example,
+此规则允许行尾注释后跟换行符。例如：
 
 ```css
 a {
-  color: pink; /* end-of-line comment */
+  color: pink; /* 行尾注释 */
   top: 0;
 }
 ```
@@ -35,7 +35,7 @@ a {
 
 ### `"always"`
 
-There *must always* be a newline after the semicolon.
+在分号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -45,8 +45,8 @@ a { color: pink; top: 0; }
 
 ```css
 a {
-  color: pink; /* end-of-line comment
-    containing a newline */
+  color: pink; /* 包含换行符的
+    行尾注释 */
   top: 0;
 }
 ```
@@ -62,14 +62,14 @@ a {
 
 ```css
 a {
-  color: pink; /* end-of-line comment */
+  color: pink; /* 行尾注释 */
   top: 0;
 }
 ```
 
 ### `"always-multi-line"`
 
-There *must always* be a newline after the semicolon in multi-line rules.
+在多行规则的分号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -98,7 +98,7 @@ a {
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace after the semicolon in multi-line rules.
+在多行规则的分号之后*不能*有空白符。
 
 以下模式被视为违规：
 

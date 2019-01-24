@@ -124,7 +124,7 @@ a {
 
 以下模式*不*被视为违规：
 
-因为以下所有 `.foo` 规则的嵌套深度都只有1。
+因为以下所有 `.foo` 规则的嵌套深度都只有 1。
 
 ```css
 a {
@@ -200,7 +200,7 @@ a {
 
 以下模式*不*被视为违规：
 
-As all of the following pseudoclasses rules would have a nesting depth of just 1.
+因为以下所有伪类规则的嵌套深度均为 1。
 
 ```css
 .a {

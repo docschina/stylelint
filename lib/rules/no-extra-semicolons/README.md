@@ -1,6 +1,6 @@
 # no-extra-semicolons
 
-不允许额外的分号。
+禁止额外的分号。
 
 ```css
 a { color: pink;; }

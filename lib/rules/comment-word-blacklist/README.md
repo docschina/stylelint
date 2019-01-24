@@ -1,6 +1,6 @@
 # comment-word-blacklist
 
-在注释中指定不允许的单词的黑名单。
+指定在注释中禁用的单词的黑名单。
 
 ```css
  /* words within comments */

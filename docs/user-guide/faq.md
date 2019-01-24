@@ -145,7 +145,7 @@ a { color: red; }
 
 用户可能 `require()` 您 npm 包中的任何文件，所以您需要做的就是记录哪些路径指向配置（例如 `require('my-package/config-2')`）`）。
 
-## 如何控制块的开括号后的空白？
+## 如何控制块的开大括号后的空白符？
 
 请参阅文档中的[这个部分](about-rules.md#-empty-line-before-和--max-empty-lines-规则)部分，该部分解释了 `* -empty-line-before` 规则如何工作。
 

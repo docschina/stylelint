@@ -1,23 +1,23 @@
 # block-closing-brace-newline-after
 
-Require a newline or disallow whitespace after the closing brace of blocks.
+要求在块的闭大括号之后必须有换行符或不能有空白符。
 
 ```css
 a { color: pink; }
 a { color: red; }↑
 /**              ↑
- * The newline after this brace */
+ * 这个大括号后的换行符 */
 ```
 
-This rule allows an end-of-line comment separated from the closing brace by spaces, as long as the comment contains no newlines. For example,
+此规则允许用空格分隔的行尾注释, 只要注释不包含换行符即可。例如,
 
 ```css
 a {
   color: pink;
-} /* end-of-line comment */
+} /* 行尾注释 */
 ```
 
-This rule allows a trailing semicolon after the closing brace of a block. For example,
+此规则允许在块的闭大括号之后使用尾随分号。例如，
 
 ```css
 :root {
@@ -25,7 +25,7 @@ This rule allows a trailing semicolon after the closing brace of a block. For ex
     background-color: hsl(120, 70%, 95%);
   };
 /* ↑
- * This semicolon */
+ * 这个分号 */
 }
 ```
 
@@ -37,7 +37,7 @@ This rule allows a trailing semicolon after the closing brace of a block. For ex
 
 ### `"always"`
 
-There *must always* be a newline after the closing brace.
+在闭大括号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -59,7 +59,7 @@ b { color: red; }
 
 ### `"always-single-line"`
 
-There *must always* be a newline after the closing brace in single-line blocks.
+在单行块的闭大括号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -81,7 +81,7 @@ b { color: red; }
 
 ### `"never-single-line"`
 
-There *must never* be whitespace after the closing brace in single-line blocks.
+在单行块的闭大括号之后*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -102,7 +102,7 @@ a { color: pink;
 
 ### `"always-multi-line"`
 
-There *must always* be a newline after the closing brace in multi-line blocks.
+在多行块的闭大括号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -125,7 +125,7 @@ b { color: red; }
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace after the closing brace in multi-line blocks.
+在多行块的闭大括号之后*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -149,7 +149,7 @@ a { color: pink;
 
 ### `ignoreAtRules: ["/regex/", "non-regex"]`
 
-Ignore specified at-rules.
+忽略指定的 @规则。
 
 例如，使用 `"always"` 或 `"always-multi-line"`。
 

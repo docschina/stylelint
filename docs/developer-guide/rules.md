@@ -158,7 +158,7 @@ report(...)
 -   您的规则如何处理字母大小写（例如 `@KEYFRAMES name {}`）？
 -   您的规则如何处理伪类与伪元素的*组合*（例如 `a:hover::before`）？
 -   您的规则如何处理嵌套（例如 do you resolve `& a {}`, or check it as is?）？
--   您的规则如何处理空白和标点符号（例如 comparing `rgb(0,0,0)` with `rgb(0, 0, 0)`）？
+-   您的规则如何处理空白符和标点符号（例如 comparing `rgb(0,0,0)` with `rgb(0, 0, 0)`）？
 
 #### 运行测试
 

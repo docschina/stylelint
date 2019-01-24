@@ -1,12 +1,12 @@
 # function-comma-newline-before
 
-Require a newline or disallow whitespace before the commas of functions.
+要求在函数的逗号之前必须有换行符或不能有空白符。
 
 ```css
   a { transform: translate(1
     , 1) }
 /** ↑
- * These commas */
+ * 这些逗号 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -17,7 +17,7 @@ Require a newline or disallow whitespace before the commas of functions.
 
 ### `"always"`
 
-There *must always* be a newline before the commas.
+在逗号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -52,7 +52,7 @@ a {
 
 ### `"always-multi-line"`
 
-There *must always* be a newline before the commas in multi-line functions.
+在多行函数的逗号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -87,7 +87,7 @@ a {
 
 ### `"never-multi-line"`
 
-There *must never* be a whitespace before the commas in multi-line functions.
+在多行函数的逗号之前*不能*有空白符。
 
 以下模式被视为违规：
 

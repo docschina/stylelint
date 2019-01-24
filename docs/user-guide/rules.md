@@ -80,7 +80,7 @@
 -   [`no-duplicate-at-import-rules`](../../lib/rules/no-duplicate-at-import-rules/README.md)：禁止在样式表中使用重复的 `@import` 规则。
 -   [`no-duplicate-selectors`](../../lib/rules/no-duplicate-selectors/README.md)：禁止样式表中的重复选择器。
 -   [`no-empty-source`](../../lib/rules/no-empty-source/README.md)：禁止空源码。
--   [`no-extra-semicolons`](../../lib/rules/no-extra-semicolons/README.md)：不允许额外的分号（可自动修复）。
+-   [`no-extra-semicolons`](../../lib/rules/no-extra-semicolons/README.md)：禁止额外的分号（可自动修复）。
 -   [`no-invalid-double-slash-comments`](../../lib/rules/no-invalid-double-slash-comments/README.md)：禁止 CSS 不支持的双斜杠注释（`//...`）。
 
 ### 限制语言功能
@@ -191,7 +191,7 @@
 
 #### 注释
 
--   [`comment-word-blacklist`](../../lib/rules/comment-word-blacklist/README.md)：在注释中指定不允许的单词的黑名单。
+-   [`comment-word-blacklist`](../../lib/rules/comment-word-blacklist/README.md)：指定在注释中禁用的单词的黑名单。
 
 #### 一般/表
 
@@ -215,13 +215,13 @@
 
 #### 函数
 
--   [`function-comma-newline-after`](../../lib/rules/function-comma-newline-after/README.md)：Require a newline or disallow whitespace after the commas of functions (Autofixable).
--   [`function-comma-newline-before`](../../lib/rules/function-comma-newline-before/README.md)：Require a newline or disallow whitespace before the commas of functions (Autofixable).
+-   [`function-comma-newline-after`](../../lib/rules/function-comma-newline-after/README.md)：要求在函数的逗号之后必须有换行符或不能有空白符（可自动修复）。
+-   [`function-comma-newline-before`](../../lib/rules/function-comma-newline-before/README.md)：要求在函数的逗号之前必须有换行符或不能有空白符（可自动修复）。
 -   [`function-comma-space-after`](../../lib/rules/function-comma-space-after/README.md)：Require a single space or disallow whitespace after the commas of functions (Autofixable).
 -   [`function-comma-space-before`](../../lib/rules/function-comma-space-before/README.md)：Require a single space or disallow whitespace before the commas of functions (Autofixable).
 -   [`function-max-empty-lines`](../../lib/rules/function-max-empty-lines/README.md)：Limit the number of adjacent empty lines within functions (Autofixable).
 -   [`function-name-case`](../../lib/rules/function-name-case/README.md)：Specify lowercase or uppercase for function names (Autofixable).
--   [`function-parentheses-newline-inside`](../../lib/rules/function-parentheses-newline-inside/README.md)：Require a newline or disallow whitespace on the inside of the parentheses of functions (Autofixable).
+-   [`function-parentheses-newline-inside`](../../lib/rules/function-parentheses-newline-inside/README.md)：要求在函数的括号内侧必须有换行符或不能有空白符（可自动修复）。
 -   [`function-parentheses-space-inside`](../../lib/rules/function-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses of functions (Autofixable).
 -   [`function-url-quotes`](../../lib/rules/function-url-quotes/README.md)：Require or disallow quotes for urls.
 -   [`function-whitespace-after`](../../lib/rules/function-whitespace-after/README.md)：Require or disallow whitespace after functions (Autofixable).
@@ -249,8 +249,8 @@
 
 #### 值列表
 
--   [`value-list-comma-newline-after`](../../lib/rules/value-list-comma-newline-after/README.md)：Require a newline or disallow whitespace after the commas of value lists (Autofixable).
--   [`value-list-comma-newline-before`](../../lib/rules/value-list-comma-newline-before/README.md)：Require a newline or disallow whitespace before the commas of value lists.
+-   [`value-list-comma-newline-after`](../../lib/rules/value-list-comma-newline-after/README.md)：要求在值列表的逗号之后必须有换行符或不能有空白符（可自动修复）。
+-   [`value-list-comma-newline-before`](../../lib/rules/value-list-comma-newline-before/README.md)：要求在值列表的逗号之前必须有换行符或不能有空白符。
 -   [`value-list-comma-space-after`](../../lib/rules/value-list-comma-space-after/README.md)：Require a single space or disallow whitespace after the commas of value lists (Autofixable).
 -   [`value-list-comma-space-before`](../../lib/rules/value-list-comma-space-before/README.md)：Require a single space or disallow whitespace before the commas of value lists (Autofixable).
 -   [`value-list-max-empty-lines`](../../lib/rules/value-list-max-empty-lines/README.md)：Limit the number of adjacent empty lines within value lists (Autofixable).
@@ -267,28 +267,28 @@
 
 -   [`declaration-bang-space-after`](../../lib/rules/declaration-bang-space-after/README.md)：Require a single space or disallow whitespace after the bang of declarations (Autofixable).
 -   [`declaration-bang-space-before`](../../lib/rules/declaration-bang-space-before/README.md)：Require a single space or disallow whitespace before the bang of declarations (Autofixable).
--   [`declaration-colon-newline-after`](../../lib/rules/declaration-colon-newline-after/README.md)：Require a newline or disallow whitespace after the colon of declarations (Autofixable).
+-   [`declaration-colon-newline-after`](../../lib/rules/declaration-colon-newline-after/README.md)：要求在声明块的冒号之后必须有换行符或不能有空白符（可自动修复）。
 -   [`declaration-colon-space-after`](../../lib/rules/declaration-colon-space-after/README.md)：Require a single space or disallow whitespace after the colon of declarations (Autofixable).
 -   [`declaration-colon-space-before`](../../lib/rules/declaration-colon-space-before/README.md)：Require a single space or disallow whitespace before the colon of declarations (Autofixable).
 -   [`declaration-empty-line-before`](../../lib/rules/declaration-empty-line-before/README.md)：要求或禁止在声明之前的空行（可自动修复）。
 
 #### 声明块
 
--   [`declaration-block-semicolon-newline-after`](../../lib/rules/declaration-block-semicolon-newline-after/README.md)：Require a newline or disallow whitespace after the semicolons of declaration blocks (Autofixable).
--   [`declaration-block-semicolon-newline-before`](../../lib/rules/declaration-block-semicolon-newline-before/README.md)：Require a newline or disallow whitespace before the semicolons of declaration blocks.
+-   [`declaration-block-semicolon-newline-after`](../../lib/rules/declaration-block-semicolon-newline-after/README.md)：要求在声明块的分号之后必须有换行符或不能有空白符（可自动修复）。
+-   [`declaration-block-semicolon-newline-before`](../../lib/rules/declaration-block-semicolon-newline-before/README.md)：要求在声明块的分号之前必须有换行符或不能有空白符。
 -   [`declaration-block-semicolon-space-after`](../../lib/rules/declaration-block-semicolon-space-after/README.md)：Require a single space or disallow whitespace after the semicolons of declaration blocks (Autofixable).
 -   [`declaration-block-semicolon-space-before`](../../lib/rules/declaration-block-semicolon-space-before/README.md)：Require a single space or disallow whitespace before the semicolons of declaration blocks (Autofixable).
 -   [`declaration-block-trailing-semicolon`](../../lib/rules/declaration-block-trailing-semicolon/README.md)：Require or disallow a trailing semicolon within declaration blocks (Autofixable).
 
 #### 块
 
--   [`block-closing-brace-empty-line-before`](../../lib/rules/block-closing-brace-empty-line-before/README.md)：要求或禁止在闭合大括号之前的空行（可自动修复）。
--   [`block-closing-brace-newline-after`](../../lib/rules/block-closing-brace-newline-after/README.md)：Require a newline or disallow whitespace after the closing brace of blocks (Autofixable).
--   [`block-closing-brace-newline-before`](../../lib/rules/block-closing-brace-newline-before/README.md)：Require a newline or disallow whitespace before the closing brace of blocks (Autofixable).
+-   [`block-closing-brace-empty-line-before`](../../lib/rules/block-closing-brace-empty-line-before/README.md)：要求或禁止在块的闭大括号之前空行（可自动修复）。
+-   [`block-closing-brace-newline-after`](../../lib/rules/block-closing-brace-newline-after/README.md)：要求在块的闭大括号之后必须有换行符或不能有空白符（可自动修复）。
+-   [`block-closing-brace-newline-before`](../../lib/rules/block-closing-brace-newline-before/README.md)：要求在块的闭大括号之前必须有换行符或不能有空白符（可自动修复）。
 -   [`block-closing-brace-space-after`](../../lib/rules/block-closing-brace-space-after/README.md)：Require a single space or disallow whitespace after the closing brace of blocks.
 -   [`block-closing-brace-space-before`](../../lib/rules/block-closing-brace-space-before/README.md)：Require a single space or disallow whitespace before the closing brace of blocks (Autofixable).
--   [`block-opening-brace-newline-after`](../../lib/rules/block-opening-brace-newline-after/README.md)：Require a newline after the opening brace of blocks (Autofixable).
--   [`block-opening-brace-newline-before`](../../lib/rules/block-opening-brace-newline-before/README.md)：Require a newline or disallow whitespace before the opening brace of blocks (Autofixable).
+-   [`block-opening-brace-newline-after`](../../lib/rules/block-opening-brace-newline-after/README.md)：要求在块的开大括号之后必须有换行符（可自动修复）。
+-   [`block-opening-brace-newline-before`](../../lib/rules/block-opening-brace-newline-before/README.md)：要求在块的开大括号之前必须有换行符或不能有空白符（可自动修复）。
 -   [`block-opening-brace-space-after`](../../lib/rules/block-opening-brace-space-after/README.md)：Require a single space or disallow whitespace after the opening brace of blocks (Autofixable).
 -   [`block-opening-brace-space-before`](../../lib/rules/block-opening-brace-space-before/README.md)：Require a single space or disallow whitespace before the opening brace of blocks (Autofixable).
 
@@ -309,8 +309,8 @@
 
 #### 选择器列表
 
--   [`selector-list-comma-newline-after`](../../lib/rules/selector-list-comma-newline-after/README.md)：Require a newline or disallow whitespace after the commas of selector lists (Autofixable).
--   [`selector-list-comma-newline-before`](../../lib/rules/selector-list-comma-newline-before/README.md)：Require a newline or disallow whitespace before the commas of selector lists (Autofixable).
+-   [`selector-list-comma-newline-after`](../../lib/rules/selector-list-comma-newline-after/README.md)：要求在选择器列表的逗号之后必须有换行符或不能有空白符（可自动修复）。
+-   [`selector-list-comma-newline-before`](../../lib/rules/selector-list-comma-newline-before/README.md)：要求在选择器列表的逗号之前必须有换行符或不能有空白符（可自动修复）。
 -   [`selector-list-comma-space-after`](../../lib/rules/selector-list-comma-space-after/README.md)：Require a single space or disallow whitespace after the commas of selector lists (Autofixable).
 -   [`selector-list-comma-space-before`](../../lib/rules/selector-list-comma-space-before/README.md)：Require a single space or disallow whitespace before the commas of selector lists (Autofixable).
 
@@ -329,8 +329,8 @@
 
 #### 媒体查询列表
 
--   [`media-query-list-comma-newline-after`](../../lib/rules/media-query-list-comma-newline-after/README.md)：Require a newline or disallow whitespace after the commas of media query lists (Autofixable).
--   [`media-query-list-comma-newline-before`](../../lib/rules/media-query-list-comma-newline-before/README.md)：Require a newline or disallow whitespace before the commas of media query lists.
+-   [`media-query-list-comma-newline-after`](../../lib/rules/media-query-list-comma-newline-after/README.md)：要求在媒体查询列表的逗号之后必须有换行符或不能有空白符（可自动修复）。
+-   [`media-query-list-comma-newline-before`](../../lib/rules/media-query-list-comma-newline-before/README.md)：要求在媒体查询列表的逗号之前必须有换行符或不能有空白符。
 -   [`media-query-list-comma-space-after`](../../lib/rules/media-query-list-comma-space-after/README.md)：Require a single space or disallow whitespace after the commas of media query lists (Autofixable).
 -   [`media-query-list-comma-space-before`](../../lib/rules/media-query-list-comma-space-before/README.md)：Require a single space or disallow whitespace before the commas of media query lists (Autofixable).
 
@@ -340,13 +340,13 @@
 -   [`at-rule-name-case`](../../lib/rules/at-rule-name-case/README.md)：Specify lowercase or uppercase for at-rules names (Autofixable).
 -   [`at-rule-name-newline-after`](../../lib/rules/at-rule-name-newline-after/README.md)：Require a newline after at-rule names.
 -   [`at-rule-name-space-after`](../../lib/rules/at-rule-name-space-after/README.md)：Require a single space after at-rule names (Autofixable).
--   [`at-rule-semicolon-newline-after`](../../lib/rules/at-rule-semicolon-newline-after/README.md)：Require a newline after the semicolon of at-rules (Autofixable).
+-   [`at-rule-semicolon-newline-after`](../../lib/rules/at-rule-semicolon-newline-after/README.md)：要求在 @规则的分号之后必须有换行符（可自动修复）。
 -   [`at-rule-semicolon-space-before`](../../lib/rules/at-rule-semicolon-space-before/README.md)：Require a single space or disallow whitespace before the semicolons of at rules.
 
 #### 注释
 
 -   [`comment-empty-line-before`](../../lib/rules/comment-empty-line-before/README.md)：要求或禁止在注释之前的空行（可自动修复）。
--   [`comment-whitespace-inside`](../../lib/rules/comment-whitespace-inside/README.md)：要求或禁止注释标记内侧的空白（可自动修复）。
+-   [`comment-whitespace-inside`](../../lib/rules/comment-whitespace-inside/README.md)：要求或禁止注释标记内侧的空白符（可自动修复）。
 
 #### 一般/表
 
@@ -354,7 +354,7 @@
 -   [`linebreaks`](../../lib/rules/linebreaks/README.md)：指定 unix 或 windows 换行符（可自动修复）。
 -   [`max-empty-lines`](../../lib/rules/max-empty-lines/README.md)：限制相邻空行的数量。
 -   [`max-line-length`](../../lib/rules/max-line-length/README.md)：限制行的长度。
--   [`no-eol-whitespace`](../../lib/rules/no-eol-whitespace/README.md)：禁止行尾空白（可自动修复）。
+-   [`no-eol-whitespace`](../../lib/rules/no-eol-whitespace/README.md)：禁止行尾空白符（可自动修复）。
 -   [`no-missing-end-of-source-newline`](../../lib/rules/no-missing-end-of-source-newline/README.md)：禁止缺少源码结尾换行符（可自动修复）。
 -   [`no-empty-first-line`](../../lib/rules/no-empty-first-line/README.md)：禁止空第一行（可自动修复）。
 
