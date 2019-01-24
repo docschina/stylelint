@@ -1,6 +1,6 @@
 # block-closing-brace-empty-line-before
 
-Require or disallow an empty line before the closing brace of blocks.
+要求或禁止在闭合大括号之前的空行。
 
 ```css
 a {
@@ -8,7 +8,7 @@ a {
   /* ← */
 } /* ↑ */
 /**  ↑
- * This line */
+ * 这行 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -67,7 +67,7 @@ a { color: pink; }
 
 ### `except: ["after-closing-brace"]`
 
-When a rule is nested, `after-closing-brace` brace will reverse the primary option.
+当规则被嵌套时，`after-closing-brace` 将反转主选项。
 
 例如，使用 `"never"` 和 `except: ["after-closing-brace"]`：
 

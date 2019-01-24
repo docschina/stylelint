@@ -257,7 +257,7 @@
 
 #### 自定义属性
 
--   [`custom-property-empty-line-before`](../../lib/rules/custom-property-empty-line-before/README.md)：Require or disallow an empty line before custom properties (Autofixable).
+-   [`custom-property-empty-line-before`](../../lib/rules/custom-property-empty-line-before/README.md)：要求或禁止在自定义属性之前的空行（可自动修复）。
 
 #### 属性
 
@@ -270,7 +270,7 @@
 -   [`declaration-colon-newline-after`](../../lib/rules/declaration-colon-newline-after/README.md)：Require a newline or disallow whitespace after the colon of declarations (Autofixable).
 -   [`declaration-colon-space-after`](../../lib/rules/declaration-colon-space-after/README.md)：Require a single space or disallow whitespace after the colon of declarations (Autofixable).
 -   [`declaration-colon-space-before`](../../lib/rules/declaration-colon-space-before/README.md)：Require a single space or disallow whitespace before the colon of declarations (Autofixable).
--   [`declaration-empty-line-before`](../../lib/rules/declaration-empty-line-before/README.md)：Require or disallow an empty line before declarations (Autofixable).
+-   [`declaration-empty-line-before`](../../lib/rules/declaration-empty-line-before/README.md)：要求或禁止在声明之前的空行（可自动修复）。
 
 #### 声明块
 
@@ -282,7 +282,7 @@
 
 #### 块
 
--   [`block-closing-brace-empty-line-before`](../../lib/rules/block-closing-brace-empty-line-before/README.md)：Require or disallow an empty line before the closing brace of blocks (Autofixable).
+-   [`block-closing-brace-empty-line-before`](../../lib/rules/block-closing-brace-empty-line-before/README.md)：要求或禁止在闭合大括号之前的空行（可自动修复）。
 -   [`block-closing-brace-newline-after`](../../lib/rules/block-closing-brace-newline-after/README.md)：Require a newline or disallow whitespace after the closing brace of blocks (Autofixable).
 -   [`block-closing-brace-newline-before`](../../lib/rules/block-closing-brace-newline-before/README.md)：Require a newline or disallow whitespace before the closing brace of blocks (Autofixable).
 -   [`block-closing-brace-space-after`](../../lib/rules/block-closing-brace-space-after/README.md)：Require a single space or disallow whitespace after the closing brace of blocks.
@@ -316,7 +316,7 @@
 
 #### 规则
 
--   [`rule-empty-line-before`](../../lib/rules/rule-empty-line-before/README.md)：Require or disallow an empty line before rules (Autofixable).
+-   [`rule-empty-line-before`](../../lib/rules/rule-empty-line-before/README.md)：要求或禁止在规则之前的空行（可自动修复）。
 
 #### 媒体功能
 
@@ -336,7 +336,7 @@
 
 #### @规则
 
--   [`at-rule-empty-line-before`](../../lib/rules/at-rule-empty-line-before/README.md)：Require or disallow an empty line before at-rules (Autofixable).
+-   [`at-rule-empty-line-before`](../../lib/rules/at-rule-empty-line-before/README.md)：要求或禁止在 @规则之前的空行（可自动修复）。
 -   [`at-rule-name-case`](../../lib/rules/at-rule-name-case/README.md)：Specify lowercase or uppercase for at-rules names (Autofixable).
 -   [`at-rule-name-newline-after`](../../lib/rules/at-rule-name-newline-after/README.md)：Require a newline after at-rule names.
 -   [`at-rule-name-space-after`](../../lib/rules/at-rule-name-space-after/README.md)：Require a single space after at-rule names (Autofixable).

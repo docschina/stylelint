@@ -11,7 +11,7 @@ a {
  * The newline after this semicolon */
 ```
 
-This rule ignores:
+此规则忽略：
 
 -   semicolons that are preceded by Less mixins
 -   the last semicolon of declaration blocks

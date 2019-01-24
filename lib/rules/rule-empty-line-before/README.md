@@ -1,16 +1,16 @@
 # rule-empty-line-before
 
-Require or disallow an empty line before rules.
+要求或禁止在规则之前的空行。
 
 ```css
 a {}
       /* ← */
 b {}  /* ↑ */
 /**      ↑
- * This line */
+ *      这行 */
 ```
 
-This rule ignores rules that are the very first node in a source.
+此规则忽略作为源中第一个节点的规则。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。我们建议启用 [`indentation`](../indentation/README.md) 规则，以便更好地使用此规则自动修复结果。
 
@@ -20,7 +20,7 @@ This rule ignores rules that are the very first node in a source.
 
 ### `"always"`
 
-There *must always* be an empty line before rules.
+在规则之前*必须*有空行。
 
 以下模式被视为违规：
 
@@ -43,7 +43,7 @@ b {}
 
 ### `"never"`
 
-There *must never* be an empty line before rules.
+在规则之前*不能*有空行。
 
 以下模式被视为违规：
 
@@ -66,7 +66,7 @@ b {}
 
 ### `"always-multi-line"`
 
-There *must always* be an empty line before multi-line rules.
+在多行规则之前*必须*有空行。
 
 以下模式被视为违规：
 
@@ -93,7 +93,7 @@ b {
 
 ### `"never-multi-line"`
 
-There *must never* be an empty line before multi-line rules.
+在多行规则之前*不能*有空行。
 
 以下模式被视为违规：
 
@@ -124,7 +124,7 @@ b {
 
 #### `"after-rule"`
 
-Reverse the primary option if the rule comes after another rule.
+如果规则紧跟在另一个规则之后则反转主选项。
 
 例如，使用 `"always"`：
 
@@ -145,14 +145,14 @@ b {}
 
 #### `"after-single-line-comment"`
 
-Reverse the primary option if the rule comes after a single-line comment.
+如果规则紧跟在单行注释之后则反转主选项。
 
 例如，使用 `"always"`：
 
 以下模式被视为违规：
 
 ```css
-/* comment */
+/* 注释 */
 
 a {}
 ```
@@ -160,13 +160,13 @@ a {}
 以下模式*不*被视为违规：
 
 ```css
-/* comment */
+/* 注释 */
 a {}
 ```
 
 #### `"inside-block-and-after-rule"`
 
-Reverse the primary option if the rule is inside a block and comes after another rule.
+如果规则在块内且紧跟在另一个规则之后则反转主选项。
 
 例如，使用 `"always"`：
 
@@ -192,7 +192,7 @@ Reverse the primary option if the rule is inside a block and comes after another
 
 #### `"inside-block"`
 
-Reverse the primary option if the rule is inside a block.
+如果规则在块内则反转主选项。
 
 例如，使用 `"always"`：
 
@@ -222,7 +222,7 @@ a {
 
 #### `"first-nested"`
 
-Reverse the primary option if the rule is the first in a block.
+如果规则被嵌套并且是其父节点的第一个子节点则反转主选项。
 
 例如，使用 `"always"`：
 
@@ -251,20 +251,20 @@ Reverse the primary option if the rule is the first in a block.
 
 #### `"after-comment"`
 
-Ignore rules that come after a comment.
+如果规则紧跟在注释之后则忽略。
 
 例如，使用 `"always"`：
 
 以下模式*不*被视为违规：
 
 ```css
-/* comment */
+/* 注释 */
 a {}
 ```
 
 #### `"first-nested"`
 
-Ignore rules that are nested and the first child of their parent node.
+如果规则被嵌套并且是其父节点的第一个子节点则忽略。
 
 例如，使用 `"always"`：
 
@@ -280,7 +280,7 @@ Ignore rules that are nested and the first child of their parent node.
 
 #### `"inside-block"`
 
-Ignore rules that are inside a block.
+忽略块内的规则。
 
 例如，使用 `"always"`：
 

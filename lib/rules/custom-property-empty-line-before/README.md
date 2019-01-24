@@ -1,6 +1,6 @@
 # custom-property-empty-line-before
 
-Require or disallow an empty line before custom properties.
+要求或禁止在自定义属性之前的空行。
 
 ```css
 a {
@@ -9,7 +9,7 @@ a {
   --foo: pink;            /* ↑ */
 }                         /* ↑ */
 /**                          ↑
- *                   This line */
+ *                          这行 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。我们建议启用 [`indentation`](../indentation/README.md) 规则，以便更好地使用此规则自动修复结果。
@@ -87,9 +87,9 @@ a {
 
 #### `"after-comment"`
 
-Reverse the primary option for custom properties that come after a comment.
+如果自定义属性紧跟在注释之后则反转主选项。
 
-Shared-line comments do not trigger this option.
+共享行注释不会触发此选项。
 
 例如，使用 `"always"`：
 
@@ -99,7 +99,7 @@ Shared-line comments do not trigger this option.
 a {
 
   --foo: pink;
-  /* comment */
+  /* 注释 */
 
   --bar: red;
 }
@@ -108,7 +108,7 @@ a {
 ```css
 a {
 
-  --foo: pink; /* comment */
+  --foo: pink; /* 注释 */
   --bar: red;
 }
 ```
@@ -119,7 +119,7 @@ a {
 a {
 
   --foo: pink;
-  /* comment */
+  /* 注释 */
   --bar: red;
 }
 ```
@@ -127,7 +127,7 @@ a {
 ```css
 a {
 
-  --foo: pink; /* comment */
+  --foo: pink; /* 注释 */
 
   --bar: red;
 }
@@ -135,9 +135,9 @@ a {
 
 #### `"after-custom-property"`
 
-Reverse the primary option for custom properties that come after another custom property.
+如果自定义属性紧跟在另一个自定义属性之后则反转主选项。
 
-Shared-line comments do not affect this option.
+共享行注释不会影响此选项。
 
 例如，使用 `"always"`：
 
@@ -155,7 +155,7 @@ a {
 ```css
 a {
 
-  --foo: pink; /* comment */
+  --foo: pink; /* 注释 */
 
   --bar: red;
 }
@@ -174,14 +174,14 @@ a {
 ```css
 a {
 
-  --foo: pink; /* comment */
+  --foo: pink; /* 注释 */
   --bar: red;
 }
 ```
 
 #### `"first-nested"`
 
-Reverse the primary option for custom properties that are nested and the first child of their parent node.
+如果自定义属性被嵌套并且是其父节点的第一个子节点则反转主选项。
 
 例如，使用 `"always"`：
 
@@ -210,7 +210,7 @@ a {
 
 #### `"after-comment"`
 
-Ignore custom properties that are preceded by comments.
+如果自定义属性紧跟在注释之后则忽略。
 
 例如，使用 `"always"`：
 
@@ -218,14 +218,14 @@ Ignore custom properties that are preceded by comments.
 
 ```css
 a {
-  /* comment */
+  /* 注释 */
   --foo: pink;
 }
 ```
 
 #### `"first-nested"`
 
-Ignore custom properties that are nested and the first child of their parent node.
+如果自定义属性被嵌套并且是其父节点的第一个子节点则忽略。
 
 例如，使用 `"always"`：
 
@@ -241,7 +241,7 @@ a {
 
 #### `"inside-single-line-block"`
 
-Ignore custom properties that are inside single-line blocks.
+忽略单行块内的自定义属性。
 
 例如，使用 `"always"`：
 
