@@ -28,7 +28,7 @@
 #### 函数
 
 -   [`function-calc-no-invalid`](../../lib/rules/function-calc-no-invalid/README.md)：禁止在 `calc` 函数中使用无效表达式。
--   [`function-calc-no-unspaced-operator`](../../lib/rules/function-calc-no-unspaced-operator/README.md)：在函数`calc`接收的表达式中，运算符和参数之间必须存在间距。
+-   [`function-calc-no-unspaced-operator`](../../lib/rules/function-calc-no-unspaced-operator/README.md)：禁止在 `calc` 函数中使用没有间隔的运算符。
 -   [`function-linear-gradient-no-nonstandard-direction`](../../lib/rules/function-linear-gradient-no-nonstandard-direction/README.md)：Disallow direction values in `linear-gradient()` calls that are not valid according to the [standard syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient#Syntax).
 
 #### 字符串
