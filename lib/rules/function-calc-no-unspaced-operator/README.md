@@ -1,14 +1,14 @@
 # function-calc-no-unspaced-operator
 
-Disallow an unspaced operator within `calc` functions.
+禁止在 `calc` 函数中使用没有间隔的运算符。
 
 ```css
 a { top: calc(1px + 2px); }
 /**               ↑
- * The space around this operator */
+ *       运算符周围的空白符 */
 ```
 
-Before the operator, there must be a single whitespace or a newline plus indentation. After the operator, there must be a single whitespace or a newline.
+在运算符前，必须有一个空格或换行符加缩进。在运算符之后，必须有一个空格或换行符。
 
 ## 选项
 
