@@ -8,7 +8,7 @@ a { font-family: serif, serif; }
  *            这些字体族名称 */
 ```
 
-该规则会检测 `font` 和 `font-family`属性。
+该规则会检测 `font` 和 `font-family` 属性。
 
 该规则会忽略`$sass`、`@less` 和 `var(--custom-property)` 变量语法。
 

@@ -1,12 +1,12 @@
 # selector-list-comma-newline-before
 
-Require a newline or disallow whitespace before the commas of selector lists.
+要求在选择器列表的逗号之前必须有换行符或不能有空白符。
 
 ```css
     a
     , b { color: pink; }
 /** ↑
- * The newline before this comma */
+ * 这个逗号之前的换行符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -17,7 +17,7 @@ Require a newline or disallow whitespace before the commas of selector lists.
 
 ### `"always"`
 
-There *must always* be a newline before the commas.
+在逗号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -44,7 +44,7 @@ a
 
 ### `"always-multi-line"`
 
-There *must always* be a newline before the commas in multi-line selector lists.
+在多行选择器列表的逗号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -72,7 +72,7 @@ b { color: pink; }
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace before the commas in multi-line selector lists.
+在多行选择器列表的逗号之前*不能*有空白符。
 
 以下模式被视为违规：
 

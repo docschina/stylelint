@@ -1,6 +1,6 @@
 # declaration-block-semicolon-newline-before
 
-Require a newline or disallow whitespace before the semicolons of declaration blocks.
+要求在声明块的分号之前必须有换行符或不能有空白符。
 
 ```css
   a {
@@ -8,10 +8,10 @@ Require a newline or disallow whitespace before the semicolons of declaration bl
     ; top: 0;
   } ↑
 /** ↑
- * The newline before this semicolon */
+ * 这个分号之前的换行符 */
 ```
 
-This rule ignores semicolons that are preceded by Less mixins.
+此规则忽略 Less mixins 的分号。
 
 ## 选项
 
@@ -19,7 +19,7 @@ This rule ignores semicolons that are preceded by Less mixins.
 
 ### `"always"`
 
-There *must always* be a newline before the semicolons.
+在分号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -49,7 +49,7 @@ a {
 
 ### `"always-multi-line"`
 
-There *must always* be a newline before the semicolons in multi-line rules.
+在多行规则的分号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -78,7 +78,7 @@ a {
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace before the semicolons in multi-line rules.
+在多行规则的分号之前*不能*有空白符。
 
 以下模式被视为违规：
 

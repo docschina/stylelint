@@ -1,6 +1,6 @@
 # block-closing-brace-empty-line-before
 
-要求或禁止在闭合大括号之前的空行。
+要求或禁止在块的闭大括号之前空行。
 
 ```css
 a {

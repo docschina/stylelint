@@ -137,9 +137,9 @@ a {
 
 ### `baseIndentLevel: int|"auto"`
 
-默认情况下，非类 CSS 文件中 CSS 代码块的缩进级别由非空行的最短缩进行确定。设置 `baseIndentLevel` 允许您根据CSS代码块打开或闭合行定义相对缩进级别。
+默认情况下，非类 CSS 文件中 CSS 代码块的缩进级别由非空行的最短缩进行确定。设置 `baseIndentLevel` 允许您根据 CSS 代码块开放或闭合行定义相对缩进级别。
 
-例如，使用 `[2，{baseIndentLevel：1}]`，CSS 应该比 `<style>` 标签缩进高1级：
+例如，使用 `[2，{baseIndentLevel：1}]`，CSS 应该比 `<style>` 标签缩进高 1 级：
 
 ```html
 <!DOCTYPE html>
@@ -156,7 +156,7 @@ a {
 
 ### `indentInsideParens: "twice"|"once-at-root-twice-in-block"`
 
-默认情况下，在括号内的换行符后，期望有*一级额外的*缩进（指定类型），并且闭合括号预计不会有额外的缩进。
+默认情况下，在括号内的换行符后，期望有*一级额外的*缩进（指定类型），并且闭括号预计不会有额外的缩进。
 
 如果要更改括号内的额外缩进数量，请使用此选项。
 
@@ -193,7 +193,7 @@ a {
 
 ### `indentClosingBrace: true|false`
 
-如果为 `true`，则块（规则或 @规则）的闭合括号将与块的内部节点保持相同的缩进级别。
+如果为 `true`，则块（规则或 @规则）的闭括号将与块的内部节点保持相同的缩进级别。
 
 例如，使用 `indentClosingBrace: true`。
 

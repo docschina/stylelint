@@ -1,12 +1,12 @@
 # value-list-comma-newline-before
 
-Require a newline or disallow whitespace before the commas of value lists.
+要求在值列表的逗号之前必须有换行符或不能有空白符。
 
 ```css
   a { background-size: 0
     , 0; }
 /** ↑
- * The newline before these commas */
+ * 这个逗号之前的换行符 */
 ```
 
 ## 选项
@@ -15,7 +15,7 @@ Require a newline or disallow whitespace before the commas of value lists.
 
 ### `"always"`
 
-There *must always* be a newline before the commas.
+在逗号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -37,7 +37,7 @@ a { background-size: 0
 
 ### `"always-multi-line"`
 
-There *must always* be a newline before the commas in multi-line value lists.
+在多行值列表的逗号之前*必须*有换行符号。
 
 以下模式被视为违规：
 
@@ -63,7 +63,7 @@ a { background-size: 0
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace before the commas in multi-line value lists.
+在多行值列表的逗号之前*不能*有空白符。
 
 以下模式被视为违规：
 

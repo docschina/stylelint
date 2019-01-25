@@ -1,23 +1,23 @@
 # block-opening-brace-newline-after
 
-Require a newline after the opening brace of blocks.
+要求在块的开大括号之后必须有换行符。
 
 ```css
   a {
     ↑ color: pink; }
 /** ↑
- * The newline after this brace */
+ * 这个大括号后的换行符 */
 ```
 
-This rule allows an end-of-line comment followed by a newline. For example,
+此规则允许行尾注释后跟换行符。例如：
 
 ```css
-a { /* end-of-line comment */
+a { /* 行尾注释 */
   color: pink;
 }
 ```
 
-Refer to [the FAQ](../../../docs/user-guide/faq.md#如何禁用单行代码块) for more information on using this rule with [`block-opening-brace-newline-before`](../block-opening-brace-newline-before/README.md) to disallow single-line rules.
+有关将此规则与[`block-opening-brace-newline-before`](../block-opening-brace-newline-before/README.md) 一起使用的更多信息，请参阅[常见问题](../../../docs/user-guide/faq.md#如何禁用单行代码块)禁止单行规则。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
@@ -27,7 +27,7 @@ Refer to [the FAQ](../../../docs/user-guide/faq.md#如何禁用单行代码块) 
 
 ### `"always"`
 
-There *must always* be a newline after the opening brace.
+在开大括号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -41,8 +41,8 @@ a{ color: pink;
 ```
 
 ```css
-a{ /* end-of-line comment
-  with a newline */
+a{ /* 包含换行符的
+    行尾注释 */
   color: pink;
 }
 ```
@@ -61,14 +61,14 @@ color: pink; }
 ```
 
 ```css
-a { /* end-of-line comment */
+a { /* 行尾注释 */
   color: pink;
 }
 ```
 
 ### `"always-multi-line"`
 
-There *must always* be a newline after the opening brace in multi-line blocks.
+在多行块的开大括号之后*必须*有换行符。
 
 以下模式被视为违规：
 
@@ -90,7 +90,7 @@ color: pink; }
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace after the opening brace in multi-line blocks.
+在多行块的开大括号之后*不能*有空白符。
 
 以下模式被视为违规：
 
