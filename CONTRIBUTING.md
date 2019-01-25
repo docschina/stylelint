@@ -1,18 +1,18 @@
-# Contributing
+# 贡献
 
-Thank you for wanting to contribute. stylelint *needs* community contributions to continue to improve.
+感谢您想要贡献。stylelint *需要*社区贡献来继续改进。
 
-If you like stylelint and open source software (since you're reading this, you almost certainly do), please consider taking some time to pitch in. Not only will you help stylelint thrive, you will also learn a thing or two — about CSS, PostCSS, Node, ES2015, unit testing, open source software, and more.
+如果你喜欢 stylelint 和开源软件（因为你正在读这个，你几乎肯定会喜欢），请考虑花一些时间来投入。你不仅会帮助 stylelint 茁壮成长，你还会学习一两件事 - 关于 CSS、PostCSS、Node.js、ES2015、单元测试、开源软件等。
 
-**We want to do everything we can to encourage contributions!** So if you want to participate but don't end up doing it for one reason or another, please file an issue and give us feedback about what we could do to better encourage you.
+**我们希望尽一切努力鼓励贡献!** 如果你想参与, 但最终却因某些原因而终止，请提交一个问题来向我们反馈如何更好的鼓励你。
 
-Also: we hope that your participation in the project isn't a one-off. *We'd love to add more members to the organization and see more regulars pop up in issues and pull requests!*
+另外：我们希望您参与该项目不是一次性的。*我们希望为组织增加更多成员，并看到更多老熟人提出问题和拉取请求！*
 
-## Code contributions
+## 代码贡献
 
-The [developer guide](docs/developer-guide.md) outlines how to get started contributing code.
+[开发者指南](docs/developer-guide.md)概述了如何开始贡献代码。
 
-## Financial contributions
+## 财政贡献
 
-We also welcome financial contributions in full transparency on our [open collective](https://opencollective.com/stylelint).
-Anyone can file an expense. If the expense makes sense for the development of the community, it will be "merged" in the ledger of our open collective by the core contributors and the person who filed the expense will be reimbursed.
+我们还欢迎对我们的[开放集体](https://opencollective.com/stylelint)作出完全透明的财政贡献。
+任何人都可以提交费用。如果费用对社区的发展有意义，它将被核心贡献者“合并”入我们开放集体的分类帐目中，提交费用的人将获得报销。
