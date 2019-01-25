@@ -1,18 +1,18 @@
 # selector-combinator-space-after
 
-Require a single space or disallow whitespace after the combinators of selectors.
+要求在组合选择器之后必须有一个空格或不能有空白符。
 
 ```css
   a > b + c ~ d e >>> f { color: pink; }
 /** ↑   ↑   ↑  ↑  ↑
- * These are combinators */
+ * 这些是组合选择器 */
 ```
 
-Combinators are used to combine several different selectors into new and more specific ones. There are several types of combinators, including: child (`>`), adjacent sibling (`+`), general sibling (`~`), and descendant (which is represented by a blank space between two selectors).
+组合选择器用于将几个不同的选择器组合成新的和更具体的选择器。有几种类型的组合选择器，包括：子（`>`），紧邻兄弟（`+`），一般兄弟（`~`）和后代（由两个选择器之间的空格表示）。
 
-The descendant combinator is *not* checked by this rule.
+根据此规则*不*检查后代选择器。
 
-Also, `+` and `-` signs within `:nth-*()` arguments are not checked (e.g. `a:nth-child(2n+1)`).
+此外，不检查 `:nth-*()` 参数内的 `+` 和 `-` 符号（例如 `a:nth-child(2n+1)`）。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
@@ -22,7 +22,7 @@ Also, `+` and `-` signs within `:nth-*()` arguments are not checked (e.g. `a:nth
 
 ### `"always"`
 
-There *must always* be a single space after the combinators.
+在组合选择器之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -46,7 +46,7 @@ a> b { color: pink; }
 
 ### `"never"`
 
-There *must never* be whitespace after the combinators.
+在组合选择器之后*不能*有空白符。
 
 以下模式被视为违规：
 

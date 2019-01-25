@@ -1,11 +1,11 @@
 # at-rule-semicolon-space-before
 
-Require a single space or disallow whitespace before the semicolons at-rules.
+要求在 @规则的分号之前必须有一个空格或不能有空白符。
 
 ```css
 @import "components/buttons";
 /**                         ↑
- * The space before this semicolon */
+ *                这个分号之前的空白符 */
 ```
 
 ## 选项
@@ -14,15 +14,15 @@ Require a single space or disallow whitespace before the semicolons at-rules.
 
 ### `"always"`
 
-There *must always* be a single space before the semicolons.
+在分号之前*必须*有一个空格。
 
-The following patterns is considered a violation:
+以下模式被视为违规：
 
 ```css
 @import "components/buttons";
 ```
 
-The following pattern is *not* considered a violation:
+以下模式*不*被视为违规：
 
 ```css
 @import "components/buttons" ;
@@ -30,15 +30,15 @@ The following pattern is *not* considered a violation:
 
 ### `"never"`
 
-There *must never* be a single space before the semicolons.
+在分号之前*不能*有空格。
 
-The following patterns is considered a violation:
+以下模式被视为违规：
 
 ```css
 @import "components/buttons" ;
 ```
 
-The following pattern is *not* considered a violation:
+以下模式*不*被视为违规：
 
 ```css
 @import "components/buttons";

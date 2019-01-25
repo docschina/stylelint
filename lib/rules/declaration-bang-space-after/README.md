@@ -1,11 +1,11 @@
 # declaration-bang-space-after
 
-Require a single space or disallow whitespace after the bang of declarations.
+要求在声明的叹号之后必须有一个空格或不能有空白符。
 
 ```css
 a { color: pink !important; }
 /**             ↑
- * The space after this exclamation mark */
+ * 这个感叹号之后的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ a { color: pink !important; }
 
 ### `"always"`
 
-There *must always* be a single space after the bang.
+在叹号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -40,7 +40,7 @@ a { color: pink! important; }
 
 ### `"never"`
 
-There *must never* be whitespace after the bang.
+在叹号之后*不能*有空白符。
 
 以下模式被视为违规：
 

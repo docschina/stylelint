@@ -5,40 +5,40 @@
 ```css
 .foo {width: calc();}
 /**               ↑
- * empty expression */
+ * 空表达式 */
 .foo {width: calc(100% 80px);}
 /**                   ↑
-/* missing operator */
+/* 缺少运算符 */
 .foo {width: calc(100% -80px);}
 /**                   ↑
-/* missing operator */
+/* 缺少运算符 */
 .foo {width: calc(100% - - 80px);}
 /**                      ↑
-/* unexpected operator */
+/* 非预期的运算符 */
 .foo {width: calc(100% -);}
 /**                    ↑
-/* unexpected operator */
+/* 非预期的运算符 */
 .foo {width: calc(- 100%);}
 /**               ↑
-/* unexpected operator */
+/* 非预期的运算符 */
 .foo {width: calc(100% / 0);}
 /**                    ↑ ↑
-/* division by zero */
+/* 除以零 */
 .foo {width: calc(100px + 80);}
 /**                  ↑  ↑  ↑
-/* the `resolved type` is invalid */
+/* `解析类型` 无效 */
 .foo {width: calc(100% + 80);}
 /**                  ↑ ↑  ↑
-/* the `resolved type` is invalid */
+/* `解析类型` 无效 */
 .foo {width: calc(100px - 80);}
 /**                  ↑  ↑  ↑
-/* the `resolved type` is invalid */
+/* `解析类型` 无效 */
 .foo {width: calc(100px * 80px);}
 /**                  ↑  ↑   ↑
-/* the `resolved type` is invalid */
+/* `解析类型` 无效 */
 .foo {width: calc(100 / 80%);}
 /**                 ↑ ↑   ↑
-/* the `resolved type` is invalid */
+/* `解析类型` 无效 */
 ```
 
 -   `calc()` 必须接收一个表达式。

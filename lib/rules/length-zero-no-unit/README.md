@@ -52,7 +52,7 @@ a { top: 1.001vh }
 
 Ignore units for zero length in custom properties.
 
-The following pattern is *not* considered a violation:
+以下模式*不*被视为违规：
 
 ```css
 a { --x: 0px; }

@@ -168,7 +168,7 @@ export default stylelint.createPlugin(ruleName, function (expectation) {
 
 ## 对等依赖
 
-您应该在插件的 `package.json` 的 `peerDependencies`（**不是** `dependencies`）键中表明，您的插件可以使用什么版本的 stylelint。这是为了确保不会意外安装不同版本的 stylelint。
+您应该在插件的 `package.json` 的 `peerDependencies`（**不是** `dependencies`）键中表明，您的插件可以使用什么版本的 stylelint。这是为了确保不会安装非预期的 stylelint 版本。
 
 例如，要表示您的插件可以与 stylelint 版本 7 和 8 一起使用：
 

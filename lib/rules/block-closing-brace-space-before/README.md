@@ -1,11 +1,11 @@
 # block-closing-brace-space-before
 
-Require a single space or disallow whitespace before the closing brace of blocks.
+要求在块的闭大括号之前必须有一个空格或不能有空白符。
 
 ```css
 a { color: pink; }
 /**              ↑
- * The space before this brace */
+ * 这个大括号之前的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ a { color: pink; }
 
 ### `"always"`
 
-There *must always* be a single space before the closing brace.
+在闭大括号之前*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -42,7 +42,7 @@ color: pink; }
 
 ### `"never"`
 
-There *must never* be whitespace before the closing brace.
+在闭大括号之前*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -68,7 +68,7 @@ color: pink;}
 
 ### `"always-single-line"`
 
-There *must always* be a single space before the closing brace in single-line blocks.
+在单行块的闭大括号之前*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -89,7 +89,7 @@ color: pink;}
 
 ### `"never-single-line"`
 
-There *must never* be whitespace before the closing brace in single-line blocks.
+在单行块的闭大括号之前*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -110,7 +110,7 @@ color: pink; }
 
 ### `"always-multi-line"`
 
-There *must always* be a single space before the closing brace in multi-line blocks.
+在多行块的闭大括号之前*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -132,7 +132,7 @@ color: pink; }
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace before the closing brace in multi-line blocks.
+在多行块的闭大括号之前*不能*有空白符。
 
 以下模式被视为违规：
 

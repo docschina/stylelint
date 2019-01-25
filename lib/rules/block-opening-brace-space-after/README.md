@@ -1,11 +1,11 @@
 # block-opening-brace-space-after
 
-Require a single space or disallow whitespace after the opening brace of blocks.
+要求在块的开大括号之后必须有一个空格或不能有空白符。
 
 ```css
   a { color: pink; }
 /** ↑
- * The space after this brace */
+ * 这个大括号之后的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ Require a single space or disallow whitespace after the opening brace of blocks.
 
 ### `"always"`
 
-There *must always* be a single space after the opening brace.
+在开大括号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -42,7 +42,7 @@ a { color: pink;
 
 ### `"never"`
 
-There *must never* be whitespace after the opening brace.
+在开大括号之后*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -68,7 +68,7 @@ a
 
 ### `"always-single-line"`
 
-There *must always* be a single space after the opening brace in single-line blocks.
+在单行块的开大括号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -89,7 +89,7 @@ a {color: pink;
 
 ### `"never-single-line"`
 
-There *must never* be whitespace after the opening brace in single-line blocks.
+在单行块的开大括号之后*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -110,7 +110,7 @@ a { color: pink;
 
 ### `"always-multi-line"`
 
-There *must always* be a single space after the opening brace in multi-line blocks.
+在多行块的开大括号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -132,7 +132,7 @@ a { color: pink;
 
 ### `"never-multi-line"`
 
-There *must never* be whitespace after the opening brace in multi-line blocks.
+在多行块的开大括号之后*不能*有空白符。
 
 以下模式被视为违规：
 

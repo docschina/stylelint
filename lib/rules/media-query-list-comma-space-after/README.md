@@ -1,11 +1,11 @@
 # media-query-list-comma-space-after
 
-Require a single space or disallow whitespace after the commas of media query lists.
+要求在媒体查询列表的逗号之后必须有一个空格或不能有空白符。
 
 ```css
 @media screen and (color), projection and (color) {}
 /**                      ↑
- *            These commas */
+ *              这个逗号之后的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ Require a single space or disallow whitespace after the commas of media query li
 
 ### `"always"`
 
-There *must always* be a single space after the commas.
+在逗号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -42,7 +42,7 @@ There *must always* be a single space after the commas.
 
 ### `"never"`
 
-There *must never* be whitespace after the commas.
+在逗号之后*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -68,7 +68,7 @@ There *must never* be whitespace after the commas.
 
 ### `"always-single-line"`
 
-There *must always* be a single space after the commas in single-line media query lists.
+在单行媒体查询列表的逗号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -94,7 +94,7 @@ There *must always* be a single space after the commas in single-line media quer
 
 ### `"never-single-line"`
 
-There *must never* be whitespace after the commas in single-line media query lists.
+在单行媒体查询列表的逗号之后*不能*有空白符。
 
 以下模式被视为违规：
 

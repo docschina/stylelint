@@ -1,14 +1,14 @@
 # declaration-block-semicolon-space-before
 
-Require a single space or disallow whitespace before the semicolons of declaration blocks.
+要求在声明块的分号之前必须有一个空格或不能有空白符。
 
 ```css
 a { color: pink; }
 /**            ↑
- * The space before this semicolon */
+ * 这个分号之前的空白符 */
 ```
 
-This rule ignores semicolons that are preceded by Less mixins.
+此规则忽略 Less mixins 的分号。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
@@ -18,7 +18,7 @@ This rule ignores semicolons that are preceded by Less mixins.
 
 ### `"always"`
 
-There *must always* be a single space before the semicolons.
+在分号之前*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -42,7 +42,7 @@ a { color: pink ; top: 0 ; }
 
 ### `"never"`
 
-There *must never* be whitespace before the semicolons.
+在分号之前*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -66,7 +66,7 @@ a { color: pink; top: 0; }
 
 ### `"always-single-line"`
 
-There *must always* be a single space before the semicolons in single-line declaration blocks.
+在单行声明块的分号之前*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -90,7 +90,7 @@ a { color: pink ; top: 0 ; }
 
 ### `"never-single-line"`
 
-There *must never* be whitespace before the semicolons in single-line declaration blocks.
+在单行声明块的分号之前*不能*有空白符。
 
 以下模式被视为违规：
 

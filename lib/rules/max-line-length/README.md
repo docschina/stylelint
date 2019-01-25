@@ -134,5 +134,5 @@ a { color: pink; }
 以下模式*不*被视为违规：
 
 ```css
-/* ignore urls https://www.example.com */
+/* 忽略 URL https://www.example.com */
 ```

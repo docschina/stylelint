@@ -5,7 +5,7 @@ Limit the number of combinators in a selector.
 ```css
   a > b + c ~ d e { color: pink; }
 /** ↑   ↑   ↑  ↑
- * These are combinators */
+ * 这些是组合选择器 */
 ```
 
 This rule resolves nested selectors before counting the number of combinators selectors. Each selector in a [selector list](https://www.w3.org/TR/selectors4/#selector-list) is evaluated separately.

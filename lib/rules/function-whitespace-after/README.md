@@ -18,7 +18,7 @@ This rule does not check for space immediately after `)` if the very next charac
 
 ### `"always"`
 
-There *must always* be whitespace after the function.
+在函数之后*必须*有空白符。
 
 以下模式被视为违规：
 
@@ -70,7 +70,7 @@ a {
 
 ### `"never"`
 
-There *must never* be whitespace after the function.
+在函数之后*不能*有空白符。
 
 以下模式被视为违规：
 

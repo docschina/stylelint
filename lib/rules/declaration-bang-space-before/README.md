@@ -1,11 +1,11 @@
 # declaration-bang-space-before
 
-Require a single space or disallow whitespace before the bang of declarations.
+要求在声明的叹号之前必须有一个空格或不能有空白符。
 
 ```css
 a { color: pink !important; }
 /**             ↑
- * The space before this exclamation mark */
+ * 这个感叹号之前的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ a { color: pink !important; }
 
 ### `"always"`
 
-There *must always* be a single space before the bang.
+在叹号之前*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -40,7 +40,7 @@ a { color:pink ! important; }
 
 ### `"never"`
 
-There *must never* be whitespace before the bang.
+在叹号之前*不能*有空白符。
 
 以下模式被视为违规：
 
