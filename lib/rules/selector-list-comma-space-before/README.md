@@ -1,11 +1,11 @@
 # selector-list-comma-space-before
 
-Require a single space or disallow whitespace before the commas of selector lists.
+要求在选择器列表的逗号之前必须有一个空格或不能有空白符。
 
 ```css
    a ,b { color: pink; }
 /**  ↑
- * The space before this comma */
+ * 这个逗号之前的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ Require a single space or disallow whitespace before the commas of selector list
 
 ### `"always"`
 
-There *must always* be a single space before the commas.
+在逗号之前*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -40,7 +40,7 @@ a , b { color: pink; }
 
 ### `"never"`
 
-There *must never* be whitespace before the commas.
+在逗号之前*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -64,7 +64,7 @@ a, b { color: pink; }
 
 ### `"always-single-line"`
 
-There *must always* be a single space before the commas in single-line selector lists.
+在单行选择器列表的逗号之前*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -81,7 +81,7 @@ b { color: pink; }
 
 ### `"never-single-line"`
 
-There *must never* be a single space before the commas in single-line selector lists.
+在单行选择器列表的逗号之前*不能*有空格。
 
 以下模式被视为违规：
 

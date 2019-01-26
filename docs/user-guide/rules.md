@@ -217,8 +217,8 @@
 
 -   [`function-comma-newline-after`](../../lib/rules/function-comma-newline-after/README.md)：要求在函数的逗号之后必须有换行符或不能有空白符（可自动修复）。
 -   [`function-comma-newline-before`](../../lib/rules/function-comma-newline-before/README.md)：要求在函数的逗号之前必须有换行符或不能有空白符（可自动修复）。
--   [`function-comma-space-after`](../../lib/rules/function-comma-space-after/README.md)：Require a single space or disallow whitespace after the commas of functions (Autofixable).
--   [`function-comma-space-before`](../../lib/rules/function-comma-space-before/README.md)：Require a single space or disallow whitespace before the commas of functions (Autofixable).
+-   [`function-comma-space-after`](../../lib/rules/function-comma-space-after/README.md)：要求在函数的逗号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`function-comma-space-before`](../../lib/rules/function-comma-space-before/README.md)：要求在函数的逗号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`function-max-empty-lines`](../../lib/rules/function-max-empty-lines/README.md)：Limit the number of adjacent empty lines within functions (Autofixable).
 -   [`function-name-case`](../../lib/rules/function-name-case/README.md)：Specify lowercase or uppercase for function names (Autofixable).
 -   [`function-parentheses-newline-inside`](../../lib/rules/function-parentheses-newline-inside/README.md)：要求在函数的括号内侧必须有换行符或不能有空白符（可自动修复）。
@@ -251,8 +251,8 @@
 
 -   [`value-list-comma-newline-after`](../../lib/rules/value-list-comma-newline-after/README.md)：要求在值列表的逗号之后必须有换行符或不能有空白符（可自动修复）。
 -   [`value-list-comma-newline-before`](../../lib/rules/value-list-comma-newline-before/README.md)：要求在值列表的逗号之前必须有换行符或不能有空白符。
--   [`value-list-comma-space-after`](../../lib/rules/value-list-comma-space-after/README.md)：Require a single space or disallow whitespace after the commas of value lists (Autofixable).
--   [`value-list-comma-space-before`](../../lib/rules/value-list-comma-space-before/README.md)：Require a single space or disallow whitespace before the commas of value lists (Autofixable).
+-   [`value-list-comma-space-after`](../../lib/rules/value-list-comma-space-after/README.md)：要求在值列表的逗号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`value-list-comma-space-before`](../../lib/rules/value-list-comma-space-before/README.md)：要求在值列表的逗号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`value-list-max-empty-lines`](../../lib/rules/value-list-max-empty-lines/README.md)：Limit the number of adjacent empty lines within value lists (Autofixable).
 
 #### 自定义属性
@@ -265,19 +265,19 @@
 
 #### 声明
 
--   [`declaration-bang-space-after`](../../lib/rules/declaration-bang-space-after/README.md)：Require a single space or disallow whitespace after the bang of declarations (Autofixable).
--   [`declaration-bang-space-before`](../../lib/rules/declaration-bang-space-before/README.md)：Require a single space or disallow whitespace before the bang of declarations (Autofixable).
+-   [`declaration-bang-space-after`](../../lib/rules/declaration-bang-space-after/README.md)：要求在声明的叹号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`declaration-bang-space-before`](../../lib/rules/declaration-bang-space-before/README.md)：要求在声明的叹号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`declaration-colon-newline-after`](../../lib/rules/declaration-colon-newline-after/README.md)：要求在声明块的冒号之后必须有换行符或不能有空白符（可自动修复）。
--   [`declaration-colon-space-after`](../../lib/rules/declaration-colon-space-after/README.md)：Require a single space or disallow whitespace after the colon of declarations (Autofixable).
--   [`declaration-colon-space-before`](../../lib/rules/declaration-colon-space-before/README.md)：Require a single space or disallow whitespace before the colon of declarations (Autofixable).
+-   [`declaration-colon-space-after`](../../lib/rules/declaration-colon-space-after/README.md)：要求在声明块的冒号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`declaration-colon-space-before`](../../lib/rules/declaration-colon-space-before/README.md)：要求在声明块的冒号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`declaration-empty-line-before`](../../lib/rules/declaration-empty-line-before/README.md)：要求或禁止在声明之前的空行（可自动修复）。
 
 #### 声明块
 
 -   [`declaration-block-semicolon-newline-after`](../../lib/rules/declaration-block-semicolon-newline-after/README.md)：要求在声明块的分号之后必须有换行符或不能有空白符（可自动修复）。
 -   [`declaration-block-semicolon-newline-before`](../../lib/rules/declaration-block-semicolon-newline-before/README.md)：要求在声明块的分号之前必须有换行符或不能有空白符。
--   [`declaration-block-semicolon-space-after`](../../lib/rules/declaration-block-semicolon-space-after/README.md)：Require a single space or disallow whitespace after the semicolons of declaration blocks (Autofixable).
--   [`declaration-block-semicolon-space-before`](../../lib/rules/declaration-block-semicolon-space-before/README.md)：Require a single space or disallow whitespace before the semicolons of declaration blocks (Autofixable).
+-   [`declaration-block-semicolon-space-after`](../../lib/rules/declaration-block-semicolon-space-after/README.md)：要求在声明块的分号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`declaration-block-semicolon-space-before`](../../lib/rules/declaration-block-semicolon-space-before/README.md)：要求在声明块的分号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`declaration-block-trailing-semicolon`](../../lib/rules/declaration-block-trailing-semicolon/README.md)：Require or disallow a trailing semicolon within declaration blocks (Autofixable).
 
 #### 块
@@ -285,21 +285,21 @@
 -   [`block-closing-brace-empty-line-before`](../../lib/rules/block-closing-brace-empty-line-before/README.md)：要求或禁止在块的闭大括号之前空行（可自动修复）。
 -   [`block-closing-brace-newline-after`](../../lib/rules/block-closing-brace-newline-after/README.md)：要求在块的闭大括号之后必须有换行符或不能有空白符（可自动修复）。
 -   [`block-closing-brace-newline-before`](../../lib/rules/block-closing-brace-newline-before/README.md)：要求在块的闭大括号之前必须有换行符或不能有空白符（可自动修复）。
--   [`block-closing-brace-space-after`](../../lib/rules/block-closing-brace-space-after/README.md)：Require a single space or disallow whitespace after the closing brace of blocks.
--   [`block-closing-brace-space-before`](../../lib/rules/block-closing-brace-space-before/README.md)：Require a single space or disallow whitespace before the closing brace of blocks (Autofixable).
+-   [`block-closing-brace-space-after`](../../lib/rules/block-closing-brace-space-after/README.md)：要求在块的闭大括号之后必须有一个空格或不能有空白符。
+-   [`block-closing-brace-space-before`](../../lib/rules/block-closing-brace-space-before/README.md)：要求在块的闭大括号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`block-opening-brace-newline-after`](../../lib/rules/block-opening-brace-newline-after/README.md)：要求在块的开大括号之后必须有换行符（可自动修复）。
 -   [`block-opening-brace-newline-before`](../../lib/rules/block-opening-brace-newline-before/README.md)：要求在块的开大括号之前必须有换行符或不能有空白符（可自动修复）。
--   [`block-opening-brace-space-after`](../../lib/rules/block-opening-brace-space-after/README.md)：Require a single space or disallow whitespace after the opening brace of blocks (Autofixable).
--   [`block-opening-brace-space-before`](../../lib/rules/block-opening-brace-space-before/README.md)：Require a single space or disallow whitespace before the opening brace of blocks (Autofixable).
+-   [`block-opening-brace-space-after`](../../lib/rules/block-opening-brace-space-after/README.md)：要求在块的开大括号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`block-opening-brace-space-before`](../../lib/rules/block-opening-brace-space-before/README.md)：要求在块的开大括号之前必须有一个空格或不能有空白符（可自动修复）。
 
 #### 选择器
 
 -   [`selector-attribute-brackets-space-inside`](../../lib/rules/selector-attribute-brackets-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the brackets within attribute selectors (Autofixable).
--   [`selector-attribute-operator-space-after`](../../lib/rules/selector-attribute-operator-space-after/README.md)：Require a single space or disallow whitespace after operators within attribute selectors (Autofixable).
--   [`selector-attribute-operator-space-before`](../../lib/rules/selector-attribute-operator-space-before/README.md)：Require a single space or disallow whitespace before operators within attribute selectors (Autofixable).
+-   [`selector-attribute-operator-space-after`](../../lib/rules/selector-attribute-operator-space-after/README.md)：要求在属性选择器中的运算符之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`selector-attribute-operator-space-before`](../../lib/rules/selector-attribute-operator-space-before/README.md)：要求在属性选择器中的运算符之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-attribute-quotes`](../../lib/rules/selector-attribute-quotes/README.md)：Require or disallow quotes for attribute values.
--   [`selector-combinator-space-after`](../../lib/rules/selector-combinator-space-after/README.md)：Require a single space or disallow whitespace after the combinators of selectors (Autofixable).
--   [`selector-combinator-space-before`](../../lib/rules/selector-combinator-space-before/README.md)：Require a single space or disallow whitespace before the combinators of selectors (Autofixable).
+-   [`selector-combinator-space-after`](../../lib/rules/selector-combinator-space-after/README.md)：要求在组合选择器之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`selector-combinator-space-before`](../../lib/rules/selector-combinator-space-before/README.md)：要求在组合选择器之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-descendant-combinator-no-non-space`](../../lib/rules/selector-descendant-combinator-no-non-space/README.md)：Disallow non-space characters for descendant combinators of selectors (Autofixable).
 -   [`selector-pseudo-class-case`](../../lib/rules/selector-pseudo-class-case/README.md)：Specify lowercase or uppercase for pseudo-class selectors (Autofixable).
 -   [`selector-pseudo-class-parentheses-space-inside`](../../lib/rules/selector-pseudo-class-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors (Autofixable).
@@ -311,8 +311,8 @@
 
 -   [`selector-list-comma-newline-after`](../../lib/rules/selector-list-comma-newline-after/README.md)：要求在选择器列表的逗号之后必须有换行符或不能有空白符（可自动修复）。
 -   [`selector-list-comma-newline-before`](../../lib/rules/selector-list-comma-newline-before/README.md)：要求在选择器列表的逗号之前必须有换行符或不能有空白符（可自动修复）。
--   [`selector-list-comma-space-after`](../../lib/rules/selector-list-comma-space-after/README.md)：Require a single space or disallow whitespace after the commas of selector lists (Autofixable).
--   [`selector-list-comma-space-before`](../../lib/rules/selector-list-comma-space-before/README.md)：Require a single space or disallow whitespace before the commas of selector lists (Autofixable).
+-   [`selector-list-comma-space-after`](../../lib/rules/selector-list-comma-space-after/README.md)：要求在选择器列表的逗号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`selector-list-comma-space-before`](../../lib/rules/selector-list-comma-space-before/README.md)：要求在选择器列表的逗号之前必须有一个空格或不能有空白符（可自动修复）。
 
 #### 规则
 
@@ -320,19 +320,19 @@
 
 #### 媒体功能
 
--   [`media-feature-colon-space-after`](../../lib/rules/media-feature-colon-space-after/README.md)：Require a single space or disallow whitespace after the colon in media features (Autofixable).
--   [`media-feature-colon-space-before`](../../lib/rules/media-feature-colon-space-before/README.md)：Require a single space or disallow whitespace before the colon in media features (Autofixable).
+-   [`media-feature-colon-space-after`](../../lib/rules/media-feature-colon-space-after/README.md)：要求在媒体功能的冒号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`media-feature-colon-space-before`](../../lib/rules/media-feature-colon-space-before/README.md)：要求在媒体功能的冒号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`media-feature-name-case`](../../lib/rules/media-feature-name-case/README.md)：Specify lowercase or uppercase for media feature names (Autofixable).
 -   [`media-feature-parentheses-space-inside`](../../lib/rules/media-feature-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses within media features (Autofixable).
--   [`media-feature-range-operator-space-after`](../../lib/rules/media-feature-range-operator-space-after/README.md)：Require a single space or disallow whitespace after the range operator in media features (Autofixable).
--   [`media-feature-range-operator-space-before`](../../lib/rules/media-feature-range-operator-space-before/README.md)：Require a single space or disallow whitespace before the range operator in media features (Autofixable).
+-   [`media-feature-range-operator-space-after`](../../lib/rules/media-feature-range-operator-space-after/README.md)：要求在媒体功能的范围运算符之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`media-feature-range-operator-space-before`](../../lib/rules/media-feature-range-operator-space-before/README.md)：要求在媒体功能的范围运算符之前必须有一个空格或不能有空白符（可自动修复）。
 
 #### 媒体查询列表
 
 -   [`media-query-list-comma-newline-after`](../../lib/rules/media-query-list-comma-newline-after/README.md)：要求在媒体查询列表的逗号之后必须有换行符或不能有空白符（可自动修复）。
 -   [`media-query-list-comma-newline-before`](../../lib/rules/media-query-list-comma-newline-before/README.md)：要求在媒体查询列表的逗号之前必须有换行符或不能有空白符。
--   [`media-query-list-comma-space-after`](../../lib/rules/media-query-list-comma-space-after/README.md)：Require a single space or disallow whitespace after the commas of media query lists (Autofixable).
--   [`media-query-list-comma-space-before`](../../lib/rules/media-query-list-comma-space-before/README.md)：Require a single space or disallow whitespace before the commas of media query lists (Autofixable).
+-   [`media-query-list-comma-space-after`](../../lib/rules/media-query-list-comma-space-after/README.md)：要求在媒体查询列表的逗号之后必须有一个空格或不能有空白符（可自动修复）。
+-   [`media-query-list-comma-space-before`](../../lib/rules/media-query-list-comma-space-before/README.md)：要求在媒体查询列表的逗号之前必须有一个空格或不能有空白符（可自动修复）。
 
 #### @规则
 
@@ -341,7 +341,7 @@
 -   [`at-rule-name-newline-after`](../../lib/rules/at-rule-name-newline-after/README.md)：Require a newline after at-rule names.
 -   [`at-rule-name-space-after`](../../lib/rules/at-rule-name-space-after/README.md)：Require a single space after at-rule names (Autofixable).
 -   [`at-rule-semicolon-newline-after`](../../lib/rules/at-rule-semicolon-newline-after/README.md)：要求在 @规则的分号之后必须有换行符（可自动修复）。
--   [`at-rule-semicolon-space-before`](../../lib/rules/at-rule-semicolon-space-before/README.md)：Require a single space or disallow whitespace before the semicolons of at rules.
+-   [`at-rule-semicolon-space-before`](../../lib/rules/at-rule-semicolon-space-before/README.md)：要求在 @规则的分号之前必须有一个空格或不能有空白符。
 
 #### 注释
 

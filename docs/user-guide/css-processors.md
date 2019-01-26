@@ -14,8 +14,8 @@
 stylelint 将根据以下信息自动推断出以下语法：
 
 -   文件扩展名
--   `<style>` 标签上的 `lang` 或 `type` 属性的值
--   Markdown 代码围栏上的标记
+-   HTML 中的 `<style>` 标签的 `type` 或 `lang` 属性
+-   Markdown 中 [GFM 受控代码块](https://help.github.com/articles/creating-and-highlighting-code-blocks/)上的[信息字符串](https://github.github.com/gfm/#info-string)
 
 但是，您可以强制使用特定语法。[命令行界面](cli.md)和 [Node.js 应用程序接口](node-api.md)都暴露了 `syntax` 选项。
 

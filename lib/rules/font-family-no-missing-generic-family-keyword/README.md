@@ -13,7 +13,7 @@ a { font-family: Arial, sans-serif; }
 
 ### `true`
 
-如下写法被认为是违规的：
+以下模式被视为违规：
 
 ```css
 a { font-family: Helvetica, Arial, Verdana, Tahoma; }
@@ -23,7 +23,7 @@ a { font-family: Helvetica, Arial, Verdana, Tahoma; }
 a { font: 1em/1.3 Times; }
 ```
 
-如下写法*不*被认为是违规的：
+以下模式*不*被视为违规：
 
 ```css
 a { font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif; }

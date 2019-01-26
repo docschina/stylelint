@@ -5,7 +5,7 @@ Require a single space after at-rule names.
 ```css
 @media (max-width: 600px) {}
 /**   ↑
- * The space after at-rule names */
+ * @规则名之后的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ Require a single space after at-rule names.
 
 ### `"always"`
 
-There *must always* be a single space after at-rule names.
+在 @规则名之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -53,7 +53,7 @@ There *must always* be a single space after at-rule names.
 
 ### `"always-single-line"`
 
-There *must always* be a single space after at-rule names in single-line declaration blocks.
+在单行声明块的 @规则名之后*必须*有一个空格。
 
 以下模式被视为违规：
 

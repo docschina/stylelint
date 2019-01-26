@@ -1,11 +1,11 @@
 # function-comma-space-after
 
-Require a single space or disallow whitespace after the commas of functions.
+要求在函数的逗号之后必须有一个空格或不能有空白符。
 
 ```css
 a { transform: translate(1, 1) }
 /**                       ↑
- * The space after these commas */
+ *               这个逗号之后的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ a { transform: translate(1, 1) }
 
 ### `"always"`
 
-There *must always* be a single space after the commas.
+在逗号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -40,7 +40,7 @@ a { transform: translate(1 , 1) }
 
 ### `"never"`
 
-There *must never* be whitespace after the commas.
+在逗号之后*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -64,7 +64,7 @@ a { transform: translate(1 ,1) }
 
 ### `"always-single-line"`
 
-There *must always* be a single space after the commas in single-line functions.
+在单行函数的逗号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -95,7 +95,7 @@ a {
 
 ### `"never-single-line"`
 
-There *must never* be whitespace after the commas in single-line functions.
+在单行函数的逗号之后*不能*有空白符。
 
 以下模式被视为违规：
 

@@ -46,7 +46,7 @@ a { font: 1em "Arial", "sans-serif", sans-serif; }
 a { font: normal 14px/32px -apple-system, BlinkMacSystemFont, sans-serif; }
 ```
 
-## 可选的次选项
+## 可选的辅助选项
 
 ### `ignoreFontFamilyNames: ["/regex/", /regex/, "string"]`
 

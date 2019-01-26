@@ -1,11 +1,11 @@
 # declaration-colon-space-after
 
-Require a single space or disallow whitespace after the colon of declarations.
+要求在声明块的冒号之后必须有一个空格或不能有空白符。
 
 ```css
 a { color: pink }
 /**      ↑
- * The space after this colon */
+ * 这个冒号之后的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ a { color: pink }
 
 ### `"always"`
 
-There *must always* be a single space after the colon.
+在冒号之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -40,7 +40,7 @@ a { color: pink }
 
 ### `"never"`
 
-There *must never* be whitespace after the colon.
+在冒号之后*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -64,7 +64,7 @@ a { color:pink }
 
 ### `"always-single-line"`
 
-There *must always* be a single space after the colon *if the declaration's value is single-line*.
+*如果声明的值为单行*，则冒号之后*必须*有一个空格。
 
 以下模式被视为违规：
 

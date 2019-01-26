@@ -1,11 +1,11 @@
 # selector-attribute-operator-space-after
 
-Require a single space or disallow whitespace after operators within attribute selectors.
+要求在属性选择器中的运算符之后必须有一个空格或不能有空白符。
 
 ```css
 [target= _blank]
 /**    ↑
- * The space after operator */
+ * 运算符之后的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ Require a single space or disallow whitespace after operators within attribute s
 
 ### `"always"`
 
-There *must always* be a single space after the operator.
+在运算符之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -76,7 +76,7 @@ There *must always* be a single space after the operator.
 
 ### `"never"`
 
-There *must never* be a single space after the operator.
+在运算符之后*不能*有空格。
 
 以下模式被视为违规：
 

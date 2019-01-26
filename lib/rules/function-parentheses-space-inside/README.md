@@ -5,7 +5,7 @@ Require a single space or disallow whitespace on the inside of the parentheses o
 ```css
 a { transform: translate( 1, 1 ); }
 /**                     ↑      ↑
- * The space inside these two parentheses */
+ * 这两个括号内侧的空白符 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
@@ -16,7 +16,7 @@ a { transform: translate( 1, 1 ); }
 
 ### `"always"`
 
-There *must always* be a single space inside of the parentheses.
+在括号的内侧*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -36,7 +36,7 @@ a { transform: translate( 1, 1 ); }
 
 ### `"never"`
 
-There *must never* be whitespace on the inside of the parentheses.
+在括号的内侧*不能*有空白符。
 
 以下模式被视为违规：
 
@@ -56,7 +56,7 @@ a { transform: translate(1, 1); }
 
 ### `"always-single-line"`
 
-There *must always* be a single space inside the parentheses of single-line functions.
+在单行函数的括号内侧*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -90,7 +90,7 @@ a {
 
 ### `"never-single-line"`
 
-There *must never* be whitespace inside the parentheses of single-line functions.
+在单行函数的括号内侧*不能*有空白符。
 
 以下模式被视为违规：
 

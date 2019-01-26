@@ -5,7 +5,7 @@
 ```css
 a { color: pink;; }
 /**             ↑
- *  This semicolons */
+ *          这个分号 */
 ```
 
 此规则忽略在 Less mixins 之后的分号。
