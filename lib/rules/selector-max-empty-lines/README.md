@@ -1,6 +1,6 @@
 # selector-max-empty-lines
 
-Limit the number of adjacent empty lines within selectors.
+限制选择器中相邻空行的数量
 
 ```css
 a,
@@ -9,12 +9,12 @@ b {        /* ↑ */
   color: red; /* ↑ */
 }             /* ↑ */
 /**              ↑
- *        This empty line */
+ *        这个空行 */
 ```
 
 ## 选项
 
-`int`: Maximum number of empty lines.
+`int`：允许的最大相邻空行数量。
 
 例如，使用 `0`：
 

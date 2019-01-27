@@ -50,19 +50,19 @@ a { top: calc(1 * (1 + 3)); }
 ```
 
 ```css
-/* notice the ), with no space after the closing parenthesis */
+/* 注意 )，在右括号后没有空格 */
 a { padding: calc(1 * 2px), calc(2 * 5px); }
 ```
 
 ```scss
-/* notice the )}, with no space after the closing parenthesis */
+/* 注意 )}，在右括号后没有空格 */
 a {
   max-height: #{($line-height) * ($lines-to-show)}em;
 }
 ```
 
 ```less
-/* notice the )}, with no space after the closing parenthesis */
+/* 注意 )}，在右括号后没有空格 */
 a {
   max-height: ((@line-height) * (@lines-to-show))em;
 }

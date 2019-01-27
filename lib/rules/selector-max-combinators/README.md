@@ -1,6 +1,6 @@
 # selector-max-combinators
 
-Limit the number of combinators in a selector.
+限制一个选择器中组合选择器的数量
 
 ```css
   a > b + c ~ d e { color: pink; }
@@ -8,11 +8,11 @@ Limit the number of combinators in a selector.
  * 这些是组合选择器 */
 ```
 
-This rule resolves nested selectors before counting the number of combinators selectors. Each selector in a [selector list](https://www.w3.org/TR/selectors4/#selector-list) is evaluated separately.
+此规则在计算组合选择器的数量之前先解析选择器嵌套。[选择器列表](https://www.w3.org/TR/selectors4/#selector-list)中的每个选择器都将单独计算。
 
 ## 选项
 
-`int`: Maximum combinators selectors allowed.
+`int`：允许的最大组合选择器数量。
 
 例如，使用 `2`：
 
@@ -57,7 +57,7 @@ a b {
 ```
 
 ```css
-/* each selector in a selector list is evaluated separately */
+/* 选择器列表中的每个选择器都将单独计算 */
 a b,
 c > d {}
 ```

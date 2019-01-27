@@ -104,7 +104,7 @@
 
 #### 数字
 
--   [`number-max-precision`](../../lib/rules/number-max-precision/README.md)：Limit the number of decimal places allowed in numbers.
+-   [`number-max-precision`](../../lib/rules/number-max-precision/README.md)：限制数字中允许的小数位数
 
 #### 时间
 
@@ -144,7 +144,7 @@
 
 #### 声明块
 
--   [`declaration-block-single-line-max-declarations`](../../lib/rules/declaration-block-single-line-max-declarations/README.md)：Limit the number of declarations within single line declaration blocks.
+-   [`declaration-block-single-line-max-declarations`](../../lib/rules/declaration-block-single-line-max-declarations/README.md)：限制一个单行声明块中声明的数量
 
 #### 选择器
 
@@ -154,16 +154,16 @@
 -   [`selector-combinator-blacklist`](../../lib/rules/selector-combinator-blacklist/README.md)：Specify a blacklist of disallowed combinators.
 -   [`selector-combinator-whitelist`](../../lib/rules/selector-combinator-whitelist/README.md)：Specify a whitelist of allowed combinators.
 -   [`selector-id-pattern`](../../lib/rules/selector-id-pattern/README.md)：Specify a pattern for ID selectors.
--   [`selector-max-attribute`](../../lib/rules/selector-max-attribute/README.md)：Limit the number of attribute selectors in a selector.
--   [`selector-max-class`](../../lib/rules/selector-max-class/README.md)：Limit the number of classes in a selector.
--   [`selector-max-combinators`](../../lib/rules/selector-max-combinators/README.md)：Limit the number of combinators in a selector.
--   [`selector-max-compound-selectors`](../../lib/rules/selector-max-compound-selectors/README.md)：Limit the number of compound selectors in a selector.
--   [`selector-max-empty-lines`](../../lib/rules/selector-max-empty-lines/README.md)：Limit the number of adjacent empty lines within selectors.
--   [`selector-max-id`](../../lib/rules/selector-max-id/README.md)：Limit the number of ID selectors in a selector.
--   [`selector-max-pseudo-class`](../../lib/rules/selector-max-pseudo-class/README.md)：Limit the number of pseudo-classes in a selector.
+-   [`selector-max-attribute`](../../lib/rules/selector-max-attribute/README.md)：限制一个选择器中属性选择器的数量
+-   [`selector-max-class`](../../lib/rules/selector-max-class/README.md)：限制一个选择器中类的数量
+-   [`selector-max-combinators`](../../lib/rules/selector-max-combinators/README.md)：限制一个选择器中组合选择器的数量
+-   [`selector-max-compound-selectors`](../../lib/rules/selector-max-compound-selectors/README.md)：限制一个选择器中复合选择器的数量
+-   [`selector-max-empty-lines`](../../lib/rules/selector-max-empty-lines/README.md)：限制选择器中相邻空行的数量
+-   [`selector-max-id`](../../lib/rules/selector-max-id/README.md)：限制一个选择器中ID选择器的数量
+-   [`selector-max-pseudo-class`](../../lib/rules/selector-max-pseudo-class/README.md)：限制一个选择器中伪类的数量
 -   [`selector-max-specificity`](../../lib/rules/selector-max-specificity/README.md)：Limit the specificity of selectors.
--   [`selector-max-type`](../../lib/rules/selector-max-type/README.md)：Limit the number of type in a selector.
--   [`selector-max-universal`](../../lib/rules/selector-max-universal/README.md)：Limit the number of universal selectors in a selector.
+-   [`selector-max-type`](../../lib/rules/selector-max-type/README.md)：限制一个选择器中类型选择器的数量
+-   [`selector-max-universal`](../../lib/rules/selector-max-universal/README.md)：限制一个选择器中通用选择器的数量
 -   [`selector-nested-pattern`](../../lib/rules/selector-nested-pattern/README.md)：Specify a pattern for the selectors of rules nested within rules.
 -   [`selector-no-qualifying-type`](../../lib/rules/selector-no-qualifying-type/README.md)：Disallow qualifying a selector by type.
 -   [`selector-no-vendor-prefix`](../../lib/rules/selector-no-vendor-prefix/README.md)：Disallow vendor prefixes for selectors.
@@ -219,7 +219,7 @@
 -   [`function-comma-newline-before`](../../lib/rules/function-comma-newline-before/README.md)：要求在函数的逗号之前必须有换行符或不能有空白符（可自动修复）。
 -   [`function-comma-space-after`](../../lib/rules/function-comma-space-after/README.md)：要求在函数的逗号之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`function-comma-space-before`](../../lib/rules/function-comma-space-before/README.md)：要求在函数的逗号之前必须有一个空格或不能有空白符（可自动修复）。
--   [`function-max-empty-lines`](../../lib/rules/function-max-empty-lines/README.md)：Limit the number of adjacent empty lines within functions (Autofixable).
+-   [`function-max-empty-lines`](../../lib/rules/function-max-empty-lines/README.md)：限制函数中相邻空行的数量（可自动修复）
 -   [`function-name-case`](../../lib/rules/function-name-case/README.md)：Specify lowercase or uppercase for function names (Autofixable).
 -   [`function-parentheses-newline-inside`](../../lib/rules/function-parentheses-newline-inside/README.md)：要求在函数的括号内侧必须有换行符或不能有空白符（可自动修复）。
 -   [`function-parentheses-space-inside`](../../lib/rules/function-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses of functions (Autofixable).
@@ -253,7 +253,7 @@
 -   [`value-list-comma-newline-before`](../../lib/rules/value-list-comma-newline-before/README.md)：要求在值列表的逗号之前必须有换行符或不能有空白符。
 -   [`value-list-comma-space-after`](../../lib/rules/value-list-comma-space-after/README.md)：要求在值列表的逗号之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`value-list-comma-space-before`](../../lib/rules/value-list-comma-space-before/README.md)：要求在值列表的逗号之前必须有一个空格或不能有空白符（可自动修复）。
--   [`value-list-max-empty-lines`](../../lib/rules/value-list-max-empty-lines/README.md)：Limit the number of adjacent empty lines within value lists (Autofixable).
+-   [`value-list-max-empty-lines`](../../lib/rules/value-list-max-empty-lines/README.md)：限制值列表中相邻空行的数量（可自动修复）
 
 #### 自定义属性
 
