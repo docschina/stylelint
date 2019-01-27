@@ -1,6 +1,6 @@
 # value-list-max-empty-lines
 
-Limit the number of adjacent empty lines within value lists.
+限制值列表中相邻空行的数量
 
 ```css
 a {
@@ -10,14 +10,14 @@ a {
     0 2px 5px #000; /* ↑ */
 }                   /* ↑ */
 /**                    ↑
- *       This empty line */
+ *                 这个空行 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
 ## 选项
 
-`int`: Maximum number of empty lines.
+`int`：允许的最大相邻空行数量。
 
 例如，使用 `0`：
 

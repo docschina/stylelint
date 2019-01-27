@@ -1,20 +1,20 @@
 # selector-max-universal
 
-Limit the number of universal selectors in a selector.
+限制一个选择器中通用选择器的数量
 
 ```css
     * {}
 /** ↑
- * This universal selector */
+ * 这个通用选择器 */
 ```
 
-This rule resolves nested selectors before counting the number of universal selectors. Each selector in a [selector list](https://www.w3.org/TR/selectors4/#selector-list) is evaluated separately.
+此规则在计算通用选择器的数量之前先解析选择器嵌套。[选择器列表](https://www.w3.org/TR/selectors4/#selector-list)中的每个选择器都将单独计算。
 
-The `:not()` pseudo-class is also evaluated separately. The rule processes the argument as if it were an independent selector, and the result does not count toward the total for the entire selector.
+`:not()` 伪类的内容也是单独计算的。此规则将其参数视为一个独立的选择器，结果不计入整个选择器的总数。
 
 ## 选项
 
-`int`: Maximum universal selectors allowed.
+`int`：允许的最大通用选择器数量。
 
 例如，使用 `2`：
 
@@ -55,12 +55,12 @@ The `:not()` pseudo-class is also evaluated separately. The rule processes the a
 ```
 
 ```css
-/* each selector in a selector list is evaluated separately */
+/* 选择器列表中的每个选择器都将单独计算 */
 *.foo,
 *.bar * {}
 ```
 
 ```css
-/* `*` is inside `:not()`, so it is evaluated separately */
+/* `*` 在 `:not()` 里面，所以它是单独计算的 */
 * > * .foo:not(*) {}
 ```

@@ -1,16 +1,16 @@
 # number-max-precision
 
-Limit the number of decimal places allowed in numbers.
+限制数字中允许的小数位数
 
 ```css
 a { top: 3.245634px; }
 /**           ↑
- * These decimal places */
+ * 这些小数位 */
 ```
 
 ## 选项
 
-`int`: Maximum number of decimal places allowed.
+`int`：允许的最大小数位数。
 
 例如，使用 `2`：
 
@@ -42,7 +42,7 @@ a { top: 3.24px; }
 
 ### `ignoreUnits: ["/regex/", /regex/, "string"]`
 
-Ignore the precision of numbers for values with the specified units.
+忽略具有指定单位的值的数字精度。
 
 例如，使用 `2`。
 

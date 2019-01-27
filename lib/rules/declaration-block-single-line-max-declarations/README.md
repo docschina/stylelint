@@ -1,16 +1,16 @@
 # declaration-block-single-line-max-declarations
 
-Limit the number of declarations within a single line declaration block.
+限制一个单行声明块中声明的数量
 
 ```css
 a { color: pink; top: 0; }
 /** ↑            ↑
- * The number of these declarations */
+ * 这些声明的数量 */
 ```
 
 ## 选项
 
-`int`: Maximum number of declarations allowed.
+`int`：允许的最大声明数量。
 
 例如，使用 `1`：
 
