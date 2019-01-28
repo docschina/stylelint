@@ -1,19 +1,19 @@
 # media-feature-name-no-unknown
 
-Disallow unknown media feature names.
+禁止未知的媒体功能名。
 
 ```css
 @media (min-width: 700px) {}
 /**     ↑
- * These media feature names */
+ * 这个媒体功能名 */
 ```
 
-This rule considers media feature names defined in the CSS Specifications, up to and including Editor's Drafts, to be known.
+此规则考虑了 CSS 规范中定义的媒体功能名，包括已知的编辑草案。
 
 此规则忽略：
 
--   media feature names within a range context
--   vendor-prefixed media feature names
+-   上下文范围中的媒体功能名称
+-   带浏览器引擎前缀的媒体功能名称
 
 ## 选项
 

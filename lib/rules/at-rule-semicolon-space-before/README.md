@@ -1,6 +1,6 @@
 # at-rule-semicolon-space-before
 
-要求在 @规则的分号之前必须有一个空格或不能有空白符。
+要求在@规则的分号之前必须有一个空格或不能有空白符。
 
 ```css
 @import "components/buttons";

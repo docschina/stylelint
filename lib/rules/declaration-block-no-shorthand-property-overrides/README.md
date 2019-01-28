@@ -1,6 +1,6 @@
 # declaration-block-no-shorthand-property-overrides
 
-Disallow shorthand properties that override related longhand properties.
+禁止简写属性覆盖相关的扩写属性。
 
 ```css
 a { background-repeat: repeat; background: green; }
@@ -8,7 +8,7 @@ a { background-repeat: repeat; background: green; }
  *               这个简写属性会覆盖之前的属性 */
 ```
 
-In almost every case, this is just an authorial oversight. For more about this behavior, see [MDN's documentation of shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
+绝大多数情况下，这只是作者的疏忽。有关此行为的更多信息，请参阅 [MDN 的简写属性文档](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Shorthand_properties)。
 
 ## 选项
 

@@ -1,16 +1,16 @@
 # selector-pseudo-class-no-unknown
 
-Disallow unknown pseudo-class selectors.
+禁止未知的伪类选择器。
 
 ```css
     a:hover {}
 /**    ↑
- * This pseudo-class selector */
+ * 这个伪类选择器 */
 ```
 
-This rule considers pseudo-class selectors defined in the CSS Specifications, up to and including Editor's Drafts, to be known.
+此规则考虑了 CSS 规范中定义的伪类选择器，包括已知的编辑草案。
 
-This rule ignores vendor-prefixed pseudo-class selectors.
+此规则忽略带浏览器引擎前缀的伪类选择器。
 
 ## 选项
 

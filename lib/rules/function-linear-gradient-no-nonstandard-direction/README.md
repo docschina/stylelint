@@ -1,20 +1,19 @@
 # function-linear-gradient-no-nonstandard-direction
 
-Disallow direction values in `linear-gradient()` calls that are not valid according to the
-[standard syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient#Syntax).
+禁止在 `linear-gradient()` 中调用不符合[标准语法](https://developer.mozilla.org/zh-CN/docs/Web/CSS/linear-gradient#语法)的无效方向值。
 
 ```css
 .foo { background: linear-gradient(to top, #fff, #000); }
 /**                                ↑
- * This (optional) first argument is the "direction" */
+ *                  这第一个参数（可选）是“方向” */
 ```
 
-A valid and standard direction value is one of the following:
+有效的标准方向值是以下之一：
 
--   an angle
--   `to ` plus a side-or-corner (`to top`, `to bottom`, `to left`, `to right`; `to top right`, `to right top`, `to bottom left`, etc.)
+-   一个角度
+-   `to ` 加上一个方位（`to top`、`to bottom`、`to left`、`to right`；`to top right`, `to right top`、`to bottom left` 等等。）
 
-A common mistake (matching outdated non-standard syntax) is to use just a side-or-corner without the preceding `to`.
+一个常见的错误（匹配过时的非标准语法）是只使用一个前面没有 `to` 的方位。
 
 ## 选项
 
@@ -61,6 +60,6 @@ A common mistake (matching outdated non-standard syntax) is to use just a side-o
 ```
 
 ```css
-/* Direction defaults to "to bottom" */
+/* 方向默认为 "to bottom" */
 .foo { background: linear-gradient(#fff, #000); }
 ```

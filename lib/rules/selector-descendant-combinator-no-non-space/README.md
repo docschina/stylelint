@@ -1,14 +1,14 @@
 # selector-descendant-combinator-no-non-space
 
-Disallow non-space characters for descendant combinators of selectors.
+禁止后代选择器使用非空格字符。
 
 ```css
 .foo .bar .baz {}
 /** ↑    ↑
-* These descendant combinators */
+* 这些后代选择器 */
 ```
 
-This rule ensures that only a single space is used and ensures no tabs, newlines, nor multiple spaces are used for descendant combinators of selectors.
+此规则确保后代选择器仅使用单个空格，不使用制表符，换行符或多个空格。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的大多数问题。
 

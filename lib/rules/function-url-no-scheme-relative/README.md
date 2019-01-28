@@ -1,16 +1,16 @@
 # function-url-no-scheme-relative
 
-Disallow scheme-relative urls.
+禁止相对协议 URL。
 
 ```css
 a { background-image: url('//www.google.com/file.jpg'); }
 /**                        ↑
- *  This scheme-relative url */
+ *  这个相对协议 URL */
 ```
 
-A [scheme-relative url](https://url.spec.whatwg.org/#syntax-url-scheme-relative) is a url that begins with `//` followed by a host.
+[相对协议 URL](https://url.spec.whatwg.org/#syntax-url-scheme-relative)是一个以 `//` 开头，后跟主机的 URL。
 
-This rule ignores url arguments that are variables (`$sass`, `@less`, `--custom-property`).
+这条规则忽略了作为变量的 URL 参数（`$sass`、`@less`、`--custom-property`）。
 
 ## 选项
 

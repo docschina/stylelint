@@ -1,14 +1,14 @@
 # at-rule-no-unknown
 
-Disallow unknown at-rules.
+禁止未知的@规则。
 
 ```css
     @unknown (max-width: 960px) {}
 /** ↑
- * At-rules like this */
+ * 像这样的@规则 */
 ```
 
-This rule considers at-rules defined in the CSS Specifications, up to and including Editor's Drafts, to be known.
+此规则考虑了 CSS 规范中定义的@规则，包括已知的编辑草案。
 
 ## 选项
 

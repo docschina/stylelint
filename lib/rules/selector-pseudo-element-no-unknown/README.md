@@ -1,16 +1,16 @@
 # selector-pseudo-element-no-unknown
 
-Disallow unknown pseudo-element selectors.
+禁止未知的伪元素选择器。
 
 ```css
     a::before {}
 /**    ↑
- * This pseudo-element selector */
+ * 这个伪元素选择器 */
 ```
 
-This rule considers pseudo-element selectors defined in the CSS Specifications, up to and including Editor's Drafts, to be known.
+此规则考虑了 CSS 规范中定义的伪元素选择器，包括已知的编辑草案。
 
-This rule ignores vendor-prefixed pseudo-element selectors.
+此规则忽略带浏览器引擎前缀的伪元素选择器。
 
 ## 选项
 

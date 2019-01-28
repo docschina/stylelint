@@ -1,11 +1,11 @@
 # at-rule-no-vendor-prefix
 
-Disallow vendor prefixes for at-rules.
+禁止@规则的浏览器引擎前缀。
 
 ```css
     @-webkit-keyframes { 0% { top: 0; } }
 /**  ↑
- * These prefixes */
+ * 这个前缀 */
 ```
 
 ## 选项

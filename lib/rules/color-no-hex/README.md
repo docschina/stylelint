@@ -1,11 +1,11 @@
 # color-no-hex
 
-Disallow hex colors.
+禁止 16 进制颜色。
 
 ```css
 a { color: #333 }
 /**        ↑
- * These hex colors */
+ * 这个 16 进制颜色 */
 ```
 
 ## 选项
@@ -26,7 +26,7 @@ a { color: #fff1aa; }
 a { color: #123456aa; }
 ```
 
-Hex values that are not valid also cause violations:
+无效的 16 进制值也会导致违规：
 
 ```css
 a { color: #foobar; }

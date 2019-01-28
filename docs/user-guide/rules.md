@@ -1,6 +1,6 @@
 # 规则
 
-规则确定了代码检查工具寻找和报告的内容。默认情况下，所有规则都处于关闭状态，并且没有任何规则的默认值。规则遵循一致的命名约定，并且设计为彼此协同工作，您可以在[“关于规则”](about-rules.md)部分中阅读更多相关信息。
+规则确定了代码检查工具寻找和指正的内容。默认情况下，所有规则都处于关闭状态，并且没有任何规则的默认值。规则遵循一致的命名约定，并且设计为彼此协同工作，您可以在[“关于规则”](about-rules.md)部分中阅读更多相关信息。
 
 内置规则适用于标准 CSS 语法，除了 `indentation` 规则之外，所有规则都将忽略包含非标准语法的结构，例如变量插值和混合。
 
@@ -18,57 +18,57 @@
 
 #### 颜色
 
--   [`color-no-invalid-hex`](../../lib/rules/color-no-invalid-hex/README.md)：禁止使用无效的十六进制颜色。
+-   [`color-no-invalid-hex`](../../lib/rules/color-no-invalid-hex/README.md)：禁止无效的 16 进制颜色。
 
 #### 字体族
 
--   [`font-family-no-duplicate-names`](../../lib/rules/font-family-no-duplicate-names/README.md)：禁止使用重复的字体族名称。
+-   [`font-family-no-duplicate-names`](../../lib/rules/font-family-no-duplicate-names/README.md)：禁止重复的字体族名称。
 -   [`font-family-no-missing-generic-family-keyword`](../../lib/rules/font-family-no-missing-generic-family-keyword/README.md)：禁止在字体族名称列表中缺少通用字体族关键字。
 
 #### 函数
 
 -   [`function-calc-no-invalid`](../../lib/rules/function-calc-no-invalid/README.md)：禁止在 `calc` 函数中使用无效表达式。
 -   [`function-calc-no-unspaced-operator`](../../lib/rules/function-calc-no-unspaced-operator/README.md)：禁止在 `calc` 函数中使用没有间隔的运算符。
--   [`function-linear-gradient-no-nonstandard-direction`](../../lib/rules/function-linear-gradient-no-nonstandard-direction/README.md)：Disallow direction values in `linear-gradient()` calls that are not valid according to the [standard syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient#Syntax).
+-   [`function-linear-gradient-no-nonstandard-direction`](../../lib/rules/function-linear-gradient-no-nonstandard-direction/README.md)：禁止在 `linear-gradient()` 中调用不符合标准语法的无效方向值。
 
 #### 字符串
 
--   [`string-no-newline`](../../lib/rules/string-no-newline/README.md)：Disallow (unescaped) newlines in strings.
+-   [`string-no-newline`](../../lib/rules/string-no-newline/README.md)：禁止字符串中的(未转义)换行符。
 
 #### 单位
 
--   [`unit-no-unknown`](../../lib/rules/unit-no-unknown/README.md)：Disallow unknown units.
+-   [`unit-no-unknown`](../../lib/rules/unit-no-unknown/README.md)：禁止未知的单位。
 
 #### 属性
 
--   [`property-no-unknown`](../../lib/rules/property-no-unknown/README.md)：Disallow unknown properties.
+-   [`property-no-unknown`](../../lib/rules/property-no-unknown/README.md)：禁止未知的属性。
 
 #### 关键帧声明
 
--   [`keyframe-declaration-no-important`](../../lib/rules/keyframe-declaration-no-important/README.md)：Disallow `!important` within keyframe declarations.
+-   [`keyframe-declaration-no-important`](../../lib/rules/keyframe-declaration-no-important/README.md)：禁止关键帧声明的 `!important`。
 
 #### 声明块
 
--   [`declaration-block-no-duplicate-properties`](../../lib/rules/declaration-block-no-duplicate-properties/README.md)：Disallow duplicate properties within declaration blocks.
--   [`declaration-block-no-shorthand-property-overrides`](../../lib/rules/declaration-block-no-shorthand-property-overrides/README.md)：Disallow shorthand properties that override related longhand properties within declaration blocks.
+-   [`declaration-block-no-duplicate-properties`](../../lib/rules/declaration-block-no-duplicate-properties/README.md)：禁止声明块的重复属性。
+-   [`declaration-block-no-shorthand-property-overrides`](../../lib/rules/declaration-block-no-shorthand-property-overrides/README.md)：禁止简写属性覆盖相关的扩写属性。
 
 #### 块
 
--   [`block-no-empty`](../../lib/rules/block-no-empty/README.md)：Disallow empty blocks.
+-   [`block-no-empty`](../../lib/rules/block-no-empty/README.md)：禁止空块。
 
 #### 选择器
 
--   [`selector-pseudo-class-no-unknown`](../../lib/rules/selector-pseudo-class-no-unknown/README.md)：Disallow unknown pseudo-class selectors.
--   [`selector-pseudo-element-no-unknown`](../../lib/rules/selector-pseudo-element-no-unknown/README.md)：Disallow unknown pseudo-element selectors.
--   [`selector-type-no-unknown`](../../lib/rules/selector-type-no-unknown/README.md)：Disallow unknown type selectors.
+-   [`selector-pseudo-class-no-unknown`](../../lib/rules/selector-pseudo-class-no-unknown/README.md)：禁止未知的伪类选择器。
+-   [`selector-pseudo-element-no-unknown`](../../lib/rules/selector-pseudo-element-no-unknown/README.md)：禁止未知的伪元素选择器。
+-   [`selector-type-no-unknown`](../../lib/rules/selector-type-no-unknown/README.md)：禁止未知的类型选择器。
 
 #### 媒体功能
 
--   [`media-feature-name-no-unknown`](../../lib/rules/media-feature-name-no-unknown/README.md)：Disallow unknown media feature names.
+-   [`media-feature-name-no-unknown`](../../lib/rules/media-feature-name-no-unknown/README.md)：禁止未知的媒体功能名。
 
-#### @规则
+####@规则
 
--   [`at-rule-no-unknown`](../../lib/rules/at-rule-no-unknown/README.md)：Disallow unknown at-rules.
+-   [`at-rule-no-unknown`](../../lib/rules/at-rule-no-unknown/README.md)：禁止未知的@规则。
 
 #### 注释
 
@@ -81,19 +81,19 @@
 -   [`no-duplicate-selectors`](../../lib/rules/no-duplicate-selectors/README.md)：禁止样式表中的重复选择器。
 -   [`no-empty-source`](../../lib/rules/no-empty-source/README.md)：禁止空源码。
 -   [`no-extra-semicolons`](../../lib/rules/no-extra-semicolons/README.md)：禁止额外的分号（可自动修复）。
--   [`no-invalid-double-slash-comments`](../../lib/rules/no-invalid-double-slash-comments/README.md)：禁止 CSS 不支持的双斜杠注释（`//...`）。
+-   [`no-invalid-double-slash-comments`](../../lib/rules/no-invalid-double-slash-comments/README.md)：禁止 CSS 不支持并可能导致意外结果的双斜杠注释（`//...`）。
 
 ### 限制语言功能
 
 #### 颜色
 
 -   [`color-named`](../../lib/rules/color-named/README.md)：Require (where possible) or disallow named colors.
--   [`color-no-hex`](../../lib/rules/color-no-hex/README.md)：Disallow hex colors.
+-   [`color-no-hex`](../../lib/rules/color-no-hex/README.md)：禁止 16 进制颜色。
 
 #### 函数
 
 -   [`function-blacklist`](../../lib/rules/function-blacklist/README.md)：Specify a blacklist of disallowed functions.
--   [`function-url-no-scheme-relative`](../../lib/rules/function-url-no-scheme-relative/README.md)：Disallow scheme-relative urls.
+-   [`function-url-no-scheme-relative`](../../lib/rules/function-url-no-scheme-relative/README.md)：禁止相对协议 URL。
 -   [`function-url-scheme-blacklist`](../../lib/rules/function-url-scheme-blacklist/README.md)：Specify a blacklist of disallowed url schemes.
 -   [`function-url-scheme-whitelist`](../../lib/rules/function-url-scheme-whitelist/README.md)：Specify a whitelist of allowed url schemes.
 -   [`function-whitelist`](../../lib/rules/function-whitelist/README.md)：Specify a whitelist of allowed functions.
@@ -117,11 +117,11 @@
 
 #### 简写属性
 
--   [`shorthand-property-no-redundant-values`](../../lib/rules/shorthand-property-no-redundant-values/README.md)：Disallow redundant values in shorthand properties (Autofixable).
+-   [`shorthand-property-no-redundant-values`](../../lib/rules/shorthand-property-no-redundant-values/README.md)：禁止简写属性的冗余值（可自动修复）。
 
 #### 值
 
--   [`value-no-vendor-prefix`](../../lib/rules/value-no-vendor-prefix/README.md)：Disallow vendor prefixes for values.
+-   [`value-no-vendor-prefix`](../../lib/rules/value-no-vendor-prefix/README.md)：禁止值的浏览器引擎前缀。
 
 #### 自定义属性
 
@@ -130,13 +130,13 @@
 #### 属性
 
 -   [`property-blacklist`](../../lib/rules/property-blacklist/README.md)：Specify a blacklist of disallowed properties.
--   [`property-no-vendor-prefix`](../../lib/rules/property-no-vendor-prefix/README.md)：Disallow vendor prefixes for properties.
+-   [`property-no-vendor-prefix`](../../lib/rules/property-no-vendor-prefix/README.md)：禁止属性的浏览器引擎前缀。
 -   [`property-whitelist`](../../lib/rules/property-whitelist/README.md)：Specify a whitelist of allowed properties.
 
 #### 声明
 
--   [`declaration-block-no-redundant-longhand-properties`](../../lib/rules/declaration-block-no-redundant-longhand-properties/README.md)：Disallow longhand properties that can be combined into one shorthand property.
--   [`declaration-no-important`](../../lib/rules/declaration-no-important/README.md)：Disallow `!important` within declarations.
+-   [`declaration-block-no-redundant-longhand-properties`](../../lib/rules/declaration-block-no-redundant-longhand-properties/README.md)：禁止可合并为一个简写属性的扩写属性。
+-   [`declaration-no-important`](../../lib/rules/declaration-no-important/README.md)：禁止声明的 `!important`。
 -   [`declaration-property-unit-blacklist`](../../lib/rules/declaration-property-unit-blacklist/README.md)：Specify a blacklist of disallowed property and unit pairs within declarations.
 -   [`declaration-property-unit-whitelist`](../../lib/rules/declaration-property-unit-whitelist/README.md)：Specify a whitelist of allowed property and unit pairs within declarations.
 -   [`declaration-property-value-blacklist`](../../lib/rules/declaration-property-value-blacklist/README.md)：Specify a blacklist of disallowed property and value pairs within declarations.
@@ -159,14 +159,14 @@
 -   [`selector-max-combinators`](../../lib/rules/selector-max-combinators/README.md)：限制一个选择器中组合选择器的数量
 -   [`selector-max-compound-selectors`](../../lib/rules/selector-max-compound-selectors/README.md)：限制一个选择器中复合选择器的数量
 -   [`selector-max-empty-lines`](../../lib/rules/selector-max-empty-lines/README.md)：限制选择器中相邻空行的数量
--   [`selector-max-id`](../../lib/rules/selector-max-id/README.md)：限制一个选择器中ID选择器的数量
+-   [`selector-max-id`](../../lib/rules/selector-max-id/README.md)：限制一个选择器中 ID 选择器的数量
 -   [`selector-max-pseudo-class`](../../lib/rules/selector-max-pseudo-class/README.md)：限制一个选择器中伪类的数量
 -   [`selector-max-specificity`](../../lib/rules/selector-max-specificity/README.md)：Limit the specificity of selectors.
 -   [`selector-max-type`](../../lib/rules/selector-max-type/README.md)：限制一个选择器中类型选择器的数量
 -   [`selector-max-universal`](../../lib/rules/selector-max-universal/README.md)：限制一个选择器中通用选择器的数量
 -   [`selector-nested-pattern`](../../lib/rules/selector-nested-pattern/README.md)：Specify a pattern for the selectors of rules nested within rules.
--   [`selector-no-qualifying-type`](../../lib/rules/selector-no-qualifying-type/README.md)：Disallow qualifying a selector by type.
--   [`selector-no-vendor-prefix`](../../lib/rules/selector-no-vendor-prefix/README.md)：Disallow vendor prefixes for selectors.
+-   [`selector-no-qualifying-type`](../../lib/rules/selector-no-qualifying-type/README.md)：禁止用类型选择器来限定一个选择器。
+-   [`selector-no-vendor-prefix`](../../lib/rules/selector-no-vendor-prefix/README.md)：禁止选择器的浏览器引擎前缀。
 -   [`selector-pseudo-class-blacklist`](../../lib/rules/selector-pseudo-class-blacklist/README.md)：Specify a blacklist of disallowed pseudo-class selectors.
 -   [`selector-pseudo-class-whitelist`](../../lib/rules/selector-pseudo-class-whitelist/README.md)：Specify a whitelist of allowed pseudo-class selectors.
 -   [`selector-pseudo-element-blacklist`](../../lib/rules/selector-pseudo-element-blacklist/README.md)：Specify a blacklist of disallowed pseudo-element selectors.
@@ -175,7 +175,7 @@
 #### 媒体功能
 
 -   [`media-feature-name-blacklist`](../../lib/rules/media-feature-name-blacklist/README.md)：Specify a blacklist of disallowed media feature names.
--   [`media-feature-name-no-vendor-prefix`](../../lib/rules/media-feature-name-no-vendor-prefix/README.md)：Disallow vendor prefixes for media feature names.
+-   [`media-feature-name-no-vendor-prefix`](../../lib/rules/media-feature-name-no-vendor-prefix/README.md)：禁止媒体功能名的浏览器引擎前缀。
 -   [`media-feature-name-value-whitelist`](../../lib/rules/media-feature-name-value-whitelist/README.md)：Specify a whitelist of allowed media feature name and value pairs.
 -   [`media-feature-name-whitelist`](../../lib/rules/media-feature-name-whitelist/README.md)：Specify a whitelist of allowed media feature names.
 
@@ -183,10 +183,10 @@
 
 -   [`custom-media-pattern`](../../lib/rules/custom-media-pattern/README.md)：Specify a pattern for custom media query names.
 
-#### @规则
+####@规则
 
 -   [`at-rule-blacklist`](../../lib/rules/at-rule-blacklist/README.md)：Specify a blacklist of disallowed at-rules.
--   [`at-rule-no-vendor-prefix`](../../lib/rules/at-rule-no-vendor-prefix/README.md)：Disallow vendor prefixes for at-rules.
+-   [`at-rule-no-vendor-prefix`](../../lib/rules/at-rule-no-vendor-prefix/README.md)：禁止@规则的浏览器引擎前缀。
 -   [`at-rule-whitelist`](../../lib/rules/at-rule-whitelist/README.md)：Specify a whitelist of allowed at-rules.
 
 #### 注释
@@ -229,7 +229,7 @@
 #### 数字
 
 -   [`number-leading-zero`](../../lib/rules/number-leading-zero/README.md)：Require or disallow a leading zero for fractional numbers less than 1 (Autofixable).
--   [`number-no-trailing-zeros`](../../lib/rules/number-no-trailing-zeros/README.md)：Disallow trailing zeros in numbers (Autofixable).
+-   [`number-no-trailing-zeros`](../../lib/rules/number-no-trailing-zeros/README.md)：禁止数量的尾随零（可自动修复）。
 
 #### 字符串
 
@@ -237,7 +237,7 @@
 
 #### 长度
 
--   [`length-zero-no-unit`](../../lib/rules/length-zero-no-unit/README.md)：Disallow units for zero lengths (Autofixable).
+-   [`length-zero-no-unit`](../../lib/rules/length-zero-no-unit/README.md)：禁止零长度的单位（可自动修复）。
 
 #### 单位
 
@@ -300,7 +300,7 @@
 -   [`selector-attribute-quotes`](../../lib/rules/selector-attribute-quotes/README.md)：Require or disallow quotes for attribute values.
 -   [`selector-combinator-space-after`](../../lib/rules/selector-combinator-space-after/README.md)：要求在组合选择器之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-combinator-space-before`](../../lib/rules/selector-combinator-space-before/README.md)：要求在组合选择器之前必须有一个空格或不能有空白符（可自动修复）。
--   [`selector-descendant-combinator-no-non-space`](../../lib/rules/selector-descendant-combinator-no-non-space/README.md)：Disallow non-space characters for descendant combinators of selectors (Autofixable).
+-   [`selector-descendant-combinator-no-non-space`](../../lib/rules/selector-descendant-combinator-no-non-space/README.md)：禁止后代选择器使用非空格字符（可自动修复）。
 -   [`selector-pseudo-class-case`](../../lib/rules/selector-pseudo-class-case/README.md)：Specify lowercase or uppercase for pseudo-class selectors (Autofixable).
 -   [`selector-pseudo-class-parentheses-space-inside`](../../lib/rules/selector-pseudo-class-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors (Autofixable).
 -   [`selector-pseudo-element-case`](../../lib/rules/selector-pseudo-element-case/README.md)：Specify lowercase or uppercase for pseudo-element selectors.
@@ -334,14 +334,14 @@
 -   [`media-query-list-comma-space-after`](../../lib/rules/media-query-list-comma-space-after/README.md)：要求在媒体查询列表的逗号之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`media-query-list-comma-space-before`](../../lib/rules/media-query-list-comma-space-before/README.md)：要求在媒体查询列表的逗号之前必须有一个空格或不能有空白符（可自动修复）。
 
-#### @规则
+####@规则
 
--   [`at-rule-empty-line-before`](../../lib/rules/at-rule-empty-line-before/README.md)：要求或禁止在 @规则之前的空行（可自动修复）。
+-   [`at-rule-empty-line-before`](../../lib/rules/at-rule-empty-line-before/README.md)：要求或禁止在@规则之前的空行（可自动修复）。
 -   [`at-rule-name-case`](../../lib/rules/at-rule-name-case/README.md)：Specify lowercase or uppercase for at-rules names (Autofixable).
 -   [`at-rule-name-newline-after`](../../lib/rules/at-rule-name-newline-after/README.md)：Require a newline after at-rule names.
 -   [`at-rule-name-space-after`](../../lib/rules/at-rule-name-space-after/README.md)：Require a single space after at-rule names (Autofixable).
--   [`at-rule-semicolon-newline-after`](../../lib/rules/at-rule-semicolon-newline-after/README.md)：要求在 @规则的分号之后必须有换行符（可自动修复）。
--   [`at-rule-semicolon-space-before`](../../lib/rules/at-rule-semicolon-space-before/README.md)：要求在 @规则的分号之前必须有一个空格或不能有空白符。
+-   [`at-rule-semicolon-newline-after`](../../lib/rules/at-rule-semicolon-newline-after/README.md)：要求在@规则的分号之后必须有换行符（可自动修复）。
+-   [`at-rule-semicolon-space-before`](../../lib/rules/at-rule-semicolon-space-before/README.md)：要求在@规则的分号之前必须有一个空格或不能有空白符。
 
 #### 注释
 

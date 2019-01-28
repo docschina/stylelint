@@ -1,14 +1,14 @@
 # shorthand-property-no-redundant-values
 
-Disallow redundant values in shorthand properties.
+禁止简写属性的冗余值。
 
 ```css
 a { margin: 1px 1px 1px 1px; }
 /**             ↑   ↑   ↑
- *           These values */
+ *                这些值 */
 ```
 
-This rule alerts you when you use redundant values in the following shorthand properties:
+在以下简写属性中使用冗余值时，此规则会提醒您：
 
 -   `margin`
 -   `padding`

@@ -19,7 +19,7 @@ stylelint 规则需要*大量的*测试。所以我们构建了一个专门的 s
 testRule(rule, testGroupDescription)
 ```
 
-`rule` 正是是你正在测试的规则（一个函数）。
+`rule` 正是是您正在测试的规则（一个函数）。
 
 `testGroupDescription` 是一个适合以下架构的对象。
 
@@ -47,7 +47,7 @@ testRule(rule, testGroupDescription)
 可选属性：
 
 -   `syntax` {"css"|"css-in-js"|"html"|"less"|"markdown"|"sass"|"scss"|"sugarss"}：默认为 `"css"`。其他设置使用特殊解析器。
--   `skipBasicChecks` {boolean}：默认为 `false`。如果为 `true`，则不会执行一些基本检查（应该几乎总是包括在内）。你可以在 `lib/testUtils/basicChecks.js` 中查看它们。
+-   `skipBasicChecks` {boolean}：默认为 `false`。如果为 `true`，则不会执行一些基本检查（应该几乎总是包括在内）。您可以在 `lib/testUtils/basicChecks.js` 中查看它们。
 -   `preceedingPlugins` {array}：应该在测试 CSS 之前运行的 PostCSS 插件数组。
 -   `fix` {boolean}：默认为 `false`。如果为 `true`，则每个 `reject` 测试用例都将进行自动修复功能测试。*如果规则具有自动修复，则为必需项。*
 

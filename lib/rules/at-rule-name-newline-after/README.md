@@ -6,7 +6,7 @@ Require a newline after at-rule names.
     @media
    /*↑*/  (max-width: 600px) {}
 /**  ↑
- * 这个 @规则名之后的换行符 */
+ * 这个@规则名之后的换行符 */
 ```
 
 ## 选项
@@ -15,7 +15,7 @@ Require a newline after at-rule names.
 
 ### `"always"`
 
-在 @规则名之后*必须*有一个换行符。
+在@规则名之后*必须*有一个换行符。
 
 以下模式被视为违规：
 

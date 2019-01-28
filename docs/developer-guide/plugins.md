@@ -103,7 +103,7 @@ stylelint 公开了一些有用的实用程序。*关于这些应用程序的接
 
 使用警告来创建一个*来自您插件规则*的*新*警告，并用 `stylelint.utils.report` 汇报
 
-比如，假设您要创建一个插件，使用您的预处理器内置的 @规则的例外列表来运行 `at-rule-no-unknown`：
+比如，假设您要创建一个插件，使用您的预处理器内置的@规则的例外列表来运行 `at-rule-no-unknown`：
 
 ```js
 const allowableAtRules = [..]
