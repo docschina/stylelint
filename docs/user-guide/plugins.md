@@ -4,7 +4,7 @@
 
 -   [`stylelint-8-point-grid`](https://github.com/dcrtantuco/stylelint-8-point-grid)：使用8点网格指南验证 CSS
 -   [`stylelint-a11y`](https://github.com/YozhikM/stylelint-a11y)：可访问性规则（插件包）。
--   [`stylelint-at-rule-no-children`](https://github.com/adityavm/stylelint-at-rule-no-children)：禁止在 @规则内部声明块规则（除少数例外）。
+-   [`stylelint-at-rule-no-children`](https://github.com/adityavm/stylelint-at-rule-no-children)：禁止在@规则内部声明块规则（除少数例外）。
 -   [`stylelint-color-format`](https://github.com/filipekiss/stylelint-color-format)：将 HEX 颜色转换为 RGB 或 HSL。
 -   [`stylelint-csstree-validator`](https://github.com/csstree/stylelint-validator):验证 CSS 值以匹配 W3C 规范和浏览器扩展。
 -   [`stylelint-declaration-block-no-ignored-properties`](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties)：禁止由于同一规则中的另一个属性值而被忽略的属性值。

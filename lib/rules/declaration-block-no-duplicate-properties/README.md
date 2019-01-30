@@ -1,14 +1,14 @@
 # declaration-block-no-duplicate-properties
 
-Disallow duplicate properties within declaration blocks.
+禁止声明块的重复属性。
 
 ```css
 a { color: pink; color: orange; }
 /** ↑            ↑
- * These duplicated properties */
+ * 这些重复属性 */
 ```
 
-This rule ignores variables (`$sass`, `@less`, `--custom-property`).
+此规则忽略变量（`$sass`、`@less`、`--custom-property`）。
 
 ## 选项
 
@@ -38,9 +38,9 @@ a { color: pink; background: orange; }
 
 ### `ignore: ["consecutive-duplicates"]`
 
-Ignore consecutive duplicated properties.
+忽略连续的重复属性。
 
-They can prove to be useful fallbacks for older browsers.
+它们可以证明是旧浏览器的有用后备。
 
 以下模式被视为违规：
 
@@ -64,14 +64,14 @@ p {
 
 ### `ignore: ["consecutive-duplicates-with-different-values"]`
 
-Ignore consecutive duplicated properties with different values.
+忽略具有不同值的连续重复属性。
 
-Including duplicate properties (fallbacks) is useful to deal with older browsers support for CSS properties. E.g. using 'px' units when 'rem' isn't available.
+包含重复属性（回退）对于处理旧版浏览器对 CSS 属性的支持非常有用。例如。当 `rem` 不可用时使用 `px` 单位。
 
 以下模式被视为违规：
 
 ```css
-/* properties with the same value */
+/* 具有相同值的属性 */
 p {
   font-size: 16px;
   font-size: 16px;
@@ -80,7 +80,7 @@ p {
 ```
 
 ```css
-/* nonconsecutive duplicates */
+/* 非连续重复 */
 p {
   font-size: 16px;
   font-weight: 400;
@@ -100,7 +100,7 @@ p {
 
 ### `ignoreProperties: ["/regex/", "non-regex"]`
 
-Ignore duplicates of specific properties.
+忽略特定属性的重复项。
 
 给定：
 

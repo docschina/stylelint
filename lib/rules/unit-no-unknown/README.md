@@ -1,14 +1,14 @@
 # unit-no-unknown
 
-Disallow unknown units.
+禁止未知的单位。
 
 ```css
 a { width: 100pixels; }
 /**           ↑
- *  These units */
+ *  这个单位 */
 ```
 
-This rule considers units defined in the CSS Specifications, up to and including Editor's Drafts, to be known.
+此规则考虑了 CSS 规范中定义的单位，包括已知的编辑草案。
 
 ## 选项
 

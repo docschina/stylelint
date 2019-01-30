@@ -1,6 +1,6 @@
 # keyframe-declaration-no-important
 
-Disallow `!important` within keyframe declarations.
+禁止关键帧声明的 `!important`。
 
 ```css
 @keyframes important2 {
@@ -8,11 +8,11 @@ Disallow `!important` within keyframe declarations.
   to { margin: 20px !important }
 }                /* ↑ */
 /**                 ↑
-*     This !important */
+*     这个 !important */
 ```
 
-Using `!important` within keyframes declarations is completely ignored in some browsers:
-[MDN - !important in a keyframe](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes#!important_in_a_keyframe)
+在某些浏览器中完全忽略在关键帧声明中使用 `！important`：
+[MDN - 关键帧中的 !important 关键词](https://developer.mozilla.org/zh-CN/docs/Web/CSS/@keyframes#关键帧中的 _!important_ 关键词)
 
 ## 选项
 

@@ -1,6 +1,6 @@
 # font-family-no-duplicate-names
 
-禁止使用重复的字体族名称。
+禁止重复的字体族名称。
 
 ```css
 a { font-family: serif, serif; }

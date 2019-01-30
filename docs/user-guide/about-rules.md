@@ -338,7 +338,7 @@ c {
 
 这里有针对 CSS 语言的主要结构的 `*-whitelist` 和 `*-blacklist` 规则：@规则，函数，声明（即属性-值对），属性和单位。这些规则可用于允许（或禁止）使用这些结构的任何语言特性（例如 `@media`、`rgb()`）。但是，有些功能没有被这些 `*-whitelist` 和 `*-blacklist` 规则捕获（或者只需要复杂的正则表达式来配置）。有一些单独的规则，通常是 `*-no-*` 规则（例如 `color-no-hex` 和 `selector-no-id`），以禁止这些功能。
 
-假设您想禁止 `@debug` 语言扩展。您可以使用 `at-rule-blacklist` 或 `at-rule-whitelist` 规则来执行此操作，因为 `@debug` 语言扩展使用 @规则 构造，例如：
+假设您想禁止 `@debug` 语言扩展。您可以使用 `at-rule-blacklist` 或 `at-rule-whitelist` 规则来执行此操作，因为 `@debug` 语言扩展使用@规则 构造，例如：
 
 ```js
 "at-rule-blacklist": ["debug"]
@@ -360,7 +360,7 @@ c {
 
 #### 颜色
 
-大部分 `<颜色>` 值是*函数*。因此，可以使用 `function-blacklist` 或 `function-whitelist` 规则允许（或禁止）它们。还有两种不是函数的颜色表示法：命名颜色和十六进制颜色。允许（或禁止）这两个特定的规则：`color-named` 和 `color-no-hex`。
+大部分 `<颜色>` 值是*函数*。因此，可以使用 `function-blacklist` 或 `function-whitelist` 规则允许（或禁止）它们。还有两种不是函数的颜色表示法：命名颜色和 16 进制颜色。允许（或禁止）这两个特定的规则：`color-named` 和 `color-no-hex`。
 
 假设您要强制执行 *如果颜色有相应的命名* 则使用命名颜色，否则使用使用 `hwb` 颜色，例如：
 
@@ -387,7 +387,7 @@ a {
 "function-blacklist": ["/^rgb/", "/^hsl/", "gray"]
 ```
 
-这种方法可以扩展使用到语言扩展（使用 @规则和函数这两个内置可扩展语法结构）时。例如，假设您要禁止所有标准颜色表示法，而使用自定义颜色表示法，例如 `my-color(red with a dash of green / 5%)`。您可以这样做：
+这种方法可以扩展使用到语言扩展（使用@规则和函数这两个内置可扩展语法结构）时。例如，假设您要禁止所有标准颜色表示法，而使用自定义颜色表示法，例如 `my-color(red with a dash of green / 5%)`。您可以这样做：
 
 ```js
 "color-named": "never",

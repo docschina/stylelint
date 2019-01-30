@@ -149,7 +149,7 @@ a { color: pink;
 
 ### `ignoreAtRules: ["/regex/", "non-regex"]`
 
-忽略指定的 @规则。
+忽略指定的@规则。
 
 例如，使用 `"always"` 或 `"always-multi-line"`。
 

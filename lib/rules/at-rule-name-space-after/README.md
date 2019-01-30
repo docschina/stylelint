@@ -16,7 +16,7 @@ Require a single space after at-rule names.
 
 ### `"always"`
 
-在 @规则名之后*必须*有一个空格。
+在@规则名之后*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -53,7 +53,7 @@ Require a single space after at-rule names.
 
 ### `"always-single-line"`
 
-在单行声明块的 @规则名之后*必须*有一个空格。
+在单行声明块的@规则名之后*必须*有一个空格。
 
 以下模式被视为违规：
 

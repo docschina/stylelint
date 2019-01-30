@@ -1,6 +1,6 @@
 # declaration-block-no-redundant-longhand-properties
 
-Disallow longhand properties that can be combined into one shorthand property.
+禁止可合并为一个简写属性的扩写属性。
 
 ```css
   a {
@@ -9,10 +9,10 @@ Disallow longhand properties that can be combined into one shorthand property.
     padding-bottom: 3px;
     padding-left: 4px; }
 /** ↑
- *  These longhand properties */
+ *  这些简写属性 */
 ```
 
-The longhand properties in the example above can be more concisely written as:
+上面示例中的扩写属性可以更简洁地写为：
 
 ```css
 a {
@@ -20,9 +20,9 @@ a {
 }
 ```
 
-This rule will only complain if you've used the longhand equivalent of *all* the properties that the shorthand will set.
+只有您的扩写属性等效于设置了*所有*简写属性时，此规则才会指正。
 
-This rule complains when the following shorthand properties can be used:
+当可以使用以下简写属性时，此规则才会指正：
 
 -   `margin`
 -   `padding`
@@ -60,9 +60,9 @@ This rule complains when the following shorthand properties can be used:
 -   `text-emphasis`
 -   `mask`
 
-**Please note** that properties are considered to be redundant if they may be written shorthand according to the specification, **regardless of the behavior of any individual browser**. For example, due to Internet Explorer's implementation of Flexbox, [it may not be possible to use the shorthand property `flex`](https://github.com/philipwalton/flexbugs#flexbug-8), but the longhand form is still considered a violation.
+**请注意** 如果属性可以根据规范进行简写，**无论任何单个浏览器的行为如何**，它都被认为是多余的。例如，由于 Internet Explorer 的 Flexbox 实现，[可能无法使用简写属性 `flex`](https://github.com/philipwalton/flexbugs#flexbug-8)，但是，扩写形式仍然被视为违规。
 
-Flexbox-related properties can be ignored using `ignoreShorthands: ["/flex-/"]` (see below).
+Flexbox 相关的属性可以使用 `ignoreShorthands: ["/flex-/"]` 忽略（见下文）。
 
 ## 选项
 

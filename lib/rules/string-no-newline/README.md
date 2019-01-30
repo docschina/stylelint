@@ -1,6 +1,6 @@
 # string-no-newline
 
-Disallow (unescaped) newlines in strings.
+禁止字符串中的(未转义)换行符。
 
 ```css
 a {
@@ -8,10 +8,10 @@ a {
     second";     ↑
 }                ↑
 /**              ↑
- * The newline here */
+ * 这里的换行符 */
 ```
 
-[The spec](https://www.w3.org/TR/CSS2/syndata.html#strings) says this: "A string cannot directly contain a newline. To include a newline in a string, use an escape representing the line feed character in ISO-10646 (U+000A), such as \"\A\" or \"\00000a\"." And also: "It is possible to break strings over several lines, for aesthetic or other reasons, but in such a case the newline itself has to be escaped with a backslash (\)."
+[规范](https://www.w3.org/TR/CSS2/syndata.html#strings)说：“字符串不能直接包含换行符。要在字符串中包含换行符，请使用表示 ISO-10646（U+000A）中换行符的转义符，例如 ‘\A’ 或 ‘\00000a’。” 还说：“出于美观或其他原因，可以将字符串断为几行，但在这种情况下，换行本身必须使用反斜杠（\\）进行转义。”
 
 ## 选项
 

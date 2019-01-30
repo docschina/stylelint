@@ -1,14 +1,14 @@
 # value-no-vendor-prefix
 
-Disallow vendor prefixes for values.
+禁止值的浏览器引擎前缀。
 
 ```css
 a { display: -webkit-flex; }
 /**          ↑
- *  These prefixes */
+ *  这个前缀 */
 ```
 
-This rule will only complain for prefixed *standard* values, and not for prefixed *proprietary* or *unknown* ones.
+此规则仅针对*标准*值的前缀进行指正，而不针对*专有*或*未知*值。
 
 ## 选项
 

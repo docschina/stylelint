@@ -1,14 +1,14 @@
 # media-feature-name-no-vendor-prefix
 
-Disallow vendor prefixes for media feature names.
+禁止媒体功能名的浏览器引擎前缀。
 
 ```css
 @media (-webkit-min-device-pixel-ratio: 1) {}
 /**      ↑
- * These prefixes */
+ * 这个前缀 */
 ```
 
-Right now this rule simply checks for prefixed *resolutions*.
+此规则目前只检查 *resolutions* 的前缀
 
 ## 选项
 

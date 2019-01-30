@@ -1,11 +1,11 @@
 # number-no-trailing-zeros
 
-Disallow trailing zeros in numbers.
+禁止数量的尾随零。
 
 ```css
 a { top: 0.5000px; bottom: 1.0px; }
 /**         ↑                ↑
- *        These trailing zeros */
+ *              这些尾随零 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的一些问题。

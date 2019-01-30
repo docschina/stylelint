@@ -1,14 +1,14 @@
 # selector-no-qualifying-type
 
-Disallow qualifying a selector by type.
+禁止用类型选择器来限定一个选择器。
 
 ```css
     a.foo {}
 /** ↑
- * This type selector is qualifying the class */
+ * 这个类型选择器限定了类选择器 */
 ```
 
-A type selector is "qualifying" when it is compounded with (chained to) another selector (e.g. a.foo, a#foo). This rule does not regulate type selectors that are combined with other selectors via a combinator (e.g. a > .foo, a #foo).
+当类型选择器与另一个选择器复合（链接）时（例如 `a.foo`、`a#foo`），即所谓“限定”。该规则不干涉类型选择器通过组合选择器与其他选择器组合（例如 `a > .foo`、`a #foo`）。
 
 ## 选项
 
@@ -60,7 +60,7 @@ input {
 
 #### `"attribute"`
 
-Allow attribute selectors qualified by type.
+允许被类型限定的属性选择器。
 
 以下模式*不*被视为违规：
 
@@ -72,7 +72,7 @@ input[type='button'] {
 
 #### `"class"`
 
-Allow class selectors qualified by type.
+允许被类型限定的类选择器。
 
 以下模式*不*被视为违规：
 
@@ -84,7 +84,7 @@ a.foo {
 
 #### `"id"`
 
-Allow ID selectors qualified by type.
+允许被类型限定的 ID 选择器。
 
 以下模式*不*被视为违规：
 

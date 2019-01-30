@@ -1,14 +1,14 @@
 # property-no-vendor-prefix
 
-Disallow vendor prefixes for properties.
+禁止属性的浏览器引擎前缀。
 
 ```css
 a { -webkit-transform: scale(1); }
 /**  ↑
- * These prefixes */
+ * 这个前缀 */
 ```
 
-This rule does not blanketly condemn vendor prefixes. Instead, it uses [Autoprefixer's](https://github.com/postcss/autoprefixer) up-to-date data (from [caniuse.com](http://caniuse.com/)) to know whether a vendor prefix should cause a violation or not. *If you've included a vendor prefixed property that has a standard alternative, one that Autoprefixer could take care of for you, this rule will complain about it*. If, however, you use a non-standard vendor-prefixed property, one that Autoprefixer would ignore and could not provide (such as `-webkit-touch-callout`), this rule will ignore it.
+此规则并不排斥所有前缀。它使用 [Autoprefixer](https://github.com/postcss/autoprefixer) 的最新数据（来自 [caniuse.com](http://caniuse.com/)）来判断前缀是否违规。*如果您使用了带前缀的属性，而它有一个可被 Autoprefixer 处理的标准的替代品，则此规则会对其作出指正*。但如果您使用一个将被 Autoprefixer 忽略且无法提供的非标准前缀属性（例如 `-webkit-touch-callout`），则此规则将忽略它。
 
 ## 选项
 

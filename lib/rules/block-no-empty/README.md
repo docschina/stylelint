@@ -1,11 +1,11 @@
 # block-no-empty
 
-Disallow empty blocks.
+禁止空块。
 
 ```css
  a { }
 /** ↑
- * Blocks like this */
+ * 像这样的块 */
 ```
 
 ## 选项

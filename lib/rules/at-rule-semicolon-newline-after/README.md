@@ -1,6 +1,6 @@
 # at-rule-semicolon-newline-after
 
-要求在 @规则的分号之后必须有换行符。
+要求在@规则的分号之后必须有换行符。
 
 ```css
 @import url("x.css");

@@ -1,14 +1,14 @@
 # selector-type-no-unknown
 
-Disallow unknown type selectors.
+禁止未知的类型选择器。
 
 ```css
     unknown {}
 /** ↑
- * This type selector */
+ * 这个类型选择器 */
 ```
 
-This rule considers tags defined in the HTML, SVG, and MathML specifications to be known.
+此规则考虑了 HTML、SVG 和 MathML 规范中定义的标记。
 
 ## 选项
 
@@ -44,7 +44,7 @@ li > a {}
 
 #### `"custom-elements"`
 
-Allow custom elements.
+允许自定义元素。
 
 以下模式被视为违规：
 
@@ -64,7 +64,7 @@ x-foo {}
 
 #### `"default-namespace"`
 
-Allow unknown type selectors if they belong to the default namespace.
+允许属于默认命名空间的未知类型选择器。
 
 以下模式被视为违规：
 

@@ -1,14 +1,14 @@
 # declaration-no-important
 
-Disallow `!important` within declarations.
+禁止声明的 `!important`。
 
 ```css
 a { color: pink !important; }
 /**             ↑
- * This !important */
+ * 这个 !important */
 ```
 
-If you always want `!important` in your declarations, e.g. if you're writing [user styles](https://userstyles.org/), you can *safely* add them using [`postcss-safe-important`](https://github.com/crimx/postcss-safe-important).
+如果您期望总是使用 `!important`，例如您正在编写[用户样式](https://userstyles.org/)，您可以使用[`postcss-safe-important`](https://github.com/crimx/postcss-safe-important)*安全的*添加。
 
 ## 选项
 

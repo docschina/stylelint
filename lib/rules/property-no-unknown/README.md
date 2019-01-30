@@ -1,21 +1,21 @@
 # property-no-unknown
 
-Disallow unknown properties.
+禁止未知的属性。
 
 ```css
 a { heigth: 100%; }
 /** ↑
- * These properties */
+ * 这个属性 */
 ```
 
-This rule considers properties defined in the [CSS Specifications and browser specific properties](https://github.com/betit/known-css-properties#source) to be known.
+此规则考虑了[CSS 规范和浏览器](https://github.com/betit/known-css-properties#source)中定义的属性。
 
 此规则忽略：
 
--   variables (`$sass`, `@less`, `--custom-property`)
--   vendor-prefixed properties (e.g., `-moz-align-self`, `-webkit-align-self`)
+-   变量（`$sass`、`@less`、`--custom-property`）
+-   带浏览器引擎前缀的属性（例如，`-moz-align-self`、`-webkit-align-self`）
 
-Use option `checkPrefixed` described below to turn on checking of vendor-prefixed properties.
+使用下面描述的选项 `checkPrefixed` 打开带浏览器引擎前缀属性的检查。
 
 ## 选项
 
@@ -99,9 +99,9 @@ a {
 
 ### `checkPrefixed: true | false` (default: `false`)
 
-If `true`, this rule will check vendor-prefixed properties.
+如果为 `true`，则此规则将检查带浏览器引擎前缀的属性。
 
-For example with `true`:
+例如，使用 `true`：
 
 以下模式*不*被视为违规：
 
