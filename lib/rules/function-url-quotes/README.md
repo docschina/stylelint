@@ -1,11 +1,11 @@
 # function-url-quotes
 
-Require or disallow quotes for urls.
+要求或禁止 URL 的引号。
 
 ```css
 a { background: url("x.jpg") }
 /**                 ↑     ↑
- *             These quotes */
+ *             这些引号 */
 ```
 
 ## 选项
@@ -14,7 +14,7 @@ a { background: url("x.jpg") }
 
 ### `"always"`
 
-Urls *must always* be quoted.
+URL *必须*用引号。
 
 以下模式被视为违规：
 
@@ -58,7 +58,7 @@ a { background: url('x.jpg'); }
 
 ### `"never"`
 
-Urls *must never* be quoted.
+URL *不能*用引号。
 
 以下模式被视为违规：
 
@@ -92,7 +92,7 @@ a { background: url(x.jpg); }
 
 ### `except: ["empty"]`
 
-Reverse the primary option if the function has no arguments.
+如果函数没有参数，则反转主选项。
 
 例如，使用 `"always"`。
 
