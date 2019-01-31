@@ -1,14 +1,14 @@
 # number-leading-zero
 
-Require or disallow a leading zero for fractional numbers less than 1.
+要求或禁止小于 1 的小数有一个前导零。
 
 ```css
 a { line-height: 0.5; }
 /**              ↑
- * This leading zero */
+ * 这个前导零 */
 ```
 
-This rule ignores mixin parameters in Less.
+此规则忽略 Less mixins 的参数。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
@@ -18,7 +18,7 @@ This rule ignores mixin parameters in Less.
 
 ### `"always"`
 
-There *must always* be a leading zero.
+这里*必须*有一个前导零。
 
 以下模式被视为违规：
 
@@ -42,7 +42,7 @@ a { transform: translate(2px, 0.4px); }
 
 ### `"never"`
 
-There *must never* be a leading zero.
+这里*不能*有前导零。
 
 以下模式被视为违规：
 

@@ -1,11 +1,11 @@
 # selector-attribute-quotes
 
-Require or disallow quotes for attribute values.
+要求或禁止属性值的引号。
 
 ```css
 [target="_blank"] {}
 /**     ↑      ↑
- * These quotes */
+ * 这些引号 */
 ```
 
 ## 选项
@@ -14,7 +14,7 @@ Require or disallow quotes for attribute values.
 
 ### `"always"`
 
-Attribute values *must always* be quoted.
+属性值*必须*使用引号。
 
 以下模式被视为违规：
 
@@ -50,7 +50,7 @@ Attribute values *must always* be quoted.
 
 ### `"never"`
 
-Attribute values *must never* be quoted.
+属性值*不能*使用引号。
 
 以下模式被视为违规：
 

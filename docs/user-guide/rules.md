@@ -223,12 +223,12 @@
 -   [`function-name-case`](../../lib/rules/function-name-case/README.md)：Specify lowercase or uppercase for function names (Autofixable).
 -   [`function-parentheses-newline-inside`](../../lib/rules/function-parentheses-newline-inside/README.md)：要求在函数的括号内侧必须有换行符或不能有空白符（可自动修复）。
 -   [`function-parentheses-space-inside`](../../lib/rules/function-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses of functions (Autofixable).
--   [`function-url-quotes`](../../lib/rules/function-url-quotes/README.md)：Require or disallow quotes for urls.
--   [`function-whitespace-after`](../../lib/rules/function-whitespace-after/README.md)：Require or disallow whitespace after functions (Autofixable).
+-   [`function-url-quotes`](../../lib/rules/function-url-quotes/README.md)：要求或禁止 URL 的引号。
+-   [`function-whitespace-after`](../../lib/rules/function-whitespace-after/README.md)：要求或禁止函数之后的空白符（可自动修复）。
 
 #### 数字
 
--   [`number-leading-zero`](../../lib/rules/number-leading-zero/README.md)：Require or disallow a leading zero for fractional numbers less than 1 (Autofixable).
+-   [`number-leading-zero`](../../lib/rules/number-leading-zero/README.md)：要求或禁止小于 1 的小数有一个前导零（可自动修复）。
 -   [`number-no-trailing-zeros`](../../lib/rules/number-no-trailing-zeros/README.md)：禁止数量的尾随零（可自动修复）。
 
 #### 字符串
@@ -278,7 +278,7 @@
 -   [`declaration-block-semicolon-newline-before`](../../lib/rules/declaration-block-semicolon-newline-before/README.md)：要求在声明块的分号之前必须有换行符或不能有空白符。
 -   [`declaration-block-semicolon-space-after`](../../lib/rules/declaration-block-semicolon-space-after/README.md)：要求在声明块的分号之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`declaration-block-semicolon-space-before`](../../lib/rules/declaration-block-semicolon-space-before/README.md)：要求在声明块的分号之前必须有一个空格或不能有空白符（可自动修复）。
--   [`declaration-block-trailing-semicolon`](../../lib/rules/declaration-block-trailing-semicolon/README.md)：Require or disallow a trailing semicolon within declaration blocks (Autofixable).
+-   [`declaration-block-trailing-semicolon`](../../lib/rules/declaration-block-trailing-semicolon/README.md)：要求或禁止声明块的一个尾随分号（可自动修复）。
 
 #### 块
 
@@ -297,7 +297,7 @@
 -   [`selector-attribute-brackets-space-inside`](../../lib/rules/selector-attribute-brackets-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the brackets within attribute selectors (Autofixable).
 -   [`selector-attribute-operator-space-after`](../../lib/rules/selector-attribute-operator-space-after/README.md)：要求在属性选择器中的运算符之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-attribute-operator-space-before`](../../lib/rules/selector-attribute-operator-space-before/README.md)：要求在属性选择器中的运算符之前必须有一个空格或不能有空白符（可自动修复）。
--   [`selector-attribute-quotes`](../../lib/rules/selector-attribute-quotes/README.md)：Require or disallow quotes for attribute values.
+-   [`selector-attribute-quotes`](../../lib/rules/selector-attribute-quotes/README.md)：要求或禁止属性值的引号。
 -   [`selector-combinator-space-after`](../../lib/rules/selector-combinator-space-after/README.md)：要求在组合选择器之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-combinator-space-before`](../../lib/rules/selector-combinator-space-before/README.md)：要求在组合选择器之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-descendant-combinator-no-non-space`](../../lib/rules/selector-descendant-combinator-no-non-space/README.md)：禁止后代选择器使用非空格字符（可自动修复）。
