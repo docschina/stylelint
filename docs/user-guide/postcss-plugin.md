@@ -36,7 +36,7 @@ npm install stylelint --save-dev
 
 只有在直接通过 `config` 属性传递对象时才需要这样做。如果您用了 `configFile`，则这个选项不是必需的。
 
-如果传递的 `config` 对象使用相对路径，例如用于 `extends` 或 `plugins`，您必须传递 `configBasedir`。如果没有使用相对路径，则不需要这个属性。
+如果传递的 `config` 对象使用相对路径，例如用于 `extends` 或 `plugins`，您必须传递 `configBasedir`。如果没有使用相对路径，则无需这个属性。
 
 ### `configOverrides`
 

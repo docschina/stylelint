@@ -1,6 +1,6 @@
 # selector-nested-pattern
 
-Specify a pattern for the selectors of rules nested within rules.
+指定嵌套规则的选择器的模式。
 
 ```css
     a {
@@ -8,20 +8,20 @@ Specify a pattern for the selectors of rules nested within rules.
       &:hover { color: pink; }
     } ↑
 /**   ↑
- * These nested selectors */
+ * 这个嵌套选择器 */
 ```
 
-Non-standard selectors (e.g. selectors with Sass or Less interpolation) and selectors of rules nested within at-rules are ignored.
+非标准选择器（例如具有 Sass 或 Less 插值的选择器）和嵌套在@规则内的规则选择器将被忽略。
 
 ## 选项
 
 `regex|string`
 
-A string will be translated into a RegExp — `new RegExp(yourString)` — so *be sure to escape properly*.
+字符串将被翻译成一个正则表达式，就像 `new RegExp(yourString)` ———— 所以一定要正确转义。
 
-The selector value will be checked in its entirety. If you'd like to allow for combinators and commas, you must incorporate them into your pattern.
+选择器值将完整检查。如果您想允许使用组合选择器和逗号，则必须将它们合并到您的模式中。
 
-Given the string:
+给定字符串：
 
 ```js
 "^&:(?:hover|focus)$"

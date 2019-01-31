@@ -1,11 +1,11 @@
 # declaration-property-value-whitelist
 
-Specify a whitelist of allowed property and value pairs within declarations.
+指定声明内允许的属性和值对的白名单。
 
 ```css
 a { text-transform: uppercase; }
 /** ↑               ↑
- * These properties and these values */
+ * 这些属性和值 */
 ```
 
 ## 选项
@@ -15,13 +15,13 @@ a { text-transform: uppercase; }
   "unprefixed-property-name": ["/regex/", "non-regex"]
 }`
 
-If a property name is found in the object, only its whitelisted property values are allowed. This rule complains about all non-matching values. (If the property name is not included in the object, anything goes.)
+如果在对象中找到属性名称，则仅允许其列入白名单的属性值。此规则会指正所有不匹配的值。（如果属性名称未包含在对象中，则什么都可以。）
 
 如果属性名称用 `"/"` 包围（例如 `"/^animation/"`），则将其解释为正则表达式。这允许方便的简写，例如：`/^animation/` 将匹配 `animation`、`animation-duration`、`animation-timing-function` 等。
 
-The same goes for values. Keep in mind that a regular expression value is matched against the entire value of the declaration, not specific parts of it. For example, a value like `"10px solid rgba( 255 , 0 , 0 , 0.5 )"` will *not* match `"/^solid/"` (notice beginning of the line boundary) but *will* match `"/\\s+solid\\s+/"` or `"/\\bsolid\\b/"`.
+值也是如此。请记住，正则表达式值与声明的整个值匹配，而不是与声明的特定部分匹配。例如，像 `"10px solid rgba( 255 , 0 , 0 , 0.5 )"` 这样的值将*不*匹配 `"/^solid/"`（注意开头的行边界）但是*将*匹配 `"/\\s+solid\\s+/"` 或 `"/\\bsolid\\b/"`。
 
-Be careful with regex matching not to accidentally consider quoted string values and `url()` arguments. For example, `"/red/"` will match value such as `"1px dotted red"` as well as `"\"foo\""` and `"white url(/mysite.com/red.png)"`.
+注意正则表达式意料之外的匹配带引号的字符串值和 `url()` 参数。例如 `"/red/"` 将匹配诸如 `"1px dotted red"` 正如 `"\"red\""` 以及 `"white url(/mysite.com/red.png)"`。
 
 给定：
 

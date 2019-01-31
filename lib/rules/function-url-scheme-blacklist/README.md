@@ -1,19 +1,19 @@
 # function-url-scheme-blacklist
 
-Specify a blacklist of disallowed URL schemes.
+指定禁用的 URL 协议的黑名单。
 
 ```css
 a { background-image: url('http://www.example.com/file.jpg'); }
 /**                        ↑
- *           This URL scheme */
+ *           这个 URL 协议 */
 ```
 
-A [URL scheme](https://url.spec.whatwg.org/#syntax-url-scheme) consists of alphanumeric, `+`, `-`, and `.` characters. It can appear at the start of a URL and is followed by `:`.
+[URL 协议]由字母、数字、`+`、`-` 和 `.` 字符组成。它可以出现在 URL 的开头，后跟`:`
 
 此规则忽略：
 
--   URL arguments without an existing URL scheme
--   URL arguments with variables or variable interpolation (`$sass`, `@less`, `--custom-property`, `#{$var}`, `@{var}`, `$(var)`)
+-   无协议的 URL 参数
+-   带变量或变量插值的 URL 参数（`$sass`、`@less`、`--custom-property`、`#{$var}`、`@{var}`、`$(var)`）
 
 ## 选项
 

@@ -92,15 +92,15 @@
 
 #### 函数
 
--   [`function-blacklist`](../../lib/rules/function-blacklist/README.md)：Specify a blacklist of disallowed functions.
+-   [`function-blacklist`](../../lib/rules/function-blacklist/README.md)：指定禁用的函数的黑名单。
 -   [`function-url-no-scheme-relative`](../../lib/rules/function-url-no-scheme-relative/README.md)：禁止相对协议 URL。
--   [`function-url-scheme-blacklist`](../../lib/rules/function-url-scheme-blacklist/README.md)：Specify a blacklist of disallowed url schemes.
--   [`function-url-scheme-whitelist`](../../lib/rules/function-url-scheme-whitelist/README.md)：Specify a whitelist of allowed url schemes.
--   [`function-whitelist`](../../lib/rules/function-whitelist/README.md)：Specify a whitelist of allowed functions.
+-   [`function-url-scheme-blacklist`](../../lib/rules/function-url-scheme-blacklist/README.md)：指定禁用的 URL 协议的黑名单。
+-   [`function-url-scheme-whitelist`](../../lib/rules/function-url-scheme-whitelist/README.md)：指定允许的 URL 协议的白名单。
+-   [`function-whitelist`](../../lib/rules/function-whitelist/README.md)：指定允许的函数的白名单。
 
 #### 关键帧
 
--   [`keyframes-name-pattern`](../../lib/rules/keyframes-name-pattern/README.md)：Specify a pattern for keyframe names.
+-   [`keyframes-name-pattern`](../../lib/rules/keyframes-name-pattern/README.md)：指定关键帧名的模式。
 
 #### 数字
 
@@ -108,12 +108,12 @@
 
 #### 时间
 
--   [`time-min-milliseconds`](../../lib/rules/time-min-milliseconds/README.md)：Specify the minimum number of milliseconds for time values.
+-   [`time-min-milliseconds`](../../lib/rules/time-min-milliseconds/README.md)：指定时间值的最小毫秒数。
 
 #### 单位
 
--   [`unit-blacklist`](../../lib/rules/unit-blacklist/README.md)：Specify a blacklist of disallowed units.
--   [`unit-whitelist`](../../lib/rules/unit-whitelist/README.md)：Specify a whitelist of allowed units.
+-   [`unit-blacklist`](../../lib/rules/unit-blacklist/README.md)：指定禁用的单位的黑名单。
+-   [`unit-whitelist`](../../lib/rules/unit-whitelist/README.md)：指定允许的单位的白名单。
 
 #### 简写属性
 
@@ -125,22 +125,22 @@
 
 #### 自定义属性
 
--   [`custom-property-pattern`](../../lib/rules/custom-property-pattern/README.md)：Specify a pattern for custom properties.
+-   [`custom-property-pattern`](../../lib/rules/custom-property-pattern/README.md)：指定自定义属性的模式。
 
 #### 属性
 
--   [`property-blacklist`](../../lib/rules/property-blacklist/README.md)：Specify a blacklist of disallowed properties.
+-   [`property-blacklist`](../../lib/rules/property-blacklist/README.md)：指定禁用的属性的黑名单。
 -   [`property-no-vendor-prefix`](../../lib/rules/property-no-vendor-prefix/README.md)：禁止属性的浏览器引擎前缀。
--   [`property-whitelist`](../../lib/rules/property-whitelist/README.md)：Specify a whitelist of allowed properties.
+-   [`property-whitelist`](../../lib/rules/property-whitelist/README.md)：指定允许的属性的白名单。
 
 #### 声明
 
 -   [`declaration-block-no-redundant-longhand-properties`](../../lib/rules/declaration-block-no-redundant-longhand-properties/README.md)：禁止可合并为一个简写属性的扩写属性。
 -   [`declaration-no-important`](../../lib/rules/declaration-no-important/README.md)：禁止声明的 `!important`。
--   [`declaration-property-unit-blacklist`](../../lib/rules/declaration-property-unit-blacklist/README.md)：Specify a blacklist of disallowed property and unit pairs within declarations.
--   [`declaration-property-unit-whitelist`](../../lib/rules/declaration-property-unit-whitelist/README.md)：Specify a whitelist of allowed property and unit pairs within declarations.
--   [`declaration-property-value-blacklist`](../../lib/rules/declaration-property-value-blacklist/README.md)：Specify a blacklist of disallowed property and value pairs within declarations.
--   [`declaration-property-value-whitelist`](../../lib/rules/declaration-property-value-whitelist/README.md)：Specify a whitelist of allowed property and value pairs within declarations.
+-   [`declaration-property-unit-blacklist`](../../lib/rules/declaration-property-unit-blacklist/README.md)：指定声明内禁用的属性和单位对的黑名单。
+-   [`declaration-property-unit-whitelist`](../../lib/rules/declaration-property-unit-whitelist/README.md)：指定声明内允许的属性和单位对的白名单。
+-   [`declaration-property-value-blacklist`](../../lib/rules/declaration-property-value-blacklist/README.md)：指定声明内禁用的属性和值对的黑名单。
+-   [`declaration-property-value-whitelist`](../../lib/rules/declaration-property-value-whitelist/README.md)：指定声明内允许的属性和值对的白名单。
 
 #### 声明块
 
@@ -148,12 +148,12 @@
 
 #### 选择器
 
--   [`selector-attribute-operator-blacklist`](../../lib/rules/selector-attribute-operator-blacklist/README.md)：Specify a blacklist of disallowed attribute operators.
--   [`selector-attribute-operator-whitelist`](../../lib/rules/selector-attribute-operator-whitelist/README.md)：Specify a whitelist of allowed attribute operators.
--   [`selector-class-pattern`](../../lib/rules/selector-class-pattern/README.md)：Specify a pattern for class selectors.
--   [`selector-combinator-blacklist`](../../lib/rules/selector-combinator-blacklist/README.md)：Specify a blacklist of disallowed combinators.
--   [`selector-combinator-whitelist`](../../lib/rules/selector-combinator-whitelist/README.md)：Specify a whitelist of allowed combinators.
--   [`selector-id-pattern`](../../lib/rules/selector-id-pattern/README.md)：Specify a pattern for ID selectors.
+-   [`selector-attribute-operator-blacklist`](../../lib/rules/selector-attribute-operator-blacklist/README.md)：指定禁用的属性运算符的黑名单。
+-   [`selector-attribute-operator-whitelist`](../../lib/rules/selector-attribute-operator-whitelist/README.md)：指定允许的属性运算符的白名单。
+-   [`selector-class-pattern`](../../lib/rules/selector-class-pattern/README.md)：指定类选择器的模式。
+-   [`selector-combinator-blacklist`](../../lib/rules/selector-combinator-blacklist/README.md)：指定禁用的组合选择器的黑名单。
+-   [`selector-combinator-whitelist`](../../lib/rules/selector-combinator-whitelist/README.md)：指定允许的组合选择器的白名单。
+-   [`selector-id-pattern`](../../lib/rules/selector-id-pattern/README.md)：指定 ID 选择器的模式。
 -   [`selector-max-attribute`](../../lib/rules/selector-max-attribute/README.md)：限制一个选择器中属性选择器的数量
 -   [`selector-max-class`](../../lib/rules/selector-max-class/README.md)：限制一个选择器中类的数量
 -   [`selector-max-combinators`](../../lib/rules/selector-max-combinators/README.md)：限制一个选择器中组合选择器的数量
@@ -164,30 +164,30 @@
 -   [`selector-max-specificity`](../../lib/rules/selector-max-specificity/README.md)：Limit the specificity of selectors.
 -   [`selector-max-type`](../../lib/rules/selector-max-type/README.md)：限制一个选择器中类型选择器的数量
 -   [`selector-max-universal`](../../lib/rules/selector-max-universal/README.md)：限制一个选择器中通用选择器的数量
--   [`selector-nested-pattern`](../../lib/rules/selector-nested-pattern/README.md)：Specify a pattern for the selectors of rules nested within rules.
+-   [`selector-nested-pattern`](../../lib/rules/selector-nested-pattern/README.md)：指定嵌套规则的选择器的模式。
 -   [`selector-no-qualifying-type`](../../lib/rules/selector-no-qualifying-type/README.md)：禁止用类型选择器来限定一个选择器。
 -   [`selector-no-vendor-prefix`](../../lib/rules/selector-no-vendor-prefix/README.md)：禁止选择器的浏览器引擎前缀。
--   [`selector-pseudo-class-blacklist`](../../lib/rules/selector-pseudo-class-blacklist/README.md)：Specify a blacklist of disallowed pseudo-class selectors.
--   [`selector-pseudo-class-whitelist`](../../lib/rules/selector-pseudo-class-whitelist/README.md)：Specify a whitelist of allowed pseudo-class selectors.
--   [`selector-pseudo-element-blacklist`](../../lib/rules/selector-pseudo-element-blacklist/README.md)：Specify a blacklist of disallowed pseudo-element selectors.
--   [`selector-pseudo-element-whitelist`](../../lib/rules/selector-pseudo-element-whitelist/README.md)：Specify a whitelist of allowed pseudo-element selectors.
+-   [`selector-pseudo-class-blacklist`](../../lib/rules/selector-pseudo-class-blacklist/README.md)：指定禁用的伪类选择器的黑名单。
+-   [`selector-pseudo-class-whitelist`](../../lib/rules/selector-pseudo-class-whitelist/README.md)：指定允许的伪类选择器的白名单。
+-   [`selector-pseudo-element-blacklist`](../../lib/rules/selector-pseudo-element-blacklist/README.md)：指定禁用的伪元素选择器的黑名单。
+-   [`selector-pseudo-element-whitelist`](../../lib/rules/selector-pseudo-element-whitelist/README.md)：指定允许的伪元素选择器的白名单。
 
 #### 媒体功能
 
--   [`media-feature-name-blacklist`](../../lib/rules/media-feature-name-blacklist/README.md)：Specify a blacklist of disallowed media feature names.
+-   [`media-feature-name-blacklist`](../../lib/rules/media-feature-name-blacklist/README.md)：指定禁用的媒体功能名的黑名单。
 -   [`media-feature-name-no-vendor-prefix`](../../lib/rules/media-feature-name-no-vendor-prefix/README.md)：禁止媒体功能名的浏览器引擎前缀。
--   [`media-feature-name-value-whitelist`](../../lib/rules/media-feature-name-value-whitelist/README.md)：Specify a whitelist of allowed media feature name and value pairs.
--   [`media-feature-name-whitelist`](../../lib/rules/media-feature-name-whitelist/README.md)：Specify a whitelist of allowed media feature names.
+-   [`media-feature-name-value-whitelist`](../../lib/rules/media-feature-name-value-whitelist/README.md)：指定允许的媒体功能名和值对的白名单。
+-   [`media-feature-name-whitelist`](../../lib/rules/media-feature-name-whitelist/README.md)：指定允许的媒体功能名的白名单。
 
 #### 自定义媒体
 
--   [`custom-media-pattern`](../../lib/rules/custom-media-pattern/README.md)：Specify a pattern for custom media query names.
+-   [`custom-media-pattern`](../../lib/rules/custom-media-pattern/README.md)：指定自定义媒体查询名的模式。
 
 ####@规则
 
--   [`at-rule-blacklist`](../../lib/rules/at-rule-blacklist/README.md)：Specify a blacklist of disallowed at-rules.
+-   [`at-rule-blacklist`](../../lib/rules/at-rule-blacklist/README.md)：指定禁用的@规则的黑名单。
 -   [`at-rule-no-vendor-prefix`](../../lib/rules/at-rule-no-vendor-prefix/README.md)：禁止@规则的浏览器引擎前缀。
--   [`at-rule-whitelist`](../../lib/rules/at-rule-whitelist/README.md)：Specify a whitelist of allowed at-rules.
+-   [`at-rule-whitelist`](../../lib/rules/at-rule-whitelist/README.md)：指定允许的@规则的白名单。
 
 #### 注释
 
@@ -202,12 +202,12 @@
 
 #### 颜色
 
--   [`color-hex-case`](../../lib/rules/color-hex-case/README.md)：Specify lowercase or uppercase for hex colors (Autofixable).
--   [`color-hex-length`](../../lib/rules/color-hex-length/README.md)：Specify short or long notation for hex colors (Autofixable).
+-   [`color-hex-case`](../../lib/rules/color-hex-case/README.md)：指定 16 进制颜色的大小写（可自动修复）。
+-   [`color-hex-length`](../../lib/rules/color-hex-length/README.md)：指定 16 进制颜色的简写或扩写（可自动修复）。
 
 #### 字体族
 
--   [`font-family-name-quotes`](../../lib/rules/font-family-name-quotes/README.md)：Specify whether or not quotation marks should be used around font family names.
+-   [`font-family-name-quotes`](../../lib/rules/font-family-name-quotes/README.md)：指定是否应在字体族名称周围使用引号。
 
 #### 字体粗细
 
@@ -220,7 +220,7 @@
 -   [`function-comma-space-after`](../../lib/rules/function-comma-space-after/README.md)：要求在函数的逗号之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`function-comma-space-before`](../../lib/rules/function-comma-space-before/README.md)：要求在函数的逗号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`function-max-empty-lines`](../../lib/rules/function-max-empty-lines/README.md)：限制函数中相邻空行的数量（可自动修复）
--   [`function-name-case`](../../lib/rules/function-name-case/README.md)：Specify lowercase or uppercase for function names (Autofixable).
+-   [`function-name-case`](../../lib/rules/function-name-case/README.md)：指定函数名的大小写（可自动修复）。
 -   [`function-parentheses-newline-inside`](../../lib/rules/function-parentheses-newline-inside/README.md)：要求在函数的括号内侧必须有换行符或不能有空白符（可自动修复）。
 -   [`function-parentheses-space-inside`](../../lib/rules/function-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses of functions (Autofixable).
 -   [`function-url-quotes`](../../lib/rules/function-url-quotes/README.md)：要求或禁止 URL 的引号。
@@ -233,7 +233,7 @@
 
 #### 字符串
 
--   [`string-quotes`](../../lib/rules/string-quotes/README.md)：Specify single or double quotes around strings (Autofixable).
+-   [`string-quotes`](../../lib/rules/string-quotes/README.md)：指定字符串使用单引号或双引号（可自动修复）。
 
 #### 长度
 
@@ -241,11 +241,11 @@
 
 #### 单位
 
--   [`unit-case`](../../lib/rules/unit-case/README.md)：Specify lowercase or uppercase for units (Autofixable).
+-   [`unit-case`](../../lib/rules/unit-case/README.md)：指定单位的大小写（可自动修复）。
 
 #### 值
 
--   [`value-keyword-case`](../../lib/rules/value-keyword-case/README.md)：Specify lowercase or uppercase for keywords values (Autofixable).
+-   [`value-keyword-case`](../../lib/rules/value-keyword-case/README.md)：指定关键字值的大小写（可自动修复）。
 
 #### 值列表
 
@@ -261,7 +261,7 @@
 
 #### 属性
 
--   [`property-case`](../../lib/rules/property-case/README.md)：Specify lowercase or uppercase for properties (Autofixable).
+-   [`property-case`](../../lib/rules/property-case/README.md)：指定属性的大小写（可自动修复）。
 
 #### 声明
 
@@ -301,11 +301,11 @@
 -   [`selector-combinator-space-after`](../../lib/rules/selector-combinator-space-after/README.md)：要求在组合选择器之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-combinator-space-before`](../../lib/rules/selector-combinator-space-before/README.md)：要求在组合选择器之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-descendant-combinator-no-non-space`](../../lib/rules/selector-descendant-combinator-no-non-space/README.md)：禁止后代选择器使用非空格字符（可自动修复）。
--   [`selector-pseudo-class-case`](../../lib/rules/selector-pseudo-class-case/README.md)：Specify lowercase or uppercase for pseudo-class selectors (Autofixable).
+-   [`selector-pseudo-class-case`](../../lib/rules/selector-pseudo-class-case/README.md)：指定伪类选择器的大小写（可自动修复）。
 -   [`selector-pseudo-class-parentheses-space-inside`](../../lib/rules/selector-pseudo-class-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors (Autofixable).
--   [`selector-pseudo-element-case`](../../lib/rules/selector-pseudo-element-case/README.md)：Specify lowercase or uppercase for pseudo-element selectors.
--   [`selector-pseudo-element-colon-notation`](../../lib/rules/selector-pseudo-element-colon-notation/README.md)：Specify single or double colon notation for applicable pseudo-elements (Autofixable).
--   [`selector-type-case`](../../lib/rules/selector-type-case/README.md)：Specify lowercase or uppercase for type selector (Autofixable).
+-   [`selector-pseudo-element-case`](../../lib/rules/selector-pseudo-element-case/README.md)：指定伪元素选择器的大小写。
+-   [`selector-pseudo-element-colon-notation`](../../lib/rules/selector-pseudo-element-colon-notation/README.md)：指定伪元素适用单冒号还是双冒号表示法（可自动修复）。
+-   [`selector-type-case`](../../lib/rules/selector-type-case/README.md)：指定类型选择器的大小写（可自动修复）。
 
 #### 选择器列表
 
@@ -322,7 +322,7 @@
 
 -   [`media-feature-colon-space-after`](../../lib/rules/media-feature-colon-space-after/README.md)：要求在媒体功能的冒号之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`media-feature-colon-space-before`](../../lib/rules/media-feature-colon-space-before/README.md)：要求在媒体功能的冒号之前必须有一个空格或不能有空白符（可自动修复）。
--   [`media-feature-name-case`](../../lib/rules/media-feature-name-case/README.md)：Specify lowercase or uppercase for media feature names (Autofixable).
+-   [`media-feature-name-case`](../../lib/rules/media-feature-name-case/README.md)：指定媒体功能名的大小写（可自动修复）。
 -   [`media-feature-parentheses-space-inside`](../../lib/rules/media-feature-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses within media features (Autofixable).
 -   [`media-feature-range-operator-space-after`](../../lib/rules/media-feature-range-operator-space-after/README.md)：要求在媒体功能的范围运算符之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`media-feature-range-operator-space-before`](../../lib/rules/media-feature-range-operator-space-before/README.md)：要求在媒体功能的范围运算符之前必须有一个空格或不能有空白符（可自动修复）。
@@ -337,7 +337,7 @@
 ####@规则
 
 -   [`at-rule-empty-line-before`](../../lib/rules/at-rule-empty-line-before/README.md)：要求或禁止在@规则之前的空行（可自动修复）。
--   [`at-rule-name-case`](../../lib/rules/at-rule-name-case/README.md)：Specify lowercase or uppercase for at-rules names (Autofixable).
+-   [`at-rule-name-case`](../../lib/rules/at-rule-name-case/README.md)：指定@规则名的大小写（可自动修复）。
 -   [`at-rule-name-newline-after`](../../lib/rules/at-rule-name-newline-after/README.md)：Require a newline after at-rule names.
 -   [`at-rule-name-space-after`](../../lib/rules/at-rule-name-space-after/README.md)：Require a single space after at-rule names (Autofixable).
 -   [`at-rule-semicolon-newline-after`](../../lib/rules/at-rule-semicolon-newline-after/README.md)：要求在@规则的分号之后必须有换行符（可自动修复）。

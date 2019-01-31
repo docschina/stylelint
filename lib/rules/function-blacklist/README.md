@@ -1,11 +1,11 @@
 # function-blacklist
 
-Specify a blacklist of disallowed functions.
+指定禁用的函数的黑名单。
 
 ```css
 a { transform: scale(1); }
 /**            ↑
- * These functions */
+ * 这个函数 */
 ```
 
 ## 选项

@@ -1,21 +1,20 @@
 # keyframes-name-pattern
 
-Specify a pattern for keyframe names.
+指定关键帧名的模式。
 
 ```css
 @keyframes slide-right {}
 /**             ↑
- * The pattern of this */
+ * 这种模式 */
 ```
 
 ## 选项
 
 `regex|string`
 
-A string will be translated into a RegExp — `new RegExp(yourString)` — so *be
-sure to escape properly*.
+字符串将被翻译成一个正则表达式，就像 `new RegExp(yourString)` ———— 所以一定要正确转义。
 
-Given the string:
+给定字符串：
 
 ```js
 "foo-.+"

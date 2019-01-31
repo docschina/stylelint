@@ -1,14 +1,14 @@
 # function-name-case
 
-Specify lowercase or uppercase for function names.
+指定函数名的大小写。
 
 ```css
 a { width: calc(5% - 10em); }
 /**        ↑
- * These functions */
+ * 这个函数 */
 ```
 
-Camel case function names, e.g. `translateX`, are accounted for when the `lower` option is used.
+当使用 `lower` 选项时，驼峰函数名，例如 `translateX`，会被考虑。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
@@ -104,7 +104,7 @@ a {
 
 ### `ignoreFunctions: ["/regex-as-string/", /regex/, "non-regex"]`
 
-Ignore case of function names.
+忽略函数名称的大小写。
 
 例如，使用 `"lower"`。
 

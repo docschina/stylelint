@@ -103,7 +103,7 @@ a {}
 }
 ```
 
-您还可以使用 `/* stylelint-disable-next-line */` 注释关闭*下一行*的规则，之后您不需要显式重新启用它们：
+您还可以使用 `/* stylelint-disable-next-line */` 注释关闭*下一行*的规则，之后您无需显式重新启用它们：
 
 ```css
 #id {

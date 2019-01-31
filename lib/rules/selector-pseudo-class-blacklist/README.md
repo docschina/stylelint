@@ -1,14 +1,14 @@
 # selector-pseudo-class-blacklist
 
-Specify a blacklist of disallowed pseudo-class selectors.
+指定禁用的伪类选择器的黑名单。
 
 ```css
   a:hover {}
 /** ↑
- * These pseudo-class selectors */
+ * 这个伪类选择器 */
 ```
 
-This rule ignores selectors that use variable interpolation e.g. `:#{$variable} {}`.
+此规则忽略使用变量插值的选择器，例如 `:#{$variable} {}`。
 
 ## 选项
 

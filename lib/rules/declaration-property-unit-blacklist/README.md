@@ -1,11 +1,11 @@
 # declaration-property-unit-blacklist
 
-Specify a blacklist of disallowed property and unit pairs within declarations.
+指定声明内禁用的属性和单位对的黑名单。
 
 ```css
 a { width: 100px; }
 /** ↑         ↑
- * These properties and these units */
+ * 这些属性和单位 */
 ```
 
 ## 选项

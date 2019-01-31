@@ -1,14 +1,14 @@
 # media-feature-name-value-whitelist
 
-Specify a whitelist of allowed media feature name and value pairs.
+指定允许的媒体功能名和值对的白名单。
 
 ```css
 @media screen and (min-width: 768px) {}
 /**                ↑          ↑
- *    These features and values */
+ *    这些功能和值 */
 ```
 
-This rule ignores media features within range and boolean context.
+此规则忽略范围和布尔上下文中的媒体功能。
 
 ## 选项
 
@@ -19,12 +19,9 @@ This rule ignores media features within range and boolean context.
 }
 ```
 
-If a media feature name is found in the object, only its whitelisted values are
-allowed. If the media feature name is not included in the object, anything goes.
+如果在对象中找到媒体功能名称，则仅允许其列入白名单的值。如果对象中未包含媒体功能名称，则什么都可以。
 
-If a name or value is surrounded with `/` (e.g. `"/width$/"`), it is interpreted
-as a regular expression. For example, `/width$/` will match `max-width` and
-`min-width`.
+如果名称或值被 `/` 包围（例如 `"/width$/"`），则它被解释为正则表达式。例如 `/width$/` 将匹配 `max-width` 和 `min-width`。
 
 给定：
 

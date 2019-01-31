@@ -2,7 +2,7 @@
 
 ## 技术
 
--   [Node.js](https://nodejs.org/en/) 4.2.1+.
+-   [Node.js](https://nodejs.org/zh-cn/) 4.2.1+.
 -   最新 [npm](https://www.npmjs.com/).
 
 ## 经验法则

@@ -1,11 +1,11 @@
 # selector-type-case
 
-Specify lowercase or uppercase for type selectors.
+指定类型选择器的大小写。
 
 ```css
     a {}
 /** ↑
- * This is type selector */
+ * 这是类型选择器 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。

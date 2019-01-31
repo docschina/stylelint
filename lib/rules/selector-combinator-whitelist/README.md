@@ -1,16 +1,16 @@
 # selector-combinator-whitelist
 
-Specify a whitelist of allowed combinators.
+指定允许的组合选择器的白名单。
 
 ```css
   a + b {}
 /** ↑
- * These combinators */
+ * 这个组合选择器 */
 ```
 
-This rule normalizes the whitespace descendant combinator to be a single space.
+此规则将空白后代选择器规范化为单个空格。
 
-This rule ignores [reference combinators](https://www.w3.org/TR/selectors4/#idref-combinators) e.g. `/for/`.
+此规则忽略[参考选择器](https://www.w3.org/TR/selectors4/#idref-combinators)，例如 `/for/`。
 
 ## 选项
 

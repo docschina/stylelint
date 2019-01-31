@@ -1,16 +1,16 @@
 # selector-pseudo-element-colon-notation
 
-Specify single or double colon notation for applicable pseudo-elements.
+指定伪元素适用单冒号还是双冒号表示法。
 
 ```css
    a::before { color:pink; }
 /** ↑
- * This notation */
+ * 这个符号 */
 ```
 
-The `::` notation was chosen for *pseudo-elements* to establish a discrimination between *pseudo-classes* (which subclass existing elements) and *pseudo-elements* (which are elements not represented in the document tree).
+为伪元素使用 `::` 符号以在伪类（子类现有元素）和伪元素（未在文档树中表现的元素）之间建立区别。
 
-However, for compatibility with existing style sheets, user agents also accept the previous one-colon notation for *pseudo-elements* introduced in CSS levels 1 and 2 (namely, `:first-line`, `:first-letter`, `:before` and `:after`).
+但是，为了与现有样式表兼容，用户代理还接受 CSS 级别 1 和 2 中引入的伪元素前单冒号表示法（即：`:first-line`, `:first-letter`、`:before` 和 `:after`）。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
@@ -20,7 +20,7 @@ However, for compatibility with existing style sheets, user agents also accept t
 
 ### `"single"`
 
-Applicable pseudo-elements *must always* use the single colon notation.
+适用的伪元素*必须*使用单个冒号表示法。
 
 以下模式被视为违规：
 
@@ -68,7 +68,7 @@ li::marker { font-variant-numeric: tabular-nums; }
 
 ### `"double"`
 
-Applicable pseudo-elements *must always* use the double colon notation.
+适用的伪元素*必须*使用双冒号表示法。
 
 以下模式被视为违规：
 

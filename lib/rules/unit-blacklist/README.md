@@ -1,11 +1,11 @@
 # unit-blacklist
 
-Specify a blacklist of disallowed units.
+指定禁用的单位的黑名单。
 
 ```css
 a { width: 100px; }
 /**           ↑
- *  These units */
+ *  这个单位 */
 ```
 
 ## 选项
@@ -54,7 +54,7 @@ a { animation: animation-name 5s ease; }
 
 ### `ignoreProperties: { unit: ["property", "/regex/", /regex/] }`
 
-Ignore units in the values of declarations with the specified properties.
+忽略指定属性的声明中值的单位。
 
 例如，使用 `["px", "vmin"]`。
 
@@ -97,7 +97,7 @@ a { height: 100vmin; }
 
 ### `ignoreMediaFeatureNames: { unit: ["property", "/regex/", /regex/] }`
 
-Ignore units for specific feature names.
+忽略指定功能名称中的单位。
 
 例如，使用 `["px", "dpi"]`。
 

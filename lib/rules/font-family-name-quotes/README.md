@@ -1,35 +1,35 @@
 # font-family-name-quotes
 
-Specify whether or not quotation marks should be used around font family names.
+指定是否应在字体族名称周围使用引号。
 
 ```css
 a { font-family: "Times New Roman", 'Ancient Runes', serif; }
 /**              ↑               ↑  ↑             ↑
- *               These quotation marks and this one */
+ *               这些引号            还有这些引号 */
 ```
 
-This rule checks the `font` and `font-family` properties.
+此规则检查 `font` 和 `font-family` 属性。
 
-This rule ignores `$sass`, `@less`, and `var(--custom-property)` variable syntaxes.
+此规则忽略 `$sass`、`@less` 和 `var(--custom-property)` 变量语法
 
 ## 选项
 
 `string`: `"always-where-required"|"always-where-recommended"|"always-unless-keyword"`
 
-*Please read the following to understand these options*:
+*请阅读以下内容以了解这些选项*：
 
--   The `font` and `font-family` properties accept a short list of special **keywords**: `inherit`, `serif`, `sans-serif`, `cursive`, `fantasy`, `system-ui`, and `monospace`. If you wrap these words in quotes, the browser will not interpret them as keywords, but will instead look for a font by that name (e.g. will look for a `"sans-serif"` font) -- which is almost *never* what you want. Instead, you use these keywords to point to the built-in, generic fallbacks (right?). Therefore, *all of the options below enforce no quotes around these keywords*. (If you actually want to use a font named `"sans-serif"`, turn this rule off.)
--   Quotes are **recommended** [in the spec](https://www.w3.org/TR/CSS2/fonts.html#font-family-prop) with "font family names that contain white space, digits, or punctuation characters other than hyphens".
--   Quotes are **required** around font-family names when they are not [valid CSS identifiers](https://www.w3.org/TR/CSS2/syndata.html#value-def-identifier). For example, a font family name requires quotes around it if it contains `$`, `!`, or `/`, but does not require quotes just because it contains spaces or a (non-initial) number or underscore. *You can probably bet that almost every font family name you use **will** be a valid CSS identifier*.
--   Quotes should **never** be used around vendor prefixed system fonts such as `-apple-system` and `BlinkMacSystemFont`.
+-   `font` 和 `font-family` 属性接受一个简短的特殊**关键字**列表：`inherit`、`serif`、`sans-serif`、`cursive`、`fantasy`、`system-ui` 和 `monospace`。如果您用引号将这些单词包裹起来，浏览器就不会将它们解释为关键字，而是会按照该名称查找字体（例如，将查找 `"sans-serif"` 字体）———— 这几乎*从来不是*您想要的。相反，您使用这些关键字指向内置的通用降级（对吗？）。因此，*以下所有选项都不会针对这些关键字强制执行*。（如果您真的想使用名为 `"sans-serif"` 的字体，请关闭此规则。）
+-   [规范中](https://www.w3.org/TR/CSS2/fonts.html#font-family-prop)**推荐** “字体族名称包含空格、数字或连字符以外的标点符号”时使用引号。
+-   如果字体族名称不是[有效的 CSS 标识符](https://www.w3.org/TR/CSS2/syndata.html#value-def-identifier)，则**需要**引号。例如，如果字体族名称包含 `$`、`！` 或 `/`，则它需要引号，但如果只是因为它包含空格或（非初始）数字或下划线则无需引号。*您使用的几乎所有字体族名称都**是**有效的 CSS 标识符*。
+-   引号应该*永远不*在供应商前缀系统字体周围使用，例如 `-apple-system` 和 `BlinkMacSystemFont`。
 
-For more on these subtleties, read ["Unquoted font family names in CSS"](https://mathiasbynens.be/notes/unquoted-font-family), by Mathias Bynens.
+有关这些细微之处的更多信息，请阅读 Mathias Bynens 的[“CSS 中的未加引号的字体族名称”](https://mathiasbynens.be/notes/unquoted-font-family)。
 
-**Caveat:** This rule does not currently understand escape sequences such as those described by Mathias. If you want to use the font family name "Hawaii 5-0" you will need to wrap it in quotes, instead of escaping it as `Hawaii \35 -0` or `Hawaii\ 5-0`.
+**警告：** 此规则目前不理解转义字符，例如 Mathias 描述的转义字符。如果您想使用字体族名称“Hawaii 5-0”，您需要用引号括起来，而不是把它作为 `Hawaii \35 -0` 或 `Hawaii\ 5-0` 转义形式。
 
 ### `"always-unless-keyword"`
 
-Expect quotes around every font family name that is not a keyword.
+期望非关键字的每个字体族名称都使用引号。
 
 以下模式被视为违规：
 
@@ -61,7 +61,7 @@ a { font: 1em 'Arial', sans-serif; }
 
 ### `"always-where-required"`
 
-Expect quotes only when quotes are *required* according to the criteria above, and disallow quotes in all other cases.
+只有在根据上述标准*需要*时才会出现引号，并且在所有其他情况下都不允许引号。
 
 以下模式被视为违规：
 
@@ -101,7 +101,7 @@ a { font: 1em Arial, sans-serif; }
 
 ### `"always-where-recommended"`
 
-Expect quotes only when quotes are *recommended* according to the criteria above, and disallow quotes in all other cases. (This includes all cases where quotes are *required*, as well.)
+只有在根据上述标准*推荐*时才会引用引号，并且在所有其他情况下都不允许引号。（这包括所有*需要*的情况。）
 
 以下模式被视为违规：
 

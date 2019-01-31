@@ -1,11 +1,11 @@
 # selector-attribute-operator-blacklist
 
-Specify a blacklist of disallowed attribute operators.
+指定禁用的属性运算符的黑名单。
 
 ```css
 [target="_blank"] {}
 /**    ↑
- * These operators */
+ * 这个运算符 */
 ```
 
 ## 选项

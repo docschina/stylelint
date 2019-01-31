@@ -1,11 +1,11 @@
 # property-blacklist
 
-Specify a blacklist of disallowed properties.
+指定禁用的属性的黑名单。
 
 ```css
 a { text-rendering: optimizeLegibility; }
 /** ↑
- * These properties */
+ * 这个属性 */
 ```
 
 ## 选项

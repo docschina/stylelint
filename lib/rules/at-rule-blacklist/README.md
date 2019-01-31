@@ -1,11 +1,11 @@
 # at-rule-blacklist
 
-Specify a blacklist of disallowed at-rules.
+指定禁用的@规则的黑名单。
 
 ```css
     @keyframes name {}
 /** ↑
- * At-rules like this */
+ * 像这样的@规则 */
 ```
 
 ## 选项

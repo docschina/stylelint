@@ -1,11 +1,11 @@
 # color-hex-case
 
-Specify lowercase or uppercase for hex colors.
+指定 16 进制颜色的大小写。
 
 ```css
 a { color: #fff }
 /**        ↑
- * These hex colors */
+ * 这个 16 进制颜色 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。

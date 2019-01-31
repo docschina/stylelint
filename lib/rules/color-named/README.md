@@ -5,7 +5,7 @@ Require (where possible) or disallow named colors.
 ```css
 a { color: black }
 /**        ↑
- * These named colors */
+ * 这个命名颜色 */
 ```
 
 ## 选项
