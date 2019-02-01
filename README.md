@@ -27,7 +27,7 @@
 
 它很容易上手。
 
-首先，决定如何使用stylelint：
+首先，决定如何使用 stylelint：
 
 -   [在命令行中](docs/user-guide/cli.md)
 -   [在您的文本编辑器中](docs/user-guide/complementary-tools.md#编辑器插件), 例如在 VS Code 中
