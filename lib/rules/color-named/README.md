@@ -1,6 +1,6 @@
 # color-named
 
-Require (where possible) or disallow named colors.
+要求（如果可能）或禁止命名颜色。
 
 ```css
 a { color: black }
@@ -14,9 +14,9 @@ a { color: black }
 
 ### `"always-where-possible"`
 
-Colors *must always*, where possible, be named.
+在可能的情况下,*必须*使用命名颜色。
 
-This will complain if a hex (3, 4, 6 and 8 digit), `rgb()`, `rgba()`, `hsl()`, `hsla()`, `hwb()` or `gray()` color can be represented as a named color.
+如果是 16 进制（3、4、6 和 8 位）、`rgb()`、`rgba()`、`hsl()`、`hsla()`、`hwb()` 或 `gray()` 颜色可以表示为命名颜色，此规则将对此指正。
 
 以下模式被视为违规：
 
@@ -72,7 +72,7 @@ a { color: rgb(0, 0, 0, 0.5); }
 
 ### `"never"`
 
-Colors *must never* be named.
+*不能*使用命名颜色。
 
 以下模式被视为违规：
 
@@ -110,7 +110,7 @@ a { color: @blue; }
 
 ### `ignore: ["inside-function"]`
 
-Ignore colors that are inside a function.
+忽略函数内的颜色。
 
 例如，使用 `"never"`。
 
@@ -130,7 +130,7 @@ a {
 
 ### `ignoreProperties: ["/regex/", /regex/, "string"]`
 
-For example with `"never"`.
+例如，使用 `"never"`。
 
 给定：
 

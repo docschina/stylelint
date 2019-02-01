@@ -1,18 +1,18 @@
 # font-weight-notation
 
-Require numeric or named (where possible) `font-weight` values. Also, when named values are expected, require only valid names.
+要求 `font-weight` 使用数字或命名（如果可能）值。此外，当需要命名值时，要求名称有效。
 
 ```css
 a { font-weight: bold }
 /**              ↑
- *   这个符号 */
+ *   这个表示法 */
 
 a { font: italic small-caps 600 16px/3 cursive; }
 /**                         ↑
-*      And this notation, too */
+*                还有这种表示法也是如此 */
 ```
 
-Valid font-weight names are `normal`, `bold`, `bolder`, and `lighter`.
+有效的字体粗细命名是 `normal`、`bold`、`bolder` 和 `lighter`。
 
 此规则忽略 `$sass`、`@less` 和 `var(--custom-property)` 变量语法
 

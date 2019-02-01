@@ -1,24 +1,24 @@
 # selector-max-specificity
 
-Limit the specificity of selectors.
+限制选择器的优先级。
 
 ```css
     .foo, #bar.baz span, #hoo { color: pink; }
 /** ↑     ↑              ↑
- * Each of these selectors */
+ *   这些选择器中的每一个 */
 ```
 
-Visit the [Specificity Calculator](https://specificity.keegan.st) for visual representation of selector specificity.
+访问[优先级计算器](https://specificity.keegan.st)，了解选择器优先级的可视化表示。
 
-This rule ignores selectors with variable interpolation (`#{$var}`, `@{var}`, `$(var)`).
+这条规则忽略了带有变量插值的选择器（``#{$var}`、`@{var}`、`$(var)`）。
 
-此规则在计算一个选择器的特异性之前先解析选择器嵌套。[选择器列表](https://www.w3.org/TR/selectors4/#selector-list)中的每个选择器都将单独计算。
+此规则在计算一个选择器的优先级之前先解析选择器嵌套。[选择器列表](https://www.w3.org/TR/selectors4/#selector-list)中的每个选择器都将单独计算。
 
 ## 选项
 
-`string`: Maximum specificity allowed.
+`string`: 允许的最大优先级。
 
-Format is `"id,class,type"`, as laid out in the [W3C selector spec](https://drafts.csswg.org/selectors/#specificity-rules).
+格式为 `"id,class,type"`，如 [W3C 选择器规范](https://drafts.csswg.org/selectors/#specificity-rules)中所述。
 
 例如，使用 `"0,2,0"`：
 
