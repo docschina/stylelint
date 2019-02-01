@@ -1,6 +1,6 @@
 # selector-pseudo-class-parentheses-space-inside
 
-Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors.
+要求在伪类选择器的括号内侧必须有一个空格或不能有空白符。
 
 ```css
 input:not( [type="submit"] ) {}

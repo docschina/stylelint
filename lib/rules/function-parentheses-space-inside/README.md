@@ -1,6 +1,6 @@
 # function-parentheses-space-inside
 
-Require a single space or disallow whitespace on the inside of the parentheses of functions.
+要求在函数的括号内侧必须有一个空格或不能有空白符。
 
 ```css
 a { transform: translate( 1, 1 ); }
@@ -16,7 +16,7 @@ a { transform: translate( 1, 1 ); }
 
 ### `"always"`
 
-在括号的内侧*必须*有一个空格。
+在括号内侧*必须*有一个空格。
 
 以下模式被视为违规：
 
@@ -36,7 +36,7 @@ a { transform: translate( 1, 1 ); }
 
 ### `"never"`
 
-在括号的内侧*不能*有空白符。
+在括号内侧*不能*有空白符。
 
 以下模式被视为违规：
 

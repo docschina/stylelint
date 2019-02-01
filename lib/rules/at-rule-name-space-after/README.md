@@ -1,6 +1,6 @@
 # at-rule-name-space-after
 
-Require a single space after at-rule names.
+要求在@规则名之后必须有一个空格。
 
 ```css
 @media (max-width: 600px) {}

@@ -76,7 +76,7 @@
 
 #### 一般/表
 
--   [`no-descending-specificity`](../../lib/rules/no-descending-specificity/README.md)：禁止在具有较高特异性的选择器后出现被其覆盖的较低特异性的选择器。
+-   [`no-descending-specificity`](../../lib/rules/no-descending-specificity/README.md)：禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器。
 -   [`no-duplicate-at-import-rules`](../../lib/rules/no-duplicate-at-import-rules/README.md)：禁止在样式表中使用重复的 `@import` 规则。
 -   [`no-duplicate-selectors`](../../lib/rules/no-duplicate-selectors/README.md)：禁止样式表中的重复选择器。
 -   [`no-empty-source`](../../lib/rules/no-empty-source/README.md)：禁止空源码。
@@ -87,7 +87,7 @@
 
 #### 颜色
 
--   [`color-named`](../../lib/rules/color-named/README.md)：Require (where possible) or disallow named colors.
+-   [`color-named`](../../lib/rules/color-named/README.md)：要求（如果可能）或禁止命名颜色。
 -   [`color-no-hex`](../../lib/rules/color-no-hex/README.md)：禁止 16 进制颜色。
 
 #### 函数
@@ -161,7 +161,7 @@
 -   [`selector-max-empty-lines`](../../lib/rules/selector-max-empty-lines/README.md)：限制选择器中相邻空行的数量
 -   [`selector-max-id`](../../lib/rules/selector-max-id/README.md)：限制一个选择器中 ID 选择器的数量
 -   [`selector-max-pseudo-class`](../../lib/rules/selector-max-pseudo-class/README.md)：限制一个选择器中伪类的数量
--   [`selector-max-specificity`](../../lib/rules/selector-max-specificity/README.md)：Limit the specificity of selectors.
+-   [`selector-max-specificity`](../../lib/rules/selector-max-specificity/README.md)：限制选择器的优先级。
 -   [`selector-max-type`](../../lib/rules/selector-max-type/README.md)：限制一个选择器中类型选择器的数量
 -   [`selector-max-universal`](../../lib/rules/selector-max-universal/README.md)：限制一个选择器中通用选择器的数量
 -   [`selector-nested-pattern`](../../lib/rules/selector-nested-pattern/README.md)：指定嵌套规则的选择器的模式。
@@ -211,7 +211,7 @@
 
 #### 字体粗细
 
--   [`font-weight-notation`](../../lib/rules/font-weight-notation/README.md)：Require numeric or named (where possible) `font-weight` values.
+-   [`font-weight-notation`](../../lib/rules/font-weight-notation/README.md)：要求 `font-weight` 使用数字或命名（如果可能）值。此外，当需要命名值时，要求名称有效。
 
 #### 函数
 
@@ -222,7 +222,7 @@
 -   [`function-max-empty-lines`](../../lib/rules/function-max-empty-lines/README.md)：限制函数中相邻空行的数量（可自动修复）
 -   [`function-name-case`](../../lib/rules/function-name-case/README.md)：指定函数名的大小写（可自动修复）。
 -   [`function-parentheses-newline-inside`](../../lib/rules/function-parentheses-newline-inside/README.md)：要求在函数的括号内侧必须有换行符或不能有空白符（可自动修复）。
--   [`function-parentheses-space-inside`](../../lib/rules/function-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses of functions (Autofixable).
+-   [`function-parentheses-space-inside`](../../lib/rules/function-parentheses-space-inside/README.md)：要求在函数的括号内侧必须有一个空格或不能有空白符（可自动修复）。
 -   [`function-url-quotes`](../../lib/rules/function-url-quotes/README.md)：要求或禁止 URL 的引号。
 -   [`function-whitespace-after`](../../lib/rules/function-whitespace-after/README.md)：要求或禁止函数之后的空白符（可自动修复）。
 
@@ -294,7 +294,7 @@
 
 #### 选择器
 
--   [`selector-attribute-brackets-space-inside`](../../lib/rules/selector-attribute-brackets-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the brackets within attribute selectors (Autofixable).
+-   [`selector-attribute-brackets-space-inside`](../../lib/rules/selector-attribute-brackets-space-inside/README.md)：要求在属性选择器的中括号内侧必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-attribute-operator-space-after`](../../lib/rules/selector-attribute-operator-space-after/README.md)：要求在属性选择器中的运算符之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-attribute-operator-space-before`](../../lib/rules/selector-attribute-operator-space-before/README.md)：要求在属性选择器中的运算符之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-attribute-quotes`](../../lib/rules/selector-attribute-quotes/README.md)：要求或禁止属性值的引号。
@@ -302,7 +302,7 @@
 -   [`selector-combinator-space-before`](../../lib/rules/selector-combinator-space-before/README.md)：要求在组合选择器之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-descendant-combinator-no-non-space`](../../lib/rules/selector-descendant-combinator-no-non-space/README.md)：禁止后代选择器使用非空格字符（可自动修复）。
 -   [`selector-pseudo-class-case`](../../lib/rules/selector-pseudo-class-case/README.md)：指定伪类选择器的大小写（可自动修复）。
--   [`selector-pseudo-class-parentheses-space-inside`](../../lib/rules/selector-pseudo-class-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors (Autofixable).
+-   [`selector-pseudo-class-parentheses-space-inside`](../../lib/rules/selector-pseudo-class-parentheses-space-inside/README.md)：要求在伪类选择器的括号内侧必须有一个空格或不能有空白符（可自动修复）。
 -   [`selector-pseudo-element-case`](../../lib/rules/selector-pseudo-element-case/README.md)：指定伪元素选择器的大小写。
 -   [`selector-pseudo-element-colon-notation`](../../lib/rules/selector-pseudo-element-colon-notation/README.md)：指定伪元素适用单冒号还是双冒号表示法（可自动修复）。
 -   [`selector-type-case`](../../lib/rules/selector-type-case/README.md)：指定类型选择器的大小写（可自动修复）。
@@ -323,7 +323,7 @@
 -   [`media-feature-colon-space-after`](../../lib/rules/media-feature-colon-space-after/README.md)：要求在媒体功能的冒号之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`media-feature-colon-space-before`](../../lib/rules/media-feature-colon-space-before/README.md)：要求在媒体功能的冒号之前必须有一个空格或不能有空白符（可自动修复）。
 -   [`media-feature-name-case`](../../lib/rules/media-feature-name-case/README.md)：指定媒体功能名的大小写（可自动修复）。
--   [`media-feature-parentheses-space-inside`](../../lib/rules/media-feature-parentheses-space-inside/README.md)：Require a single space or disallow whitespace on the inside of the parentheses within media features (Autofixable).
+-   [`media-feature-parentheses-space-inside`](../../lib/rules/media-feature-parentheses-space-inside/README.md)：要求在媒体功能的括号内侧必须有一个空格或不能有空白符（可自动修复）。
 -   [`media-feature-range-operator-space-after`](../../lib/rules/media-feature-range-operator-space-after/README.md)：要求在媒体功能的范围运算符之后必须有一个空格或不能有空白符（可自动修复）。
 -   [`media-feature-range-operator-space-before`](../../lib/rules/media-feature-range-operator-space-before/README.md)：要求在媒体功能的范围运算符之前必须有一个空格或不能有空白符（可自动修复）。
 
@@ -338,8 +338,8 @@
 
 -   [`at-rule-empty-line-before`](../../lib/rules/at-rule-empty-line-before/README.md)：要求或禁止在@规则之前的空行（可自动修复）。
 -   [`at-rule-name-case`](../../lib/rules/at-rule-name-case/README.md)：指定@规则名的大小写（可自动修复）。
--   [`at-rule-name-newline-after`](../../lib/rules/at-rule-name-newline-after/README.md)：Require a newline after at-rule names.
--   [`at-rule-name-space-after`](../../lib/rules/at-rule-name-space-after/README.md)：Require a single space after at-rule names (Autofixable).
+-   [`at-rule-name-newline-after`](../../lib/rules/at-rule-name-newline-after/README.md)：要求在@规则名之后必须有换行符。
+-   [`at-rule-name-space-after`](../../lib/rules/at-rule-name-space-after/README.md)：要求在@规则名之后必须有一个空格（可自动修复）。
 -   [`at-rule-semicolon-newline-after`](../../lib/rules/at-rule-semicolon-newline-after/README.md)：要求在@规则的分号之后必须有换行符（可自动修复）。
 -   [`at-rule-semicolon-space-before`](../../lib/rules/at-rule-semicolon-space-before/README.md)：要求在@规则的分号之前必须有一个空格或不能有空白符。
 

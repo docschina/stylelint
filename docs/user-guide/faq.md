@@ -81,7 +81,7 @@ stylelint 默认地能*解析*如下的非标准语法，包括Sass、Less 和 S
 
 您可以使用 [stylelint-selector-bem-pattern](https://github.com/davidtheclark/stylelint-selector-bem-pattern) 插件确保您的选择器符合所选的 BEM 风格模式。
 
-您还可以利用 `selector- *` 规则来禁止某些类型的选择器（例如ID选择器）和控制特异性。
+您还可以利用 `selector-*` 规则来禁止某些类型的选择器（例如ID选择器）和控制优先级。
 
 如果您正在使用 SUITCSS，则可能需要使用[他们的可共享配置](https://github.com/suitcss/stylelint-config-suitcss)。
 

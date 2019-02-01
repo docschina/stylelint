@@ -1,6 +1,6 @@
 # media-feature-parentheses-space-inside
 
-Require a single space or disallow whitespace on the inside of the parentheses within media features.
+要求在媒体功能的括号内侧必须有一个空格或不能有空白符。
 
 ```css
 @media ( max-width: 300px ) {}

@@ -1,6 +1,6 @@
 # at-rule-name-newline-after
 
-Require a newline after at-rule names.
+要求在@规则名之后必须有换行符。
 
 ```css
     @media
