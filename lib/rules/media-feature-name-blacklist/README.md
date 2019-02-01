@@ -1,14 +1,14 @@
 # media-feature-name-blacklist
 
-Specify a blacklist of disallowed media feature names.
+指定禁用的媒体功能名的黑名单。
 
 ```css
 @media (min-width: 700px) {}
 /**     ↑
- * These media feature names */
+ * 这个媒体功能名 */
 ```
 
-**Caveat:** Media feature names within a range context are currently ignored.
+**警告：** 目前忽略范围上下文中的媒体功能名称。
 
 ## 选项
 

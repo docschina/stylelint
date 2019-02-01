@@ -1,11 +1,11 @@
 # unit-whitelist
 
-Specify a whitelist of allowed units.
+指定允许的单位的白名单。
 
 ```css
 a { width: 100px; }
 /**           ↑
- *  These units */
+ *  这个单位 */
 ```
 
 ## 选项
@@ -58,7 +58,7 @@ a { transform: rotate(30deg); }
 
 ### `ignoreProperties: { unit: ["property", "/regex/", /regex/] }`
 
-Ignore units in the values of declarations with the specified properties.
+忽略指定属性的声明中值的单位。
 
 例如，使用 `["px", "em"]`。
 

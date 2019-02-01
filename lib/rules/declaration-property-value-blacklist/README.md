@@ -1,11 +1,11 @@
 # declaration-property-value-blacklist
 
-Specify a blacklist of disallowed property and value pairs within declarations.
+指定声明内禁用的属性和值对的黑名单。
 
 ```css
 a { text-transform: uppercase; }
 /** ↑               ↑
- * These properties and these values */
+ * 这些属性和值 */
 ```
 
 ## 选项

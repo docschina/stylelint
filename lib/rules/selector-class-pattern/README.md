@@ -1,26 +1,26 @@
 # selector-class-pattern
 
-Specify a pattern for class selectors.
+指定类选择器的模式。
 
 ```css
     .foo, #bar.baz span, #hoo[disabled] { color: pink; }
 /** ↑         ↑
- * These class selectors */
+ * 这些类选择器 */
 ```
 
-This rule ignores non-outputting Less mixin definitions and called Less mixins.
+此规则忽略非输出 Less mixin 定义和调用 Less mixins。
 
-Escaped selectors (e.g. `.u-size-11\/12\@sm`) are parsed as escaped twice (e.g. `.u-size-11\\/12\\@sm`). Your RegExp should account for that.
+转义选择器（例如 `.u-size-11\/12\@sm`）被解析为两次转义（例如 `.u-size-11\\/12\\@sm`）。您的正则表达式应该考虑到这一点。
 
 ## 选项
 
 `regex|string`
 
-A string will be translated into a RegExp — `new RegExp(yourString)` — so *be sure to escape properly*.
+字符串将被翻译成一个正则表达式，就像 `new RegExp(yourString)` ———— 所以一定要正确转义。
 
-The selector value *after `.`* will be checked. No need to include `.` in your pattern.
+此规则将检查 *`.` 之后*的选择器值。无需在模式中包含 `.`。
 
-Given the string:
+给定字符串：
 
 ```js
 "foo-[a-z]+"
@@ -72,11 +72,11 @@ div > #zing + .foo-bar {}
 
 ### `resolveNestedSelectors: true | false` (default: `false`)
 
-This option will resolve nested selectors with `&` interpolation.
+此选项将解析使用 `&` 插值的嵌套选择器。
 
 例如，使用 `true`。
 
-Given the string:
+给定字符串：
 
 ```js
 "^[A-Z]+$"
@@ -86,7 +86,7 @@ Given the string:
 
 ```css
 .A {
-  &__B {} /* resolved to ".A__B" */
+  &__B {} /* 解析为 ".A__B" */
 }
 ```
 
@@ -94,6 +94,6 @@ Given the string:
 
 ```css
 .A {
-  &B {} /* resolved to ".AB" */
+  &B {} /* 解析为 ".AB" */
 }
 ```

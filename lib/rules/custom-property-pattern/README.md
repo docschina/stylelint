@@ -1,20 +1,20 @@
 # custom-property-pattern
 
-Specify a pattern for custom properties.
+指定自定义属性的模式。
 
 ```css
 a { --foo-: 1px; }
 /**   ↑
- * The pattern of this */
+ * 这种模式 */
 ```
 
 ## 选项
 
 `regex|string`
 
-A string will be translated into a RegExp like so `new RegExp(yourString)` — so be sure to escape properly.
+字符串将被翻译成一个正则表达式，就像 `new RegExp(yourString)` ———— 所以一定要正确转义。
 
-Given the string:
+给定字符串：
 
 ```js
 "foo-.+"

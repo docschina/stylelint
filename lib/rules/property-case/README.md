@@ -1,11 +1,11 @@
 # property-case
 
-Specify lowercase or uppercase for properties.
+指定属性的大小写。
 
 ```css
     a { width: 1px; }
 /**     ↑
- * These properties */
+ * 这个属性 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。

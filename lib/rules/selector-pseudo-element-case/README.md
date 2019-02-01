@@ -1,11 +1,11 @@
 # selector-pseudo-element-case
 
-Specify lowercase or uppercase for pseudo-element selectors.
+指定伪元素选择器的大小写。
 
 ```css
     a::before {}
 /**    ↑
- * This is pseudo-element selector */
+ * 这是伪元素选择器 */
 ```
 
 ## 选项

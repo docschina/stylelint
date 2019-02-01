@@ -1,11 +1,11 @@
 # declaration-property-unit-whitelist
 
-Specify a whitelist of allowed property and unit pairs within declarations.
+指定声明内允许的属性和单位对的白名单。
 
 ```css
 a { width: 100px; }
 /** ↑         ↑
- * These properties and these units */
+ * 这些属性和单位 */
 ```
 
 ## 选项

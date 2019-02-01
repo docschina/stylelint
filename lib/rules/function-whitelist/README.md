@@ -1,11 +1,11 @@
 # function-whitelist
 
-Specify a whitelist of allowed functions
+指定允许的函数的白名单。
 
 ```css
 a { transform: scale(1); }
 /**            ↑
- * These functions */
+ * 这个函数 */
 ```
 
 ## 选项

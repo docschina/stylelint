@@ -1,14 +1,14 @@
 # value-keyword-case
 
-Specify lowercase or uppercase for keywords values.
+指定关键字值的大小写。
 
 ```css
     a { display: block; }
 /**              ↑
- *    These values */
+ *    这个值 */
 ```
 
-This rule ignores [`<custom-idents>`](https://developer.mozilla.org/en/docs/Web/CSS/custom-ident) of known properties. Values which are paired with non-properties (e.g. `$vars` and custom properties), and do not conform to the primary option, can be ignored using the `ignoreValues: []` secondary option.
+此规则忽略 [`<custom-idents>`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/custom-ident) 的已知属性。使用 `ignoreValues：[]` 辅助选项可以忽略与非属性（例如 `$vars` 和自定义属性）配对且不符合主选项的值。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的所有问题。
 
@@ -169,7 +169,7 @@ a {
 
 ### `ignoreProperties: ["/regex/", /regex/, "non-regex"]`
 
-Ignore case of the values of the listed properties.
+忽略列出的属性的值的大小写。
 
 例如，使用 `"lower"`。
 

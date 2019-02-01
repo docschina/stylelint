@@ -1,18 +1,18 @@
 # time-min-milliseconds
 
-Specify the minimum number of milliseconds for time values.
+指定时间值的最小毫秒数。
 
 ```css
 a { animation: slip-n-slide 150ms linear; }
 /**                         ↑
- *                  This time */
+ *                       这个时间 */
 ```
 
-This rule checks positive numbers in `transition-duration`, `transition-delay`, `animation-duration`, `animation-delay`, and those times as they manifest in the `transition` and `animation` shorthands.
+这条规则检查 `transition-duration`、`transition-delay`、`animation-duration`、`animation-delay` 中的正数，以及它们在 `transition` 和 `animation` 简写中声明的那些时间。
 
 ## 选项
 
-`int`: Minimum number of milliseconds for time values.
+`int`: 时间值的最小毫秒数。
 
 例如，使用 `100`：
 

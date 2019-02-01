@@ -1,11 +1,11 @@
 # at-rule-whitelist
 
-Specify a whitelist of allowed at-rules.
+指定允许的@规则的白名单。
 
 ```css
     @keyframes name {}
 /** ↑
- * At-rules like this */
+ * 像这样的@规则 */
 ```
 
 ## 选项
@@ -55,3 +55,4 @@ a { @extend placeholder; }
   from { top: 10px; }
   to { top: 20px; }
 }
+```

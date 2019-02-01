@@ -1,14 +1,14 @@
 # media-feature-name-whitelist
 
-Specify a whitelist of allowed media feature names.
+指定允许的媒体功能名的白名单。
 
 ```css
 @media (min-width: 700px) {}
 /**     ↑
- * These media feature names */
+ * 这个媒体功能名 */
 ```
 
-This rule ignores media feature names within a range context.
+此规则忽略范围上下文中的媒体功能名称。
 
 ## 选项
 

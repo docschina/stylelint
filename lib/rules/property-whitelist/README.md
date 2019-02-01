@@ -1,14 +1,14 @@
 # property-whitelist
 
-Specify a whitelist of allowed properties.
+指定允许的属性的白名单。
 
 ```css
 a { display: block; }
 /** ↑
- * These properties */
+ * 这个属性 */
 ```
 
-This rule ignores variables (`$sass`, `@less`, `--custom-property`).
+此规则忽略变量（`$sass`、`@less`、`--custom-property`）。
 
 ## 选项
 

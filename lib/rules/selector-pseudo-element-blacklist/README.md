@@ -1,17 +1,17 @@
 # selector-pseudo-element-blacklist
 
-Specify a blacklist of disallowed pseudo-element selectors.
+指定禁用的伪元素选择器的黑名单。
 
 ```css
  a::before {}
 /** ↑
- * These pseudo-element selectors */
+ * 这个伪元素选择器 */
 ```
 
 此规则忽略：
 
--   CSS2 pseudo-elements i.e. those prefixed with a single colon
--   selectors that use variable interpolation e.g. `::#{$variable} {}`
+-   CSS2 伪元素，即以单个冒号为前缀的元素
+-   使用变量插值的选择器，例如 `::#{$variable} {}`
 
 ## 选项
 

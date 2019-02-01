@@ -1,14 +1,14 @@
 # at-rule-name-case
 
-Specify lowercase or uppercase for at-rules names.
+指定@规则名的大小写。
 
 ```css
    @media (min-width: 10px) {}
 /** ↑
- * These at-rule names */
+ * 这个@规则名 */
 ```
 
-Only lowercase at-rule names are valid in SCSS.
+SCSS 中只有小写的规则名称才有效。
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的一些问题。
 

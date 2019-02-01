@@ -1,22 +1,22 @@
 # selector-id-pattern
 
-Specify a pattern for ID selectors.
+指定 ID 选择器的模式。
 
 ```css
 .foo, #bar.baz a, #hoo[disabled] { color: pink; }
 /**   ↑           ↑
- * These ID selectors */
+ * 这些 ID 选择器 */
 ```
 
 ## 选项
 
 `regex|string`
 
-A string will be translated into a RegExp — `new RegExp(yourString)` — so *be sure to escape properly*.
+字符串将被翻译成一个正则表达式，就像 `new RegExp(yourString)` ———— 所以一定要正确转义。
 
-The selector value *after `#`* will be checked. No need to include `#` in your pattern.
+此规则将检查 *`#` 之后*的选择器值。无需在模式中包含 `#`。
 
-Given the string:
+给定字符串：
 
 ```js
 "foo-[a-z]+"

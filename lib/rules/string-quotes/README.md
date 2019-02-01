@@ -1,26 +1,26 @@
 # string-quotes
 
-Specify single or double quotes around strings.
+指定字符串使用单引号或双引号。
 
 ```css
 a[id="foo"] { content: "x"; }
 /**  ↑   ↑             ↑ ↑
- * These quotes and these quotes */
+ * 这些引号和引号 */
 ```
 
-Quotes within comments are ignored.
+注释中的引号将被忽略。
 
 
 ```css
-/* "This is fine" */
-/* 'And this is also fine' */
+/* "这么写没问题" */
+/* '这么写也没问题' */
 ```
 
-Single quotes in a charset @-rule are ignored as using single quotes in this context is incorrect according the [CSS specification](https://www.w3.org/TR/CSS2/syndata.html#x57).
+@charset 规则中的单引号将被忽略，因为根据 [CSS 规范](https://www.w3.org/TR/CSS2/syndata.html#x57)，在此上下文中使用单引号是不正确的。
 
 ```css
 @charset "utf-8"
-/* fine regardless of configuration */
+/* 无论配置如何都没问题 */
 ```
 
 [命令行](../../../docs/user-guide/cli.md#自动修复错误)中的 `--fix` 选项可以自动修复此规则报告的大多数问题。
@@ -31,7 +31,7 @@ Single quotes in a charset @-rule are ignored as using single quotes in this con
 
 ### `"single"`
 
-Strings *must always* be wrapped with single quotes.
+字符串*必须*用单引号包裹。
 
 以下模式被视为违规：
 
@@ -59,7 +59,7 @@ a { content: "x'y'z"; }
 
 ### `"double"`
 
-Strings *must always* be wrapped with double quotes.
+字符串*必须*用双引号包裹。
 
 以下模式被视为违规：
 
@@ -89,7 +89,7 @@ a { content: 'x"y"z'; }
 
 ### `avoidEscape`: `true|false`, defaults to `true`
 
-Allows strings to use single-quotes or double-quotes so long as the string contains a quote that would have to be escaped otherwise.
+允许字符串使用单引号或双引号，只要该字符串包含必须以其他方式转义的引号。
 
 例如，使用 `"single", { "avoidEscape" : false }`。
 

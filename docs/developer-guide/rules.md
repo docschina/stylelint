@@ -62,7 +62,7 @@ export default rule
 
 最典型的次要选项是 `"ignore": []` 和 `"except": []`；但任何数据都可以使用。
 
-如果您不需要忽略或例外，规则的次要选项可以是任何内容。例如，在一些 `selector-*` 规则中使用 `resolveNestedSelectors: true|false` 来改变规则处理嵌套选择器的方式。
+如果您无需忽略或例外，规则的次要选项可以是任何内容。例如，在一些 `selector-*` 规则中使用 `resolveNestedSelectors: true|false` 来改变规则处理嵌套选择器的方式。
 
 ##### 关键字 `"ignore"` 和 `"except"`
 
